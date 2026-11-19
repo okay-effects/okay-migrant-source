@@ -79,4 +79,7 @@ build), run by okay-study's core compiled to JavaScript: no server, no request b
 - `sbt web` builds `app/.js/target/web` (index.html, main.js — 0.8 MB); `sbt publishSite` pushes it from a clean
   tree to the public repository of the built page (`-Dsite.repo=…`), as the other applications do.
 
-Not yet published: the repositories are not made (the source's, private; the page's, public).
+**Published 2026-11-19**: https://okay-effects.github.io/okay-migrant/ — the page's repository
+okay-effects/okay-migrant (public, GitHub Pages, branch main), the source okay-effects/okay-migrant-source
+(private). The live page answers the two conversations of `scripts/page.scala` (run with the address). Its section
+is on okay-effects.github.io (a nav link, "What it does / How it is built", the libraries' line).

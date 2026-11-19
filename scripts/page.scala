@@ -11,7 +11,7 @@ import scala.jdk.CollectionConverters.*
 /** THE PAGE DRIVEN AS A PERSON WOULD, at a phone's size: the built page served from its directory, a language
  * chosen, the questions answered by their buttons, the answer read; a screenshot of the answer. The analytics
  * beacon is answered with an empty script (a test is not a visit).
- * `scala-cli run scripts/page.scala -- <web dir> <out.png>` */
+ * `scala-cli run scripts/page.scala -- <web dir | https://the live page/> <out.png>` */
 @main def page(dir: String, out: String): Unit =
   val server = HttpServer.create(InetSocketAddress("127.0.0.1", 0), 0)
   server.createContext("/", (x: HttpExchange) =>
@@ -24,7 +24,7 @@ import scala.jdk.CollectionConverters.*
     else x.sendResponseHeaders(404, -1)
     x.close())
   server.start()
-  val url = s"http://127.0.0.1:${server.getAddress.getPort}/"
+  val url = if dir.startsWith("http") then dir else s"http://127.0.0.1:${server.getAddress.getPort}/"
   val exe = sys.env.getOrElse("CHROME", sys.props("user.home") +
     "/Library/Caches/ms-playwright/chromium-1234/chrome-mac-arm64/" +
     "Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing")
