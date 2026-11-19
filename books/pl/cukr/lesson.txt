@@ -48,6 +48,7 @@ Dlaczego warto uzyskać kartę pobytu CUKR?
 
 
 
+        Karta pobytu CUKR wraz z ważnym dokumentem podróży uprawniać Cię będzie do podróżowania po
          strefie Schengen przez okres do 90 dni w każdym okresie 180 dniowym.
         Jeśli będziesz chciał w przyszłości ubiegać się o udzielenie zezwolenia na pobyt rezydenta
          długoterminowego UE, okres pobytu w Polsce na podstawie karty pobytu CUKR będzie wliczał się do
@@ -100,6 +101,7 @@ Aby złożyć wniosek o wydanie karty pobytu CUKR musisz:
 
 
 
+        osobiście zalogować się do systemu MOS za pośrednictwem login.gov.pl (po kliknięciu „zaloguj” na
          stronie MOS nastąpi przekierowanie) i wypełnić formularz wniosku o wydanie karty pobytu dla
          obywateli Ukrainy korzystających z ochrony czasowej. Nigdy nie podawaj nikomu informacji
          służących do logowania na login.gov.pl. Może to wpłynąć na bezpieczeństwo Twoich danych!
@@ -128,6 +130,7 @@ O czym muszę pamiętać?
          o możliwości jej odbioru, nie uzyskasz zezwolenia na pobyt czasowy, a karta pobytu zostanie
          unieważniona.
         Kolejne zezwolenie na pobyt czasowy będziesz mógł otrzymać na zasadach ogólnych.
+
 
 
 
@@ -183,6 +186,7 @@ zmieni się z UKR na CUKR i nie uzyskasz uprawnień wynikających z zezwolenia n
 
 
 
+         4. Jaka jest podstawowa różnica między statusem UKR a kartą pobytu CUKR?
 Status UKR jest nadawany obywatelom Ukrainy i niektórym członkom ich rodzin, którzy przybyli do Polski po
 23 lutego 2022 r. w związku z wybuchem wojny i są objęci ochroną czasową, a od 5 marca 2026 r. także
 pozostałym cudzoziemcom korzystającym z ochrony czasowej. Status ten umożliwia legalny pobyt w Polsce
@@ -231,6 +235,7 @@ zdrowotne. Procedura uzyskania zezwolenia na pobyt czasowy jest dłuższa, wymag
 
 
 
+urzędzie wojewódzkim, złożenia odcisków palców, wzoru podpisu i dostarczenia wielu załączników. Zwykłe
 zezwolenie na pobyt czasowy może być udzielone na okres od 3 miesięcy do 3 lat, w zależności od tego
 okresu, jakiego wymaga Twój cel pobytu – jeśli cel pobytu ustanie, zezwolenie na pobyt czasowy może
 zostać cofnięte.
@@ -282,6 +287,7 @@ W rejestrach tych muszą znajdować się:
 
 
 
+          odciski palców (nie dotyczy dzieci, które nie ukończyły 6. roku życia) albo informacja o braku
            fizycznej możliwości pobrania odcisków palców, albo informacja o chwilowej niemożności pobrania
            odcisków palców – w takiej sytuacji powinny zostać podjęte co najmniej dwie próby pobrania
            odcisków palców w urzędzie gminy, przy czym przynajmniej jedna powinna była być podjęta w

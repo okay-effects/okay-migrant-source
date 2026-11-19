@@ -28,8 +28,14 @@ object Main:
     val language = args.headOption.getOrElse("uk")
     val model = Model.parse(Files.readString(Path.of("models/pl-cukr.json"))).fold(sys.error, identity)
     val now = LocalDate.now
-    val topic = CukrTopic.topic(model, now.getYear * 10000 + now.getMonthValue * 100 + now.getDayOfMonth)
+    val after = Model.parse(Files.readString(Path.of("models/pl-cukr-after.json"))).fold(sys.error, identity)
+    val topics = CukrTopic.topic(model, now.getYear * 10000 + now.getMonthValue * 100 + now.getDayOfMonth) +:
+      CukrAfterTopic.topics(after)
+    // the situation: the first answer given after the language, else asked
+    topics.zipWithIndex.foreach((t, i) => println(s"  ${i + 1}. ${t.name.in(language)}"))
+    val chosen = args.lift(1).orElse { print("> "); Option(scala.io.StdIn.readLine()) }.flatMap(_.trim.toIntOption)
+    val topic = chosen.flatMap(n => topics.lift(n - 1)).getOrElse(topics.head)
     println(topic.name.in(language))
-    val outcome = run(console(language, args.drop(1).iterator)(Interview.run[Person](topic)))
+    val outcome = run(console(language, args.drop(2).iterator)(Interview.run[Person](topic)))
     println()
     println(outcome.said(topic, language))

@@ -46,12 +46,37 @@ class InterviewSuite extends munit.FunSuite:
     def plain(s: String) = s.replaceAll("[\\s\\u00a0\\uf0b7•]+", " ").trim
     val books = Map("pl" -> Vector("info-pl.txt", "faq-pl.txt"), "uk" -> Vector("info-ua.txt", "faq-ua.txt"))
       .view.mapValues(fs => plain(fs.map(f => text(s"books/pl/cukr/$f")).mkString(" "))).toMap
+    val after = CukrAfterTopic.topics(Model.parse(text("models/pl-cukr-after.json")).fold(e => fail(e), identity))
     val missing = for
-      reason <- topic.reasons.values.toVector ++ topic.remember
-      (language, quote) <- reason.source.quotes.toVector
+      t <- topic +: after
+      reason <- t.reasons.values.toVector ++ t.remember
+      source <- reason.sources
+      (language, quote) <- source.quotes.toVector
       if !books(language).contains(plain(quote))
     yield s"$language: $quote"
-    assertEquals(missing, Vector.empty[String])
+    assertEquals(missing.distinct, Vector.empty[String])
+
+  test("what follows the application: the office's questions told through the conversation of some situation"):
+    val after = CukrAfterTopic.topics(Model.parse(text("models/pl-cukr-after.json")).fold(e => fail(e), identity))
+    for (what, e) <- CukrAfter.official do
+      // the situation whose questions can state this case: every sentence is some choice's
+      val told = after.flatMap { t =>
+        val answers = t.questions.flatMap(q => q.choices.find(c => e.sentences.contains(c.sentence))
+          .map(c => q.id -> Person.Said.Chose(c.id))).toMap
+        Option.when(answers.size == e.sentences.size) {
+          val asked = collection.mutable.ArrayBuffer.empty[String]
+          run(Person.scripted(answers, asked)(Interview.run[Person](t)))
+        }
+      }
+      // a case whose number is not a choice's (the office's "10 working days") has no conversation: skipped, counted
+      if told.nonEmpty then assertEquals(told.head.verdicts, e.answer.split(" \\+ ").toVector.sorted, what)
+    val reachable = CukrAfter.official.count((_, e) => after.exists(t =>
+      e.sentences.forall(s => t.questions.exists(_.choices.exists(_.sentence == s)))))
+    assert(reachable >= 10, s"$reachable of ${CukrAfter.official.size} official cases are a conversation's")
+
+  test("every verdict of what follows has its words and its source"):
+    val codes = (1 to 400).map(k => CukrAfter.sampled(k, scala.util.Random(k))).flatMap(_.answer.split(" \\+ ")).toSet
+    assertEquals(codes -- CukrAfterTopic.reasons.keySet, Set.empty[String])
 
   test("an answer is said with its source, the day of the book and what it is not"):
     val said = told(Cukr.official(2)._2).said(topic, "ru")

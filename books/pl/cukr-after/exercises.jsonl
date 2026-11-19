@@ -1,0 +1,44 @@
+{"number":1,"sentences":["the card was refused and the decision was delivered 14 days ago","the refusal was for a fee not paid"],"answer":"fee_not_returned + may_appeal + may_apply_again"}
+{"number":2,"sentences":["the card is ready and 30 days have passed since the office said so"],"answer":"collect_it"}
+{"number":3,"sentences":["the card is held and the holder wants to work"],"answer":"may_work"}
+{"number":4,"sentences":["the card is held and the holder moved 10 working days ago"],"answer":"inform_voivode_in_time"}
+{"number":5,"sentences":["the application is made and the applicant leaves Poland for 31 days"],"answer":"status_lost_no_card"}
+{"number":6,"sentences":["the card is held and the holder is away from Poland for 12 months at a stretch"],"answer":"permit_may_be_withdrawn"}
+{"number":7,"sentences":["the card is held and the holder wants to run a business"],"answer":"may_run_business"}
+{"number":8,"sentences":["the refusal was for another reason","the card was refused and the decision was delivered 30 days ago"],"answer":"appeal_time_passed + fee_not_returned"}
+{"number":9,"sentences":["the card is held and the holder is away from Poland for 3 months at a stretch"],"answer":"permit_kept"}
+{"number":10,"sentences":["the card is held and was lost again by the holder's fault"],"answer":"replace_for_300"}
+{"number":11,"sentences":["the application is made and the applicant leaves Poland for 7 days"],"answer":"status_kept"}
+{"number":12,"sentences":["the card is held and the holder moved 30 working days ago"],"answer":"inform_voivode_late"}
+{"number":13,"sentences":["the card is ready and 61 days have passed since the office said so"],"answer":"card_annulled"}
+{"number":14,"sentences":["the card is held and the holder is away from Poland for 6 months at a stretch"],"answer":"six_months_texts_differ"}
+{"number":15,"sentences":["the card is held and was lost for the first time"],"answer":"replace_for_200"}
+{"number":16,"sentences":["the card was refused and the decision was delivered 7 days ago","the refusal was for a fee not paid"],"answer":"fee_not_returned + may_appeal + may_apply_again"}
+{"number":17,"sentences":["the refusal was for another reason","the card was refused and the decision was delivered 15 days ago"],"answer":"appeal_time_passed + fee_not_returned"}
+{"number":18,"sentences":["the card is held and the holder is away from Poland for 9 months at a stretch"],"answer":"permit_may_be_withdrawn"}
+{"number":19,"sentences":["the card is held and the holder moved 15 working days ago"],"answer":"inform_voivode_in_time"}
+{"number":20,"sentences":["the card is ready and 75 days have passed since the office said so"],"answer":"card_annulled"}
+{"number":21,"sentences":["the application is made and the applicant leaves Poland for 29 days"],"answer":"status_kept"}
+{"number":22,"sentences":["the application is made and the applicant leaves Poland for 45 days"],"answer":"status_lost_no_card"}
+{"number":23,"sentences":["the card is ready and 1 days have passed since the office said so"],"answer":"collect_it"}
+{"number":24,"sentences":["the card is held and the holder moved 16 working days ago"],"answer":"inform_voivode_late"}
+{"number":25,"sentences":["the card is held and the holder is away from Poland for 1 months at a stretch"],"answer":"permit_kept"}
+{"number":26,"sentences":["the card was refused and the decision was delivered 13 days ago","the refusal was for another reason"],"answer":"fee_not_returned + may_appeal"}
+{"number":27,"sentences":["the card was refused and the decision was delivered 1 days ago","the refusal was for another reason"],"answer":"fee_not_returned + may_appeal"}
+{"number":28,"sentences":["the refusal was for another reason","the card was refused and the decision was delivered 1 days ago"],"answer":"fee_not_returned + may_appeal"}
+{"number":29,"sentences":["the refusal was for another reason","the card was refused and the decision was delivered 13 days ago"],"answer":"fee_not_returned + may_appeal"}
+{"number":30,"sentences":["the refusal was for a fee not paid","the card was refused and the decision was delivered 15 days ago"],"answer":"appeal_time_passed + fee_not_returned + may_apply_again"}
+{"number":31,"sentences":["the card was refused and the decision was delivered 7 days ago","the refusal was for another reason"],"answer":"fee_not_returned + may_appeal"}
+{"number":32,"sentences":["the refusal was for a fee not paid","the card was refused and the decision was delivered 14 days ago"],"answer":"fee_not_returned + may_appeal + may_apply_again"}
+{"number":33,"sentences":["the refusal was for a fee not paid","the card was refused and the decision was delivered 1 days ago"],"answer":"fee_not_returned + may_appeal + may_apply_again"}
+{"number":34,"sentences":["the card is held and the holder is away from Poland for 7 months at a stretch"],"answer":"permit_may_be_withdrawn"}
+{"number":35,"sentences":["the card is held and the holder moved 14 working days ago"],"answer":"inform_voivode_in_time"}
+{"number":36,"sentences":["the card was refused and the decision was delivered 13 days ago","the refusal was for a fee not paid"],"answer":"fee_not_returned + may_appeal + may_apply_again"}
+{"number":37,"sentences":["the application is made and the applicant leaves Poland for 1 days"],"answer":"status_kept"}
+{"number":38,"sentences":["the card was refused and the decision was delivered 15 days ago","the refusal was for a fee not paid"],"answer":"appeal_time_passed + fee_not_returned + may_apply_again"}
+{"number":39,"sentences":["the card is ready and 60 days have passed since the office said so"],"answer":"collect_it"}
+{"number":40,"sentences":["the refusal was for a fee not paid","the card was refused and the decision was delivered 30 days ago"],"answer":"appeal_time_passed + fee_not_returned + may_apply_again"}
+{"number":41,"sentences":["the application is made and the applicant leaves Poland for 30 days"],"answer":"status_kept"}
+{"number":42,"sentences":["the card is ready and 59 days have passed since the office said so"],"answer":"collect_it"}
+{"number":43,"sentences":["the refusal was for a fee not paid","the card was refused and the decision was delivered 13 days ago"],"answer":"fee_not_returned + may_appeal + may_apply_again"}
+{"number":44,"sentences":["the application is made and the applicant leaves Poland for 90 days"],"answer":"status_lost_no_card"}

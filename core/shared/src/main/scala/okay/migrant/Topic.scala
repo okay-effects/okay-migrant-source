@@ -23,13 +23,17 @@ final case class Question(id: String, text: Words, choices: Vector[Choice],
  * office published it in, and where it stands in the book */
 final case class Source(place: String, quotes: Map[String, String])
 
-/** what the assistant says for a verdict: its plain wording (ours, unofficial) and the official source */
-final case class Reason(text: Words, source: Source)
+/** what the assistant says for a verdict: its plain wording (ours, unofficial), the official source — and a
+ * second one where the office's texts say it twice, or differently — and whether it is what the person hoped */
+final case class Reason(text: Words, source: Source, also: Vector[Source] = Vector.empty, good: Boolean = false):
+  def sources: Vector[Source] = source +: also
 
 /** A TOPIC THE ASSISTANT KNOWS: the model checked against the office's cases, the questions that state a case,
  * what each verdict means and rests on, what is to be remembered beside a positive answer, and the book */
 final case class Topic(name: Words, model: Model, questions: Vector[Question], reasons: Map[String, Reason],
-    remember: Vector[Reason], book: Words, fetched: String):
+    remember: Vector[Reason], book: Words, fetched: String, yes: Option[Words] = None, no: Option[Words] = None):
+  /** an answer's title: the topic's own for a good and for another answer, else its name */
+  def title(good: Boolean): Words = (if good then yes else no).getOrElse(name)
 
   private val cache = scala.collection.mutable.HashMap.empty[Set[String], Set[String]]
 

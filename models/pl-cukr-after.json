@@ -1,0 +1,125 @@
+{
+  "sentences": [
+    {
+      "pattern": "the card was refused and the decision was delivered {N:[0-9]+} days ago",
+      "facts": [
+        "refused({#})",
+        "decision_delivered_days_ago({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the refusal was for a fee not paid",
+      "facts": [
+        "refusal_reason({#}, fee_not_paid)"
+      ]
+    },
+    {
+      "pattern": "the refusal was for another reason",
+      "facts": [
+        "refusal_reason({#}, other_reason)"
+      ]
+    },
+    {
+      "pattern": "the card is ready and {N:[0-9]+} days have passed since the office said so",
+      "facts": [
+        "card_ready({#})",
+        "days_since_notice({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the card is held and the holder wants to work",
+      "facts": [
+        "card_held({#})",
+        "wants({#}, work)"
+      ]
+    },
+    {
+      "pattern": "the card is held and the holder wants to run a business",
+      "facts": [
+        "card_held({#})",
+        "wants({#}, run_business)"
+      ]
+    },
+    {
+      "pattern": "the card is held and the holder moved {N:[0-9]+} working days ago",
+      "facts": [
+        "card_held({#})",
+        "moved_working_days_ago({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the card is held and the holder is away from Poland for {N:[0-9]+} months at a stretch",
+      "facts": [
+        "card_held({#})",
+        "away_months({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the card is held and was lost again by the holder's fault",
+      "facts": [
+        "card_held({#})",
+        "card_lost({#}, again)"
+      ]
+    },
+    {
+      "pattern": "the card is held and was lost for the first time",
+      "facts": [
+        "card_held({#})",
+        "card_lost({#}, first)"
+      ]
+    },
+    {
+      "pattern": "the application is made and the applicant leaves Poland for {N:[0-9]+} days",
+      "facts": [
+        "application_made({#})",
+        "leaves_days({#}, {N})"
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "pattern": "{N:[0-9]+}",
+      "facts": [
+        "number({N})"
+      ]
+    }
+  ],
+  "rules": [
+    "% Refusal (questions 45-47): the fee is never returned; an appeal within 14 days of delivery; a new application after a refusal for a missing fee.",
+    "outcome(fee_not_returned) :- refused(S).",
+    "outcome(may_appeal) :- refused(S), decision_delivered_days_ago(S, N), N < 15.",
+    "outcome(appeal_time_passed) :- refused(S), decision_delivered_days_ago(S, N), 14 < N.",
+    "outcome(may_apply_again) :- refused(S), refusal_reason(T, fee_not_paid).",
+    "% Collection (questions 3, 9, 49): 60 days from the office's notice, then the card is annulled.",
+    "outcome(collect_it) :- card_ready(S), days_since_notice(S, N), N < 61.",
+    "outcome(card_annulled) :- card_ready(S), days_since_notice(S, N), 60 < N.",
+    "% Rights of a holder (questions 55, 56).",
+    "outcome(may_work) :- card_held(S), wants(S, work).",
+    "outcome(may_run_business) :- card_held(S), wants(S, run_business).",
+    "% Change of address (question 51): inform the voivode within 15 working days.",
+    "outcome(inform_voivode_in_time) :- card_held(S), moved_working_days_ago(S, N), N < 16.",
+    "outcome(inform_voivode_late) :- card_held(S), moved_working_days_ago(S, N), 15 < N.",
+    "% Leaving after the application (questions 4, 43): status UKR is lost above 30 days, and no card follows.",
+    "outcome(status_kept) :- application_made(S), leaves_days(S, N), N < 31.",
+    "outcome(status_lost_no_card) :- application_made(S), leaves_days(S, N), 30 < N.",
+    "% Absence of a holder (questions 3, 4, 9, 53, 54): under 6 months kept, over 6 months may be withdrawn; at exactly 6 the texts differ ('at least 6' against 'above 6').",
+    "outcome(permit_kept) :- card_held(S), away_months(S, N), N < 6.",
+    "outcome(six_months_texts_differ) :- card_held(S), away_months(S, N), N = 6.",
+    "outcome(permit_may_be_withdrawn) :- card_held(S), away_months(S, N), 6 < N.",
+    "% Replacement of a lost card (question 60): 200, and 300 when lost again by the holder's fault.",
+    "replace_fee(200) :- card_held(S), card_lost(S, first).",
+    "replace_fee(300) :- card_held(S), card_lost(S, again)."
+  ],
+  "answers": [
+    {
+      "pattern": "replace_for_{N:[0-9]+}",
+      "goal": "replace_fee(N)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:[a-z_0-9]+}",
+      "goal": "outcome(A)",
+      "unordered": false
+    }
+  ]
+}

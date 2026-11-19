@@ -26,16 +26,21 @@ object Person:
 /** what the assistant concludes: the case as stated, the model's verdicts, and — in words — each verdict with
  * its official source, what to remember, the book and its day */
 final case class Outcome(sentences: Vector[String], verdicts: Vector[String], asked: Vector[String]):
-  def eligible: Boolean = verdicts == Vector("eligible")
+  /** every verdict is what the person hoped for */
+  def good(topic: Topic): Boolean = verdicts.nonEmpty && verdicts.forall(v => topic.reasons.get(v).exists(_.good))
 
   def said(topic: Topic, language: String): String =
-    def quote(s: Source): String =
-      val q = s.quotes.getOrElse(language, s.quotes.getOrElse("pl", s.quotes.values.head))
-      s"    «$q» — ${s.place}"
-    val lines = verdicts.flatMap(v => topic.reasons.get(v).map(r => s"• ${r.text.in(language)}\n${quote(r.source)}"))
-    val more = if eligible then topic.remember.map(r => s"! ${r.text.in(language)}\n${quote(r.source)}") else Vector.empty
+    def quotes(r: Reason): String = r.sources.map(s => s"    ${Outcome.quoted(s, language)}").mkString("\n")
+    val lines = verdicts.flatMap(v => topic.reasons.get(v).map(r => s"• ${r.text.in(language)}\n${quotes(r)}"))
+    val more = if good(topic) then topic.remember.map(r => s"! ${r.text.in(language)}\n${quotes(r)}") else Vector.empty
     (lines ++ more :+ s"${topic.book.in(language)} (${topic.fetched}). ${Interview.notAdvice.in(language)}")
       .mkString("\n")
+
+object Outcome:
+  /** a source as shown: the office's sentence in the person's language where the office wrote in it, else in
+   * Polish, and its place */
+  def quoted(s: Source, language: String): String =
+    "«" + s.quotes.getOrElse(language, s.quotes.getOrElse("pl", s.quotes.values.head)) + "» — " + s.place
 
 object Interview:
   val notAdvice: Words = Words(

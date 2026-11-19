@@ -25,8 +25,11 @@ object CukrTopic:
 
   /** `today`: the day of the conversation, as a number (20261119) — the answer "today" states it */
   def topic(model: Model, today: Int): Topic = Topic(
-    name = Words("Посвідка на проживання CUKR (Польща)", "Карта побыта CUKR (Польша)", "Karta pobytu CUKR (Polska)",
-      "The CUKR residence card (Poland)"),
+    name = Words("Чи можу я подати заяву на посвідку CUKR?", "Могу ли я подать заявление на карту CUKR?",
+      "Czy mogę złożyć wniosek o kartę pobytu CUKR?", "Can I apply for the CUKR card?"),
+    yes = Some(Words("Можна подавати", "Можно подавать", "Można składać", "You may apply")),
+    no = Some(Words("Зараз подати не вдасться", "Сейчас подать не получится", "Teraz nie można złożyć",
+      "The application cannot be made now")),
     model = model,
     questions = Vector(
       Question("who", Words("Для кого посвідка?", "Для кого карта?", "Dla kogo jest karta?", "Who is the card for?"),
@@ -84,7 +87,8 @@ object CukrTopic:
         "The application can be made: the conditions asked about are met."),
         Source(sheet, Map(
           "pl" -> "Aby otrzymać kartę pobytu CUKR, musisz spełnić jednocześnie wszystkie cztery poniższe warunki",
-          "uk" -> "Щоб отримати посвідку на проживання CUKR, ви повинні одночасно виконати всі чотири наведені нижче умови"))),
+          "uk" -> "Щоб отримати посвідку на проживання CUKR, ви повинні одночасно виконати всі чотири наведені нижче умови")),
+        good = true),
       "no_pesel_today" -> Reason(Words("Немає чинного PESEL UKR на день подання заяви.",
         "Нет действующего PESEL UKR на день подачи заявления.", "Brak aktualnego PESEL UKR w dniu złożenia wniosku.",
         "PESEL UKR is not active on the day of the application."),

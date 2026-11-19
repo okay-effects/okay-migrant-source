@@ -24,11 +24,16 @@ lazy val core = crossProject(JVMPlatform, JSPlatform).crossType(CrossType.Full).
     libraryDependencies ++= Seq("io.github.okay-effects" %%% "okay-study" % study,
       "io.github.okay-effects" %%% "okay-scala" % "0.1.1"),
     Compile / sourceGenerators += Def.task {
-      val json = IO.read((ThisBuild / baseDirectory).value / "models" / "pl-cukr.json")
-      require(!json.contains("\"\"\""), "a model with a triple quote in it")
+      val models = (ThisBuild / baseDirectory).value / "models"
+      def text(file: String): String = {
+        val json = IO.read(models / file)
+        require(!json.contains("\"\"\""), s"$file: a model with a triple quote in it")
+        "\"\"\"" + json + "\"\"\""
+      }
       val out = (Compile / sourceManaged).value / "okay" / "migrant" / "Models.scala"
       IO.write(out, "package okay.migrant\n\n/** the checked models as text (made from `models/` by the build) */\n" +
-        "object Models:\n  val plCukr: String = \"\"\"" + json + "\"\"\"\n")
+        "object Models:\n  val plCukr: String = " + text("pl-cukr.json") + "\n  val plCukrAfter: String = " +
+        text("pl-cukr-after.json") + "\n")
       Seq(out)
     }.taskValue)
   .jvmSettings(libraryDependencies ++= Seq("io.github.okay-effects" %% "okay-study-teacher" % study, munit.value),
