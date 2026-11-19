@@ -8,7 +8,8 @@ import scala.util.Random
  * fetched 2026-11-19). A case is a few canonical sentences about an applicant; the answer is `eligible` or the
  * reasons the application fails. The reference model is MY reading of the information sheet and of answers 6–20
  * and 29 of the official questions; `official` are UDSC's own cases, stated by hand, with what UDSC answers —
- * the check of that reading. `CukrBook` (the JVM) writes the lesson and the exercises. Information, not legal advice; the law behind it changes. */
+ * the check of that reading. `CukrBook` (the JVM) writes the lesson and the exercises. Information,
+   not legal advice; the law behind it changes. */
 object Cukr:
   val reference: Model = Model.parse(
     """{"sentences": [

@@ -43,7 +43,8 @@ object Assistant:
   def main[R[_]: Has[Ui]](today: Int): Unit ! R =
     menu[String, R]("CUKR", languages*).flatMap { language =>
       val all = topics(today)
-      val what = words(language)("Що вас цікавить?", "Что вас интересует?", "Co Cię interesuje?", "What do you want to know?")
+      val what = words(language)("Що вас цікавить?", "Что вас интересует?", "Co Cię interesuje?",
+        "What do you want to know?")
       menu[Topic, R](what, all.map(t => t.name.in(language) -> t)*).flatMap(topic =>
         Interview.by[R](topic)(asked[R](topic, language)).flatMap(answered[R](topic, language, _)))
     }.andThen(defer(main[R](today)))

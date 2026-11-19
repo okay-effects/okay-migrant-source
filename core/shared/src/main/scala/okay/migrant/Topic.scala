@@ -39,7 +39,8 @@ final case class Topic(name: Words, model: Model, questions: Vector[Question], r
 
   /** the model's verdicts for a case's sentences (the exact side; a case the model cannot run has none) */
   def verdicts(sentences: Set[String]): Set[String] =
-    cache.getOrElseUpdate(sentences, Solve.run(model, sentences.toVector.sorted).fold(_ => Set.empty, _.map(_._2).toSet))
+    cache.getOrElseUpdate(sentences, Solve.run(model, sentences.toVector.sorted).fold(_ => Set.empty,
+      _.map(_._2).toSet))
 
   /** every answer the model may still give, over all the ways the unanswered questions may be answered */
   def open(known: Map[String, String]): Set[Set[String]] =

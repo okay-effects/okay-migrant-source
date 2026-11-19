@@ -54,7 +54,8 @@ object CukrBook:
     def covering(from: Vector[okay.study.Exercise]): Vector[okay.study.Exercise] =
       val all = from.flatMap(words).toSet
       Iterator.unfold((Set.empty[String], from)) { (seen, rest) =>
-        Option.when(seen != all)(rest.maxBy(e => (words(e) -- seen).size)).map(e => e -> (seen ++ words(e), rest.filter(_ != e)))
+        Option.when(seen != all)(rest.maxBy(e => (words(e) -- seen).size)).map(e => e -> (seen ++ words(e),
+          rest.filter(_ != e)))
       }.toVector
     val first = covering(drawn)
     val second = covering(drawn.filterNot(first.contains))

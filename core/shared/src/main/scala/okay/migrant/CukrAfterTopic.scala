@@ -17,11 +17,15 @@ object CukrAfterTopic:
   private def source(pl: String, uk: String, place: String = faq) = Source(place, Map("pl" -> pl, "uk" -> uk))
 
   private val thirty = source(
-    "Samo złożenie wniosku o wydanie karty pobytu CUKR nie pozbawia Cię statusu UKR, zatem możesz wyjechać z Polski, jednak nie dłużej niż na 30 dni.",
-    "Саме подання заяви про видачу посвідки на проживання CUKR не позбавляє вас статусу UKR, тому ви можете виїхати з Польщі, але не більш, ніж на 30 днів.")
+    ("Samo złożenie wniosku o wydanie karty pobytu CUKR nie pozbawia Cię statusu UKR, zatem możesz wyjechać z " +
+      "Polski, jednak nie dłużej niż na 30 dni."),
+    ("Саме подання заяви про видачу посвідки на проживання CUKR не позбавляє вас статусу UKR, тому ви можете " +
+      "виїхати з Польщі, але не більш, ніж на 30 днів."))
   private val sixty = source(
-    "Twoja karta zostanie unieważniona i nie będziesz mógł jej odebrać. Nie będziesz mógł się ubiegać o zwrot dokonanych opłat.",
-    "Ваша посвідка буде анульована, і ви не зможете її отримати. Ви не зможете звернутися за поверненням сплачених платежів.")
+    ("Twoja karta zostanie unieważniona i nie będziesz mógł jej odebrać. Nie będziesz mógł się ubiegać o zwrot " +
+      "dokonanych opłat."),
+    ("Ваша посвідка буде анульована, і ви не зможете її отримати. Ви не зможете звернутися за поверненням " +
+      "сплачених платежів."))
   private val stretch = source(
     "Aby nie utracić karty pobytu CUKR nie możesz wyjechać z Polski jednorazowo na okres 6 miesięcy.",
     "Щоб не втратити посвідку на проживання CUKR, ви не можете виїхати з Польщі одноразово на строк 6 місяців.")
@@ -33,11 +37,14 @@ object CukrAfterTopic:
   private val fifteen = source("powinieneś to zrobić w ciągu 15 dni roboczych od dnia zmiany adresu",
     "це потрібно зробити протягом 15 робочих днів від дня зміни адреси")
   private val fourteen = source(
-    "masz prawo do złożenia w terminie 14 dni od dnia doręczenia decyzji odwołania do Szefa Urzędu do Spraw Cudzoziemców",
+    ("masz prawo do złożenia w terminie 14 dni od dnia doręczenia decyzji odwołania do Szefa Urzędu do Spraw " +
+      "Cudzoziemców"),
     "ви маєте право протягом 14 днів від дня вручення рішення подати скаргу до Голови Управління у справах іноземців")
   private val replace = source(
-    "Będziesz musiał dokonać opłaty 200 zł, a jeśli kolejny raz utracisz kartę pobytu z własnej winy (np. kolejny raz ją zgubisz), opłata wyniesie 300 zł.",
-    "Потрібно буде сплатити 200 PLN, а якщо ви вдруге втратите посвідку з власної вини (наприклад знову її загубите), плата становитиме 300 PLN.")
+    ("Będziesz musiał dokonać opłaty 200 zł, a jeśli kolejny raz utracisz kartę pobytu z własnej winy (np. kolejny " +
+      "raz ją zgubisz), opłata wyniesie 300 zł."),
+    ("Потрібно буде сплатити 200 PLN, а якщо ви вдруге втратите посвідку з власної вини (наприклад знову її " +
+      "загубите), плата становитиме 300 PLN."))
 
   val reasons: Map[String, Reason] = Map(
     "status_kept" -> Reason(Words("Статус UKR зберігається: після подання заяви можна виїхати не більше ніж на 30 днів.",
@@ -69,10 +76,14 @@ object CukrAfterTopic:
       "The voivode may withdraw the permit: the absence is longer than six months at a stretch."),
       stretch, Vector(atLeastSix)),
     "six_months_texts_differ" -> Reason(Words(
-      "Рівно 6 місяців: офіційні тексти розходяться («щонайменше 6» і «понад 6»). Вважайте це ризиком і уточніть в управлінні.",
-      "Ровно 6 месяцев: официальные тексты расходятся («не менее 6» и «свыше 6»). Считайте это риском и уточните в управлении.",
-      "Dokładnie 6 miesięcy: oficjalne teksty różnią się («co najmniej 6» i «powyżej 6»). Potraktuj to jako ryzyko i zapytaj w urzędzie.",
-      "Exactly six months: the official texts differ (\"at least 6\" and \"above 6\"). Take it as a risk and ask the office."),
+      ("Рівно 6 місяців: офіційні тексти розходяться («щонайменше 6» і «понад 6»). Вважайте це ризиком і уточніть " +
+        "в управлінні."),
+      ("Ровно 6 месяцев: официальные тексты расходятся («не менее 6» и «свыше 6»). Считайте это риском и уточните " +
+        "в управлении."),
+      ("Dokładnie 6 miesięcy: oficjalne teksty różnią się («co najmniej 6» i «powyżej 6»). Potraktuj to jako " +
+        "ryzyko i zapytaj w urzędzie."),
+      ("Exactly six months: the official texts differ (\"at least 6\" and \"above 6\"). Take it as a risk and ask " +
+        "the office.")),
       atLeastSix, Vector(aboveSix)),
     "inform_voivode_in_time" -> Reason(Words(
       "Повідомте воєводу про нову адресу: на це є 15 робочих днів від зміни адреси, строк ще не минув.",
@@ -103,19 +114,23 @@ object CukrAfterTopic:
     "may_apply_again" -> Reason(Words("Заяву можна подати знову.", "Заявление можно подать снова.",
       "Wniosek można złożyć ponownie.", "The application can be made again."),
       source("będę mógł ponownie złożyć wniosek o wydanie karty pobytu CUKR? Tak.",
-        "Чи зможу я подати заяву повторно, якщо отримаю відмову у видачі посвідки на проживання CUKR через відсутність необхідної оплати? Так."),
+        ("Чи зможу я подати заяву повторно, якщо отримаю відмову у видачі посвідки на проживання CUKR через " +
+          "відсутність необхідної оплати? Так.")),
       good = true),
     "replace_for_200" -> Reason(Words(
       "Якнайшвидше подайте паперову заяву на заміну посвідки воєводі за місцем проживання; плата 200 зл.",
       "Как можно скорее подайте бумажное заявление на замену карты воеводе по месту жительства; плата 200 зл.",
-      "Jak najszybciej złóż papierowy wniosek o wymianę karty do wojewody właściwego dla miejsca zamieszkania; opłata 200 zł.",
-      "As soon as you can, make a paper application to replace the card to the voivode of your residence; the fee is 200 zł."),
+      ("Jak najszybciej złóż papierowy wniosek o wymianę karty do wojewody właściwego dla miejsca zamieszkania; " +
+        "opłata 200 zł."),
+      ("As soon as you can, make a paper application to replace the card to the voivode of your residence; the fee " +
+        "is 200 zł.")),
       replace, good = true),
     "replace_for_300" -> Reason(Words(
       "Якнайшвидше подайте паперову заяву на заміну посвідки; за повторну втрату з власної вини плата 300 зл.",
       "Как можно скорее подайте бумажное заявление на замену карты; за повторную утерю по своей вине плата 300 зл.",
       "Jak najszybciej złóż papierowy wniosek o wymianę karty; za kolejną utratę z własnej winy opłata wynosi 300 zł.",
-      "As soon as you can, make a paper application to replace the card; lost again by your own fault, the fee is 300 zł."),
+      ("As soon as you can, make a paper application to replace the card; lost again by your own fault, the fee is " +
+        "300 zł.")),
       replace, good = true),
     "may_work" -> Reason(Words("Так: з посвідкою CUKR можна працювати у будь-якого роботодавця без дозволу на роботу.",
       "Да: с картой CUKR можно работать у любого работодателя без разрешения на работу.",
@@ -127,8 +142,10 @@ object CukrAfterTopic:
       "Да: предпринимательскую деятельность можно вести на тех же условиях, что и граждане Польши.",
       "Tak: działalność gospodarczą można prowadzić na takich samych zasadach jak obywatele polscy.",
       "Yes: one may run a business on the same terms as Polish citizens."),
-      source("Posiadanie karty pobytu CUKR daje Ci prawo do prowadzenia działalności gospodarczej na takich samych zasadach, jakie obowiązują obywateli polskich.",
-        "Наявність посвідки на проживання CUKR надає вам право здійснювати підприємницьку діяльність на тих самих умовах, що й громадянам Польщі."),
+      source(("Posiadanie karty pobytu CUKR daje Ci prawo do prowadzenia działalności gospodarczej na takich samych " +
+        "zasadach, jakie obowiązują obywateli polskich."),
+        ("Наявність посвідки на проживання CUKR надає вам право здійснювати підприємницьку діяльність на тих самих " +
+          "умовах, що й громадянам Польщі.")),
       good = true))
 
   private def two(id: String, text: Words, a: (Words, String), b: (Words, String)) =
@@ -139,22 +156,27 @@ object CukrAfterTopic:
 
   /** the situations, each a topic over the same model */
   def topics(model: Model): Vector[Topic] = Vector(
-    topic(model, Words("Я подав(ла) заяву — чи можна виїхати з Польщі?", "Я подал(а) заявление — можно ли уехать из Польши?",
+    topic(model, Words("Я подав(ла) заяву — чи можна виїхати з Польщі?",
+      "Я подал(а) заявление — можно ли уехать из Польши?",
       "Złożyłem(-am) wniosek — czy mogę wyjechać z Polski?", "I have applied — may I leave Poland?"),
       two("leave", Words("На скільки днів?", "На сколько дней?", "Na ile dni?", "For how many days?"),
         Words("Не більше ніж на 30 днів", "Не более чем на 30 дней", "Najwyżej na 30 dni", "For 30 days or fewer") ->
           CukrAfter.leaves(30),
         Words("Більше ніж на 30 днів", "Больше чем на 30 дней", "Na dłużej niż 30 dni", "For more than 30 days") ->
           CukrAfter.leaves(31))),
-    topic(model, Words("Посвідка готова — до коли її треба отримати?", "Карта готова — до какого срока её нужно получить?",
+    topic(model, Words("Посвідка готова — до коли її треба отримати?",
+      "Карта готова — до какого срока её нужно получить?",
       "Karta jest gotowa — do kiedy trzeba ją odebrać?", "The card is ready — by when must I collect it?"),
-      two("waits", Words("Скільки днів минуло від повідомлення управління?", "Сколько дней прошло с уведомления управления?",
+      two("waits", Words("Скільки днів минуло від повідомлення управління?",
+        "Сколько дней прошло с уведомления управления?",
         "Ile dni minęło od zawiadomienia urzędu?", "How many days have passed since the office's notice?"),
         Words("60 днів або менше", "60 дней или меньше", "60 dni lub mniej", "60 days or fewer") -> CukrAfter.waits(60),
         Words("Більше 60 днів", "Больше 60 дней", "Więcej niż 60 dni", "More than 60 days") -> CukrAfter.waits(61))),
-    topic(model, Words("Маю посвідку — на скільки можна виїхати з Польщі?", "У меня карта — на сколько можно уехать из Польши?",
+    topic(model, Words("Маю посвідку — на скільки можна виїхати з Польщі?",
+      "У меня карта — на сколько можно уехать из Польши?",
       "Mam kartę — na jak długo mogę wyjechać z Polski?", "I hold the card — how long may I be away from Poland?"),
-      Question("away", Words("Скільки місяців поспіль триватиме відсутність?", "Сколько месяцев подряд продлится отсутствие?",
+      Question("away", Words("Скільки місяців поспіль триватиме відсутність?",
+        "Сколько месяцев подряд продлится отсутствие?",
         "Ile miesięcy z rzędu potrwa nieobecność?", "How many months at a stretch will the absence last?"), Vector(
         Choice("less", Words("Менше 6 місяців", "Меньше 6 месяцев", "Mniej niż 6 miesięcy", "Less than six months"),
           CukrAfter.away(5)),
@@ -164,7 +186,8 @@ object CukrAfterTopic:
           CukrAfter.away(7))))),
     topic(model, Words("Маю посвідку і змінив(ла) адресу", "У меня карта, и я сменил(а) адрес",
       "Mam kartę i zmieniłem(-am) adres", "I hold the card and I have moved"),
-      two("moved", Words("Скільки робочих днів минуло від зміни адреси?", "Сколько рабочих дней прошло со смены адреса?",
+      two("moved", Words("Скільки робочих днів минуло від зміни адреси?",
+        "Сколько рабочих дней прошло со смены адреса?",
         "Ile dni roboczych minęło od zmiany adresu?", "How many working days have passed since the move?"),
         Words("15 робочих днів або менше", "15 рабочих дней или меньше", "15 dni roboczych lub mniej",
           "15 working days or fewer") -> CukrAfter.moved(15),
@@ -174,7 +197,8 @@ object CukrAfterTopic:
       "I was refused the card"),
       two("refused", Words("Скільки днів минуло від вручення рішення?", "Сколько дней прошло со вручения решения?",
         "Ile dni minęło od doręczenia decyzji?", "How many days have passed since the decision was delivered?"),
-        Words("14 днів або менше", "14 дней или меньше", "14 dni lub mniej", "14 days or fewer") -> CukrAfter.refused(14),
+        Words("14 днів або менше", "14 дней или меньше", "14 dni lub mniej",
+          "14 days or fewer") -> CukrAfter.refused(14),
         Words("Більше 14 днів", "Больше 14 дней", "Więcej niż 14 dni", "More than 14 days") -> CukrAfter.refused(15)),
       two("unpaid", Words("Чому відмовили?", "Почему отказали?", "Z jakiego powodu odmówiono?", "Why was it refused?"),
         Words("Через несплачений збір", "Из-за неуплаченного сбора", "Z powodu braku opłaty", "For a fee not paid") ->

@@ -67,7 +67,8 @@ object CukrTopic:
         "When is the application made? (today, or a date dd.mm.yyyy)"),
         Vector(
           Choice("today", Words("Сьогодні", "Сегодня", "Dzisiaj", "Today"), Cukr.made(today)),
-          Choice("before", Words("До 4 травня 2026 р.", "До 4 мая 2026 г.", "Przed 4 maja 2026 r.", "Before 4 May 2026"),
+          Choice("before", Words("До 4 травня 2026 р.", "До 4 мая 2026 г.", "Przed 4 maja 2026 r.",
+            "Before 4 May 2026"),
             Cukr.made(20260503)),
           Choice("within", Words("З 4 травня 2026 р. до 4 березня 2027 р.", "С 4 мая 2026 г. по 4 марта 2027 г.",
             "Od 4 maja 2026 r. do 4 marca 2027 r.", "From 4 May 2026 to 4 March 2027"), Cukr.made(20260601)),
@@ -142,6 +143,8 @@ object CukrTopic:
         Source(sheet, Map(
           "pl" -> "Wniosek o wydanie karty pobytu CUKR możesz złożyć jedynie w formie elektronicznej",
           "uk" -> "Заяву про видачу посвідки на проживання CUKR можна подати лише в електронній формі")))),
-    book = Words("Джерело: матеріали Управління у справах іноземців (UdSC), отримані", "Источник: материалы Управления по делам иностранцев (UdSC), получены",
-      "Źródło: materiały Urzędu do Spraw Cudzoziemców (UdSC), pobrane", "Source: the Office for Foreigners' (UdSC) materials, fetched"),
+    book = Words("Джерело: матеріали Управління у справах іноземців (UdSC), отримані",
+      "Источник: материалы Управления по делам иностранцев (UdSC), получены",
+      "Źródło: materiały Urzędu do Spraw Cudzoziemców (UdSC), pobrane",
+        "Source: the Office for Foreigners' (UdSC) materials, fetched"),
     fetched = "2026-11-19")

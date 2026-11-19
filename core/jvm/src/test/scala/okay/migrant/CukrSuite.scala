@@ -31,7 +31,8 @@ class CukrTeacherSuite extends munit.FunSuite:
         case s if s.startsWith("the UKR status has lasted") => s"the UKR status has lasted ${rnd.nextInt(1500)} days without a break"
         case s => s
       }
-      val (a, b) = (Solve.run(Cukr.reference, sentences).map(_.map(_._2).toSet), Solve.run(model, sentences).map(_.map(_._2).toSet))
+      val (a, b) = (Solve.run(Cukr.reference, sentences).map(_.map(_._2).toSet), Solve.run(model,
+        sentences).map(_.map(_._2).toSet))
       Option.when(a != b)(s"${sentences.mkString("; ")} → reference $a, teacher $b")
     }
     assertEquals(differ.take(5).toVector, Vector.empty[String], s"${differ.size} differ")
