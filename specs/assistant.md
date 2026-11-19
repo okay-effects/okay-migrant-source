@@ -83,3 +83,31 @@ build), run by okay-study's core compiled to JavaScript: no server, no request b
 okay-effects/okay-migrant (public, GitHub Pages, branch main), the source okay-effects/okay-migrant-source
 (private). The live page answers the two conversations of `scripts/page.scala` (run with the address). Its section
 is on okay-effects.github.io (a nav link, "What it does / How it is built", the libraries' line).
+
+## 4. What follows the application: the second book (2026-11-20)
+
+The same sources (`books/pl/cukr/`), another lesson — the official answers 2–5, 9 and 43–60, as published
+(`books/pl/cukr-after/lesson.txt`, 15 KB) — and its own cases (`CukrAfter`): a situation in one or two canonical
+sentences (the applicant leaves for N days after applying; the card is ready and N days have passed; the holder is
+away N months at a stretch; moved N working days ago; a refusal delivered N days ago, for a fee or not; the card
+lost, for the first time or again; work, a business), the answer what follows (seventeen verdicts).
+
+- **The reference** (my reading) answers the office's fourteen questions as the office does (`CukrAfterSuite`).
+- **One place the office's texts disagree, and the model does not choose**: an absence of exactly six months —
+  "powyżej 6 miesięcy" (the sheet; answer 9), "co najmniej 6 miesięcy" (answer 54), "jednorazowo na okres 6
+  miesięcy" (answer 53). Less than six: the permit is kept; more: it may be withdrawn; exactly six: the assistant
+  says the texts differ, shows both sentences, and to ask the office. Reading a book closely finds this.
+- **The teacher's theory** (a fresh agent, the task's one file; 25 cases shown — the fewest that hold every
+  verdict's name twice, since a name cannot be guessed — 19 held out): words and rules at the first writing,
+  **shown 25 of 25, held out 19 of 19**; the office's fourteen questions; no difference from the reference on
+  three thousand cases with any number from 0 to 400 (`models/pl-cukr-after.json`, `CukrAfterTeacherSuite`).
+- **In the assistant** (`CukrAfterTopic`): seven situations, each a `Topic` over the one model, beside "can I
+  apply" — after the language the page asks which. A number is answered by its side of the threshold. A verdict
+  may rest on two official sentences (`Reason.also`): both are shown. `Reason.good` tells what the person hoped
+  for from what they did not; the title of an answer is the situation's.
+- Found on the way: the lessons had lost the first line of every page (a form feed begins it and the cut dropped
+  the line); they are kept now — the first book's lesson gained six lines, its model was written without them.
+
+Checks: 73 tests; the law of quotes over every topic and both sources of a verdict; `scripts/page.scala` — four
+conversations in Chromium at a phone's size (a refusal in Russian, a child in Ukrainian, exactly six months in
+Polish with both of the office's sentences on the screen, a refusal for a fee in English).

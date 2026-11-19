@@ -45,6 +45,7 @@ import scala.jdk.CollectionConverters.*
     def body(): String = p.locator("body").textContent().replaceAll("\\s+", " ")
     // in Russian: a person who came, PESEL yes, 4 June yes, under a year, today, registers complete
     press("Русский")
+    press("Могу ли я подать заявление на карту CUKR?")
     press("Для человека, который приехал в Польшу из Украины после 23 февраля 2022 г.")
     press("Да"); p.waitForSelector("text=4 июня 2025"); press("Да")
     press("Меньше 365 дней, или был перерыв (периоды не складываются)")
@@ -57,6 +58,7 @@ import scala.jdk.CollectionConverters.*
     // again, in Ukrainian: a child born in Poland, the mother with the card
     press("Ещё раз")
     press("Українська")
+    press("Чи можу я подати заяву на посвідку CUKR?")
     press("Для дитини, народженої в Польщі після 23 лютого 2022 р.")
     press("Так"); p.waitForSelector("text=мати"); press("Так")
     press("Сьогодні"); p.waitForSelector("text=MOS"); press("Так")
@@ -65,6 +67,23 @@ import scala.jdk.CollectionConverters.*
     require(allowed.contains("у день видачі воєводою посвідки на проживання CUKR"), allowed.take(600))
     require(allowed.contains("Built on") && allowed.contains("Need more?"), "the foot")
     p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out)).setFullPage(true))
+    // what follows, in Polish: the card held, away for exactly six months — the page says the texts differ
+    press("Ще раз")
+    press("Polski")
+    press("Mam kartę — na jak długo mogę wyjechać z Polski?")
+    press("Dokładnie 6 miesięcy")
+    p.waitForSelector("text=oficjalne teksty różnią się")
+    val six = body()
+    require(six.contains("co najmniej 6 miesięcy") && six.contains("powyżej 6 miesięcy"), six.take(700))
+    p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("six.png")).setFullPage(true))
+    // in English: refused for a fee not paid, within the fourteen days
+    press("Jeszcze raz")
+    press("English")
+    press("I was refused the card")
+    press("14 days or fewer"); press("For a fee not paid")
+    p.waitForSelector("text=The application can be made again")
+    val refusal = body()
+    require(refusal.contains("can be appealed") && refusal.contains("not returned"), refusal.take(700))
     require(failed.isEmpty, failed.mkString("\n"))
-    println(s"the page: two conversations answered as expected, no error, no request beyond the page; $out")
+    println(s"the page: four conversations answered as expected, no error, no request beyond the page; $out")
   finally { browser.close(); pw.close(); server.stop(0) }
