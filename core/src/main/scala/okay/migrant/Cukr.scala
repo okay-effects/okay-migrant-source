@@ -45,14 +45,14 @@ object Cukr:
   private def answer(sentences: Vector[String]): String =
     Solve.run(reference, sentences).fold(sys.error, _.map(_._2).sorted.mkString(" + "))
 
-  private val came = "the applicant came to Poland from Ukraine after 23 February 2022"
-  private val born = "the applicant is a child born in Poland after 23 February 2022"
-  private def pesel(on: Boolean) = s"PESEL UKR is ${if on then "" else "not "}active on the day of the application"
-  private def june(on: Boolean) = s"PESEL UKR was ${if on then "" else "not "}active on 4 June 2025"
-  private def days(n: Int) = s"the UKR status has lasted $n days without a break"
-  private def made(d: Int) = s"the application is made on $d"
-  private def mother(card: Boolean) = if card then "the mother holds a CUKR card" else "the mother does not hold a CUKR card"
-  private def registers(full: Boolean) =
+  val came = "the applicant came to Poland from Ukraine after 23 February 2022"
+  val born = "the applicant is a child born in Poland after 23 February 2022"
+  def pesel(on: Boolean) = s"PESEL UKR is ${if on then "" else "not "}active on the day of the application"
+  def june(on: Boolean) = s"PESEL UKR was ${if on then "" else "not "}active on 4 June 2025"
+  def days(n: Int) = s"the UKR status has lasted $n days without a break"
+  def made(d: Int) = s"the application is made on $d"
+  def mother(card: Boolean) = if card then "the mother holds a CUKR card" else "the mother does not hold a CUKR card"
+  def registers(full: Boolean) =
     if full then "the registers hold all the required data" else "the registers lack some required data"
 
   /** UDSC's own cases (the number of the official question), as I state them, and what UDSC answers */

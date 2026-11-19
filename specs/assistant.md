@@ -33,3 +33,31 @@ What this is not yet: the day the card is issued (PESEL UKR must still be active
 be known when applying, and has to be SAID with every `eligible`; the questions about what the card changes
 (work, travel, benefits, the 60 days, the six months away) are not modelled; nothing reads a person's own words.
 Every answer shown to a person carries the source and its date, and that it is information, not legal advice.
+
+## 2. The conversation (2026-11-19)
+
+`Topic` (a model checked against the office's cases; the questions that state a case, each answer a canonical
+sentence; each verdict in plain words with its official source), `Interview.run` — a program of the effect
+`Person` alone — and `CukrTopic`.
+
+- **What is asked is decided by the exact side** (`Topic.next`): a question is asked only while some answer to it
+  can still change what the model answers, over every way the other open questions may be answered (okay-desk
+  theory §10 b: decide only what changes the answer). No order of questions is written per topic: a child born in
+  Poland is never asked about 4 June 2025 or the 365 days, a person who came is never asked about the mother.
+  When nothing can change the answer, it is given. All the reasons are found, not the first: after "less than
+  365 days" the day of the application is still asked.
+- **Nothing is assumed**: a fact is in the case only because the person said it; an answer that is none of the
+  question's asks it again; the question about the registers has no "I do not know" that would count as yes.
+- **A value**: the day of the application may be chosen (today; before, within, after the window) or typed
+  (`dd.mm.yyyy`), and becomes the number the model compares.
+- **The answer** (`Outcome.said`): each verdict in the person's language (ours, unofficial), under it the office's
+  own sentence as published — Polish or Ukrainian, the languages the office wrote in — and its place; beside a
+  positive answer what cannot be checked now (PESEL UKR on the day of issue) and that the application is only
+  electronic; the source, the day it was fetched, and that it is information, not legal advice.
+
+**Checks** (`InterviewSuite`): the office's ten cases told by answering what is asked give the office's answers;
+only what can change the answer is asked; EVERY official sentence shown stands in the book as published (the
+law of quotes, over both languages); an answer carries its source, its day and what it is not.
+Try it: `sbt "core/runMain okay.migrant.Main ru"` (uk | ru | pl | en; answers may follow: `… Main ru 1 1 1 2 1 1`).
+
+Not yet: a person's own words (the answers are chosen, or a date typed); the page; what the card changes.

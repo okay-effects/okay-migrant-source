@@ -15,7 +15,8 @@ lazy val core = (project in file("core")).settings(name := "okay-migrant",
   libraryDependencies ++= Seq("io.github.okay-effects" %% "okay-study" % "0.1.0-SNAPSHOT",
     "io.github.okay-effects" %% "okay-study-teacher" % "0.1.0-SNAPSHOT",
     "org.scalameta" %% "munit" % "1.2.3" % Test),
-  fork := true, run / baseDirectory := (ThisBuild / baseDirectory).value,
+  Test / fork := true,
   Test / baseDirectory := (ThisBuild / baseDirectory).value)
 
 lazy val root = (project in file(".")).aggregate(core).settings(publish / skip := true)
+

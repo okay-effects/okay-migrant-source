@@ -7,3 +7,4 @@ source and its date. Information, not legal advice.
 First topic: the CUKR residence card in Poland (`books/pl/cukr/`, the Office for Foreigners' materials).
 
     sbt test
+    sbt "core/runMain okay.migrant.Main ru"   # the assistant in a terminal: uk | ru | pl | en
