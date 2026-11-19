@@ -8,9 +8,16 @@ repository; the assistant speaks the people's languages (uk, ru, pl, en first).
 
 - `books/<country>/<topic>/`: the official sources AS PUBLISHED, never edited, with `SOURCE.md` (where from, the
   day fetched); `lesson.txt` and `exercises.jsonl` made from them (`Cukr.main`). First: `books/pl/cukr/`.
-- `core/` (`okay.migrant`): a topic's cases — the canonical sentences, the reference reading, the official cases
-  stated by hand with the office's answers (`Cukr`), and its tests. A reference is OUR reading: it serves by the
-  official cases it answers as the office does.
+- `core/` (`okay.migrant`; `shared` for the JVM and Scala.js, `jvm` for what reads files): a topic's cases — the
+  canonical sentences, the reference reading, the official cases stated by hand with the office's answers
+  (`Cukr`); the assistant's `Topic` (questions, verdicts, official quotes: `CukrTopic`) and the conversation
+  (`Interview`: the exact side chooses what to ask); on the JVM the book written for a teacher (`CukrBook`), a
+  console (`Main`), the tests. A reference is OUR reading: it serves by the official cases it answers as the
+  office does. An official quote shown must stand in the book as published (`InterviewSuite`).
+- `app/`: the page — `Assistant` (a program of okay-ui's `Ui`), `InTheBrowser` (the Laminar face),
+  `app/web/index.html` (the foot rule, the analytics beacon). `sbt web`, then
+  `scala-cli run scripts/page.scala -- app/.js/target/web runs/page.png` (the page driven in Chromium at a
+  phone's size); `sbt publishSite` from a clean tree.
 - `models/<country>-<topic>.json`: the model a teacher wrote from the lesson (okay-study's `Judge` with
   `BOOK=books/pl/cukr`), under a test against the official cases and against the reference.
 - The rules of this project:
@@ -20,6 +27,6 @@ repository; the assistant speaks the people's languages (uk, ru, pl, en first).
      advice; what the model does not cover is said, not guessed.
   3. The law changes: a book is fetched again before it is relied on; the day is part of the data.
   4. A person's facts stay on the device.
-- Tests: `sbt test` (no model). okay-study comes from ivy-local for now (`sbt core/publishLocal
-  study/publishLocal` there).
+- Tests: `sbt test` (no model). okay-study comes from ivy-local for now (`sbt coreJVM/publishLocal
+  coreJS/publishLocal study/publishLocal` there).
 - Plans: `SPRINT.md`; results: `specs/assistant.md`. Commits: plain messages, no attribution trailers.

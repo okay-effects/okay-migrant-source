@@ -61,3 +61,22 @@ law of quotes, over both languages); an answer carries its source, its day and w
 Try it: `sbt "core/runMain okay.migrant.Main ru"` (uk | ru | pl | en; answers may follow: `… Main ru 1 1 1 2 1 1`).
 
 Not yet: a person's own words (the answers are chosen, or a date typed); the page; what the card changes.
+
+## 3. The page (2026-11-19)
+
+`app/` — `Assistant.main`, a program of okay-ui's `Ui` alone: the language (uk, ru, pl, en), the conversation of
+§2 with a question a screen and an answer a button (`Interview.by`, the asking given), the answer — each verdict
+with the office's own sentence and its place, what to remember, the source and its day, "information, not legal
+advice" — and again (no Quit). The model the page runs is `models/pl-cukr.json` as text (`Models`, made by the
+build), run by okay-study's core compiled to JavaScript: no server, no request but the page's own files.
+
+- Played with no browser (`AssistantSuite`, okay-ui's `Play`, by the buttons' labels): a refusal in Russian and
+  back to the languages; a child born in Poland in Ukrainian — may apply.
+- In a browser at a phone's size (`scripts/page.scala`, Playwright, the built page served from its directory):
+  the same two conversations, the official sentences on the screen, the foot ("Built on okay-effects", "Need
+  more?"), no console error, and NO REQUEST LEAVING THE PAGE but the analytics beacon (answered by an empty
+  script in the test).
+- `sbt web` builds `app/.js/target/web` (index.html, main.js — 0.8 MB); `sbt publishSite` pushes it from a clean
+  tree to the public repository of the built page (`-Dsite.repo=…`), as the other applications do.
+
+Not yet published: the repositories are not made (the source's, private; the page's, public).

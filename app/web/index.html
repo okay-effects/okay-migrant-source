@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CUKR — чи можу я подати заяву? / могу ли я подать заявление?</title>
+  <meta name="description" content="Karta pobytu CUKR: an assistant that asks a few questions and answers from the Office for Foreigners' official materials, with the source. Information, not legal advice. Nothing you answer leaves this page.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%227%22 fill=%22%231f5fbf%22/%3E%3C/svg%3E">
+  <style>
+    /* this page's own rules over okay-ui's calm skin (Laminar.run installs it) */
+    body > header .brand { letter-spacing: 0.08em; }
+    body > header .bar { flex-wrap: wrap; }
+    /* an answer's button: the whole width on a phone, the text as long as it is */
+    .okay-actions > button { text-align: left; white-space: normal; }
+    /* the foot: who built it on the left, "Need more?" (the author) on the right */
+    body > footer { border-top: 1px solid #e3e7ee; padding: 10px 16px; font-size: 14px; }
+    body > footer div.bar { display: flex !important; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+    body > footer div.bar .more { margin-left: auto; }
+    body > footer div.bar .note { flex-basis: 100%; margin-bottom: 6px; color: #5b6472; }
+  </style>
+  <!-- Cloudflare Web Analytics: no cookies, no personal data -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "bf3bb7f255b64c1da1185fd68bdf6a44"}'></script>
+</head>
+<body>
+  <header><div class="bar"><a class="brand" href="./">CUKR</a>
+    <span class="tag">karta pobytu · посвідка на проживання · карта побыта</span></div></header>
+  <main id="app"></main>
+  <footer><div class="bar">
+    <span class="note">Information from the official materials of the Office for Foreigners (UdSC, Poland), not legal
+      advice. Your answers stay in this page: nothing is sent anywhere.</span>
+    <span>Built on <a href="https://github.com/okay-effects" target="_blank" rel="noopener noreferrer">okay-effects</a>
+      — algebraic effects for Scala</span>
+    <a class="more" href="https://okay-effects.github.io/#author" target="_blank" rel="noopener noreferrer">Need more?</a>
+  </div></footer>
+  <script src="main.js"></script>
+</body>
+</html>

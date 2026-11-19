@@ -2,17 +2,13 @@ package okay.migrant
 
 import okay.study.{Exercise, Model, Solve}
 
-import okay.effects.json.Json
-
-import java.nio.file.{Files, Path}
 import scala.util.Random
 
 /** THE FIRST LEGAL BOOK: the CUKR residence card (Poland, the Office for Foreigners' materials in `books/pl/cukr/`,
  * fetched 2026-11-19). A case is a few canonical sentences about an applicant; the answer is `eligible` or the
  * reasons the application fails. The reference model is MY reading of the information sheet and of answers 6–20
  * and 29 of the official questions; `official` are UDSC's own cases, stated by hand, with what UDSC answers —
- * the check of that reading. `main` writes the lesson (the sheet and answers 1–10, as published) and the
- * exercises. Information, not legal advice; the law behind it changes. */
+ * the check of that reading. `CukrBook` (the JVM) writes the lesson and the exercises. Information, not legal advice; the law behind it changes. */
 object Cukr:
   val reference: Model = Model.parse(
     """{"sentences": [
@@ -92,22 +88,3 @@ object Cukr:
           registers(mostly))
       else Vector(born, pesel(mostly), mother(rnd.nextBoolean()), made(date), registers(mostly))
     Exercise(number, rnd.shuffle(sentences), answer(sentences))
-
-  /** the lesson: the information sheet and the official answers 1–10, as published (page footers taken off) */
-  def lesson: String =
-    def clean(file: String): Vector[String] = Files.readString(Path.of("books/pl/cukr", file)).linesIterator.toVector
-      .filterNot(l => l.contains("Taborowa") || l.contains("02-699") || l.trim == "rodo" || l.contains('\f'))
-    val faq = clean("faq-pl.txt")
-    val upTo = faq.indexWhere(_.trim.startsWith("11. Jestem obywatelem Ukrainy"))
-    (clean("info-pl.txt") ++ Vector("", "PYTANIA I ODPOWIEDZI (1–10)", "") ++ faq.take(upTo)).mkString("\n")
-
-  def main(args: Array[String]): Unit =
-    val rnd = Random(20261119)
-    val exercises = (1 to 60).toVector.map(sampled(_, rnd))
-    val dir = Path.of("books/pl/cukr")
-    Files.writeString(dir.resolve("lesson.txt"), lesson)
-    Files.writeString(dir.resolve("exercises.jsonl"), exercises.map(e =>
-      Json.obj("number" -> Json.num(e.number), "sentences" -> Json.Arr(e.sentences.map(Json.Str(_))),
-        "answer" -> Json.Str(e.answer)).render).mkString("\n") + "\n")
-    val kinds = exercises.groupBy(_.answer).view.mapValues(_.size).toVector.sortBy(-_._2)
-    println(s"${exercises.size} exercises; answers: ${kinds.take(8).map((a, n) => s"$n $a").mkString("; ")}")

@@ -46,13 +46,16 @@ object Interview:
 
   /** THE CONVERSATION: while an answer can still change the model's verdict, the question it belongs to is asked;
    * then the verdicts. Nothing is assumed: a fact is in the case only because the person said it */
-  def run[R[_]: Has[Person]](topic: Topic): Outcome ! R =
+  def run[R[_]: Has[Person]](topic: Topic): Outcome ! R = by[R](topic)(Person.ask(_))
+
+  /** the same conversation, the asking given: a person behind the effect, a screen of a page */
+  def by[R[_]](topic: Topic)(ask: Question => Person.Said ! R): Outcome ! R =
     loop[(Map[String, String], Vector[String]), Outcome, R]((Map.empty, Vector.empty)) { (known, asked) =>
       topic.next(known) match
         case None =>
           pure(Right(Outcome(known.values.toVector.sorted, topic.verdicts(known.values.toSet).toVector.sorted, asked)))
         case Some(q) =>
-          Person.ask(q).map { said =>
+          ask(q).map { said =>
             val sentence = said match
               case Person.Said.Chose(id) => q.choices.find(_.id == id).map(_.sentence)
               case Person.Said.Typed(value) => q.typed.flatMap(_(value))
