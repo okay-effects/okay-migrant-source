@@ -2,7 +2,8 @@ package okay.migrant.app
 
 import okay.business.faces.Skin
 import okay.business.laminar.Laminar
-import okay.business.model.Ui
+import okay.business.model.{Address, Ui}
+import okay.business.web.InThePage
 import okay.scala3.*
 import okay.scala3.std.*
 import org.scalajs.dom
@@ -11,11 +12,11 @@ import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 import scala.scalajs.js
 
 /** the page: the assistant's program run by okay-ui's Laminar face; everything stays in the browser — no request
- * leaves it but the page's own files. The program's address is the URL's fragment: each screen a new entry of the
- * browser's history, so a link to it can be sent and the browser's Back goes to the screen before */
+ * leaves it but the page's own files. The program's address (okay-ui's `Address`) is the URL's fragment: each screen
+ * a new entry of the browser's history, so a link to it can be sent and Back goes to the screen before */
 object InTheBrowser:
   type Browser[X] = (Async + Ui + Address)[X]
-  type Shown[X] = (Async + Ui)[X]
+
   val skin: Skin = Skin.calm(accent = "#1f5fbf", deep = "#12366e")
 
   /** the header's button: the link to this screen, sent by the phone's own sharing, or copied; its words in the
@@ -25,7 +26,7 @@ object InTheBrowser:
       "uk" -> ("Поділитися посиланням", "Посилання скопійовано"), "ru" -> ("Поделиться ссылкой", "Ссылка скопирована"),
       "pl" -> ("Udostępnij link", "Link skopiowany"), "en" -> ("Share link", "Link copied"))
     private def button = Option(dom.document.getElementById("share"))
-    private def said(path: Vector[String]) = words.getOrElse(path.headOption.getOrElse("en"), words("en"))
+    private def said(path: Seq[String]) = words.getOrElse(path.headOption.getOrElse("en"), words("en"))
 
     /** the foot's note in the screen's language (English before a language is chosen) */
     private val notes = Map(
@@ -41,7 +42,7 @@ object InTheBrowser:
         "odpowiedzi, które do niego prowadzą: wysyłaj go tylko tym, którym chcesz je pokazać."))
     private lazy val english = Option(dom.document.getElementById("note")).map(_.textContent).getOrElse("")
 
-    def at(path: Vector[String]): Unit =
+    def at(path: Seq[String]): Unit =
       button.foreach(_.textContent = said(path)._1)
       val note = english
       Option(dom.document.getElementById("note")).foreach(_.textContent =
@@ -62,27 +63,19 @@ object InTheBrowser:
           js.timers.setTimeout(2000)(at(Address.path(dom.window.location.hash))))
     }
 
-  /** the address in the URL: opened at the fragment; a new place pushed as a new entry of the history */
-  def inTheUrl[A](p: A ! Browser): A ! Shown =
-    handle(p, Handler.tail[Address, Shown, A, A](pure)([X] => (op: Address[X]) => op match
-      case Address.Opened => Address.path(dom.window.location.hash)
-      case Address.Now(path) =>
-        Share.at(path)
-        val fragment = Address.fragment(path)
-        if dom.window.location.hash != fragment then
-          dom.window.history.pushState(null, "", if fragment.isEmpty then dom.window.location.pathname else fragment)
-        ()))
-
   def main(args: Array[String]): Unit =
     val root = Option(dom.document.getElementById("app")).getOrElse(dom.document.body)
     val now = new js.Date()
     val today = now.getFullYear().toInt * 10000 + (now.getMonth().toInt + 1) * 100 + now.getDate().toInt
     def start() =
-      val running = Async.start(Laminar.run(root, skin)(inTheUrl(Assistant.main[Browser](today))))
+      val running = Async.start(Laminar.run(root, skin)(InThePage.address(Assistant.main[Browser](today))))
       running.future.failed.foreach { case _: Cancelled => (); case e => dom.console.error(e.toString) }
       running
     Share.install()
+    // each screen drawn: the button's and the foot's words in the language of the address it is at
+    new dom.MutationObserver((_, _) => Share.at(Address.path(dom.window.location.hash)))
+      .observe(root, new dom.MutationObserverInit { childList = true; subtree = true })
     var running = start()
     // Back, Forward, or a link opened in this page: the program again, from that address
-    dom.window.addEventListener("popstate", (_: dom.Event) => { running.cancel(); running = start() })
+    InThePage.onBack(() => { running.cancel(); running = start() })
     dom.window.addEventListener("pagehide", (_: dom.Event) => running.cancel())

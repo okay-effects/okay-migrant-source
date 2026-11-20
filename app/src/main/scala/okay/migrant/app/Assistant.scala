@@ -59,7 +59,7 @@ object Assistant:
     opened.get(q.id).filter(id => q.choices.exists(_.id == id)) match
       // a link's answer: given, not asked
       case Some(id) => pure(Person.Said.Chose(id))
-      case None => Address.now[R](at ++ answeredSoFar(topic, known)).andThen(
+      case None => nowAt[R]((at ++ answeredSoFar(topic, known)).toList).andThen(
         show(Screen[Person.Said](topic.name.in(language))(Part.section(q.text.in(language))())(
           q.choices.map(c => Button(c.label.in(language))(Person.Said.Chose(c.id)))*)))
 
@@ -75,20 +75,20 @@ object Assistant:
     val foot = Part.text(s"${topic.book.in(language)} ${topic.fetched}. ${Interview.notAdvice.in(language)}")
     val known = outcome.asked.flatMap(id => topic.questions.find(_.id == id)).flatMap(q =>
       q.choices.find(c => outcome.sentences.contains(c.sentence)).map(c => q.id -> c.sentence)).toMap
-    Address.now[R](at ++ answeredSoFar(topic, known)).andThen(
+    nowAt[R]((at ++ answeredSoFar(topic, known)).toList).andThen(
       show(Screen[Unit](topic.title(good).in(language))((verdicts ++ remember :+ foot)*)(
         Button(w("Ще раз", "Ещё раз", "Jeszcze raz", "Again"), Style.Primary)(()))))
 
   /** a menu at its address: the address said, then the menu — unless the address opened already chose */
   private def chosen[A, R[_]: Has[Ui]: Has[Address]](at: Vector[String], opened: Option[A], title: String,
       options: (String, A)*): A ! R =
-    opened.fold(Address.now[R](at).andThen(menu[A, R](title, options*)))(pure(_))
+    opened.fold(nowAt[R](at.toList).andThen(menu[A, R](title, options*)))(pure(_))
 
   /** the page, for ever: a language, a situation, its conversation, an answer, and again. Every screen has its
    * address — the language, the area, the topic, the answers given — and the page opened at an address goes
    * straight to its screen */
   def main[R[_]: Has[Ui]: Has[Address]](today: Int): Unit ! R =
-    Address.opened[R].flatMap(from[R](today, _))
+    whereOpened[R].flatMap(path => from[R](today, path.toVector))
 
   private def from[R[_]: Has[Ui]: Has[Address]](today: Int, path: Vector[String]): Unit ! R =
     val all = areas(today)
