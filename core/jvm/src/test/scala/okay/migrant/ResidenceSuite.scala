@@ -8,6 +8,10 @@ class ResidenceSuite extends munit.FunSuite:
     test(s"permanent residence: $what"):
       val verdict = Verdict.of(Permanent.reference, e)
       assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
+  for (what, e) <- Arrival.official do
+    test(s"arriving: $what"):
+      val verdict = Verdict.of(Arrival.reference, e)
+      assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
   for (what, e) <- Pesel.official do
     test(s"PESEL: $what"):
       val verdict = Verdict.of(Pesel.reference, e)
@@ -30,7 +34,17 @@ class ResidenceTeacherSuite extends munit.FunSuite:
   private val eu = model("pl-eu-resident.json")
   private val work = model("pl-work.json")
   private val pesel = model("pl-pesel.json")
+  private val arrival = model("pl-arrival.json")
 
+  for (what, e) <- Arrival.official do
+    test(s"the teacher's arrival model: $what"):
+      val verdict = Verdict.of(arrival, e)
+      assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
+
+  for (what, e) <- Arrival.official do
+    test(s"arriving: $what"):
+      val verdict = Verdict.of(Arrival.reference, e)
+      assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
   for (what, e) <- Pesel.official do
     test(s"the teacher's PESEL model: $what"):
       val verdict = Verdict.of(pesel, e)
@@ -72,3 +86,5 @@ class ResidenceTeacherSuite extends munit.FunSuite:
     agree(Work.reference, work, Work.sampled, 9)
   test("PESEL: the teacher's model and the reference agree on three thousand cases"):
     agree(Pesel.reference, pesel, Pesel.sampled, 10)
+  test("arriving: the teacher's model and the reference agree on three thousand cases"):
+    agree(Arrival.reference, arrival, Arrival.sampled, 11)

@@ -54,7 +54,7 @@ class InterviewSuite extends munit.FunSuite:
     val after = CukrAfterTopic.topics(model("pl-cukr-after.json"))
     val residence = Vector(ResidenceTopics.permanent(model("pl-permanent.json")),
       ResidenceTopics.euResident(model("pl-eu-resident.json")), ResidenceTopics.work(model("pl-work.json"))) ++
-      PeselTopics.topics(model("pl-pesel.json"))
+      PeselTopics.topics(model("pl-pesel.json")) :+ ArrivalTopic.topic(model("pl-arrival.json"))
     val missing = for
       t <- (topic +: after) ++ residence
       reason <- t.reasons.values.toVector ++ t.remember
@@ -154,3 +154,21 @@ class InterviewSuite extends munit.FunSuite:
     println(said)
     println("---")
     println(told(Cukr.official(1)._2).said(topic, "uk"))
+
+  test("arriving: the offices' statements told through the conversation; only what changes the steps is asked"):
+    val arrival = ArrivalTopic.topic(Model.parse(text("models/pl-arrival.json")).fold(e => fail(e), identity))
+    for (what, e) <- Arrival.official do
+      val answers = arrival.questions.flatMap(q => q.choices.find(c => e.sentences.contains(c.sentence))
+        .map(c => q.id -> Person.Said.Chose(c.id))).toMap
+      val asked = collection.mutable.ArrayBuffer.empty[String]
+      val outcome = run(Person.scripted(answers, asked)(Interview.run[Person](arrival)))
+      assertEquals(outcome.verdicts, e.answer.split(" \\+ ").toVector.sorted, what)
+      assert(asked.forall(answers.contains), s"$what: asked ${asked.mkString(", ")}")
+    // from Ukraine: nothing more is asked; an EU citizen: how long, not what for
+    val asked = collection.mutable.ArrayBuffer.empty[String]
+    run(Person.scripted(Map("who" -> Person.Said.Chose("ukraine")), asked)(Interview.run[Person](arrival)))
+    assertEquals(asked.toVector, Vector("who"))
+
+  test("arriving: every step said has its words and its source"):
+    val codes = (1 to 400).map(k => Arrival.sampled(k, scala.util.Random(k))).flatMap(_.answer.split(" \\+ ")).toSet
+    assertEquals(codes -- ArrivalTopic.reasons.keySet, Set.empty[String])

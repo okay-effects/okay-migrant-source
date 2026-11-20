@@ -1,0 +1,137 @@
+{
+  "sentences": [
+    {
+      "pattern": "the person's purpose is work",
+      "facts": [
+        "purpose({#}, work)"
+      ]
+    },
+    {
+      "pattern": "the person's purpose is life with a spouse who is a Polish citizen",
+      "facts": [
+        "purpose({#}, spouse_of_pole)"
+      ]
+    },
+    {
+      "pattern": "the person's purpose is full-time studies at a university",
+      "facts": [
+        "purpose({#}, studies)"
+      ]
+    },
+    {
+      "pattern": "the person's purpose is something else",
+      "facts": [
+        "purpose({#}, other)"
+      ]
+    },
+    {
+      "pattern": "the person's purpose is {P}",
+      "facts": [
+        "purpose({#}, {P})"
+      ]
+    },
+    {
+      "pattern": "the person came on a Schengen visa",
+      "facts": [
+        "entry({#}, schengen_visa)"
+      ]
+    },
+    {
+      "pattern": "the person came on a Polish national visa",
+      "facts": [
+        "entry({#}, national_visa)"
+      ]
+    },
+    {
+      "pattern": "the person came without a visa",
+      "facts": [
+        "entry({#}, visa_free)"
+      ]
+    },
+    {
+      "pattern": "the person came on {E}",
+      "facts": [
+        "entry({#}, {E})"
+      ]
+    },
+    {
+      "pattern": "the person plans to stay in Poland more than {N:[0-9]+} days",
+      "facts": [
+        "stay_more_than({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the person plans to stay in Poland {N:[0-9]+} days or less",
+      "facts": [
+        "stay_at_most({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the person came from Ukraine because of the war that began on {D}, or is a family member of such a person",
+      "facts": [
+        "ukraine_war_refugee({#}, {D})"
+      ]
+    },
+    {
+      "pattern": "the person is a citizen of an EU state, Norway, Iceland, Liechtenstein or Switzerland",
+      "facts": [
+        "citizen({#}, eu_eea_ch)"
+      ]
+    },
+    {
+      "pattern": "the person is a citizen of {C}",
+      "facts": [
+        "citizen({#}, {C})"
+      ]
+    }
+  ],
+  "terms": [],
+  "rules": [
+    "% who the person is",
+    "ukr(yes) :- ukraine_war_refugee(S, D).",
+    "eu(yes) :- citizen(S, eu_eea_ch), not ukr(yes).",
+    "foreigner(yes) :- purpose(S, P), not ukr(yes), not eu(yes).",
+    "foreigner(yes) :- entry(S, E), not ukr(yes), not eu(yes).",
+    "% a stay longer than 90 days",
+    "below_90(yes) :- stay_more_than(S, N), N < 90.",
+    "long(yes) :- stay_more_than(S, N), not below_90(yes).",
+    "% the person settles: a long stay, or a national visa (a visa for more than 90 days)",
+    "settle(yes) :- long(yes).",
+    "settle(yes) :- entry(S, national_visa).",
+    "third(yes) :- settle(yes), foreigner(yes).",
+    "visa(schengen_visa) :- entry(S, schengen_visa).",
+    "visa(national_visa) :- entry(S, national_visa).",
+    "short_stay_rule(yes) :- entry(S, schengen_visa).",
+    "short_stay_rule(yes) :- entry(S, visa_free).",
+    "% Ukrainians fleeing the war (status UKR)",
+    "advice(s1_pesel_ukr_in_30_days) :- ukr(yes).",
+    "advice(s2_ukr_work_without_permit) :- ukr(yes).",
+    "advice(s3_ukr_away_at_most_30_days) :- ukr(yes).",
+    "advice(s4_ukr_cukr_after_365_days) :- ukr(yes).",
+    "% EU, EEA and Swiss citizens",
+    "advice(s1_eu_three_months_free) :- eu(yes).",
+    "advice(s2_eu_register_stay) :- eu(yes), long(yes).",
+    "advice(s3_eu_work_free) :- eu(yes).",
+    "% registration of residence and PESEL for anyone settling, except status UKR",
+    "advice(s9_register_residence_pesel) :- settle(yes), not ukr(yes).",
+    "% third-country nationals, any stay",
+    "advice(s1_count_90_in_180_days) :- foreigner(yes), short_stay_rule(yes).",
+    "advice(s2_work_needs_a_permit) :- foreigner(yes), purpose(S, work).",
+    "% third-country nationals settling",
+    "advice(s3_apply_while_stay_is_legal) :- third(yes).",
+    "advice(s4_single_permit) :- third(yes), purpose(S, work).",
+    "advice(s4_spouse_permit) :- third(yes), purpose(S, spouse_of_pole).",
+    "advice(s4_study_permit) :- third(yes), purpose(S, studies).",
+    "advice(s4_other_purposes) :- third(yes), purpose(S, other).",
+    "advice(s5_visa_purpose_may_exclude) :- third(yes), purpose(S, work), visa(V).",
+    "advice(s5_permanent_later) :- third(yes), purpose(S, spouse_of_pole).",
+    "advice(s5_studies_work_without_permit) :- third(yes), purpose(S, studies)."
+  ],
+  "answers": [
+    {
+      "pattern": "{A:s[0-9]+_[a-z0-9_]+}",
+      "goal": "advice(A)",
+      "unordered": false
+    }
+  ]
+}

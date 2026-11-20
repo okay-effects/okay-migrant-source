@@ -94,3 +94,18 @@ class AssistantSuite extends munit.FunSuite:
   test("topics' addresses differ within an area"):
     for a <- Assistant.areas(20261119) do
       assertEquals(a.topics.map(Assistant.slug).distinct.size, a.topics.size, a.id)
+
+  test("in Ukrainian: came from Ukraine because of the war — four steps; 'more' opens PESEL UKR"):
+    val p = played(Act.press("Українська"), Act.press("Я приїхав(ла) до Польщі: що робити?"),
+      Act.press("Приїхав(ла) з України через війну (з 24.02.2022), або член сім'ї"))
+    assertEquals(p.problems, Nil)
+    assertEquals(p.at.map(_.title), Some("Ваші кроки"))
+    val more = played(Act.press("Українська"), Act.press("Я приїхав(ла) до Польщі: що робити?"),
+      Act.press("Приїхав(ла) з України через війну (з 24.02.2022), або член сім'ї"),
+      Act.press("Детальніше: Як отримати PESEL UKR?"))
+    assertEquals(more.at.map(_.title), Some("Як отримати PESEL UKR?"))
+
+  test("every step's 'more' names a topic the page has"):
+    for (_, r) <- okay.migrant.ArrivalTopic.reasons if r.see.nonEmpty do
+      val (_, went) = at(Vector("en") ++ r.see)
+      assert(went.headOption.exists(_.drop(1).startsWith(r.see)), s"${r.see} → $went")

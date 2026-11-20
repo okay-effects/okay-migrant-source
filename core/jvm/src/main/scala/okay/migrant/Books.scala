@@ -87,3 +87,33 @@ object ResidenceBooks:
       (mswiaPart ++ Vector("", "URZĄD M.ST. WARSZAWY", "") ++ warsaw("warszawa-ukr-pl.txt") ++ Vector("") ++
         warsaw("warszawa-pesel-pl.txt")).mkString("\n"),
       { val r = Random(20261123); (1 to 160).toVector.map(Pesel.sampled(_, r)) })
+
+    // ARRIVING: the pages' main text, as published (their menus, cookies and licence left out), and the parts of the
+    // books already here that the steps rest on
+    val arrival = Path.of("books/pl/arrival")
+    def text(dir: Path, file: String) = Files.readString(dir.resolve(file)).linesIterator.toVector
+      .filter(_.trim.length > 40).filterNot(l => Vector("ciasteczek", "Creative Commons", "FAMI", "preferencji",
+        "sesji dostępu", "komunikatów", "statystycznych", "blokowanie", "Zezwolenie na pobyt rezydenta").exists(l.contains))
+    def from(lines: Vector[String], start: String, count: Int) =
+      lines.drop(lines.indexWhere(_.contains(start)).ensuring(_ >= 0, start)).take(count)
+    val purposes = Files.readString(arrival.resolve("purposes-pl.txt")).linesIterator.map(_.trim).toVector
+    val lesson = Vector("RUCH BEZWIZOWY") ++ from(text(arrival, "visa-free-pl.txt"), "Wjazd do Polski w ruchu", 4) ++
+      from(text(arrival, "visa-free-pl.txt"), "W przypadku cudzoziemców podróżujących w ruchu", 1) ++
+      Vector("", "WIZY") ++ from(text(arrival, "visas-pl.txt"), "Wizy Schengen są wizami", 1) ++
+      from(text(arrival, "visas-pl.txt"), "Typ wizy, o którą powinien", 1) ++
+      Vector("", "OBYWATEL UE") ++ from(text(arrival, "eu-citizen-pl.txt"), "Posiadając obywatelstwo UE", 22) ++
+      Vector("", "WYKONYWANIE PRACY") ++ from(text(arrival, "work-rules-pl.txt"), "O ile prawo Unii zapewnia", 5) ++
+      from(text(arrival, "work-rules-pl.txt"), "Swobodny dostęp do polskiego rynku pracy dotyczy", 30) ++
+      Vector("", "ZEZWOLENIE NA POBYT CZASOWY I PRACĘ") ++
+      from(Files.readString(Path.of("books/pl/work/info-pl.txt")).linesIterator.toVector,
+        "Cudzoziemcy, którzy są wyłączeni z możliwości uzyskania tego zezwolenia", 22) ++
+      from(text(Path.of("books/pl/work"), "info-pl.txt"), "Jeżeli wniosek został złożony prawidłowo", 1) ++
+      Vector("", "STUDIA") ++ from(text(arrival, "studies-pl.txt"), "Zezwolenie na pobyt czasowy w celu kształcenia się na studiach uprawnia", 8) ++
+      Vector("", "CELE POBYTU CZASOWEGO") ++ from(purposes, "Wybierz główny cel pobytu", 1) ++
+      purposes.drop(purposes.indexOf("Wykonywanie pracy")).take(22).distinct ++
+      Vector("", "PESEL") ++ warsaw("warszawa-pesel-pl.txt").take(6) ++
+      Vector("", "OBYWATELE UKRAINY (MSWiA, UdSC)") ++ mswiaPart.take(40) ++
+      from(text(Path.of("books/pl/cukr"), "faq-pl.txt"), "Status ten umożliwia", 1) ++
+      from(text(Path.of("books/pl/cukr"), "info-pl.txt"), "posiadałeś status UKR nieprzerwanie", 1)
+    Books.write(arrival.resolve("study"), lesson.mkString("\n"),
+      { val r = Random(20261124); (1 to 160).toVector.map(Arrival.sampled(_, r)) })

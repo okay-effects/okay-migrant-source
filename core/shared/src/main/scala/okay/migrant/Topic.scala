@@ -24,8 +24,10 @@ final case class Question(id: String, text: Words, choices: Vector[Choice],
 final case class Source(place: String, quotes: Map[String, String])
 
 /** what the assistant says for a verdict: its plain wording (ours, unofficial), the official source — and a
- * second one where the office's texts say it twice, or differently — and whether it is what the person hoped */
-final case class Reason(text: Words, source: Source, also: Vector[Source] = Vector.empty, good: Boolean = false):
+ * second one where the office's texts say it twice, or differently — whether it is what the person hoped, and where
+ * the assistant says more of it: an address after the language (`pesel/how-to-get-pesel-ukr`), none if nowhere */
+final case class Reason(text: Words, source: Source, also: Vector[Source] = Vector.empty, good: Boolean = false,
+    see: Vector[String] = Vector.empty):
   def sources: Vector[Source] = source +: also
 
 /** A TOPIC THE ASSISTANT KNOWS: the model checked against the office's cases, the questions that state a case,

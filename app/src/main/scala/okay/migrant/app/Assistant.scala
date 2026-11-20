@@ -1,8 +1,8 @@
 package okay.migrant.app
 
 import okay.business.scala3.*
-import okay.migrant.{CukrAfterTopic, CukrTopic, Interview, Models, Outcome, PeselTopics, Person, Question,
-  ResidenceTopics, Topic, Words}
+import okay.migrant.{ArrivalTopic, CukrAfterTopic, CukrTopic, Interview, Models, Outcome, PeselTopics, Person,
+  Question, ResidenceTopics, Topic, Words}
 import okay.study.Model
 
 /** THE ASSISTANT'S PAGE AS A PROGRAM OF `Ui` ALONE (okay-ui): the language, then the conversation — a question
@@ -37,6 +37,8 @@ object Assistant:
       "Karta pobytu CUKR (dla obywateli Ukrainy ze statusem UKR)",
       "The CUKR card (for Ukrainians with the UKR status)"),
       topics(today)),
+    Area("arrival", ArrivalTopic.topic(model(Models.plArrival)).name,
+      Vector(ArrivalTopic.topic(model(Models.plArrival)))),
     Area("pesel", Words("PESEL і PESEL UKR", "PESEL и PESEL UKR", "PESEL i PESEL UKR", "PESEL and PESEL UKR"),
       PeselTopics.topics(model(Models.plPesel))),
     Area("work", ResidenceTopics.work(model(Models.plWork)).name, Vector(ResidenceTopics.work(model(Models.plWork)))),
@@ -64,7 +66,7 @@ object Assistant:
           q.choices.map(c => Button(c.label.in(language))(Person.Said.Chose(c.id)))*)))
 
   private def answered[R[_]: Has[Ui]: Has[Address]](topic: Topic, language: String, at: Vector[String],
-      outcome: Outcome): Unit ! R =
+      outcome: Outcome, named: Vector[String] => Option[String]): Vector[String] ! R =
     val w = words(language)
     def sources(r: okay.migrant.Reason): Vector[Part] = r.sources.map(s => Part.text(Outcome.quoted(s, language)))
     val good = outcome.good(topic)
@@ -75,9 +77,13 @@ object Assistant:
     val foot = Part.text(s"${topic.book.in(language)} ${topic.fetched}. ${Interview.notAdvice.in(language)}")
     val known = outcome.asked.flatMap(id => topic.questions.find(_.id == id)).flatMap(q =>
       q.choices.find(c => outcome.sentences.contains(c.sentence)).map(c => q.id -> c.sentence)).toMap
+    // a step that the assistant says more of: a button to that topic (its address after the language)
+    val more = outcome.verdicts.flatMap(topic.reasons.get).map(_.see).filter(_.nonEmpty).distinct
+      .flatMap(see => named(see).map(name =>
+        Button(w("Детальніше: ", "Подробнее: ", "Więcej: ", "More: ") + name)(see)))
     nowAt[R]((at ++ answeredSoFar(topic, known)).toList).andThen(
-      show(Screen[Unit](topic.title(good).in(language))((verdicts ++ remember :+ foot)*)(
-        Button(w("Ще раз", "Ещё раз", "Jeszcze raz", "Again"), Style.Primary)(()))))
+      show(Screen[Vector[String]](topic.title(good).in(language))((verdicts ++ remember :+ foot)*)((more :+
+        Button(w("Ще раз", "Ещё раз", "Jeszcze raz", "Again"), Style.Primary)(Vector.empty[String]))*)))
 
   /** a menu at its address: the address said, then the menu — unless the address opened already chose */
   private def chosen[A, R[_]: Has[Ui]: Has[Address]](at: Vector[String], opened: Option[A], title: String,
@@ -91,6 +97,11 @@ object Assistant:
     whereOpened[R].flatMap(path => from[R](today, path.toVector))
 
   private def from[R[_]: Has[Ui]: Has[Address]](today: Int, path: Vector[String]): Unit ! R =
+    // a topic's name by its address after the language: the area's id, and the topic's words when the area has many
+    def named(language: String)(see: Vector[String]): Option[String] =
+      areas(today).find(a => see.headOption.contains(a.id)).flatMap(a =>
+        if a.topics.size == 1 then Some(a.topics.head.name.in(language))
+        else a.topics.find(t => see.lift(1).contains(slug(t))).map(_.name.in(language)))
     val all = areas(today)
     val language = path.headOption.filter(l => languages.exists(_._2 == l))
     chosen[String, R](Vector.empty, language, "Polska · Польща · Польша · Poland", languages*).flatMap { language =>
@@ -110,7 +121,9 @@ object Assistant:
           val opened = answers.flatMap(_.split("=", 2) match
             case Array(q, c) => Some(q -> c)
             case _ => None).toMap
-          Interview.along[R](topic)(asked[R](topic, language, at, opened)).flatMap(answered[R](topic, language, at, _))
+          Interview.along[R](topic)(asked[R](topic, language, at, opened))
+            .flatMap(answered[R](topic, language, at, _, named(language)))
+            .map(see => if see.isEmpty then Vector.empty else language +: see)
         }
       }
-    }.andThen(defer(from[R](today, Vector.empty)))
+    }.flatMap(next => defer(from[R](today, next)))
