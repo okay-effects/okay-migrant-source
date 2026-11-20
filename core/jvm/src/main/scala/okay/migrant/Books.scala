@@ -93,7 +93,8 @@ object ResidenceBooks:
     val arrival = Path.of("books/pl/arrival")
     def text(dir: Path, file: String) = Files.readString(dir.resolve(file)).linesIterator.toVector
       .filter(_.trim.length > 40).filterNot(l => Vector("ciasteczek", "Creative Commons", "FAMI", "preferencji",
-        "sesji dostępu", "komunikatów", "statystycznych", "blokowanie", "Zezwolenie na pobyt rezydenta").exists(l.contains))
+        "sesji dostępu", "komunikatów", "statystycznych", "blokowanie",
+          "Zezwolenie na pobyt rezydenta").exists(l.contains))
     def from(lines: Vector[String], start: String, count: Int) =
       lines.drop(lines.indexWhere(_.contains(start)).ensuring(_ >= 0, start)).take(count)
     val purposes = Files.readString(arrival.resolve("purposes-pl.txt")).linesIterator.map(_.trim).toVector
@@ -108,7 +109,8 @@ object ResidenceBooks:
       from(Files.readString(Path.of("books/pl/work/info-pl.txt")).linesIterator.toVector,
         "Cudzoziemcy, którzy są wyłączeni z możliwości uzyskania tego zezwolenia", 22) ++
       from(text(Path.of("books/pl/work"), "info-pl.txt"), "Jeżeli wniosek został złożony prawidłowo", 1) ++
-      Vector("", "STUDIA") ++ from(text(arrival, "studies-pl.txt"), "Zezwolenie na pobyt czasowy w celu kształcenia się na studiach uprawnia", 8) ++
+      Vector("", "STUDIA") ++ from(text(arrival, "studies-pl.txt"),
+        "Zezwolenie na pobyt czasowy w celu kształcenia się na studiach uprawnia", 8) ++
       Vector("", "CELE POBYTU CZASOWEGO") ++ from(purposes, "Wybierz główny cel pobytu", 1) ++
       purposes.drop(purposes.indexOf("Wykonywanie pracy")).take(22).distinct ++
       Vector("", "PESEL") ++ warsaw("warszawa-pesel-pl.txt").take(6) ++

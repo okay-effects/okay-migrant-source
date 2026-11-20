@@ -26,6 +26,8 @@ Done 2026-11-20 (specs §7): PESEL and PESEL UKR — the teacher's model 37/37 h
 
 Done 2026-11-20 (specs §8): a link to every screen — the address in the URL, Back, a button to share it.
 
+Done 2026-11-20 (specs §10): the arrival guide — steps by case, the teacher's model 15/15 held out, "more" buttons.
+
 2. **A person's own words** — an answer typed freely read into one of the question's options by the small reader
    (okay-study's reader by choices). Check: the options chosen right on answers written by other hands, in four
    languages; in doubt the options are shown instead.

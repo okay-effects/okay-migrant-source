@@ -5,6 +5,8 @@ exact answer from a country's official rules for foreigners, with the office's o
 the day it was read. In Ukrainian, Russian, Polish and English. **Information, not legal advice.**
 
 In Poland, for now:
+- **I have come to Poland: what do I do?** — the steps for your case: from Ukraine because of the war, an EU
+  citizen, without a visa, on a Schengen or a national visa; how long; work, studies, a Polish spouse;
 - **the CUKR residence card** (for holders of the UKR status; applications until 4 March 2027): whether you may
   apply, and what follows — leaving after the application, collecting the card, being away, moving, a refusal, a
   lost card, work;

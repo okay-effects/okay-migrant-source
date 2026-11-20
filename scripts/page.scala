@@ -148,7 +148,22 @@ import scala.jdk.CollectionConverters.*
     p.goBack()
     p.waitForSelector("text=Чи щось із цього стосується вас?")
     require(p.url().endsWith("passport=yes"), p.url())
+    // arriving, in Russian: without a visa, longer than 90 days, for work — the steps; "more" opens the permit
+    p.navigate(url)
+    press("Русский")
+    press("Я приехал(а) в Польшу: что делать?")
+    press("Из другой страны, без визы (безвизовый въезд)")
+    press("Дольше 90 дней"); press("Работа")
+    p.waitForSelector("text=Ваши шаги")
+    val steps = body()
+    require(steps.contains("1. Без визы или по шенгенской визе") && steps.contains("3. Подайте заявление") &&
+      steps.contains("Напоследок: зарегистрируйте место жительства") && steps.contains("неофициальный перевод"),
+      steps.take(1500))
+    p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("arrival.png")).setFullPage(true))
+    press("Подробнее: Разрешение на пребывание и работу")
+    p.waitForSelector("text=Разрешение на пребывание и работу")
+    require(p.url().contains("#/ru/work"), p.url())
     require(failed.isEmpty, failed.mkString("\n"))
-    println(s"the page: eight conversations answered as expected, a link opened at its screen, Back, no error, " +
+    println(s"the page: nine conversations answered as expected, a link opened at its screen, Back, no error, " +
       s"no request beyond the page; $out")
   finally { browser.close(); pw.close(); server.stop(0) }

@@ -210,3 +210,24 @@ our translation with "unofficial translation; in Polish: «…»" and the origin
 screen's language. Checks: every source shown has, in uk/ru/en, the office's text or our translation, every title
 its translation, no translation of what is not shown (`InterviewSuite`); the browser — the PESEL UKR answer in
 Ukrainian with the translation and its original.
+
+## 10. I have come to Poland: what do I do? (2026-11-20)
+
+The user asked for a guide for every case of arriving. `books/pl/arrival/` (MOS, pl/uk/ru: entry, visa-free travel,
+visas, a permit's purposes, studies, an EU citizen's registration — Polish only —, the rules of work, Ukraine's
+protection, family life) with the books already here. A case: who — from Ukraine because of the war, an EU/EEA/Swiss
+citizen, from elsewhere without a visa, on a Schengen visa, on a Polish national visa —, how long (90 days or more),
+what for (work, full-time studies, a Polish spouse, other). The answer is the STEPS in order (`s1_…` … `s9_…`), each
+with the office's sentence; a step the assistant says more of (`Reason.see`: PESEL UKR, keeping the status, CUKR,
+the single permit, permanent residence, an ordinary PESEL) gives a button that opens that topic. Only what changes the
+steps is asked: from Ukraine, nothing more; an EU citizen, how long; a national visa, not how long.
+
+- **My reading corrected by the teacher**: the single permit's exclusion names visas "typu D lub Schengen" issued for
+  tourism or a visit — my reference had it for Schengen visas alone; the teacher's first rules had it for both.
+- **The teacher**: words at the first writing; rules shown 12 — 12 of 12 shown, but 10 of 27 held out: twelve
+  cases do not show a table this wide. Shown 24 with the judge's report: **24 of 24, 15 of 15 held out**, the eleven
+  statements, no difference from the reference on three thousand cases (`models/pl-arrival.json`).
+- 14 new Polish sentences and 6 titles translated (`Translations`), in "ви/вы".
+
+Checks: 222 tests; the browser — nine conversations, the arrival in Russian (visa-free, longer, work) and its "more".
+Other countries: each needs its official books first; none is in yet.

@@ -61,7 +61,8 @@ object Arrival:
   val schengen = "the person came on a Schengen visa"
   val national = "the person came on a Polish national visa"
   def long(yes: Boolean) =
-    if yes then "the person plans to stay in Poland more than 90 days" else "the person plans to stay in Poland 90 days or less"
+    if yes then "the person plans to stay in Poland more than 90 days"
+    else "the person plans to stay in Poland 90 days or less"
   val work = "the person's purpose is work"
   val studies = "the person's purpose is full-time studies at a university"
   val spouse = "the person's purpose is life with a spouse who is a Polish citizen"
