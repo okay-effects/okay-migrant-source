@@ -4,13 +4,17 @@ A legal assistant for an immigrant: **https://okay-effects.github.io/okay-migran
 exact answer from a country's official rules for foreigners, with the office's own sentence, where it stands and
 the day it was read. In Ukrainian, Russian, Polish and English. **Information, not legal advice.**
 
-The first topic is the CUKR residence card in Poland (for holders of the UKR status; applications until
-4 March 2027): whether you may apply, and what follows — leaving after the application, collecting the card,
-being away, moving, a refusal, a lost card, work.
+In Poland, for now:
+- **the CUKR residence card** (for holders of the UKR status; applications until 4 March 2027): whether you may
+  apply, and what follows — leaving after the application, collecting the card, being away, moving, a refusal, a
+  lost card, work;
+- **the permanent residence permit** (pobyt stały): by the law's grounds — a spouse of a Polish citizen, Karta
+  Polaka, Polish origin, protection, a tolerated stay, a child…;
+- **the long-term EU resident permit**: five years and how they count, absences, income, insurance, Polish B1.
 
 ## How it is made
 
-- **The rules are a model checked against the office.** `books/pl/cukr/` holds the Office for Foreigners' own
+- **The rules are a model checked against the office.** `books/pl/` holds the Office for Foreigners' own
   documents as published (with where from and the day fetched). From them a language model wrote the rules as
   data — sentences, Datalog, answers — by [okay-study]; each model (`models/`) is kept under tests: the office's
   own questions stated as cases, cases it was never shown, and a second reading made apart, on three thousand

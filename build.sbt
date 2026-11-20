@@ -27,14 +27,15 @@ lazy val core = crossProject(JVMPlatform, JSPlatform).crossType(CrossType.Full).
     Compile / sourceGenerators += Def.task {
       val models = (ThisBuild / baseDirectory).value / "models"
       def text(file: String): String = {
-        val json = IO.read(models / file)
+        val json = if ((models / file).exists) IO.read(models / file) else "" // a model not yet written
         require(!json.contains("\"\"\""), s"$file: a model with a triple quote in it")
         "\"\"\"" + json + "\"\"\""
       }
       val out = (Compile / sourceManaged).value / "okay" / "migrant" / "Models.scala"
       IO.write(out, "package okay.migrant\n\n/** the checked models as text (made from `models/` by the build) */\n" +
-        "object Models:\n  val plCukr: String = " + text("pl-cukr.json") + "\n  val plCukrAfter: String = " +
-        text("pl-cukr-after.json") + "\n")
+        "object Models:\n" + Vector("plCukr" -> "pl-cukr.json", "plCukrAfter" -> "pl-cukr-after.json",
+          "plPermanent" -> "pl-permanent.json", "plEuResident" -> "pl-eu-resident.json")
+          .map { case (name, file) => s"  val $name: String = ${text(file)}\n" }.mkString)
       Seq(out)
     }.taskValue)
   .jvmSettings(libraryDependencies ++= Seq("io.github.okay-effects" %% "okay-study-teacher" % study, munit.value),

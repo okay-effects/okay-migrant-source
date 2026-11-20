@@ -45,6 +45,7 @@ import scala.jdk.CollectionConverters.*
     def body(): String = p.locator("body").textContent().replaceAll("\\s+", " ")
     // in Russian: a person who came, PESEL yes, 4 June yes, under a year, today, registers complete
     press("Русский")
+    press("Карта CUKR (для граждан Украины со статусом UKR)")
     press("Могу ли я подать заявление на карту CUKR?")
     press("Для человека, который приехал в Польшу из Украины после 23 февраля 2022 г.")
     press("Да"); p.waitForSelector("text=4 июня 2025"); press("Да")
@@ -58,6 +59,7 @@ import scala.jdk.CollectionConverters.*
     // again, in Ukrainian: a child born in Poland, the mother with the card
     press("Ещё раз")
     press("Українська")
+    press("Посвідка CUKR (для громадян України зі статусом UKR)")
     press("Чи можу я подати заяву на посвідку CUKR?")
     press("Для дитини, народженої в Польщі після 23 лютого 2022 р.")
     press("Так"); p.waitForSelector("text=мати"); press("Так")
@@ -70,6 +72,7 @@ import scala.jdk.CollectionConverters.*
     // what follows, in Polish: the card held, away for exactly six months — the page says the texts differ
     press("Ще раз")
     press("Polski")
+    press("Karta pobytu CUKR (dla obywateli Ukrainy ze statusem UKR)")
     press("Mam kartę — na jak długo mogę wyjechać z Polski?")
     press("Dokładnie 6 miesięcy")
     p.waitForSelector("text=oficjalne teksty różnią się")
@@ -79,11 +82,33 @@ import scala.jdk.CollectionConverters.*
     // in English: refused for a fee not paid, within the fourteen days
     press("Jeszcze raz")
     press("English")
+    press("The CUKR card (for Ukrainians with the UKR status)")
     press("I was refused the card")
     press("14 days or fewer"); press("For a fee not paid")
     p.waitForSelector("text=The application can be made again")
     val refusal = body()
     require(refusal.contains("can be appealed") && refusal.contains("not returned"), refusal.take(700))
+    // permanent residence, in Ukrainian: a spouse married for two years without the two years on the permit
+    press("Again")
+    press("Українська")
+    press("Дозвіл на постійне проживання (pobyt stały)")
+    press("Я у шлюбі з громадянином / громадянкою Польщі")
+    press("Менше 3 років"); press("Ні")
+    p.waitForSelector("text=За цією підставою — ні")
+    val spouse = body()
+    require(spouse.contains("перебуває у шлюбі щонайменше 3 роки") && spouse.contains("pobyt czasowy"), spouse.take(700))
+    p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("spouse.png")).setFullPage(true))
+    // the EU resident, in Russian: one absence of more than six months
+    press("Ще раз")
+    press("Русский")
+    press("Разрешение долгосрочного резидента ЕС")
+    press("Работа, бизнес, семья, постоянное разрешение или другое временное разрешение")
+    press("5 лет или больше"); press("Больше 6 месяцев"); press("10 месяцев или меньше")
+    press("Да"); press("Да"); press("Есть документ о B1 или выше (сертификат, аттестат польской школы и т. п.)")
+    p.waitForSelector("text=Сейчас — нет")
+    val absent = body()
+    require(absent.contains("не превышал 6 месяцев единовременно"), absent.take(700))
+    p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("eu.png")).setFullPage(true))
     require(failed.isEmpty, failed.mkString("\n"))
-    println(s"the page: four conversations answered as expected, no error, no request beyond the page; $out")
+    println(s"the page: six conversations answered as expected, no error, no request beyond the page; $out")
   finally { browser.close(); pw.close(); server.stop(0) }

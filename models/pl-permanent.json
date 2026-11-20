@@ -1,0 +1,127 @@
+{
+  "sentences": [
+    {
+      "pattern": "the ground is marriage to a Polish citizen",
+      "facts": [
+        "ground({#}, marriage)"
+      ]
+    },
+    {
+      "pattern": "the ground is refugee status, subsidiary protection or humanitarian stay",
+      "facts": [
+        "ground({#}, protection)"
+      ]
+    },
+    {
+      "pattern": "the ground is a tolerated stay",
+      "facts": [
+        "ground({#}, tolerated)"
+      ]
+    },
+    {
+      "pattern": "the ground is work in an occupation desired for the Polish economy",
+      "facts": [
+        "ground({#}, desired_occupation)"
+      ]
+    },
+    {
+      "pattern": "the ground is being a child of a foreigner settled in Poland",
+      "facts": [
+        "ground({#}, child_of_settled)"
+      ]
+    },
+    {
+      "pattern": "the ground is being a child of a Polish citizen in their parental custody",
+      "facts": [
+        "ground({#}, child_of_polish_citizen)"
+      ]
+    },
+    {
+      "pattern": "the ground is Polish origin and the will to settle in Poland",
+      "facts": [
+        "ground({#}, polish_origin)"
+      ]
+    },
+    {
+      "pattern": "the ground is a valid Karta Polaka and the will to settle in Poland",
+      "facts": [
+        "ground({#}, karta_polaka)"
+      ]
+    },
+    {
+      "pattern": "the ground is asylum granted in Poland",
+      "facts": [
+        "ground({#}, asylum)"
+      ]
+    },
+    {
+      "pattern": "none of the law's grounds applies",
+      "facts": [
+        "no_ground_applies({#})"
+      ]
+    },
+    {
+      "pattern": "the marriage has lasted {N:[0-9]+} years",
+      "facts": [
+        "marriage_years({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "right before applying the applicant did not stay in Poland for {N:[0-9]+} years without a break on a temporary permit for this marriage",
+      "facts": [
+        "marriage_permit_stay_missing({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "right before applying the applicant stayed in Poland without a break for at least {N:[0-9]+} years on a temporary permit for this marriage",
+      "facts": [
+        "marriage_permit_stay_at_least({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the stay in Poland on this ground has lasted {N:[0-9]+} years without a break",
+      "facts": [
+        "stay_years({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the child was born at another time",
+      "facts": [
+        "child_born({#}, another_time)"
+      ]
+    },
+    {
+      "pattern": "the child was born after the parent's permit was granted or while the parent was in Poland on a temporary permit or protection",
+      "facts": [
+        "child_born({#}, qualifying_time)"
+      ]
+    }
+  ],
+  "terms": [],
+  "rules": [
+    "% Marriage to a Polish citizen: at least 3 years married and at least 2 years' unbroken stay on a marriage permit",
+    "fail(married_under_3_years) :- ground(G, marriage), marriage_years(S, N), N < 3.",
+    "fail(no_2_years_on_marriage_permit) :- ground(G, marriage), marriage_permit_stay_missing(S, N).",
+    "fail(no_2_years_on_marriage_permit) :- ground(G, marriage), marriage_permit_stay_at_least(S, N), N < 2.",
+    "% Refugee status, subsidiary protection or humanitarian stay: at least 5 years' unbroken stay",
+    "fail(protection_under_5_years) :- ground(G, protection), stay_years(S, N), N < 5.",
+    "% Tolerated stay: at least 10 years' unbroken stay",
+    "fail(tolerated_under_10_years) :- ground(G, tolerated), stay_years(S, N), N < 10.",
+    "% Desired occupation: no such permit can be granted yet",
+    "fail(desired_occupation_not_possible_yet) :- ground(G, desired_occupation).",
+    "% Child of a foreigner settled in Poland: must be born at a qualifying time",
+    "fail(child_born_at_another_time) :- ground(G, child_of_settled), child_born(S, another_time).",
+    "% No ground at all",
+    "fail(no_ground) :- no_ground_applies(S).",
+    "verdict(V) :- fail(V).",
+    "blocked(G) :- ground(S, G), fail(V).",
+    "verdict(eligible) :- ground(S, G), not blocked(G)."
+  ],
+  "answers": [
+    {
+      "pattern": "{V:[a-z0-9_]+}",
+      "goal": "verdict(V)",
+      "unordered": false
+    }
+  ]
+}

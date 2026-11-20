@@ -1,30 +1,30 @@
 {"number":1,"sentences":["right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage","the marriage has lasted 0 years","the ground is marriage to a Polish citizen"],"answer":"married_under_3_years + no_2_years_on_marriage_permit"}
 {"number":2,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 5 years without a break"],"answer":"eligible"}
-{"number":3,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 1 years without a break"],"answer":"protection_under_5_years"}
+{"number":3,"sentences":["the child was born at another time","the ground is being a child of a foreigner settled in Poland"],"answer":"child_born_at_another_time"}
 {"number":4,"sentences":["none of the law's grounds applies"],"answer":"no_ground"}
 {"number":5,"sentences":["the ground is work in an occupation desired for the Polish economy"],"answer":"desired_occupation_not_possible_yet"}
 {"number":6,"sentences":["the ground is a tolerated stay","the stay in Poland on this ground has lasted 8 years without a break"],"answer":"tolerated_under_10_years"}
-{"number":7,"sentences":["the child was born at another time","the ground is being a child of a foreigner settled in Poland"],"answer":"child_born_at_another_time"}
-{"number":8,"sentences":["right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage","the ground is marriage to a Polish citizen","the marriage has lasted 1 years"],"answer":"married_under_3_years + no_2_years_on_marriage_permit"}
-{"number":9,"sentences":["the ground is a tolerated stay","the stay in Poland on this ground has lasted 11 years without a break"],"answer":"eligible"}
-{"number":10,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 4 years without a break"],"answer":"protection_under_5_years"}
-{"number":11,"sentences":["the ground is a tolerated stay","the stay in Poland on this ground has lasted 9 years without a break"],"answer":"tolerated_under_10_years"}
-{"number":12,"sentences":["right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage","the marriage has lasted 1 years","the ground is marriage to a Polish citizen"],"answer":"married_under_3_years"}
-{"number":13,"sentences":["the stay in Poland on this ground has lasted 9 years without a break","the ground is refugee status, subsidiary protection or humanitarian stay"],"answer":"eligible"}
-{"number":14,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 6 years without a break"],"answer":"eligible"}
-{"number":15,"sentences":["right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage","the marriage has lasted 2 years","the ground is marriage to a Polish citizen"],"answer":"married_under_3_years"}
-{"number":16,"sentences":["the marriage has lasted 4 years","the ground is marriage to a Polish citizen","right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage"],"answer":"no_2_years_on_marriage_permit"}
-{"number":17,"sentences":["the ground is Polish origin and the will to settle in Poland"],"answer":"eligible"}
-{"number":18,"sentences":["the ground is being a child of a Polish citizen in their parental custody"],"answer":"eligible"}
-{"number":19,"sentences":["the ground is a valid Karta Polaka and the will to settle in Poland"],"answer":"eligible"}
-{"number":20,"sentences":["the child was born after the parent's permit was granted or while the parent was in Poland on a temporary permit or protection","the ground is being a child of a foreigner settled in Poland"],"answer":"eligible"}
-{"number":21,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 3 years without a break"],"answer":"protection_under_5_years"}
-{"number":22,"sentences":["right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage","the marriage has lasted 4 years","the ground is marriage to a Polish citizen"],"answer":"eligible"}
-{"number":23,"sentences":["the marriage has lasted 7 years","the ground is marriage to a Polish citizen","right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage"],"answer":"eligible"}
-{"number":24,"sentences":["the ground is a tolerated stay","the stay in Poland on this ground has lasted 10 years without a break"],"answer":"eligible"}
-{"number":25,"sentences":["the marriage has lasted 2 years","right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage","the ground is marriage to a Polish citizen"],"answer":"married_under_3_years + no_2_years_on_marriage_permit"}
-{"number":26,"sentences":["the stay in Poland on this ground has lasted 4 years without a break","the ground is a tolerated stay"],"answer":"tolerated_under_10_years"}
-{"number":27,"sentences":["the ground is asylum granted in Poland"],"answer":"eligible"}
+{"number":7,"sentences":["right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage","the marriage has lasted 1 years","the ground is marriage to a Polish citizen"],"answer":"married_under_3_years"}
+{"number":8,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 1 years without a break"],"answer":"protection_under_5_years"}
+{"number":9,"sentences":["the ground is Polish origin and the will to settle in Poland"],"answer":"eligible"}
+{"number":10,"sentences":["the ground is being a child of a Polish citizen in their parental custody"],"answer":"eligible"}
+{"number":11,"sentences":["the ground is a valid Karta Polaka and the will to settle in Poland"],"answer":"eligible"}
+{"number":12,"sentences":["the child was born after the parent's permit was granted or while the parent was in Poland on a temporary permit or protection","the ground is being a child of a foreigner settled in Poland"],"answer":"eligible"}
+{"number":13,"sentences":["the ground is asylum granted in Poland"],"answer":"eligible"}
+{"number":14,"sentences":["right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage","the ground is marriage to a Polish citizen","the marriage has lasted 1 years"],"answer":"married_under_3_years + no_2_years_on_marriage_permit"}
+{"number":15,"sentences":["the ground is a tolerated stay","the stay in Poland on this ground has lasted 11 years without a break"],"answer":"eligible"}
+{"number":16,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 4 years without a break"],"answer":"protection_under_5_years"}
+{"number":17,"sentences":["right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage","the marriage has lasted 2 years","the ground is marriage to a Polish citizen"],"answer":"married_under_3_years"}
+{"number":18,"sentences":["the ground is a tolerated stay","the stay in Poland on this ground has lasted 9 years without a break"],"answer":"tolerated_under_10_years"}
+{"number":19,"sentences":["the stay in Poland on this ground has lasted 9 years without a break","the ground is refugee status, subsidiary protection or humanitarian stay"],"answer":"eligible"}
+{"number":20,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 6 years without a break"],"answer":"eligible"}
+{"number":21,"sentences":["the marriage has lasted 4 years","the ground is marriage to a Polish citizen","right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage"],"answer":"no_2_years_on_marriage_permit"}
+{"number":22,"sentences":["the ground is refugee status, subsidiary protection or humanitarian stay","the stay in Poland on this ground has lasted 3 years without a break"],"answer":"protection_under_5_years"}
+{"number":23,"sentences":["right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage","the marriage has lasted 4 years","the ground is marriage to a Polish citizen"],"answer":"eligible"}
+{"number":24,"sentences":["the marriage has lasted 7 years","the ground is marriage to a Polish citizen","right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage"],"answer":"eligible"}
+{"number":25,"sentences":["the ground is a tolerated stay","the stay in Poland on this ground has lasted 10 years without a break"],"answer":"eligible"}
+{"number":26,"sentences":["the marriage has lasted 2 years","right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage","the ground is marriage to a Polish citizen"],"answer":"married_under_3_years + no_2_years_on_marriage_permit"}
+{"number":27,"sentences":["the stay in Poland on this ground has lasted 4 years without a break","the ground is a tolerated stay"],"answer":"tolerated_under_10_years"}
 {"number":28,"sentences":["the marriage has lasted 0 years","the ground is marriage to a Polish citizen","right before applying the applicant stayed in Poland without a break for at least 2 years on a temporary permit for this marriage"],"answer":"married_under_3_years"}
 {"number":29,"sentences":["right before applying the applicant did not stay in Poland for 2 years without a break on a temporary permit for this marriage","the marriage has lasted 3 years","the ground is marriage to a Polish citizen"],"answer":"no_2_years_on_marriage_permit"}
 {"number":30,"sentences":["the stay in Poland on this ground has lasted 15 years without a break","the ground is a tolerated stay"],"answer":"eligible"}

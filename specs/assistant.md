@@ -111,3 +111,33 @@ lost, for the first time or again; work, a business), the answer what follows (s
 Checks: 73 tests; the law of quotes over every topic and both sources of a verdict; `scripts/page.scala` — four
 conversations in Chromium at a phone's size (a refusal in Russian, a child in Ukrainian, exactly six months in
 Polish with both of the office's sentences on the screen, a refusal for a fee in English).
+
+## 5. Beyond CUKR: the permanent residence permit and the long-term EU resident permit (2026-11-20)
+
+The operator asked for the assistant to be general, not CUKR alone. Two permits most foreigners in Poland ask
+about, from the Office for Foreigners' MOS portal (`books/pl/permanent/`, `books/pl/eu-resident/`: the information
+page in Polish, Ukrainian and Russian and the official questions and answers, as published, CC BY-NC-ND 3.0 PL).
+
+- **Permanent residence** (`Permanent`): a ground of the law's list (a spouse of a Polish citizen: 3 years of
+  marriage and 2 years on a temporary permit for it right before; Karta Polaka or Polish origin and the will to
+  settle; a child of a Polish citizen; a child of a settled foreigner born at the right time; refugee or subsidiary
+  or humanitarian: 5 years; tolerated: 10; asylum; the desired occupation — not possible yet, no regulation;
+  none) and what it asks for. Eleven of the office's statements as cases.
+- **Long-term EU resident** (`EuResident`): the basis at the time of applying (studies, temporary protection,
+  humanitarian, tolerated, asylum, a protection procedure, intra-corporate transfer exclude it), the counted stay
+  (5 years; the question says how to count: studies half, temporary protection and school not at all), the
+  longest absence (6 months) and all together (10), income for 3 years over the threshold (from 2025: 1010 zł
+  alone, 823 per family member), insurance, Polish B1 by a document (not under 16). Eleven statements as cases.
+- **The teachers' theories**: words at the second writing in both (the first time the goals were atoms with no
+  arguments — the engine has none, the judge told them; one teacher also had not been shown five kinds of
+  sentence: `Books.write` now shows every kind of sentence, its numbers aside, as well as every verdict), rules at
+  the first: **permanent 18 shown, 12 of 12 held out; EU resident 12 shown, 106 of 106 held out**; every
+  statement of the office; on three thousand sampled cases each no difference from the reference wherever the
+  reference reads the case (the teachers made the law's fixed numbers — 16 years, 2 years — slots, a wider
+  language than the reference's).
+- **On the page**: after the language, an area — the CUKR card (its eight topics), permanent residence, the EU
+  resident. Quotes now also in Russian (the portal's own version). The law of quotes runs over every book.
+
+Checks: 125 tests; `scripts/page.scala` — six conversations in Chromium at a phone's size, the two new permits
+among them. Not modelled: the documents, the procedure, appeals, the Blue Card's "2+3" rule and its 12/18-month
+breaks, the income's exact sums (asked as yes or no with the thresholds said).

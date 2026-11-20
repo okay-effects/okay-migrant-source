@@ -11,7 +11,8 @@ import scala.util.Random
  * so first the fewest cases that do, twice over, then the rest. Returns how many to show (`TRAIN`) */
 object Books:
   def write(dir: Path, lesson: String, drawn: Vector[Exercise]): Int =
-    def words(e: Exercise) = e.answer.split(" \\+ ").toSet
+    // what a teacher must see: every verdict's name, and every kind of sentence (its numbers aside)
+    def words(e: Exercise) = e.answer.split(" \\+ ").toSet ++ e.sentences.map(_.replaceAll("[0-9]+", "#"))
     def covering(from: Vector[Exercise]): Vector[Exercise] =
       val all = from.flatMap(words).toSet
       Iterator.unfold((Set.empty[String], from)) { (seen, rest) =>
@@ -30,7 +31,7 @@ object Books:
       Json.obj("number" -> Json.num(e.number), "sentences" -> Json.Arr(e.sentences.map(Json.Str(_))),
         "answer" -> Json.Str(e.answer)).render).mkString("\n") + "\n")
     println(s"$dir: ${all.size} exercises, ${all.map(_.answer).distinct.size} different answers; " +
-      s"the first ${shown.size} hold every verdict twice (TRAIN=${shown.size})")
+      s"the first ${shown.size} hold every verdict and every kind of sentence twice (TRAIN=${shown.size})")
     shown.size
 
   /** the lines of a source's text from the heading `from` to the one before the heading `to` — a heading, not

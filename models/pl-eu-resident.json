@@ -1,0 +1,110 @@
+{
+  "sentences": [
+    {
+      "pattern": "a stable and regular income above the threshold is shown",
+      "facts": [
+        "income({#}, shown)"
+      ]
+    },
+    {
+      "pattern": "a stable and regular income above the threshold is not shown",
+      "facts": [
+        "income({#}, not_shown)"
+      ]
+    },
+    {
+      "pattern": "the applicant was under {A:[0-9]+} when applying",
+      "facts": [
+        "under_age({#}, {A})"
+      ]
+    },
+    {
+      "pattern": "the counted legal stay in Poland is {N:[0-9]+} months",
+      "facts": [
+        "counted_stay({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the applicant has health insurance",
+      "facts": [
+        "insurance({#}, yes)"
+      ]
+    },
+    {
+      "pattern": "the applicant has no health insurance",
+      "facts": [
+        "insurance({#}, no)"
+      ]
+    },
+    {
+      "pattern": "the longest absence from Poland lasted {N:[0-9]+} months",
+      "facts": [
+        "longest_absence({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "all absences from Poland together lasted {N:[0-9]+} months",
+      "facts": [
+        "total_absences({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the stay at the time of applying is on an excluded basis",
+      "facts": [
+        "current_basis({#}, excluded)"
+      ]
+    },
+    {
+      "pattern": "the stay at the time of applying is on a basis that is not excluded",
+      "facts": [
+        "current_basis({#}, not_excluded)"
+      ]
+    },
+    {
+      "pattern": "Polish at level {L:[A-C][12]} is confirmed by a document",
+      "facts": [
+        "polish({#}, {L}, confirmed)"
+      ]
+    },
+    {
+      "pattern": "Polish at level {L:[A-C][12]} is not confirmed by a document",
+      "facts": [
+        "polish({#}, {L}, not_confirmed)"
+      ]
+    }
+  ],
+  "terms": [],
+  "rules": [
+    "% any sentence of the problem",
+    "some(yes) :- income(S, X).",
+    "some(yes) :- under_age(S, X).",
+    "some(yes) :- counted_stay(S, X).",
+    "some(yes) :- insurance(S, X).",
+    "some(yes) :- longest_absence(S, X).",
+    "some(yes) :- total_absences(S, X).",
+    "some(yes) :- current_basis(S, X).",
+    "some(yes) :- polish(S, L, X).",
+    "% 5 years (60 months) of counted legal stay",
+    "fail(stay_too_short) :- counted_stay(S, N), N < 60.",
+    "% one absence not longer than 6 months, all together not more than 10",
+    "fail(absence_too_long) :- longest_absence(S, N), 6 < N.",
+    "fail(absences_too_long) :- total_absences(S, N), 10 < N.",
+    "fail(current_basis_excluded) :- current_basis(S, excluded).",
+    "fail(no_insurance) :- insurance(S, no).",
+    "fail(income_not_shown) :- income(S, not_shown).",
+    "% Polish B1 confirmed by a document, not required under 16",
+    "polish_ok(yes) :- polish(S, L, confirmed).",
+    "exempt(yes) :- under_age(S, A), A < 17.",
+    "fail(no_polish_b1) :- some(yes), not polish_ok(yes), not exempt(yes).",
+    "failed(yes) :- fail(V).",
+    "verdict(V) :- fail(V).",
+    "verdict(eligible) :- some(yes), not failed(yes)."
+  ],
+  "answers": [
+    {
+      "pattern": "{V:[a-z0-9_]+}",
+      "goal": "verdict(V)",
+      "unordered": false
+    }
+  ]
+}

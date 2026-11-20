@@ -44,17 +44,48 @@ class InterviewSuite extends munit.FunSuite:
 
   test("every official sentence shown stands in the book, as published"):
     def plain(s: String) = s.replaceAll("[\\s\\u00a0\\uf0b7•]+", " ").trim
-    val books = Map("pl" -> Vector("info-pl.txt", "faq-pl.txt"), "uk" -> Vector("info-ua.txt", "faq-ua.txt"))
-      .view.mapValues(fs => plain(fs.map(f => text(s"books/pl/cukr/$f")).mkString(" "))).toMap
-    val after = CukrAfterTopic.topics(Model.parse(text("models/pl-cukr-after.json")).fold(e => fail(e), identity))
+    // every source as published, by its language: a quote stands in some book's text of that language
+    val files = scala.jdk.CollectionConverters.IteratorHasAsScala(Files.walk(Path.of("books")).iterator).asScala
+      .filter(_.toString.endsWith(".txt")).filterNot(_.toString.contains("/study/")).toVector
+    def of(suffixes: String*) = plain(files.filter(f => suffixes.exists(f.getFileName.toString.endsWith))
+      .map(f => Files.readString(f)).mkString(" "))
+    val books = Map("pl" -> of("-pl.txt"), "uk" -> of("-ua.txt", "-uk.txt"), "ru" -> of("-ru.txt"))
+    def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)
+    val after = CukrAfterTopic.topics(model("pl-cukr-after.json"))
+    val residence = Vector(ResidenceTopics.permanent(model("pl-permanent.json")),
+      ResidenceTopics.euResident(model("pl-eu-resident.json")))
     val missing = for
-      t <- topic +: after
+      t <- (topic +: after) ++ residence
       reason <- t.reasons.values.toVector ++ t.remember
       source <- reason.sources
       (language, quote) <- source.quotes.toVector
       if !books(language).contains(plain(quote))
     yield s"$language: $quote"
     assertEquals(missing.distinct, Vector.empty[String])
+
+  test("the residence permits: the office's statements told through the conversation"):
+    def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)
+    val cases = Vector(ResidenceTopics.permanent(model("pl-permanent.json")) -> Permanent.official,
+      ResidenceTopics.euResident(model("pl-eu-resident.json")) -> EuResident.official)
+    for (t, official) <- cases; (what, e) <- official do
+      val answers = t.questions.flatMap(q => q.choices.find(c => e.sentences.contains(c.sentence))
+        .map(c => q.id -> Person.Said.Chose(c.id))).toMap
+      // a case whose numbers are not a choice's (the office's 30 months of school) is told by its side of the rule
+      if answers.size == e.sentences.size then
+        val asked = collection.mutable.ArrayBuffer.empty[String]
+        val outcome = run(Person.scripted(answers, asked)(Interview.run[Person](t)))
+        assertEquals(outcome.verdicts, e.answer.split(" \\+ ").toVector.sorted, s"$what — asked ${asked.mkString(", ")}")
+
+  test("the residence permits: only what can change the answer is asked"):
+    def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)
+    val permanent = ResidenceTopics.permanent(model("pl-permanent.json"))
+    val asked = collection.mutable.ArrayBuffer.empty[String]
+    run(Person.scripted(Map("ground" -> Person.Said.Chose("karta")), asked)(Interview.run[Person](permanent)))
+    assertEquals(asked.toVector, Vector("ground"))
+    asked.clear()
+    run(Person.scripted(Map("ground" -> Person.Said.Chose("spouse"), "married" -> Person.Said.Chose("short"),
+      "two" -> Person.Said.Chose("yes")), asked)(Interview.run[Person](permanent)))
+    assertEquals(asked.toVector, Vector("ground", "married", "two"))
 
   test("what follows the application: the office's questions told through the conversation of some situation"):
     val after = CukrAfterTopic.topics(Model.parse(text("models/pl-cukr-after.json")).fold(e => fail(e), identity))
