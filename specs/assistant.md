@@ -195,6 +195,9 @@ answers are given to the conversation (`Interview.along`), not asked; what no lo
 and the nearest screen shown. The header's button sends the link by the phone's own sharing, or copies it; the
 foot says a link carries the answers that lead to it. The fragment never goes to the server.
 
+The effect moved into okay-ui the same day (`Address`: `whereOpened`, `nowAt`; `addressed` for tests, `InThePage.address`
+and `InThePage.onBack` in a page; okay-ui 0.1.0 republished), the app's own copy removed.
+
 Checks: the program played with an address (each screen's path; a link opened at its answer; an old link at the
 nearest screen); the browser — the link opened in another page at the same answer, Back, the button's words.
 
