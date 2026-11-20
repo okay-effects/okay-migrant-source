@@ -162,3 +162,23 @@ the same employer, and Turkish citizens). Thirteen of the office's statements as
 - The law of quotes caught one of mine: a Russian quote with "злотих" for the portal's "злотых".
 
 Checks: 140 tests; the browser — seven conversations, the single permit's pay under the minimum among them.
+
+## 7. PESEL and PESEL UKR (2026-11-20)
+
+`books/pl/pesel/`: MSWiA's questions and answers on the UKR status (PDF and its text) and the City of Warsaw's
+two pages — PESEL with the UKR status, and PESEL on a foreigner's application. One model, three situations
+(`Pesel`): getting PESEL UKR (who — a Ukrainian who lived in Ukraine before 24 February 2022, a foreigner with
+protection there, a foreigner who stayed there legally and cannot go home safely, their families; within 30 days
+of crossing the border; a valid passport; not with another permit or protection in Poland, an application for
+international protection, temporary protection in another EU state, or a local border traffic permit), keeping
+the status (away more than 30 days at a stretch, another permit, an application for protection, protection
+elsewhere in the EU, an EU citizenship, no passport shown by 31 August 2026 end it), and an ordinary PESEL (by
+registering one's residence, or on application, in person, when a law requires the number). Fifteen statements.
+
+- **The teacher**: words and rules both at the first writing — **27 shown, 37 of 37 held out**, the fifteen
+  statements, no difference from the reference on three thousand cases (`models/pl-pesel.json`).
+- **On the page**: an area "PESEL and PESEL UKR" with three topics, after CUKR. Every answer says the difference:
+  PESEL UKR confirms temporary protection (a legal stay until 4 March 2027, work with no permit — the UdSC's own
+  sentence); an ordinary PESEL is only a number and no basis of stay.
+
+Checks: 180 tests; the browser — eight conversations, PESEL UKR in Ukrainian among them.

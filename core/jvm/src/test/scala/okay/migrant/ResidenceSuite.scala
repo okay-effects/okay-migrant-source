@@ -29,6 +29,12 @@ class ResidenceTeacherSuite extends munit.FunSuite:
   private val permanent = model("pl-permanent.json")
   private val eu = model("pl-eu-resident.json")
   private val work = model("pl-work.json")
+  private val pesel = model("pl-pesel.json")
+
+  for (what, e) <- Pesel.official do
+    test(s"the teacher's PESEL model: $what"):
+      val verdict = Verdict.of(pesel, e)
+      assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
 
   for (what, e) <- Permanent.official do
     test(s"the teacher's permanent residence model: $what"):
@@ -64,3 +70,5 @@ class ResidenceTeacherSuite extends munit.FunSuite:
     agree(EuResident.reference, eu, EuResident.sampled, 8)
   test("the single permit: the teacher's model and the reference agree on three thousand cases"):
     agree(Work.reference, work, Work.sampled, 9)
+  test("PESEL: the teacher's model and the reference agree on three thousand cases"):
+    agree(Pesel.reference, pesel, Pesel.sampled, 10)

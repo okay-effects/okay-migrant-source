@@ -53,7 +53,8 @@ class InterviewSuite extends munit.FunSuite:
     def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)
     val after = CukrAfterTopic.topics(model("pl-cukr-after.json"))
     val residence = Vector(ResidenceTopics.permanent(model("pl-permanent.json")),
-      ResidenceTopics.euResident(model("pl-eu-resident.json")), ResidenceTopics.work(model("pl-work.json")))
+      ResidenceTopics.euResident(model("pl-eu-resident.json")), ResidenceTopics.work(model("pl-work.json"))) ++
+      PeselTopics.topics(model("pl-pesel.json"))
     val missing = for
       t <- (topic +: after) ++ residence
       reason <- t.reasons.values.toVector ++ t.remember
@@ -75,7 +76,8 @@ class InterviewSuite extends munit.FunSuite:
       if answers.size == e.sentences.size then
         val asked = collection.mutable.ArrayBuffer.empty[String]
         val outcome = run(Person.scripted(answers, asked)(Interview.run[Person](t)))
-        assertEquals(outcome.verdicts, e.answer.split(" \\+ ").toVector.sorted, s"$what — asked ${asked.mkString(", ")}")
+        assertEquals(outcome.verdicts, e.answer.split(" \\+ ").toVector.sorted,
+          s"$what — asked ${asked.mkString(", ")}")
 
   test("the residence permits: only what can change the answer is asked"):
     def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)
@@ -87,6 +89,29 @@ class InterviewSuite extends munit.FunSuite:
     run(Person.scripted(Map("ground" -> Person.Said.Chose("spouse"), "married" -> Person.Said.Chose("short"),
       "two" -> Person.Said.Chose("yes")), asked)(Interview.run[Person](permanent)))
     assertEquals(asked.toVector, Vector("ground", "married", "two"))
+
+  test("PESEL: the offices' statements told through the conversation of their situation"):
+    val pesel = PeselTopics.topics(Model.parse(text("models/pl-pesel.json")).fold(e => fail(e), identity))
+    // a number of days is asked by its side of the 30 days
+    def side(s: String) =
+      val Crossed = """the applicant crossed the Polish border (\d+) days ago""".r
+      val Away = """the holder has been away from Poland for (\d+) days at a stretch""".r
+      s match
+        case Crossed(n) => Pesel.crossed(if n.toInt <= 30 then 30 else 31)
+        case Away(n) => Pesel.away(if n.toInt <= 30 then 30 else 31)
+        case other => other
+    for (what, e) <- Pesel.official do
+      val sentences = e.sentences.map(side)
+      val told = pesel.flatMap { t =>
+        val answers = t.questions.flatMap(q => q.choices.find(c => sentences.contains(c.sentence))
+          .map(c => q.id -> Person.Said.Chose(c.id))).toMap
+        Option.when(answers.size == sentences.size)(
+          run(Person.scripted(answers, collection.mutable.ArrayBuffer.empty[String])(Interview.run[Person](t))))
+      }
+      assert(told.nonEmpty, s"$what has no conversation")
+      assertEquals(told.head.verdicts, e.answer.split(" \\+ ").toVector.sorted, what)
+    for t <- pesel do
+      assert(t.reasons.contains("may_get_pesel_ukr") && t.remember.nonEmpty, t.name.en)
 
   test("what follows the application: the office's questions told through the conversation of some situation"):
     val after = CukrAfterTopic.topics(Model.parse(text("models/pl-cukr-after.json")).fold(e => fail(e), identity))

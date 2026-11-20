@@ -51,3 +51,16 @@ class AssistantSuite extends munit.FunSuite:
       Act.press("Да"), Act.press("Да"), Act.press("Есть документ о B1 или выше (сертификат, аттестат польской школы и т. п.)"))
     assertEquals(p.problems, Nil)
     assertEquals(p.at.map(_.title), Some("Можно подавать"))
+
+  test("in Ukrainian: PESEL UKR — a Ukrainian who came 30 days ago or less, a passport, no exclusion — may get it"):
+    val p = played(Act.press("Українська"), Act.press("PESEL і PESEL UKR"), Act.press("Як отримати PESEL UKR?"),
+      Act.press("Громадянин України, жив(ла) в Україні до 24.02.2022, або член сім'ї"),
+      Act.press("30 днів тому або менше"), Act.press("Так"), Act.press("Нічого з цього"))
+    assertEquals(p.problems, Nil)
+    assertEquals(p.at.map(_.title), Some("PESEL UKR можна отримати"))
+
+  test("in Russian: away for more than 30 days — the UKR status is lost"):
+    val p = played(Act.press("Русский"), Act.press("PESEL и PESEL UKR"), Act.press("Сохранится ли мой статус UKR?"),
+      Act.press("Больше 30 дней"), Act.press("Ничего из этого"))
+    assertEquals(p.problems, Nil)
+    assertEquals(p.at.map(_.title), Some("Статус UKR утрачен"))

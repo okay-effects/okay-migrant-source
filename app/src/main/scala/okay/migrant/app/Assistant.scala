@@ -1,8 +1,8 @@
 package okay.migrant.app
 
 import okay.business.scala3.*
-import okay.migrant.{CukrAfterTopic, CukrTopic, Interview, Models, Outcome, Person, Question, ResidenceTopics,
-  Topic, Words}
+import okay.migrant.{CukrAfterTopic, CukrTopic, Interview, Models, Outcome, PeselTopics, Person, Question,
+  ResidenceTopics, Topic, Words}
 import okay.study.Model
 
 /** THE ASSISTANT'S PAGE AS A PROGRAM OF `Ui` ALONE (okay-ui): the language, then the conversation — a question
@@ -29,13 +29,19 @@ object Assistant:
 
   private def model(text: String) = Model.parse(text).fold(sys.error, identity)
 
-  /** what the page knows, in Poland: the CUKR card (its eight topics), permanent residence, the EU resident */
+  /** what the page knows, in Poland: the CUKR card (eight topics), PESEL (three), the single permit, permanent
+   * residence, the EU resident */
   def areas(today: Int): Vector[Area] = Vector(
-    Area(Words("Посвідка CUKR (для громадян України зі статусом UKR)", "Карта CUKR (для граждан Украины со статусом UKR)",
-      "Karta pobytu CUKR (dla obywateli Ukrainy ze statusem UKR)", "The CUKR card (for Ukrainians with the UKR status)"),
+    Area(Words("Посвідка CUKR (для громадян України зі статусом UKR)",
+      "Карта CUKR (для граждан Украины со статусом UKR)",
+      "Karta pobytu CUKR (dla obywateli Ukrainy ze statusem UKR)",
+      "The CUKR card (for Ukrainians with the UKR status)"),
       topics(today)),
+    Area(Words("PESEL і PESEL UKR", "PESEL и PESEL UKR", "PESEL i PESEL UKR", "PESEL and PESEL UKR"),
+      PeselTopics.topics(model(Models.plPesel))),
     Area(ResidenceTopics.work(model(Models.plWork)).name, Vector(ResidenceTopics.work(model(Models.plWork)))),
-    Area(ResidenceTopics.permanent(model(Models.plPermanent)).name, Vector(ResidenceTopics.permanent(model(Models.plPermanent)))),
+    Area(ResidenceTopics.permanent(model(Models.plPermanent)).name,
+      Vector(ResidenceTopics.permanent(model(Models.plPermanent)))),
     Area(ResidenceTopics.euResident(model(Models.plEuResident)).name,
       Vector(ResidenceTopics.euResident(model(Models.plEuResident)))))
 

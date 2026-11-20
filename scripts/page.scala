@@ -120,6 +120,17 @@ import scala.jdk.CollectionConverters.*
     val pay = body()
     require(pay.contains("Otrzymywane wynagrodzenie musi wynosić co najmniej 4806 zł brutto miesięcznie"), pay.take(700))
     p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("work.png")).setFullPage(true))
+    // PESEL UKR, in Ukrainian: a Ukrainian who came within 30 days, with a passport — may get it, and the difference
+    press("Jeszcze raz")
+    press("Українська")
+    press("PESEL і PESEL UKR")
+    press("Як отримати PESEL UKR?")
+    press("Громадянин України, жив(ла) в Україні до 24.02.2022, або член сім'ї")
+    press("30 днів тому або менше"); press("Так"); press("Нічого з цього")
+    p.waitForSelector("text=PESEL UKR можна отримати")
+    val ukr = body()
+    require(ukr.contains("Numer PESEL ze statusem UKR możesz uzyskać") && ukr.contains("Звичайний PESEL"), ukr.take(700))
+    p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("pesel.png")).setFullPage(true))
     require(failed.isEmpty, failed.mkString("\n"))
-    println(s"the page: seven conversations answered as expected, no error, no request beyond the page; $out")
+    println(s"the page: eight conversations answered as expected, no error, no request beyond the page; $out")
   finally { browser.close(); pw.close(); server.stop(0) }

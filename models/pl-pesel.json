@@ -1,0 +1,187 @@
+{
+  "sentences": [
+    {
+      "pattern": "the applicant holds a residence permit or a protection in Poland",
+      "facts": [
+        "applicant_has_other_permit({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant has temporary protection in another EU state",
+      "facts": [
+        "applicant_has_other_eu_protection({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant applied for international protection in Poland",
+      "facts": [
+        "applicant_applied_protection({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant entered Poland on a local border traffic permit",
+      "facts": [
+        "applicant_border_traffic({#})"
+      ]
+    },
+    {
+      "pattern": "none of the exclusions applies to the applicant",
+      "facts": [
+        "applicant_no_exclusion({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant has no valid passport",
+      "facts": [
+        "applicant_passport({#}, no)"
+      ]
+    },
+    {
+      "pattern": "the applicant has a valid passport",
+      "facts": [
+        "applicant_passport({#}, yes)"
+      ]
+    },
+    {
+      "pattern": "the applicant is a Ukrainian citizen who lived in Ukraine before 24 February 2022, or a family member",
+      "facts": [
+        "applicant_group({#}, ukrainian_citizen)"
+      ]
+    },
+    {
+      "pattern": "the applicant is a foreigner who had protection in Ukraine before 24 February 2022, or a family member",
+      "facts": [
+        "applicant_group({#}, protected_in_ukraine)"
+      ]
+    },
+    {
+      "pattern": "the applicant is a foreigner who stayed legally in Ukraine before 24 February 2022 and cannot return home safely",
+      "facts": [
+        "applicant_group({#}, legal_stay_cannot_return)"
+      ]
+    },
+    {
+      "pattern": "the applicant is none of these",
+      "facts": [
+        "applicant_group({#}, none)"
+      ]
+    },
+    {
+      "pattern": "the applicant crossed the Polish border {N:[0-9]+} days ago",
+      "facts": [
+        "days_since_crossing({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the holder has been away from Poland for {N:[0-9]+} days at a stretch",
+      "facts": [
+        "days_away({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the holder applied for international protection",
+      "facts": [
+        "holder_applied_protection({#})"
+      ]
+    },
+    {
+      "pattern": "the holder got temporary protection in another EU state",
+      "facts": [
+        "holder_other_eu_protection({#})"
+      ]
+    },
+    {
+      "pattern": "the holder got a residence permit or a protection in Poland",
+      "facts": [
+        "holder_other_permit({#})"
+      ]
+    },
+    {
+      "pattern": "the holder became a Polish or another EU citizen",
+      "facts": [
+        "holder_new_citizenship({#})"
+      ]
+    },
+    {
+      "pattern": "the holder was registered without a passport and did not show one by {D:[0-9]+ [A-Z][a-z]+ [0-9]+}",
+      "facts": [
+        "holder_no_passport_shown({#}, {D})"
+      ]
+    },
+    {
+      "pattern": "nothing else happened to the holder's status",
+      "facts": [
+        "holder_nothing_else({#})"
+      ]
+    },
+    {
+      "pattern": "no law requires the person to have a PESEL number yet",
+      "facts": [
+        "law_requires_pesel({#}, no)"
+      ]
+    },
+    {
+      "pattern": "a law requires the person to have a PESEL number",
+      "facts": [
+        "law_requires_pesel({#}, yes)"
+      ]
+    },
+    {
+      "pattern": "the person does not register a residence in Poland",
+      "facts": [
+        "registers_residence({#}, no)"
+      ]
+    },
+    {
+      "pattern": "the person registers a residence in Poland",
+      "facts": [
+        "registers_residence({#}, yes)"
+      ]
+    }
+  ],
+  "terms": [],
+  "rules": [
+    "% applying for PESEL UKR: exclusions",
+    "excluded(other_permit) :- applicant_has_other_permit(S).",
+    "excluded(other_eu_state) :- applicant_has_other_eu_protection(S).",
+    "excluded(protection_application) :- applicant_applied_protection(S).",
+    "excluded(border_traffic) :- applicant_border_traffic(S).",
+    "blocked(yes) :- excluded(R).",
+    "% applying: conditions (passport, 30 days from crossing, eligible group)",
+    "verdict(needs_passport) :- applicant_passport(S, no).",
+    "late(yes) :- days_since_crossing(S, N), 30 < N.",
+    "verdict(too_late_30_days) :- late(yes).",
+    "verdict(not_entitled) :- applicant_group(S, none).",
+    "verdict(may_get_pesel_ukr) :- applicant_group(S, G), G != none, applicant_passport(P, yes), days_since_crossing(T, N), not late(yes), not blocked(yes).",
+    "% holding the UKR status: ways to lose it",
+    "lost(left_over_30_days) :- days_away(S, N), 30 < N.",
+    "lost(protection_application) :- holder_applied_protection(S).",
+    "lost(other_eu_state) :- holder_other_eu_protection(S).",
+    "lost(other_permit) :- holder_other_permit(S).",
+    "lost(citizenship) :- holder_new_citizenship(S).",
+    "lost(no_passport) :- holder_no_passport_shown(S, D).",
+    "lost_any(yes) :- lost(R).",
+    "verdict(status_kept) :- days_away(S, N), not lost_any(yes).",
+    "% ordinary PESEL for a foreigner",
+    "verdict(pesel_by_registration) :- registers_residence(S, yes).",
+    "verdict(pesel_by_application) :- registers_residence(S, no), law_requires_pesel(T, yes).",
+    "verdict(no_basis_for_pesel_yet) :- registers_residence(S, no), law_requires_pesel(T, no)."
+  ],
+  "answers": [
+    {
+      "pattern": "excluded_{R:[a-z_]+}",
+      "goal": "excluded(R)",
+      "unordered": false
+    },
+    {
+      "pattern": "lost_{R:[a-z0-9_]+}",
+      "goal": "lost(R)",
+      "unordered": false
+    },
+    {
+      "pattern": "{V:[a-z0-9_]+}",
+      "goal": "verdict(V)",
+      "unordered": false
+    }
+  ]
+}
