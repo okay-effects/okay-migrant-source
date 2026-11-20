@@ -1,0 +1,979 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="uk" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    &#x411;&#x435;&#x437;&#x432;&#x456;&#x437;&#x43E;&#x432;&#x456; &#x43F;&#x43E;&#x434;&#x43E;&#x440;&#x43E;&#x436;&#x456; | &#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;
+</title>
+<meta name="Description" content=" ?? &#x411;&#x435;&#x437;&#x432;&#x456;&#x437;&#x43E;&#x432;&#x456; &#x43F;&#x43E;&#x434;&#x43E;&#x440;&#x43E;&#x436;&#x456;" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/uk/uk/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/uk/uk/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/uk/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/uk/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-content ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/uk/">
+						<img src="/clean-assets/images/logo_white.svg" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/uk/prawo/">&#x41F;&#x440;&#x430;&#x432;&#x43E;</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/uk/kontakt/">&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x438;</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/uk/informacje-o-portalu/">&#x406;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x456;&#x44F; &#x43F;&#x440;&#x43E; &#x43F;&#x43E;&#x440;&#x442;&#x430;&#x43B;</a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/uk/prawo/">&#x41F;&#x440;&#x430;&#x432;&#x43E;</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/uk/kontakt/">&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x438;</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/uk/informacje-o-portalu/">&#x406;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x456;&#x44F; &#x43F;&#x440;&#x43E; &#x43F;&#x43E;&#x440;&#x442;&#x430;&#x43B;</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/uk/baza-pytan-i-odpowiedzi/" class="dropdown-item">&#x411;&#x430;&#x437;&#x430; &#x434;&#x430;&#x43D;&#x438;&#x445; &#x437;&#x430;&#x43F;&#x438;&#x442;&#x430;&#x43D;&#x44C; &#x442;&#x430; &#x432;&#x456;&#x434;&#x43F;&#x43E;&#x432;&#x456;&#x434;&#x435;&#x439;</a></li>
+			<li><a href="/uk/z-chogo-pochati/" class="dropdown-item">&#x417; &#x447;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x447;&#x430;&#x442;&#x438;?</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/perepustka-perepustka/" class="dropdown-item">&#x41F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;-&#x43F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">&#x412;&#x438;&#x432;&#x447;&#x435;&#x43D;&#x43D;&#x44F; &#x434;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x456;&#x432;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x434;&#x43E;&#x437;&#x432;&#x456;&#x43B;-&#x43D;&#x430;-&#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;/" class="dropdown-item">&#x414;&#x43E;&#x437;&#x432;&#x456;&#x43B; &#x43D;&#x430; &#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x43F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430;-&#x43D;&#x430;-&#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;-&#x434;&#x43B;&#x44F;-&#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E;-&#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430;-&#x454;&#x441;/" class="dropdown-item">&#x41F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430; &#x43D;&#x430; &#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F; &#x434;&#x43B;&#x44F; &#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E; &#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430; &#x404;&#x421;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/rozwiazania-ob-ukrainy/fukor/" class="dropdown-item">&#x426;&#x443;&#x43A;&#x43E;&#x440;</a></li>
+			<li><a href="/uk/kategorie-informacji/dokumenty/op3/karta-perebuvannya/" class="dropdown-item">&#x41A;&#x430;&#x440;&#x442;&#x430; &#x43F;&#x435;&#x440;&#x435;&#x431;&#x443;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/polozhennya/" class="dropdown-item">&#x41F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x43D;&#x44F;</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	UK
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				PL
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/visas-movement-free/visa-free-travel/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/voyage-sans-visa/voyage-sans-visa/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thi-thuc-di-chuyen-mien-thi-thuc/chinh-sach-mien-thi-thuc/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				RU
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fuk%2Fkategorie-informacji%2Fwizy-ruch-bezwizowy%2Fruch-bezwizowy%2F" type="button">A&#x432;&#x442;&#x43E;&#x440;&#x438;&#x437;&#x443;&#x432;&#x430;&#x442;&#x438;&#x441;&#x44F;</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/uk/baza-pytan-i-odpowiedzi/" class="dropdown-item">&#x411;&#x430;&#x437;&#x430; &#x434;&#x430;&#x43D;&#x438;&#x445; &#x437;&#x430;&#x43F;&#x438;&#x442;&#x430;&#x43D;&#x44C; &#x442;&#x430; &#x432;&#x456;&#x434;&#x43F;&#x43E;&#x432;&#x456;&#x434;&#x435;&#x439;</a></li>
+			<li><a href="/uk/z-chogo-pochati/" class="dropdown-item">&#x417; &#x447;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x447;&#x430;&#x442;&#x438;?</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/perepustka-perepustka/" class="dropdown-item">&#x41F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;-&#x43F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">&#x412;&#x438;&#x432;&#x447;&#x435;&#x43D;&#x43D;&#x44F; &#x434;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x456;&#x432;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x434;&#x43E;&#x437;&#x432;&#x456;&#x43B;-&#x43D;&#x430;-&#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;/" class="dropdown-item">&#x414;&#x43E;&#x437;&#x432;&#x456;&#x43B; &#x43D;&#x430; &#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x43F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430;-&#x43D;&#x430;-&#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;-&#x434;&#x43B;&#x44F;-&#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E;-&#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430;-&#x454;&#x441;/" class="dropdown-item">&#x41F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430; &#x43D;&#x430; &#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F; &#x434;&#x43B;&#x44F; &#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E; &#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430; &#x404;&#x421;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/rozwiazania-ob-ukrainy/fukor/" class="dropdown-item">&#x426;&#x443;&#x43A;&#x43E;&#x440;</a></li>
+			<li><a href="/uk/kategorie-informacji/dokumenty/op3/karta-perebuvannya/" class="dropdown-item">&#x41A;&#x430;&#x440;&#x442;&#x430; &#x43F;&#x435;&#x440;&#x435;&#x431;&#x443;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/polozhennya/" class="dropdown-item">&#x41F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x43D;&#x44F;</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	UK
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				PL
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/visas-movement-free/visa-free-travel/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/voyage-sans-visa/voyage-sans-visa/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thi-thuc-di-chuyen-mien-thi-thuc/chinh-sach-mien-thi-thuc/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				RU
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fuk%2Fkategorie-informacji%2Fwizy-ruch-bezwizowy%2Fruch-bezwizowy%2F" type="button">A&#x432;&#x442;&#x43E;&#x440;&#x438;&#x437;&#x443;&#x432;&#x430;&#x442;&#x438;&#x441;&#x44F;</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							&#x411;&#x435;&#x437;&#x432;&#x456;&#x437;&#x43E;&#x432;&#x456; &#x43F;&#x43E;&#x434;&#x43E;&#x440;&#x43E;&#x436;&#x456;
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/uk/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="&#x41F;&#x43E;&#x448;&#x443;&#x43A;" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+	<div class="sub-nav  pt-3 pt-md-0">
+		<div class="container">
+			<p class="m-0 h6 py-2 bold">
+			</p>
+		</div>
+	</div>
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/uk/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+						<li class="no-ellipsis">...</li>
+						<li aria-current="&#x411;&#x435;&#x437;&#x432;&#x456;&#x437;&#x43E;&#x432;&#x456; &#x43F;&#x43E;&#x434;&#x43E;&#x440;&#x43E;&#x436;&#x456;">
+							<a href="/uk/kategorie-informacji/wizy-ruch-bezwizowy/" class="ellipsis">&#x411;&#x435;&#x437;&#x432;&#x456;&#x437;&#x43E;&#x432;&#x456; &#x43F;&#x43E;&#x434;&#x43E;&#x440;&#x43E;&#x436;&#x456;</a>
+						</li>
+
+					<li class="ellipsis active" aria-current="&#x411;&#x435;&#x437;&#x432;&#x456;&#x437;&#x43E;&#x432;&#x456; &#x43F;&#x43E;&#x434;&#x43E;&#x440;&#x43E;&#x436;&#x456;">&#x411;&#x435;&#x437;&#x432;&#x456;&#x437;&#x43E;&#x432;&#x456; &#x43F;&#x43E;&#x434;&#x43E;&#x440;&#x43E;&#x436;&#x456;</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+
+<div class="container pb-5 min-h-article">
+
+
+
+	<div id="content-to-pdf" class="content-section row m-0">
+		
+<div class="section-item menu-section col-12 col-lg-2">
+	<h4 class="content-menu">&#x41C;&#x435;&#x43D;&#x44E;</h4>
+	<ul class="p-3">
+			<li class="list-group-item px-2 ">
+				<a href="#4b100d95-d274-4c76-bb37-e78688bbae35">&#x412;&#x441;&#x442;&#x443;&#x43F;</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#da06b907-0ed4-43b9-a723-285a7d8044f3">&#x41F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x43D;&#x44F; &#x442;&#x430; &#x43E;&#x441;&#x43D;&#x43E;&#x432;&#x43D;&#x456; &#x43F;&#x440;&#x438;&#x43D;&#x446;&#x438;&#x43F;&#x438;</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#3b2dde1c-d0e6-407c-83a0-ae8b3346358b">&#x414;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x435;&#x43D;&#x438;&#x439; &#x442;&#x435;&#x440;&#x43C;&#x456;&#x43D; &#x43F;&#x435;&#x440;&#x435;&#x431;&#x443;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a>
+			</li>
+	</ul>
+</div>
+
+
+		<div class="content col content-anchor">
+				<div id="4b100d95-d274-4c76-bb37-e78688bbae35">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Вступ</span></h2>
+<hr>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">В&#x27;їзд до Польщі в рамках безвізового режиму означає, що <strong>для такого в&#x27;їзду іноземцю не потрібно отримувати</strong> національну <strong>візу</strong> або шенгенську <strong>візу, </strong>що дає право на перетин польського кордону. </span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt; font-family: 'Open Sans';">Допустимий термін перебування на цій підставі в Шенгенській зоні, у тому числі в Польщі, <strong>становить 90 днів протягом 180-денного періоду.</strong></span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Іноземець може скористатися спрощеною процедурою в’їзду, <strong>якщо є громадянином держави, зазначеної в Регламенті Європейського Парламенту та Ради (ЄС) 2018/1806</strong> як держава, громадяни якої не повинні мати візи при перетині зовнішніх кордонів. Крім того</span><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>, деякі категорії іноземців не підлягають візовому режиму</strong>, незалежно від їхнього громадянства.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Звільнення від візового режиму <strong>не означає звільнення від виконання інших умов в’їзду</strong>, визначених у Шенгенському прикордонному кодексі, які повинні дотримуватися. </span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto; height: 303.2px;">
+<tbody>
+<tr style="height: 50.4px;">
+<td rowspan="2" style="background-color: rgb(241, 243, 255); vertical-align: top; width: 11.9146%; height: 303.2px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/u1jpcnz2/vector-12.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<th style="width: 88.0515%; height: 50.4px;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Система ETIAS</span></p>
+</th>
+</tr>
+<tr style="height: 252.8px;">
+<td style="width: 88.0515%; height: 252.8px;">
+<p>З<span style="font-size: 16pt; font-family: 'Open Sans';"> запуском у 2026 році системи ETIAS (Європейської системи інформації про подорожі та дозволів на подорож) іноземці, які перебувають на території держав-членів у рамках безвізового режиму, також будуть <strong>зобов’язані мати дозвіл ETIAS протягом усього періоду короткострокового перебування</strong>.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Цей дозвіл буде функціонувати за принципами, подібними до систем авторизації подорожей, запроваджених Австралією (ETA), Канадою (eTA) та Сполученими Штатами (ESTA).</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Інформація про систему ETIAS — <a rel="noopener" href="https://travel-europe.europa.eu/pl/etias" target="_blank" title="Informacja_ETIAS"><span style="text-decoration: underline;"><strong>відкрийте посилання.</strong></span></a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12.023%; background-color: rgb(241, 243, 255); vertical-align: top;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/wbkpw2hs/vector-10.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<td style="width: 87.9509%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Перевірте, чи маєте ви громадянство, яке звільняє вас від необхідності мати візу – <a rel="noopener" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230" target="_blank" title="Dostęp do Rozporządzenia 2018_ 1806_EUR LEX" data-anchor="?uri=CELEX%3A02018R1806-20251230"><strong><span style="text-decoration: underline;">відкрийте посилання.</span></strong></a></span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Ознайомтеся з інформацією про правила в&#x27;їзду та короткострокового перебування в Польщі — <a rel="noopener" href="/kategorie-informacji/wizy-ruch-bezwizowy/zasady-wjazdu-i-krotkoterminowego-pobytu/" target="_blank" title="Zasady wjazdu"><strong><span style="text-decoration: underline;">відкрийте посилання.</span></strong></a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>    </div>
+</div>
+</div>
+				</div>
+				<div id="da06b907-0ed4-43b9-a723-285a7d8044f3">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;">Положення та основні принципи</span></h2>
+<hr>
+<h3><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt;"><br>Правове підґрунтя для безвізу;</span></strong></span></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>Регламент (ЄС) 2018/1806 Європейського Парламенту та Ради</strong> від 14 листопада 2018 року, в якому перераховані треті країни, громадяни яких повинні мати візи при перетині зовнішніх кордонів, а також країни, громадяни яких звільняються від цієї вимоги:</span></p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">w</span></strong><span style="font-family: 'Open Sans';"><strong>Стаття 4</strong>уточнює, що громадяни третіх країн<strong>перелічених у Додатку II до цього Регламенту, не потребують отримання візи</strong>при перетині зовнішніх кордонів і має зазначати</span></span><span style="font-size: 16pt; font-family: 'Open Sans';">&nbsp;<strong>загальні категорії осіб, які звільняються від необхідності отримання візи;</strong></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Для деяких національностей вводиться додаткове обмеження в контексті необхідності наявності у громадян країни біометричних паспортів з відповідними відмітками (або їх відсутності).</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>у статті 6</strong> <strong>визначає додаткові категорії осіб</strong>які можуть бути звільнені від візового режиму або які можуть бути звільнені від нього відповідно до односторонніх положень або двосторонніх угод;</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt;">Польща скористалася можливістю звільнити від візових вимог учнів, яким зазвичай потрібна віза і які постійно проживають в одній з безвізових країн або в Швейцарії чи Ліхтенштейні, коли вони беруть участь у шкільних екскурсіях під наглядом шкільного вчителя (ст. 24(2) Закону про іноземців).</span></span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Деякі двосторонні угоди, укладені ЄС, передбачають безвізовий режим, за винятком власників дипломатичних, службових (службових) та спеціальних паспортів.</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">У випадку Польщі, як держави-члена Європейського Союзу, одностороннє встановлення додаткового звільнення від візового режиму для громадян третіх країн або винятку з візового режиму може відбуватися за допомогою розпорядження міністра закордонних справ, виданого за погодженням з міністром внутрішніх справ відповідно до статті 58а Закону про іноземців від 12 грудня 2013 року. У разі видання такого розпорядження, що встановлює додаткове звільнення від візового режиму, в ньому також має бути зазначено період дозволеного безвізового перебування та його необхідні умови;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12%; background-color: rgb(241, 243, 255);"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/fwnltyhq/vector-11.svg?rmode=max&amp;width=55&amp;height=48" alt="" width="55" height="48"></td>
+<td style="width: 88%;">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Для отримання додаткової інформації про візову політику ЄС та винятки див. веб-сайт Європейської Комісії -<a rel="noopener" href="https://home-affairs.ec.europa.eu/policies/schengen/visa-policy_en" target="_blank" title="Візи ЄС">відкрите посилання.</a></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: 'Open Sans'; font-size: 14pt;">&nbsp;</span></p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-0" aria-controls="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-0">
+                             <span class="h2 px-0 accordion-title">&#x412;&#x438;&#x43D;&#x44F;&#x442;&#x43A;&#x438; &#x437; &#x432;&#x456;&#x437;&#x43E;&#x432;&#x43E;&#x433;&#x43E; &#x43E;&#x431;&#x43E;&#x432;&#x27;&#x44F;&#x437;&#x43A;&#x443;</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-0" data-bs-parent="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709">
+                        <div class="accordion-body">
+                            <h3><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">Категорії осіб, звільнених від вимоги наявності візи (ст. 4 ч. 2)</span></strong></span></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Від візових вимог звільнені такі категорії осіб, перелічених у Додатку I до Регламенту (ЄС) 2018/1806 як особи, яким потрібна віза:</span></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">особи, які перетинають кордон у рамках місцевого прикордонного руху;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">учні, які постійно проживають на території держав-членів, які беруть участь у шкільній екскурсії в групі учнів під керівництвом учителя цієї школи;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">особи, що мають статус біженця, та особи без громадянства, а також інші особи, які не мають громадянства жодної держави, що проживають постійно в державі-члені та є власниками документа для виїзду за кордон, виданого цією державою-членом.</span></li>
+</ul>
+<h3 style="font-size: 16pt; font-family: 'Open Sans';"><strong><span style="font-family: 'Open Sans'; font-size: 16pt;">Додаткові категорії – відповідно до національного законодавства</span></strong></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Додатково держави-члени можуть звільнити (за власним рішенням або двосторонніми угодами) від вимоги наявності візи</span></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">власників дипломатичних паспортів, службових/офіційних паспортів або спеціальних паспортів;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">членів цивільних екіпажів повітряних і морських суден під час виконання службових обов'язків;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">членів цивільних екіпажів морських суден під час перебування на березі, які мають мореходну книжку;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">членів гуманітарних або рятувальних місій у разі катастрофи або нещасного випадку;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">цивільних екіпажів суден, що плавають по міжнародних внутрішніх водних шляхах;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">власників документів для виїзду за кордон, виданих посадовим особам міжнародними міжурядовими організаціями, членом яких є принаймні одна держава-член, або іншими організаціями, визнаними суб'єктами міжнародного права;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">учні, які мають одне з громадянств, перелічених у Додатку I до Регламенту, і постійно проживають у Швейцарії або Ліхтенштейні, які беруть участь у шкільній екскурсії в групі учнів під керівництвом учителя цієї школи;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">особи, які мають статус біженця та особи без громадянства, що постійно проживають у країні, яка видала їм документ для виїзду за кордон, що належить до країн, перелічених у Додатку II;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">членів збройних сил, які подорожують у справах НАТО або Партнерства заради миру;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">особи, які мають статус біженця, особи без громадянства або не мають іншого документа для виїзду, виданого Ірландією та визнаного відповідною державою-членом.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-1" aria-controls="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-1">
+                             <span class="h2 px-0 accordion-title">&#x412;&#x438;&#x43D;&#x44F;&#x442;&#x43A;&#x438; &#x437;&#x456; &#x437;&#x432;&#x456;&#x43B;&#x44C;&#x43D;&#x435;&#x43D;&#x43D;&#x44F; &#x432;&#x456;&#x434; &#x432;&#x456;&#x437;&#x43E;&#x432;&#x43E;&#x433;&#x43E; &#x43E;&#x431;&#x43E;&#x432;&#x27;&#x44F;&#x437;&#x43A;&#x443;</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-1" data-bs-parent="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 16pt; font-family: 'Open Sans';">Держави-члени можуть передбачати винятки з візового режиму<strong> </strong>як визначено в статті 4 Регламенту (ЄС) 2018/1806<strong>по відношенню до осіб, які працюють за наймом</strong> під час його перебування,<strong>але</strong></span><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">Польща;</span></strong><span style="font-family: 'Open Sans';"><strong>не передбачає звільнення з цього приводу.</strong> Власники дозволів на роботу, дозволів на сезонну роботу, особи, зазначені в деклараціях про доручення виконання роботи або інших документах, що дозволяють доступ до ринку праці, не потребують додаткових віз.</span></span></p>
+<h3><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"><strong>Крім того, держава-член може звільнити від візового режиму наступні категорії осіб:</strong></span></span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">Власники дипломатичних паспортів, службових (службових)/офіційних (офіційних) паспортів або спеціальних паспортів;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">членів екіпажів цивільних повітряних і морських суден під час виконання ними службових обов'язків;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">цивільні члени екіпажів морських суден, які перебувають у береговій відпустці та мають посвідчення моряка;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">учасники місій з надання допомоги чи порятунку в разі стихійного лиха або нещасного випадку;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">цивільні екіпажі суден, що здійснюють плавання у міжнародних внутрішніх водах;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">власники проїзних документів, виданих посадовим особам міжнародними міжурядовими організаціями, членами яких є одна або більше держав-членів або інших організацій, визнаних суб'єктами міжнародного права.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+				<div id="3b2dde1c-d0e6-407c-83a0-ae8b3346358b">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Дозволений термін перебування</span></h2>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;"></span><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"><span style="font-size: 16pt;">Для іноземців, які подорожують у рамках безвізового режиму на загальних умовах, дозволений термін перебування становить <strong>90 днів протягом кожного 180-денного періоду перебування. </strong></span></span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"><span style="font-size: 16pt;">Однак у<strong> </strong></span></span></span><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"><span style="font-size: 16pt;">разі національних відступів щодо безвізового перебування окремих категорій громадян третіх країн <strong>цей</strong> термін <strong>може бути коротшим. </strong></span></span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>Продовження перебування </strong>в рамках безвізового режиму можливе лише у разі двосторонніх угод, підписаних Польщею та згодом нотифікованих Європейській комісії – <span style="text-decoration: underline;"><strong>відкрити посилання.<br><br></strong></span></span></span></p>
+<h3><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"></span></span><span style="font-family: 'Open Sans'; font-size: 14pt;"></span><strong><span style="font-family: 'Open Sans'; font-size: 18pt; color: rgb(133, 49, 77);"><span style="color: rgb(198, 54, 99);">Спосіб обчислення періоду перебування (90 днів у кожні 180 днів)</span><br></span></strong></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 18pt; color: rgb(133, 49, 77);"></span><span style="font-family: 'Open Sans'; font-size: 14pt;"><span style="font-size: 16pt;">Законність перебування в рамках безвізового режиму визначається, беручи до уваги кожний 180-денний період (180 днів поспіль, наприклад, з 1 березня до 27 серпня, з 20 червня до 16 грудня, з 15 серпня до 10 лютого) та перевіряючи, чи перебував іноземець у певний день на території однієї з держав-членів (включаючи день в’їзду та виїзду).</span><br><br></span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%; border-style: dashed; border-width: 1px; background-color: rgb(241, 243, 255);">
+<p style="text-align: left;"><span style="color: rgb(198, 54, 99); font-size: 14pt;"><strong><span style="font-family: 'Open Sans';"> <span style="font-size: 16pt;">Приклад:</span></span></strong></span></p>
+<ul style="text-align: left;">
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">15 червня іноземець хоче перевірити, коли він повинен покинути територію Шенгенської зони. Іноземець перебував на території різних держав Шенгенської зони з 12 березня до 27 квітня; на території Ісландії з 5 до 13 травня; на території Ірландії з 13 до 20 травня; на території Хорватії з 20 травня до 5 червня та на території Німеччини з 5 червня.<br><br>Термін перебування = 47 (12.03 до 27.04) + 9 (5 до 13.05) + 27 (від 20.05) = 83 дні, оскільки Ірландія не враховується при обчисленні періоду перебування (не належить до Шенгенської зони), натомість враховується Ісландія (держава поза межами ЄС, що належить до Шенгенської зони). Отже, іноземець повинен покинути територію держав-членів до 22 червня.</span></li>
+</ul>
+<ul>
+<li style="font-size: 16pt; text-align: left; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">Цей самий іноземець виїхав 19 червня і планує 14-денну відпустку на Мальті. Він розмірковує, коли зможе розпочати цю відпустку. Оскільки він перебував 87 днів на території держав-членів у період, що почався 12 березня, то найраніше він зможе приїхати на 14-денну відпустку 5 вересня: 180-денний період закінчується 7 вересня, а іноземцю залишилося в ньому 3 дні дозволеного перебування.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table border="1" style="border-collapse: collapse; width: 89.9948%; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12%; vertical-align: middle; text-align: center;"><strong><span style="font-size: 16pt; font-family: 'Open Sans';"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/wbkpw2hs/vector-10.svg?rmode=max&amp;width=50&amp;height=46" alt="" width="50" height="46"><br></span></strong></td>
+<td style="width: 88%; text-align: left;"><strong><span style="font-size: 16pt; font-family: 'Open Sans';">Для розрахунків скористайтеся калькулятором Шенгену: </span><a rel="noopener" href="https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en" target="_blank" title="Schengen calculator" data-anchor="?lang=en"><span style="font-size: 16pt; font-family: 'Open Sans';">відкрийте посилання.</span></a></strong></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h3><span style="color: rgb(133, 49, 77); font-size: 18pt;"><strong><span style="font-family: 'Open Sans';"><span style="color: rgb(198, 54, 99);">Об&#x27;єднання періоду дозволеного перебування з довгостроковим перебуванням<br></span></span></strong></span></h3>
+<hr>
+<p><span style="color: rgb(133, 49, 77); font-size: 18pt;"><span style="font-family: 'Open Sans';"></span></span><span style="font-family: 'Open Sans'; font-size: 16pt;">Період перебування на підставі<strong> довгострокової національної візи або дозволів на проживання,</strong> виданих державою-членом, <strong>не зараховується до періоду дозволеного перебування в рамках безвізового режиму.</strong><br><br>Громадяни країн, перелічених у додатку II до Регламенту (ЄС) 2018/1806 можуть, <strong>як правило,</strong> <strong>перебувати 90 днів протягом наступних 180 днів після закінчення </strong>терміну дії довгострокової національної візи або дозволу на проживання або після закінчення терміну дозволеного перебування, зазначеного в довгостроковій національній візі. </span></p>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Інформація SG — <a rel="noopener" href="https://www.strazgraniczna.pl/pl/cudzoziemcy/najczesciej-zadawane-py/6044,26-Czy-po-zakonczeniu-pobytu-na-podstawie-polskiej-wizy-krajowej-typ-D-lub-karty.html" target="_blank" title="Przekształcenie pobytu"><strong>відкрити посилання.</strong></a></span></p>    </div>
+</div>
+</div>
+				</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		var fragment = window.location.hash.substr(1); // Pobieranie fragmentu URL po #
+		if (fragment) {
+			$("ul li a[href='#" + fragment + "']").addClass("activeAnchor");
+		}
+		$("ul li a").click(function () {
+			$("ul li a").removeClass("activeAnchor");
+			$(this).addClass("activeAnchor");
+		});
+	});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.querySelector('.alert')) {
+            var paragraph = document.querySelector('.sub-nav p');
+            if (paragraph) {
+                paragraph.style.display = 'none';
+            }
+        }
+    });
+</script>
+<style>
+	.icons span {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+		.icons span:hover {
+			opacity: 0.8;
+		}
+
+	.alert p:last-child{
+		margin-bottom: unset;
+	}
+</style>
+
+
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Цей веб-сайт використовує файли cookie для полегшення користування нашим сервісом та для статистичних цілей, зокрема:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">адаптації вмісту сервісу до Ваших мовних уподобань;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">підтримки сеансу доступу до контенту та функціональних можливостей порталу, доступних виключно для зареєстрованих користувачів;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">уникнення повторного відображення повідомлень адміністратора сервісу на вашому пристрої;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">збору статистичних даних щодо унікальних переглядів порталу (дані щодо типу та версії використовуваного браузера).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Якщо в налаштуваннях браузера не ввімкнено блокування файлів такого типу, ви погоджуєтеся на їх використання та збереження в пам'яті вашого пристрою. Пам'ятайте, що ви завжди можете самостійно керувати цими налаштуваннями у своєму браузері. Більше інформації ви можете знайти в нашій <a rel="noopener" href="/uk/cookie/" target="_blank" title="Polityka cookies">Політиці щодо файлів cookie.</a></span></p>    <button id="agreeButton" class="btn">&#x41F;&#x440;&#x438;&#x439;&#x43D;&#x44F;&#x442;&#x438; &#x444;&#x430;&#x439;&#x43B;&#x438; cookie</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Усі матеріали, опубліковані на сайті, надаються за ліцензією Creative Commons: вказання авторства — некомерційне використання — без похідних творів 3.0 Польща (CC BY-NC-ND 3.0 PL), якщо інше не зазначено. Інформація, розміщена на порталі MOS, не є джерелом права. Автори доклали належних зусиль, щоб вона відповідала чинним правовим нормам. У разі виявлення невідповідності просимо повідомити про це відповідний орган.</p>
+<p style="text-align: justify;">Проєкт № 1/8-2018/BK-FAMI під назвою «Модернізація системи Pobyt v.2 у частині створення Модуля обслуговування справ» співфінансується за рахунок коштів Національного фонду притулку, міграції та інтеграції – «Безпечна гавань».</p>
+</div>
+</div>					<p style="text-align: justify; font-style: italic; margin-top: 0.5em;">&#x423;&#x432;&#x430;&#x433;&#x430;! &#x41F;&#x435;&#x440;&#x435;&#x43A;&#x43B;&#x430;&#x434; &#x43C;&#x456;&#x433; &#x431;&#x443;&#x442;&#x438; &#x432;&#x438;&#x43A;&#x43E;&#x43D;&#x430;&#x43D;&#x438;&#x439; &#x437;&#x430; &#x434;&#x43E;&#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x43E;&#x44E; &#x430;&#x432;&#x442;&#x43E;&#x43C;&#x430;&#x442;&#x438;&#x437;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x445; &#x456;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442;&#x456;&#x432;.</p>
+			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>&#x41F;&#x43E;&#x437;&#x43D;&#x430;&#x439;&#x43E;&#x43C;&#x442;&#x435;&#x441;&#x44F; &#x437; &#x43D;&#x430;&#x43C;&#x438; &#x431;&#x43B;&#x438;&#x436;&#x447;&#x435;</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>&#x414;&#x43E;&#x43F;&#x43E;&#x43C;&#x43E;&#x436;&#x456;&#x442;&#x44C;!</h5>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="#" target="_blank">
+				&#x41A;&#x430;&#x440;&#x442;&#x430; &#x441;&#x430;&#x439;&#x442;&#x443;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				&#x422;&#x435;&#x445;&#x43D;&#x456;&#x447;&#x43D;&#x430; &#x43F;&#x456;&#x434;&#x442;&#x440;&#x438;&#x43C;&#x43A;&#x430;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				&#x420;&#x435;&#x434;&#x430;&#x43A;&#x446;&#x456;&#x44F;
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>&#x42E;&#x440;&#x438;&#x434;&#x438;&#x447;&#x43D;&#x456; &#x43F;&#x438;&#x442;&#x430;&#x43D;&#x43D;&#x44F;</h5>
+		<div class="col">
+			<a href="/uk/polozhennya/" target="_blank">
+				&#x41F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x430;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				&#x414;&#x435;&#x43A;&#x43B;&#x430;&#x440;&#x430;&#x446;&#x456;&#x44F; &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x43E;&#x441;&#x442;&#x456;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk/polityka-prywatnosci/" target="_blank">
+				&#x41F;&#x43E;&#x43B;&#x456;&#x442;&#x438;&#x43A;&#x430; &#x43A;&#x43E;&#x43D;&#x444;&#x456;&#x434;&#x435;&#x43D;&#x446;&#x456;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x456;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk/cookie/" target="_blank">
+				&#x41F;&#x43E;&#x43B;&#x456;&#x442;&#x438;&#x43A;&#x430; &#x444;&#x430;&#x439;&#x43B;&#x456;&#x432; cookie
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+<!-- MY COLOR #c63663  -->
+<style type="text/css">
+	body {
+		border-color: #c63663 !important;
+	}
+
+	.alert,
+	.card .card-top,
+	nav {
+		border-color: #c63663 !important;
+	}
+
+	.sub-nav {
+		background: #c63663 !important;
+	}
+	.menu-section ul li::before {
+	color: #c63663 !important;}
+</style>
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>

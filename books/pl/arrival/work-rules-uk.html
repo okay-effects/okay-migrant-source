@@ -1,0 +1,999 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="uk" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    &#x417;&#x430;&#x433;&#x430;&#x43B;&#x44C;&#x43D;&#x456; &#x43F;&#x440;&#x438;&#x43D;&#x446;&#x438;&#x43F;&#x438; | &#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;
+</title>
+<meta name="Description" content=" ?? &#x417;&#x430;&#x433;&#x430;&#x43B;&#x44C;&#x43D;&#x456; &#x43F;&#x440;&#x438;&#x43D;&#x446;&#x438;&#x43F;&#x438;" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/uk/uk/kategorie-informacji/vikonuyuchi-robotu/zasady-ogolne/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/uk/uk/kategorie-informacji/vikonuyuchi-robotu/zasady-ogolne/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/uk/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/uk/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-content ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/uk/">
+						<img src="/clean-assets/images/logo_white.svg" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/uk/prawo/">&#x41F;&#x440;&#x430;&#x432;&#x43E;</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/uk/kontakt/">&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x438;</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/uk/informacje-o-portalu/">&#x406;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x456;&#x44F; &#x43F;&#x440;&#x43E; &#x43F;&#x43E;&#x440;&#x442;&#x430;&#x43B;</a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/uk/prawo/">&#x41F;&#x440;&#x430;&#x432;&#x43E;</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/uk/kontakt/">&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;&#x438;</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/uk/informacje-o-portalu/">&#x406;&#x43D;&#x444;&#x43E;&#x440;&#x43C;&#x430;&#x446;&#x456;&#x44F; &#x43F;&#x440;&#x43E; &#x43F;&#x43E;&#x440;&#x442;&#x430;&#x43B;</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/uk/baza-pytan-i-odpowiedzi/" class="dropdown-item">&#x411;&#x430;&#x437;&#x430; &#x434;&#x430;&#x43D;&#x438;&#x445; &#x437;&#x430;&#x43F;&#x438;&#x442;&#x430;&#x43D;&#x44C; &#x442;&#x430; &#x432;&#x456;&#x434;&#x43F;&#x43E;&#x432;&#x456;&#x434;&#x435;&#x439;</a></li>
+			<li><a href="/uk/z-chogo-pochati/" class="dropdown-item">&#x417; &#x447;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x447;&#x430;&#x442;&#x438;?</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/perepustka-perepustka/" class="dropdown-item">&#x41F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;-&#x43F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">&#x412;&#x438;&#x432;&#x447;&#x435;&#x43D;&#x43D;&#x44F; &#x434;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x456;&#x432;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x434;&#x43E;&#x437;&#x432;&#x456;&#x43B;-&#x43D;&#x430;-&#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;/" class="dropdown-item">&#x414;&#x43E;&#x437;&#x432;&#x456;&#x43B; &#x43D;&#x430; &#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x43F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430;-&#x43D;&#x430;-&#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;-&#x434;&#x43B;&#x44F;-&#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E;-&#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430;-&#x454;&#x441;/" class="dropdown-item">&#x41F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430; &#x43D;&#x430; &#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F; &#x434;&#x43B;&#x44F; &#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E; &#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430; &#x404;&#x421;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/rozwiazania-ob-ukrainy/fukor/" class="dropdown-item">&#x426;&#x443;&#x43A;&#x43E;&#x440;</a></li>
+			<li><a href="/uk/kategorie-informacji/dokumenty/op3/karta-perebuvannya/" class="dropdown-item">&#x41A;&#x430;&#x440;&#x442;&#x430; &#x43F;&#x435;&#x440;&#x435;&#x431;&#x443;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/polozhennya/" class="dropdown-item">&#x41F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x43D;&#x44F;</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	UK
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/kategorie-informacji/wykonywanie-pracy/zasady-ogolne/">
+				PL
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/doing-the-job/principles-general/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x642;&#x64A;&#x627;&#x645;-&#x628;&#x627;&#x644;&#x645;&#x647;&#x645;&#x629;/zasady-ogolne/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/faire-le-travail/principes-generaux/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thuc-hien-cong-viec/cac-nguyen-tac-chung/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vypolnenie-raboty/zasady-ogolne/">
+				RU
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fuk%2Fkategorie-informacji%2Fvikonuyuchi-robotu%2Fzasady-ogolne%2F" type="button">A&#x432;&#x442;&#x43E;&#x440;&#x438;&#x437;&#x443;&#x432;&#x430;&#x442;&#x438;&#x441;&#x44F;</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/uk/baza-pytan-i-odpowiedzi/" class="dropdown-item">&#x411;&#x430;&#x437;&#x430; &#x434;&#x430;&#x43D;&#x438;&#x445; &#x437;&#x430;&#x43F;&#x438;&#x442;&#x430;&#x43D;&#x44C; &#x442;&#x430; &#x432;&#x456;&#x434;&#x43F;&#x43E;&#x432;&#x456;&#x434;&#x435;&#x439;</a></li>
+			<li><a href="/uk/z-chogo-pochati/" class="dropdown-item">&#x417; &#x447;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x447;&#x430;&#x442;&#x438;?</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/perepustka-perepustka/" class="dropdown-item">&#x41F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;-&#x43F;&#x435;&#x440;&#x435;&#x43F;&#x443;&#x441;&#x442;&#x43A;&#x430;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">&#x412;&#x438;&#x432;&#x447;&#x435;&#x43D;&#x43D;&#x44F; &#x434;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x456;&#x432;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x434;&#x43E;&#x437;&#x432;&#x456;&#x43B;-&#x43D;&#x430;-&#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;/" class="dropdown-item">&#x414;&#x43E;&#x437;&#x432;&#x456;&#x43B; &#x43D;&#x430; &#x43F;&#x43E;&#x441;&#x442;&#x456;&#x439;&#x43D;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/&#x43F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430;-&#x43D;&#x430;-&#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435;-&#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F;-&#x434;&#x43B;&#x44F;-&#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E;-&#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430;-&#x454;&#x441;/" class="dropdown-item">&#x41F;&#x43E;&#x441;&#x432;&#x456;&#x434;&#x43A;&#x430; &#x43D;&#x430; &#x442;&#x438;&#x43C;&#x447;&#x430;&#x441;&#x43E;&#x432;&#x435; &#x43F;&#x440;&#x43E;&#x436;&#x438;&#x432;&#x430;&#x43D;&#x43D;&#x44F; &#x434;&#x43B;&#x44F; &#x434;&#x43E;&#x432;&#x433;&#x43E;&#x441;&#x442;&#x440;&#x43E;&#x43A;&#x43E;&#x432;&#x43E;&#x433;&#x43E; &#x440;&#x435;&#x437;&#x438;&#x434;&#x435;&#x43D;&#x442;&#x430; &#x404;&#x421;</a></li>
+			<li><a href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/rozwiazania-ob-ukrainy/fukor/" class="dropdown-item">&#x426;&#x443;&#x43A;&#x43E;&#x440;</a></li>
+			<li><a href="/uk/kategorie-informacji/dokumenty/op3/karta-perebuvannya/" class="dropdown-item">&#x41A;&#x430;&#x440;&#x442;&#x430; &#x43F;&#x435;&#x440;&#x435;&#x431;&#x443;&#x432;&#x430;&#x43D;&#x43D;&#x44F;</a></li>
+			<li><a href="/uk/polozhennya/" class="dropdown-item">&#x41F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x43D;&#x44F;</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	UK
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/kategorie-informacji/wykonywanie-pracy/zasady-ogolne/">
+				PL
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/doing-the-job/principles-general/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x642;&#x64A;&#x627;&#x645;-&#x628;&#x627;&#x644;&#x645;&#x647;&#x645;&#x629;/zasady-ogolne/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/faire-le-travail/principes-generaux/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thuc-hien-cong-viec/cac-nguyen-tac-chung/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vypolnenie-raboty/zasady-ogolne/">
+				RU
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fuk%2Fkategorie-informacji%2Fvikonuyuchi-robotu%2Fzasady-ogolne%2F" type="button">A&#x432;&#x442;&#x43E;&#x440;&#x438;&#x437;&#x443;&#x432;&#x430;&#x442;&#x438;&#x441;&#x44F;</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							&#x417;&#x430;&#x433;&#x430;&#x43B;&#x44C;&#x43D;&#x456; &#x43F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x430; &#x432;&#x438;&#x43A;&#x43E;&#x43D;&#x430;&#x43D;&#x43D;&#x44F; &#x440;&#x43E;&#x431;&#x43E;&#x442;&#x438; &#x456;&#x43D;&#x43E;&#x437;&#x435;&#x43C;&#x446;&#x44F;&#x43C;&#x438;
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/uk/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="&#x41F;&#x43E;&#x448;&#x443;&#x43A;" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+	<div class="sub-nav  pt-3 pt-md-0">
+		<div class="container">
+			<p class="m-0 h6 py-2 bold">
+			</p>
+		</div>
+	</div>
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/uk/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+						<li class="no-ellipsis">...</li>
+						<li aria-current="&#x412;&#x438;&#x43A;&#x43E;&#x43D;&#x443;&#x44E;&#x447;&#x438; &#x440;&#x43E;&#x431;&#x43E;&#x442;&#x443;">
+							<a href="/uk/kategorie-informacji/vikonuyuchi-robotu/" class="ellipsis">&#x412;&#x438;&#x43A;&#x43E;&#x43D;&#x443;&#x44E;&#x447;&#x438; &#x440;&#x43E;&#x431;&#x43E;&#x442;&#x443;</a>
+						</li>
+
+					<li class="ellipsis active" aria-current="&#x417;&#x430;&#x433;&#x430;&#x43B;&#x44C;&#x43D;&#x456; &#x43F;&#x440;&#x438;&#x43D;&#x446;&#x438;&#x43F;&#x438;">&#x417;&#x430;&#x433;&#x430;&#x43B;&#x44C;&#x43D;&#x456; &#x43F;&#x440;&#x438;&#x43D;&#x446;&#x438;&#x43F;&#x438;</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+
+<div class="container pb-5 min-h-article">
+
+		<div class="alert">
+			<p>Якщо ви хочете дізнатися більше, ознайомтеся з інформацією на <a rel="noopener" href="https://psz.praca.gov.pl/" target="_blank" title="Wortal Publicznych Służb Zatrudnienia">порталі Державних служб зайнятості</a> у розділі «Працевлаштування іноземців» та матеріалами <a rel="noopener" href="https://www.biznes.gov.pl/pl" target="_blank" title="Portal biznes.gov.pl">порталу biznes.gov.pl</a>. У разі виникнення сумнівів ви можете отримати допомогу, зателефонувавши на «Зелену лінію»: 19524 (більше інформації: <a rel="noopener" href="https://zielonalinia.gov.pl/" target="_blank" title="Portal Zielona Linia">zielonalinia.gov.pl</a>) або звернувшись до Міністерства сім’ї, праці та соціальної політики.</p>
+           </div>
+
+
+	<div id="content-to-pdf" class="content-section row m-0">
+		
+<div class="section-item menu-section col-12 col-lg-2">
+	<h4 class="content-menu">&#x41C;&#x435;&#x43D;&#x44E;</h4>
+	<ul class="p-3">
+			<li class="list-group-item px-2 ">
+				<a href="#65a81dcd-48c9-4022-99f4-1e2cdd70755e">&#x412;&#x441;&#x442;&#x443;&#x43F;</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#b83fa94f-2545-4192-abd2-869f60b1e392">&#x41F;&#x43E;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x43D;&#x44F;</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#6851fdb5-4649-4de1-815d-3baae0e53a1b">&#x414;&#x435;&#x442;&#x430;&#x43B;&#x44C;&#x43D;&#x435; &#x43F;&#x43E;&#x44F;&#x441;&#x43D;&#x435;&#x43D;&#x43D;&#x44F;</a>
+			</li>
+	</ul>
+</div>
+
+
+		<div class="content col content-anchor">
+				<div id="65a81dcd-48c9-4022-99f4-1e2cdd70755e">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Вступ</span></h2>
+<hr>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3%; background-color: rgb(241, 243, 255); text-align: left;"> </td>
+<th style="width: 97%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Словник термінів – Свобода пересування працівників у Європейському Союзі</span></th>
+</tr>
+<tr>
+<td style="width: 49.5472%;">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"><a rel="noopener" href="https://www.europarl.europa.eu/factsheets/pl/sheet/147/swobodny-przeplyw-osob" target="_blank">Свободний рух працівників</a> є однією з чотирьох основних свобод, якими користуються громадяни ЄС, ЄЕЗ (Норвегії, Ісландії, Ліхтенштейну) та Швейцарії, а також члени їхніх сімей.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Вона охоплює право на:</span></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">шукати роботу в іншій країні ЄС;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">працевлаштування в іншій країні ЄС без необхідності отримання дозволу на роботу;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">проживання в іншій країні ЄС з метою роботи;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">залишатися в іншій країні ЄС навіть після закінчення трудових відносин, якщо виконуються умови, визначені законодавством ЄС;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">рівного ставлення з громадянами відповідної країни ЄС у сфері доступу до зайнятості, умов праці та соціальних і податкових пільг. Обмеження у доступі до ринку праці застосовуються стосовно державної служби.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Оскільки законодавство ЄС забезпечує громадянам ЄС, ЄЕЗ та Швейцарії, а також членам їхніх сімей вільний доступ до польського ринку праці, <strong>інші іноземці користуються таким доступом лише у чітко визначених випадках. </strong></span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>Поза цими випадками можливість іноземців працювати в Польщі обмежена</strong> — щоб влаштуватися на роботу<strong>,</strong> іноземці повинні виконати певні умови: </span></p>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">перебувати в Польщі на законних підставах;</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';">підстава їхнього легального перебування (наприклад, віза) повинна дозволяти їхнє працевлаштування відповідно до вимог законодавства;</span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">вони повинні мати право на виконання роботи в Польщі — це право може </span><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';">випливати або з документа, що дозволяє їм працювати в Польщі, який отримав для них роботодавець (наприклад, дозвіл на роботу) або який вони отримали самостійно (наприклад, дозвіл на тимчасове перебування та роботу), або з певної ситуації, яка дозволяє їм виконувати роботу в Польщі <a rel="noopener" href="/kategorie-informacji/wykonywanie-pracy/wykonywanie-pracy-bez-koniecznosci-posiadania-zezwolenia-na-prace/" target="_blank" title="Wykonywanie pracy bez zezwolenia na pracę">без цього документа.</a></span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">робота виконується у конкретного роботодавця, на умовах та на посаді, які були визначені у дозволі на роботу, заяві про доручення роботи або дозволі на тимчасове проживання (за винятком ситуації, коли ці умови були змінені на користь іноземця, наприклад, підвищення заробітної плати)</span></span></li>
+</ul>
+<p> </p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto; height: 493.6px;">
+<tbody>
+<tr style="height: 71.2px;">
+<td rowspan="2" style="width: 1%; height: 493.6px; background-color: rgb(52, 73, 94);"> </td>
+<th style="width: 99%; text-align: left; background-color: rgb(241, 243, 255); height: 71.2px;"><span style="font-size: 16pt; font-family: 'Open Sans'; color: rgb(236, 240, 241);"> <span style="font-size: 14pt;"><span style="color: rgb(0, 0, 0); font-size: 16pt;">Якщо ви хочете працевлаштувати іноземця з-поза меж ЄС/ЄЕЗ та Швейцарії</span></span></span></th>
+</tr>
+<tr style="height: 422.4px;">
+<td style="width: 98.8788%; height: 422.4px; background-color: rgb(241, 243, 255);">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ перевірте, на якій підставі він перебуває в Польщі — попросіть його пред’явити документ, що підтверджує його легальне перебування в Польщі. </span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ переконайтеся, що віза або дозвіл на проживання, які має іноземець, дозволяють йому працювати в Польщі — не кожна віза і не кожен дозвіл на тимчасове проживання це дозволяють. </span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ якщо для того, щоб мати можливість працювати, іноземцю потрібний дозвіл на роботу ⇒ перед укладенням договору подайте заявку на видачу йому такого дозволу, або, якщо він є громадянином Вірменії, Білорусі, Молдови та України, скористайтеся спрощеною процедурою внесення заяви про доручення іноземцю роботи до реєстру заяв. Іншим варіантом у цій ситуації є подання іноземцем заяви про видачу дозволу, який одночасно легалізує його перебування та роботу в Польщі (так званий єдиний дозвіл, як, зокрема, дозвіл на тимчасове перебування та роботу). </span></p>
+</td>
+</tr>
+</tbody>
+</table>    </div>
+</div>
+</div>
+				</div>
+				<div id="b83fa94f-2545-4192-abd2-869f60b1e392">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; font-size: 36pt; color: rgb(198, 54, 99);"><br>Нормативні акти</span></h2>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">Закон від 20 березня 2025 року про умови допустимості доручення роботи іноземцям на території Республіки Польща; </span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">розпорядження Міністра у справах сім’ї, праці та соціальної політики від 20 листопада 2025 року про особливі випадки, в яких іноземець, що має право на перебування на території Республіки Польща, може виконувати роботу без дозволу на роботу або заяви про доручення роботи іноземцю;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">розпорядження Міністра у справах сім’ї, праці та соціальної політики від 21 листопада 2025 року щодо держав, громадян яких можуть стосуватися заяви про доручення роботи іноземцю, та деяких положень щодо дозволу на сезонну роботу.</span></li>
+</ul>    </div>
+</div>
+</div>
+				</div>
+				<div id="6851fdb5-4649-4de1-815d-3baae0e53a1b">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Детальне пояснення</span></h2>
+<hr>
+<h3><strong><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99);"><span style="font-size: 18pt;">I. Вільний доступ до польського ринку праці</span></span></strong></h3>
+<hr>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Вільний доступ до польського ринку праці застосовується, коли ви можете виконувати роботу без необхідності виконання додаткових адміністративних формальностей. У цій ситуації не потрібно отримувати додатковий документ, що дозволяє роботу, наприклад дозвіл на роботу або заяву про доручення роботи іноземцю. </span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Маючи такий доступ, ви можете працювати у будь-якого обраного вами роботодавця та на узгоджених з ним умовах. Однак це не означає повної свободи зайнятості - Трудовий кодекс захищає вас від експлуатації з боку роботодавця. </span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Становище у сфері зайнятості аналогічне становищу польських громадян, за винятком здійснення певних професій та зайняття певних посад, що вимагають польського громадянства.</span><span style="font-size: 16pt; font-family: 'Open Sans'; color: rgb(198, 54, 99);"></span><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(133, 49, 77);"></span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%; vertical-align: middle;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Цією свободою користуються насамперед громадяни ЄС, ЄЕП (NO, IS, LI), Швейцарії та Великобританії — бенефіціари Брекзиту, а також певні члени їхніх сімей. </span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Повний доступ до ринку праці мають також ті громадяни третіх країн та особи без громадянства, які мають дозвіл на проживання, наданий на невизначений строк (зокрема, постійне проживання, статус біженця), або чиє особливе сімейне або правове становище дозволяє їм перебувати в Польщі та виконувати роботу без дозволу (наприклад, подружжя польських громадян, яким надано дозвіл на тимчасове проживання у зв'язку з одруженням).</span></p>
+</td>
+</tr>
+</tbody>
+</table>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-collapse-0" aria-controls="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-collapse-0">
+                             <span class="h2 px-0 accordion-title">&#x412;&#x456;&#x43B;&#x44C;&#x43D;&#x438;&#x439; &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F; &#x434;&#x43E; &#x43F;&#x43E;&#x43B;&#x44C;&#x441;&#x44C;&#x43A;&#x43E;&#x433;&#x43E; &#x440;&#x438;&#x43D;&#x43A;&#x443; &#x43F;&#x440;&#x430;&#x446;&#x456; - &#x43A;&#x43E;&#x43D;&#x43A;&#x440;&#x435;&#x442;&#x43D;&#x456; &#x432;&#x438;&#x43F;&#x430;&#x434;&#x43A;&#x438;</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-heading-0" data-bs-parent="#accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6">
+                        <div class="accordion-body">
+                            <div id="art(3)ust(1)pkt(6)" class="a_pkt unit-menu">
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">іноземець отримає вигоду від<strong>тимчасовий захист</strong>в Польщі;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">іноземець має<strong>статус біженця</strong>виданий в Польщі, має дійсний<strong> сертифікат, виданий Головою УДЦР</strong> у зв'язку з процедурою надання міжнародного захисту (стаття 35(1))<span style="font-size: 14pt;">*</span>) <strong>або користується додатковим захистом;</strong><hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">іноземець має<strong>дозвіл на проживання з гуманітарних причин</strong> або має згоду<strong>для терпимого перебування;</strong><hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">іноземець має<strong>дозвіл на постійне проживання;</strong></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">іноземець має<strong>дозвіл на проживання для довгострокового резидента ЄС;</strong><hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">іноземець має<strong>дозвіл на тимчасове проживання:</strong>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';">для цілей навчання (<strong>Стаття 144**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">з метою проведення наукових досліджень (<strong>Стаття 151(1)**</strong>) l<strong>ub національну візу для проведення наукових досліджень або розробок</strong>або посвідка на тимчасове проживання у зв'язку з іншими обставинами (надається після завершення наукових досліджень або розробок/досліджень).<strong>Стаття 186(1), пункт 7**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">для довгострокової мобільності дослідника (<strong>Стаття 151b(1)**</strong>) або для довгострокової мобільності члена сім'ї дослідника (<strong>Стаття 161b(1)**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">для члена сім'ї громадянина Республіки Польща, наданий на підставі перебування в законно визнаному шлюбі з громадянином Республіки Польща (<strong>Стаття 158(1), пункт 1**</strong>) або надається повторно у разі розлучення, роздільного проживання або вдівства (<strong>158(2), пункт 1 або 2**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">для возз'єднання сім'ї (<strong>Стаття 159(1)**</strong>) або надається повторно у зв'язку з розлученням, окремим проживанням, овдовінням або смертю члена сім'ї (<strong>Стаття 161(2)**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">для постраждалих від торгівлі людьми (<strong>Стаття 176**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">через інші обставини /для власника дозволу на проживання довгострокового резидента ЄС в іншій країні ЄС або для члена сім'ї такого іноземця/ (<strong>Стаття 186(1), пункт 3 або 4**)</strong>;</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">у зв'язку з іншими обставинами, зазначеними<strong>у статті 186(1)(8) - (9)**;&nbsp;</strong></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">надані у зв'язку з<strong>з одруженням з іноземцем,</strong>який:
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';">має один з вищезгаданих дозволів на тимчасове проживання;</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">хто має безстроковий дозвіл (дозвіл на постійне проживання або дозвіл на довгострокове перебування);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">є бенефіціаром міжнародного захисту (статус біженця, додатковий захист), національного захисту (гуманітарний дозвіл на проживання, дозвіл на толерантне перебування) або інших форм захисту (тимчасовий захист);&nbsp;<hr></li>
+</ul>
+</li>
+</ul>
+</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><strong>іноземець є нащадком польського громадянина або особи, зазначеної в ст. 3 п. 1 пп. 6)-12), п. 14) або п. 15)</strong> Закону про умови прийнятності***, які мають дозвіл на тимчасове перебування на території Республіки Польща, віком до 21 року або перебувають на його/її утриманні;<hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">іноземець перебуває в Польщі<strong> відповідно до розділу 108(1)(2), розділу 206(1)(2) або розділу 222a(1)(2) Закону про іноземців;</strong>(тобто в рамках перебування, визнаного легальним після подання заяви на отримання дозволу на тимчасове, постійне або довгострокове перебування резидента ЄС), якщо до подання заяви він або вона виконали умови, зазначені в ст. 3 (1) (14-17) Закону про прийнятність***.&nbsp;</li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.432%; text-align: left; background-color: rgb(241, 243, 255);"><span style="font-family: 'Open Sans';"><em>Легенда:&nbsp;</em></span><br><span style="font-family: 'Open Sans';"><em>* - Закон від 13 червня 2003 року про надання захисту іноземцям на території Республіки Польща;<br>** - Закон від 12 грудня 2013 року про іноземців;<br>*** - Закон від 20 березня 2025 року про умови допустимості працевлаштування іноземців на території Республіки Польща.</em></span></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 16pt; font-family: 'Open Sans'; line-height: 1;">&nbsp;</p>
+</div>
+<div id="art(3)ust(1)pkt(13)" class="a_pkt unit-menu"></div>
+<div id="art(3)ust(1)pkt(18)" class="a_pkt unit-menu"></div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h3><span style="font-family: 'Open Sans';"><strong><span style="color: rgb(198, 54, 99); font-size: 18pt;">II. Обмежений доступ до польського ринку праці</span></strong></span></h3>
+<hr>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Обмежений доступ до польського ринку праці - це ситуація, коли ви можете виконувати роботу на підставі документа про дозвіл на роботу, в якому, як правило, вказано роботодавця, у якого ви можете працювати, і умови, на яких ви можете там працювати.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Як і у випадку з вільним доступом, на вас поширюються положення Трудового кодексу. Вони захищають вас від експлуатації з боку роботодавця;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Якщо Ви перебуваєте в Польщі на підставі візи, пам'ятайте, що Ви можете виконувати роботу тільки на підставі візи, виданої з метою, зазначеною в ст. 60 ч. 1 п. 3 пп. 3 - 10, пп. 12 пп. 13b, пп. 17 пп. 21 або пп. 23 пп. 24b Закону "Про іноземців". Будь-яка інша віза не дає вам такого права, навіть якщо у вас є дійсний дозвіл на роботу або заява про доручення виконання роботи іноземцю.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Дозвіл на тимчасове проживання, як правило, дозволяє виконувати роботу в рамках дозволу на роботу (можливо, декларації). Винятком є дозвіл на тимчасове перебування у зв'язку з обставинами, що дають право на короткострокове перебування (ст. 181 Закону про іноземців) - перебування на підставі такого дозволу унеможливлює легальне працевлаштування.&nbsp;</span></p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-collapse-0" aria-controls="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-collapse-0">
+                             <span class="h2 px-0 accordion-title">&#x41E;&#x431;&#x43C;&#x435;&#x436;&#x435;&#x43D;&#x438;&#x439; &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F; &#x434;&#x43E; &#x440;&#x438;&#x43D;&#x43A;&#x443; &#x43F;&#x440;&#x430;&#x446;&#x456; &#x2013; &#x43A;&#x43E;&#x43D;&#x43A;&#x440;&#x435;&#x442;&#x43D;&#x456; &#x432;&#x438;&#x43F;&#x430;&#x434;&#x43A;&#x438;</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-heading-0" data-bs-parent="#accordion-7ca923ea-c55c-470c-8b03-7597ac99e546">
+                        <div class="accordion-body">
+                            <h3 class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-size: 16pt; font-family: 'Open Sans';">Іноземці, які не мають вільного доступу до ринку праці, можуть працювати в Польщі:</span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><!-- [if !supportLists]--><!--[endif]--><strong>за так званим єдиним дозволом</strong>яка поєднує в собі елементи дозволу на проживання та дозволу на працевлаштування;</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.432%;">
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">дозвіл на тимчасове проживання та роботу (ч. 1 ст. 114, ст. 126)</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">дозвіл на тимчасове проживання з метою висококваліфікованого працевлаштування (стаття 127);</span><span style="font-size: 16pt; font-family: 'Open Sans';"><!--[endif]--></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">посвідка на тимчасове проживання з метою внутрішньокорпоративного переведення (ст. 139а);</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">дозвіл на тимчасове проживання з метою здійснення підприємницької діяльності, виданий відповідно до статті 142(3) Закону про іноземців;</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>на підставі дозволу на тимчасове перебування для довгострокової мобільності</strong> власник Блакитної карти ЄС (стаття 137а) або</span><span style="font-size: 16pt; font-family: 'Open Sans';">керівних працівників, спеціалістів або стажерів, в рамках внутрішньофірмового переведення (стаття 139o);</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>при використанні короткострокової мобільності</strong> Власник блакитної карти, ІТ-спеціаліст, дослідник або студент, на умовах, викладених в Законі про іноземців;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>на підставі дозволу на роботу</strong>якщо вони перебувають у Польщі на іншій підставі, яка дозволяє їм виконувати роботу (наприклад, віза або дозвіл на тимчасове проживання - за певними винятками);</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>громадяни Вірменії, Білорусі, Молдови або України - на підставі заяви про доручення виконання роботи іноземцю</strong>внесені до реєстру декларацій, якщо вони перебувають у Польщі на іншій підставі, яка дозволяє їм виконувати роботу (наприклад, віза або дозвіл на тимчасове проживання - за певними винятками).</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 11.9777%; background-color: rgb(241, 243, 255); vertical-align: top;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/u1jpcnz2/vector-12.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<td style="width: 88.0029%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Законодавство передбачає<strong>низка винятків щодо необхідності отримання дозволу на працевлаштування та декларації про</strong> про доручення виконання роботи іноземцю.</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Можливість працювати на підставі віз та дозволів на тимчасове проживання - це<strong>обмежується конкретними цілями видачі віз та дозволів.</strong></span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Для отримання додаткової інформації див. вкладки:</span></p>
+<p style="padding-left: 40px; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Особливі випадки звільнення від необхідності отримання дозволу на працевлаштування -.<span style="text-decoration: underline;"><strong>відкрите посилання</strong></span></span></p>
+<p style="padding-left: 40px; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ На підставі якої візи можна працювати в Польщі</span><span style="font-size: 16pt; font-family: 'Open Sans';">- <span style="text-decoration: underline;"><strong>відкрите посилання.</strong></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		var fragment = window.location.hash.substr(1); // Pobieranie fragmentu URL po #
+		if (fragment) {
+			$("ul li a[href='#" + fragment + "']").addClass("activeAnchor");
+		}
+		$("ul li a").click(function () {
+			$("ul li a").removeClass("activeAnchor");
+			$(this).addClass("activeAnchor");
+		});
+	});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.querySelector('.alert')) {
+            var paragraph = document.querySelector('.sub-nav p');
+            if (paragraph) {
+                paragraph.style.display = 'none';
+            }
+        }
+    });
+</script>
+<style>
+	.icons span {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+		.icons span:hover {
+			opacity: 0.8;
+		}
+
+	.alert p:last-child{
+		margin-bottom: unset;
+	}
+</style>
+
+
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Цей веб-сайт використовує файли cookie для полегшення користування нашим сервісом та для статистичних цілей, зокрема:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">адаптації вмісту сервісу до Ваших мовних уподобань;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">підтримки сеансу доступу до контенту та функціональних можливостей порталу, доступних виключно для зареєстрованих користувачів;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">уникнення повторного відображення повідомлень адміністратора сервісу на вашому пристрої;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">збору статистичних даних щодо унікальних переглядів порталу (дані щодо типу та версії використовуваного браузера).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Якщо в налаштуваннях браузера не ввімкнено блокування файлів такого типу, ви погоджуєтеся на їх використання та збереження в пам'яті вашого пристрою. Пам'ятайте, що ви завжди можете самостійно керувати цими налаштуваннями у своєму браузері. Більше інформації ви можете знайти в нашій <a rel="noopener" href="/uk/cookie/" target="_blank" title="Polityka cookies">Політиці щодо файлів cookie.</a></span></p>    <button id="agreeButton" class="btn">&#x41F;&#x440;&#x438;&#x439;&#x43D;&#x44F;&#x442;&#x438; &#x444;&#x430;&#x439;&#x43B;&#x438; cookie</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Усі матеріали, опубліковані на сайті, надаються за ліцензією Creative Commons: вказання авторства — некомерційне використання — без похідних творів 3.0 Польща (CC BY-NC-ND 3.0 PL), якщо інше не зазначено. Інформація, розміщена на порталі MOS, не є джерелом права. Автори доклали належних зусиль, щоб вона відповідала чинним правовим нормам. У разі виявлення невідповідності просимо повідомити про це відповідний орган.</p>
+<p style="text-align: justify;">Проєкт № 1/8-2018/BK-FAMI під назвою «Модернізація системи Pobyt v.2 у частині створення Модуля обслуговування справ» співфінансується за рахунок коштів Національного фонду притулку, міграції та інтеграції – «Безпечна гавань».</p>
+</div>
+</div>					<p style="text-align: justify; font-style: italic; margin-top: 0.5em;">&#x423;&#x432;&#x430;&#x433;&#x430;! &#x41F;&#x435;&#x440;&#x435;&#x43A;&#x43B;&#x430;&#x434; &#x43C;&#x456;&#x433; &#x431;&#x443;&#x442;&#x438; &#x432;&#x438;&#x43A;&#x43E;&#x43D;&#x430;&#x43D;&#x438;&#x439; &#x437;&#x430; &#x434;&#x43E;&#x43F;&#x43E;&#x43C;&#x43E;&#x433;&#x43E;&#x44E; &#x430;&#x432;&#x442;&#x43E;&#x43C;&#x430;&#x442;&#x438;&#x437;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x445; &#x456;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442;&#x456;&#x432;.</p>
+			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='&#x41C;&#x43E;&#x434;&#x443;&#x43B;&#x44C; &#x43E;&#x431;&#x440;&#x43E;&#x431;&#x43A;&#x438; &#x441;&#x43F;&#x440;&#x430;&#x432;' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>&#x41F;&#x43E;&#x437;&#x43D;&#x430;&#x439;&#x43E;&#x43C;&#x442;&#x435;&#x441;&#x44F; &#x437; &#x43D;&#x430;&#x43C;&#x438; &#x431;&#x43B;&#x438;&#x436;&#x447;&#x435;</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>&#x414;&#x43E;&#x43F;&#x43E;&#x43C;&#x43E;&#x436;&#x456;&#x442;&#x44C;!</h5>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="#" target="_blank">
+				&#x41A;&#x430;&#x440;&#x442;&#x430; &#x441;&#x430;&#x439;&#x442;&#x443;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				&#x422;&#x435;&#x445;&#x43D;&#x456;&#x447;&#x43D;&#x430; &#x43F;&#x456;&#x434;&#x442;&#x440;&#x438;&#x43C;&#x43A;&#x430;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				&#x420;&#x435;&#x434;&#x430;&#x43A;&#x446;&#x456;&#x44F;
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>&#x42E;&#x440;&#x438;&#x434;&#x438;&#x447;&#x43D;&#x456; &#x43F;&#x438;&#x442;&#x430;&#x43D;&#x43D;&#x44F;</h5>
+		<div class="col">
+			<a href="/uk/polozhennya/" target="_blank">
+				&#x41F;&#x440;&#x430;&#x432;&#x438;&#x43B;&#x430;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk//" target="_blank">
+				&#x414;&#x435;&#x43A;&#x43B;&#x430;&#x440;&#x430;&#x446;&#x456;&#x44F; &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F;&#x43D;&#x43E;&#x441;&#x442;&#x456;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk/polityka-prywatnosci/" target="_blank">
+				&#x41F;&#x43E;&#x43B;&#x456;&#x442;&#x438;&#x43A;&#x430; &#x43A;&#x43E;&#x43D;&#x444;&#x456;&#x434;&#x435;&#x43D;&#x446;&#x456;&#x439;&#x43D;&#x43E;&#x441;&#x442;&#x456;
+			</a>
+		</div>
+		<div class="col">
+			<a href="/uk/cookie/" target="_blank">
+				&#x41F;&#x43E;&#x43B;&#x456;&#x442;&#x438;&#x43A;&#x430; &#x444;&#x430;&#x439;&#x43B;&#x456;&#x432; cookie
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+<!-- MY COLOR #c63663  -->
+<style type="text/css">
+	body {
+		border-color: #c63663 !important;
+	}
+
+	.alert,
+	.card .card-top,
+	nav {
+		border-color: #c63663 !important;
+	}
+
+	.sub-nav {
+		background: #c63663 !important;
+	}
+	.menu-section ul li::before {
+	color: #c63663 !important;}
+</style>
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>

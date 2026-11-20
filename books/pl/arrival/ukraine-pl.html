@@ -1,0 +1,1064 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="pl" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    Ustawa-o ochronie | Modu&#x142; Obs&#x142;ugi Spraw
+</title>
+<meta name="Description" content=" ?? Ustawa-o ochronie" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/ustawa-o-ochronie/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/ustawa-o-ochronie/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-content ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/">
+						<img src="/clean-assets/images/logo_white.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/mapa-strony/"></a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/possibilities-legalization/solutions-ob-ukraine/law-of-protection/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x627;&#x62D;&#x62A;&#x645;&#x627;&#x644;&#x627;&#x62A;-&#x627;&#x644;&#x62A;&#x634;&#x631;&#x64A;&#x639;/rozwiazania-ob-ukrainy/ustawa-o-ochronie/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/possibilites-legalisation/solutions-ob-ukraine/acte-de-protection/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/cac-phuong-an-hop-phap-hoa/giai-phap-khu-vuc-ukraine/luat-ve-bao-ve/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vozmozhnosti-legalizafiya/rozwiazania-ob-ukrainy/ustawa-o-ochronie/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/rozwiazania-ob-ukrainy/ustawa-o-ochronie/">
+				UK
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fmozliwosci-legalizacji%2Frozwiazania-ob-ukrainy%2Fustawa-o-ochronie%2F" type="button">Zaloguj</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/possibilities-legalization/solutions-ob-ukraine/law-of-protection/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x627;&#x62D;&#x62A;&#x645;&#x627;&#x644;&#x627;&#x62A;-&#x627;&#x644;&#x62A;&#x634;&#x631;&#x64A;&#x639;/rozwiazania-ob-ukrainy/ustawa-o-ochronie/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/possibilites-legalisation/solutions-ob-ukraine/acte-de-protection/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/cac-phuong-an-hop-phap-hoa/giai-phap-khu-vuc-ukraine/luat-ve-bao-ve/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vozmozhnosti-legalizafiya/rozwiazania-ob-ukrainy/ustawa-o-ochronie/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/rozwiazania-ob-ukrainy/ustawa-o-ochronie/">
+				UK
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fmozliwosci-legalizacji%2Frozwiazania-ob-ukrainy%2Fustawa-o-ochronie%2F" type="button">Zaloguj</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							Ochrona czasowa
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="Szukaj" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+	<div class="sub-nav  pt-3 pt-md-0">
+		<div class="container">
+			<p class="m-0 h6 py-2 bold">
+			</p>
+		</div>
+	</div>
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+						<li class="no-ellipsis">...</li>
+						<li aria-current="Rozwiazania-ob.-Ukrainy">
+							<a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/" class="ellipsis">Rozwiazania-ob.-Ukrainy</a>
+						</li>
+
+					<li class="ellipsis active" aria-current="Ustawa-o ochronie">Ustawa-o ochronie</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+
+<div class="container pb-5 min-h-article">
+
+
+
+	<div id="content-to-pdf" class="content-section row m-0">
+		
+<div class="section-item menu-section col-12 col-lg-2">
+	<h4 class="content-menu">Menu</h4>
+	<ul class="p-3">
+			<li class="list-group-item px-2 ">
+				<a href="#e813f53a-5275-44ef-8c78-1508d49cd316">Wprowadzenie</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#185b83b4-8341-4bab-b964-b9880389af7b">Przepisy</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#c267063c-0c28-4e39-bd89-82afdaec638e">Szczeg&#xF3;&#x142;owe obja&#x15B;nienie </a>
+			</li>
+	</ul>
+</div>
+
+
+		<div class="content col content-anchor">
+				<div id="e813f53a-5275-44ef-8c78-1508d49cd316">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0 ms-0 me-0 contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-size: 36pt; color: rgb(198, 54, 99); font-family: 'Open Sans';"><br>Wprowadzenie&nbsp;</span></h2>
+<hr>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 1%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 99%;">
+<p style="text-align: left;" class="MsoNormal"><strong><span style="font-size: 16pt; font-family: 'Open Sans';">Słownik terminów - ochrona czasowa</span></strong></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">W dniu 4 marca 2022 r. Unia Europejska sięgnęła po raz pierwszy po mechanizm ochrony tymczasowej, przewidziany dyrektywą Rady 2001/55/WE z dnia 20 lipca 2001 r., która to ten mechanizm przewidziała.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">„Ochrona czasowa" <strong>oznacza szczególnego rodzaju procedurę, która jest uruchamiana w przypadku masowego napływu do UE osób poszukujących ochrony</strong> z państw trzecich, które nie mogą powrócić do państwa swojego pochodzenia, np. w związku z działaniami wojennymi prowadzonymi na terytorium tego państwa, lub jeśli istnieje rzeczywiste zagrożenie wystąpieniem takiego napływu. Jej celem jest przyjęcie na terytorium i przyznanie natychmiastowej tymczasowej ochrony w Unii – co oznacza zezwolenie wysiedleńcom na tymczasowy pobyt i przyznanie określonych uprawnień.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Ochrona czasowa <strong>jest przyznawana w ramach uproszczonej w stosunku do ochrony międzynarodowej procedury administracyjnej</strong>. UE wykorzystuje tę procedurę wówczas, gdy uzasadnione jest przypuszczenie, że system udzielania ochrony międzynarodowej nie będzie w stanie udźwignąć ciężaru masowego napływu wysiedleńców bez negatywnych skutków dla działania tego systemu, bez szkody zarówno dla tych osób, jak i innych osób poszukujących ochrony.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><span style="font-family: 'Open Sans';"><strong><span style="font-size: 14pt; color: rgb(198, 54, 99);"><span style="font-size: 18pt;">Kategorie cudzoziemców objęte ochroną czasową</span></span></strong></span></h3>
+<hr>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Poniższe wyliczenie obejmuje kategorie cudzoziemców objętych ochroną czasową, uruchomioną w związku z masowym napływem cudzoziemców z Ukrainy od dnia 24 lutego 2022r., <strong>zgodnie z ustawą z dnia 13 czerwca 2003r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej.&nbsp;</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul style="margin-top: 0cm;">
+<li class="MsoListParagraph" style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>obywatele Ukrainy</strong>, którzy w okresie od dnia 24 lutego 2022 r. przybyli legalnie do Polski w celu korzystania z ochrony czasowej;&nbsp;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li class="MsoListParagraph" style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">bezpaństwowcy lub obywatele państw trzecich innych niż Ukraina, którzy <strong>przed 24 lutego 2022 r. korzystali z ochrony międzynarodowej lub równoważnej ochrony krajowej w Ukrainie</strong>, i którzy w okresie od dnia 24 lutego 2022 r. przybyli legalnie do Polski w celu korzystania z ochrony czasowej;&nbsp;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li class="MsoListParagraph" style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>małżonkowie obywateli Ukrainy lub w/w cudzoziemców</strong>, którzy w okresie od dnia 24 lutego 2022 r. przybyli legalnie do Polski w celu korzystania z ochrony czasowej;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li class="MsoListParagraph" style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>małoletnie dzieci obywateli Ukrainy lub w/w cudzoziemców</strong>, którzy w okresie od dnia 24 lutego 2022 r. przybyli legalnie do Polski w celu korzystania z ochrony czasowej;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li class="MsoListParagraph" style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>małoletnie dzieci małżonków obywateli Ukrainy lub w/w cudzoziemców</strong>, którzy w okresie od dnia 24 lutego 2022 r. przybyli legalnie do Polski w celu korzystania z ochrony czasowej;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li class="MsoListParagraph" style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">bezpaństwowcy lub obywatele państw trzecich innych niż Ukraina, którzy są w stanie udowodnić, że <strong>przed 24 lutego 2022 r. legalnie przebywali w Ukrainie na podstawie ważnego zezwolenia na pobyt stały</strong> wydanego zgodnie z prawem ukraińskim i nie są w stanie w bezpiecznych warunkach powrócić do kraju lub regionu pochodzenia, i którzy w okresie od dnia 24 lutego 2022 r. przybyli legalnie do Polski w celu korzystania z ochrony czasowej;&nbsp;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li class="MsoListParagraph" style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>dzieci urodzone w Polsce w okresie od dnia 24 lutego 2022 r., których rodzice są beneficjentami ochrony czasowej</strong>, o ile dzieci te nie posiadają obywatelstwa polskiego ani obywatelstwa innego państwa członkowskiego Unii Europejskiej;&nbsp;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"><br></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+</ul>
+<p style="padding-left: 40px;"><span style="font-size: 16pt; font-family: 'Open Sans';"><img src="/media/u1jpcnz2/vector-12.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51">&nbsp;</span></p>
+<hr>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto; height: 230.4px;">
+<tbody>
+<tr style="height: 51.2px;">
+<td rowspan="2" style="width: 3.05129%; height: 230.4px; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 97.0601%; text-align: left; height: 51.2px;"><span style="font-size: 16pt; font-family: 'Open Sans';">Obywatele Ukrainy i członkowie ich rodzin ze statusem "UKR" w dacie 4 marca 2026r.</span></th>
+</tr>
+<tr style="height: 179.2px;">
+<td style="width: 97.0601%; height: 179.2px;"><span style="font-size: 16pt; font-family: 'Open Sans';">Jeżeli do dnia 4 marca 2026 r. obywatele Ukrainy oraz określeni członkowie ich rodzin korzystali z ochrony czasowej w Polsce na podstawie art. 2 ust. 1 lub 2 ustawy z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa, co zostało potwierdzone nadaniem im numerów PESEL ze statusem „UKR”, w<strong> </strong>dalszym ciągu <strong>korzystają z tej ochrony, ale na podstawie przepisów</strong> <strong>ustawy o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej.</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3.05129%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 96.9148%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Pozostali beneficjenci ochrony czasowej</span></th>
+</tr>
+<tr>
+<td style="width: 96.9148%;">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Cudzoziemcy, którzy do dnia 4 marca 2026r. korzystali z ochrony czasowej w Polsce na podstawie przepisów ustawy o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej, co zostało potwierdzone wydaniem im przez Szefa Urzędu do Spraw Cudzoziemców zaświadczeń potwierdzających korzystanie z tej ochrony<strong>,</strong> mogą:</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>⇒ </strong><strong>wystąpić o nadanie im numerów PESEL ze statusem „UKR”,&nbsp;</strong>co umożliwi im korzystanie z całokształtu uprawnień przysługujących beneficjentom ochrony czasowej na podstawie przepisów prawa obowiązujących od dnia 5 marca 2026 r., albo</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>⇒ w dalszym ciągu przebywać w Polsce na podstawie tych zaświadczeń</strong>, których ważność została zachowana do dnia 4 marca 2027 r.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3.05129%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 97.0601%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Pozostali obywatele Ukrainy</span></th>
+</tr>
+<tr>
+<td style="width: 97.0601%;"><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Jeżeli jesteś obywatelem Ukrainy i nie jesteś objęty ochroną czasową, odwiedź zakładkę "Specjalne środki przedłużenia pobytu" - <a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/rozwiazania-uzupe-niajace/" target="_blank" title="Informacja MOS_Specjalne środki przedłużenia"><span style="text-decoration: underline;"><strong>otwórz link.</strong></span></a></span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">&nbsp;</span></p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-95536a33-08d5-4d78-90b8-e7acac91d689">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-95536a33-08d5-4d78-90b8-e7acac91d689-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-95536a33-08d5-4d78-90b8-e7acac91d689-collapse-0" aria-controls="accordion-95536a33-08d5-4d78-90b8-e7acac91d689-collapse-0">
+                             <span class="h2 px-0 accordion-title">Cudzoziemcy, kt&#xF3;rzy nie mog&#x105; korzysta&#x107; z ochrony czasowej w Polsce</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-95536a33-08d5-4d78-90b8-e7acac91d689-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-95536a33-08d5-4d78-90b8-e7acac91d689-heading-0" data-bs-parent="#accordion-95536a33-08d5-4d78-90b8-e7acac91d689">
+                        <div class="accordion-body">
+                            <ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">posiadają jedno z zezwoleń pobytowych, które uniemożliwiają korzystanie z tej ochrony;<span style="mso-fareast-font-family: 'Times New Roman';"></span></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 80%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);"><span style="font-size: 16pt; font-family: 'Open Sans';">&nbsp;</span></td>
+<td style="width: 97%;">
+<ul style="margin-top: 0cm; list-style-type: circle;">
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt stały;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt rezydenta długoterminowego UE;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">status uchodźcy;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">ochronę uzupełniającą;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zgodę na pobyt ze względów humanitarnych;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zgodę na pobyt tolerowany.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul style="margin-top: 0cm;">
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">złożyli w Polsce wnioski o udzielenie ochrony międzynarodowej lub w ich imieniu zostały złożone takie wnioski;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">uzyskali już ochronę czasową w innym państwie członkowskim Unii Europejskiej;&nbsp;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">granicę przekroczyli na podstawie zezwolenia na przekraczanie granicy w ramach małego ruchu granicznego (MRG);</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">są obywatelami innych państw członkowskich UE;</span></li>
+<li class="MsoListParagraph" style="margin-left: 0cm; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">Szef Urzędu do Spraw Cudzoziemców wydał wobec nich decyzję o odmowie dopuszczenia na terytorium Rzeczypospolitej Polskiej w celu korzystania z ochrony czasowej lub o stwierdzeniu wyłączenia z tej ochrony (m.in. jeśli popełnili zbrodnię przeciwko pokojowi, zbrodnię wojenną lub zbrodnię przeciwko ludzkości w rozumieniu prawa międzynarodowego, lub jeśli ich wjazd lub pobyt mogą zagrozić bezpieczeństwu państwa.)</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h3 style="text-align: justify;"><strong><span style="color: rgb(198, 54, 99);"><span style="font-size: 18pt; font-family: 'Open Sans';">Zasady korzystania z ochrony czasowej</span><br></span></strong></h3>
+<hr>
+<p class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Jeżeli uprawniony cudzoziemiec przybył do Polski w celu korzystania z ochrony czasowej, może pozostać do końca jej trwania <strong>pod warunkiem uzyskania numeru PESEL ze statusem UKR.</strong> </span></p>
+<p class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Z wnioskiem o jego nadanie należy wystąpić <strong>nie później niż w terminie 30 dni od dnia wjazdu.</strong> Spóźnienie się ze złożeniem tego wniosku będzie skutkować wygaśnięciem ochrony czasowej.</span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12%; background-color: rgb(241, 243, 255); text-align: center;"><img src="/media/u1jpcnz2/vector-12.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<td style="width: 88%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Aktualnie pobyt beneficjentów ochrony czasowej w Polsce <strong>uznaje się za legalny do 4 marca 2027r.</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><strong><span style="font-size: 18pt; color: rgb(198, 54, 99); font-family: 'Open Sans';">Możliwości przedłużenia pobytu</span></strong></h3>
+<hr>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-1583146b-9ba5-419b-81cc-35f93f461094">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-1583146b-9ba5-419b-81cc-35f93f461094-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-0" aria-controls="accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-0">
+                             <span class="h2 px-0 accordion-title">Opcja 1: Wyst&#x105;pienie z wnioskiem o wydanie karty pobytu (CUKR)</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-1583146b-9ba5-419b-81cc-35f93f461094-heading-0" data-bs-parent="#accordion-1583146b-9ba5-419b-81cc-35f93f461094">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Możesz wystąpić z wnioskiem pozwalającym na przekształcenie ochrony czasowej (statusu UKR) w zezwolenie na pobyt czasowy w specjalnym trybie (poprzez uzyskanie karty pobytu z adnotacją "Poprzednio posiadacz ochrony czasowej") -<span style="text-decoration: underline;">&nbsp;<a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/cukr/" target="_blank" title="Informacja MOS_Przekształcenie ochrony czasowej w pobyt czasowy (CUKR)"><strong>otwórz link, aby zapoznać się z informacjami o procedurze.&nbsp;</strong></a></span></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-1583146b-9ba5-419b-81cc-35f93f461094-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-1" aria-controls="accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-1">
+                             <span class="h2 px-0 accordion-title">Opcja 2: Wyst&#x105;pienie z wnioskiem o udzielenie zezwolenia na pobyt sta&#x142;y</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-1583146b-9ba5-419b-81cc-35f93f461094-heading-1" data-bs-parent="#accordion-1583146b-9ba5-419b-81cc-35f93f461094">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Korzystanie z ochrony czasowej (status UKR) nie stanowi przeszkody w możliwości uzyskania zezwolenia na pobyt stały - <strong><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-sta-y/" target="_blank" title="Informacja MOS_Zezwolenie na pobyt stały"><span style="text-decoration: underline;">otwórz link, aby zapoznać się z informacjami o procedurze.</span></a></strong></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-1583146b-9ba5-419b-81cc-35f93f461094-heading-2">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-2" aria-controls="accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-2">
+                             <span class="h2 px-0 accordion-title">Opcja 3: Wyst&#x105;pienie z wnioskiem o udzielenie zezwolenia na pobyt czasowy</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-1583146b-9ba5-419b-81cc-35f93f461094-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-1583146b-9ba5-419b-81cc-35f93f461094-heading-2" data-bs-parent="#accordion-1583146b-9ba5-419b-81cc-35f93f461094">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ <strong>Do końca trwania ochrony czasowej</strong>&nbsp;możesz złożyć w MOS wniosek o jedno z zezwoleń na pobyt czasowy, dla których ustawa specjalna czasowo wyłącza przepisy o odmowie wszczęcia postępowania w sprawie udzielenia tego zezwolenia względem osób posiadających status UKR.</span></p>
+<table border="1" style="border-collapse: collapse; width: 94%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 49.5866%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Dostępne zezwolenia&nbsp;</span></th>
+</tr>
+<tr>
+<td style="width: 49.5866%;">
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy i pracę - <a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" target="_blank" title="Informacja_jednolite"><span style="text-decoration: underline;">otwórz link.</span><span style="text-decoration: underline;"></span><span style="text-decoration: underline;"></span></a></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenia na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji -<strong>&nbsp;<a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/niebieska-karta/" target="_blank" title="Informacja_Niebieska Karta UE"><span style="text-decoration: underline;">otwórz link.</span></a><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/niebieska-karta/" target="_blank" title="Informacja_Niebieska Karta UE"><span style="text-decoration: underline;"></span></a><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/niebieska-karta/" target="_blank" title="Informacja_Niebieska Karta UE"><span style="text-decoration: underline;"></span></a></strong><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/niebieska-karta/" title="Niebieska-Karta"><span style="text-decoration: underline;"></span></a></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy w celu prowadzenia działalności gospodarczej -<strong>&nbsp;<a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/" target="_blank" title="Informacja_Zezwolenie_Dzialalność"><span style="text-decoration: underline;">otwórz link.</span></a><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/" target="_blank" title="Informacja_Zezwolenie_Dzialalność"><span style="text-decoration: underline;"></span></a><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/" target="_blank" title="Informacja_Zezwolenie_Dzialalność"><span style="text-decoration: underline;"></span></a></strong><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/" target="_blank" title="Informacja_Zezwolenie_Działalność gospodarcza"></a><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/" target="_blank" title="Informacja_Zezwolenie_Działalność gospodarcza"><span style="text-decoration: underline;"></span></a></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy dla członka rodziny obywatela RP, udzielane małżonkowi obywatela RP -<strong>&nbsp;</strong><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-z-rodzina/ma-zonek-ob-rp/" target="_blank" title="Informacja_Zezwolenie_Małżonek_ob_RP"><span style="text-decoration: underline;">otwórz link</span></a><strong>.</strong></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenia na pobyt czasowy w celu połączenia się z rodziną, o którym mowa w art. 159 ust. 1 ustawy o cudzoziemcach - <span style="text-decoration: underline;"><a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-z-rodzina/" target="_blank" title="Informacja_Zezwolenie_łączenie_rodzin">otwórz link<strong>.</strong></a></span></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+				<div id="185b83b4-8341-4bab-b964-b9880389af7b">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-size: 36pt; color: rgb(198, 54, 99); font-family: 'Open Sans';"><br>Przepisy</span></h2>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">ustawa z dnia 23 stycznia 2026r. o wygaszaniu rozwiązań wynikających z ustawy o pomocy obywatelom Ukrainy na terytorium tego państwa oraz o zmianie niektórych innych ustaw;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">ustawa z dnia 24 września 2010r. o ewidencji ludności;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">ustawa z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin;</span><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"></span></span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"><a rel="noopener" href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20220000583" target="_blank"><span style="color: #03a9f4;"></span></a></span><span style="font-family: 'Open Sans';">decyzja wykonawcza Rady (UE) 2022/382 z dnia 4 marca 2022r., stwierdzająca istnienie masowego napływu wysiedleńców z Ukrainy w rozumieniu art. 5 dyrektywy 2001/55/WE i skutkująca wprowadzeniem tymczasowej ochrony, wraz z decyzjami wykonawczymi Rady (UE) w sprawie przedłużenia tymczasowej ochrony, w tym decyzji wykonawczej 2024/1836 z dnia 25 czerwca 2024r. oraz decyzji wykonawczej 2025/1460 z dnia 15 lipca 2025r.;</span></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"></span></span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">art. 5 ust. 1 dyrektywy Rady 2001/55/WE z dnia 20 lipca 2001 r. w sprawie minimalnych standardów przyznawania tymczasowej ochrony na wypadek masowego napływu wysiedleńców oraz środków wspierających równowagę wysiłków między państwami członkowskimi związanych z przyjęciem takich osób wraz z jego następstwami.</span></span></li>
+</ul>    </div>
+</div>
+</div>
+				</div>
+				<div id="c267063c-0c28-4e39-bd89-82afdaec638e">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(198, 54, 99);"><br><span style="font-size: 36pt;">Szczegółowe objaśnienie</span><br></span></h2>
+<hr>
+<h3><strong><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(198, 54, 99);">Status "UKR"</span></strong></h3>
+<hr>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Posiadanie numeru <strong>PESEL z przypisanym statusem „UKR” stanowi urzędowe poświadczenie posiadania uprawnienia do pobytu w Polsce</strong> oraz uprawnień towarzyszących. Potwierdza, że korzystasz w Polsce z ochrony czasowej.</span></p>
+<p style="line-height: 1.4;" class="MsoNormal"><span style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 16pt;"><strong>Sprawdź </strong></span><strong><span style="font-size: 16pt;">w jaki sposób uzyskać to poświadczenie - <a rel="noopener" href="https://www.gov.pl/web/gov/uzyskaj-numer-pesel-oraz-profil-zaufany--usluga-dla-obywateli-ukrainy" target="_blank" title="Dostęp do artukułu o PESEL i profil zaufany na gov.pl">otwórz link.</a></span></strong></span></p>
+<hr>
+<p><a rel="noopener" href="https://www.gov.pl/web/ua" target="_blank"><span style="font-size: 16pt;"></span></a><strong style="font-family: 'Open Sans'; text-align: justify;"><span style="font-size: 18pt;"><span style="color: rgb(198, 54, 99);">Utrata statusu "UKR" i jego przywrócenie&nbsp;</span></span></strong></p>
+<hr>
+<p style="line-height: 1.4;" class="MsoNormal"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Utracisz uprawnienie do pobytu, jeśli:</span></span></p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">opuścisz terytorium Polski na dłużej niż 30 dni,<strong>&nbsp;</strong>niezależnie od tego dokąd wyjedziesz (także, jeśli udasz się do Ukrainy lub innego państwa UE);</span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">uzyskasz zezwolenie na pobyt czasowy;</span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">uzyskasz zezwolenie na pobyt stały; </span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">uzyskasz zezwolenie na pobyt rezydenta długoterminowego UE;</span><span style="font-family: 'Open Sans';"></span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">zostanie ci udzielona zgoda na pobyt ze względów humanitarnych lub zgoda na pobyt tolerowany;</span><span style="font-family: 'Open Sans';"></span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">złożysz wniosek o udzielenie ochrony międzynarodowej;</span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">zostaniesz objęty ochroną czasową inne państwo członkowskie UE;</span></li>
+<li style="line-height: 1.4; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jeśli uzyskasz kartę pobytu z adnotacją "Poprzednio posiadacz ochrony czasowej".&nbsp;<br></span></li>
+</ul>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">W przypadku<strong> utraty uprawnień "status UKR" </strong>numeru PESEL<strong> jest automatycznie zmieniany na inny status&nbsp;</strong>( jak „<strong>NUE” <a style="mso-comment-reference: BM_1; mso-comment-date: 20240711T0913;">lub „CUKR”</a></strong>).&nbsp;</span></span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Odzyskasz uprawnienie do korzystania z ochrony czasowej w Polsce, utracone w wyniku opuszczenia terytorium RP na okres dłuższy niż 30 dni, <strong>jeśli ponownie legalnie wjedziesz do Polski i ponownie spełnisz warunki do korzystania z ochrony czasowej.&nbsp;</strong></span></span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(198, 54, 99);"><strong>Dokument ochrony czasowej (dawna Diia.pl)</strong></span></p>
+<hr>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Aby zapewnić dostęp do usług publicznych online, wraz z nadaniem numeru PESEL obywatele Ukrainy oraz inni cudzoziemcy uprawnieni do ochrony czasowej w Polsce <strong>mogą uzyskać profil zaufany.&nbsp;</strong></span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Pozwala on im <strong>skorzystać z aplikacji mObywatel, </strong>dzięki której zyskują<strong> dostęp do cyfrowego dokumentu o nazwie "Dokument ochrony Czasowej" (dawna Diia.pl).&nbsp;</strong></span></p>
+<p style="line-height: 1.4;" class="MsoNormal"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/jesgh2cc/lp-mobile-2558x1310-1.webp?rmode=max&amp;width=500" alt="" width="500" height="256"></p>
+<p style="line-height: 1.4;" class="MsoNormal"><span style="font-family: 'Open Sans';">Zdjęcie - źródło: mobywatel.gov.pl</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Ten elektroniczny dokument potwierdza ich tożsamość w Polsce oraz status beneficjenta ochrony czasowej, a także <strong>spełnia rolę elektronicznego dokumentu pobytowego.&nbsp;</strong>Pozwala na przekraczanie wielokrotne granicy polskiej bez konieczności posiadania wizy, za okazaniem ważnego dokumentu podróży. Pozwala także na przemieszczanie się w ramach strefy Schengen.</span></p>
+<p style="line-height: 1.4;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Więcej informacji&nbsp;<strong>- <a rel="noopener" href="https://info.mobywatel.gov.pl/aktualnosci/wazna-informacja-dla-obywateli-Ukrainy" target="_blank" title="Przekierowanie do Mobywatel"><span style="text-decoration: underline;">otwórz link.</span></a><a rel="noopener" href="https://info.mobywatel.gov.pl/aktualnosci/wazna-informacja-dla-obywateli-Ukrainy" target="_blank" title="Dokument ochrony czasowej"></a></strong></span><span style="font-size: 14pt; font-family: 'Open Sans';"><!-- [if !supportAnnotations]--></span><!--[endif]--></p>    </div>
+</div>
+</div>
+				</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		var fragment = window.location.hash.substr(1); // Pobieranie fragmentu URL po #
+		if (fragment) {
+			$("ul li a[href='#" + fragment + "']").addClass("activeAnchor");
+		}
+		$("ul li a").click(function () {
+			$("ul li a").removeClass("activeAnchor");
+			$(this).addClass("activeAnchor");
+		});
+	});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.querySelector('.alert')) {
+            var paragraph = document.querySelector('.sub-nav p');
+            if (paragraph) {
+                paragraph.style.display = 'none';
+            }
+        }
+    });
+</script>
+<style>
+	.icons span {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+		.icons span:hover {
+			opacity: 0.8;
+		}
+
+	.alert p:last-child{
+		margin-bottom: unset;
+	}
+</style>
+
+
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Ta strona używa ciasteczek (plików cookies) w celu ułatwienia Ci korzystania z naszego serwisu oraz w celach statystycznych, w szczególności:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">dostosowania zawartości serwisu do Twoich preferencji językowych;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">utrzymywania sesji dostępu do treści i funkcjonalności portalu dostępnych wyłącznie dla zarejestrowanych użytkowników;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">unikania powtórnego wyświetlania komunikatów administratora serwisu na Twoim Urządzeniu;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">zbierania danych statystycznych dotyczących unikalnych wyświetleń portalu (dane dotyczące rodzaju i wersji używanej przeglądarki).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Jeśli w ustawieniach przeglądarki nie zostało włączone blokowanie tego typu plików, to zgadzasz się na ich użycie oraz zapisanie w pamięci swojego urządzenia. Pamiętaj, że zawsze możesz samodzielnie zarządzać tymi ustawieniami w swojej przeglądarce. Więcej informacji możesz znaleźć w naszej <a rel="noopener" href="/polityka-cookies/" target="_blank" title="Polityka cookies">Polityce cookies.</a></span></p>    <button id="agreeButton" class="btn">Zaakceptuj ciastka</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Wszystkie treści publikowane w serwisie są udostępniane na licencji Creative Commons: uznanie autorstwa - użycie niekomercyjne - bez utworów zależnych 3.0 Polska (CC BY-NC-ND 3.0 PL), o ile nie jest to stwierdzone inaczej. Informacja zamieszczona na portalu MOS nie stanowi źródła prawa. Autorzy dołożyli należytej staranności, aby była ona zgodna z obowiązującymi regulacjami prawnymi. W przypadku zidentyfikowania stanu niezgodności prosimy o poinformowanie organu o tym fakcie.</p>
+<p style="text-align: justify;">Projekt nr 1/8-2018/BK-FAMI pt. „Modernizacja Systemu Pobyt v.2 w zakresie utworzenia Modułu Obsługi Spraw” jest współfinansowany ze środków Programu Krajowego Funduszu Azylu Migracji i Integracji – Bezpieczna przystań.</p>
+</div>
+</div>			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Poznaj nas</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Pomoc</h5>
+		<div class="col">
+			<a href="/baza-pytan-i-odpowiedzi/" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="/mapa-strony/" target="_blank">
+				Mapa strony
+			</a>
+		</div>
+		<div class="col">
+			<a href="/pomoc-techniczna/" target="_blank">
+				Pomoc techniczna
+			</a>
+		</div>
+		<div class="col">
+			<a href="/redakcja/" target="_blank">
+				Redakcja
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Kwestie prawne</h5>
+		<div class="col">
+			<a href="/regulamin/" target="_blank">
+				Regulamin
+			</a>
+		</div>
+		<div class="col">
+			<a href="/deklaracja-dostepnosci/" target="_blank">
+				Deklaracja dost&#x119;pno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-prywatnosci/" target="_blank">
+				Polityka prywatno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-cookies/" target="_blank">
+				Polityka cookies
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+<!-- MY COLOR #c63663  -->
+<style type="text/css">
+	body {
+		border-color: #c63663 !important;
+	}
+
+	.alert,
+	.card .card-top,
+	nav {
+		border-color: #c63663 !important;
+	}
+
+	.sub-nav {
+		background: #c63663 !important;
+	}
+	.menu-section ul li::before {
+	color: #c63663 !important;}
+</style>
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+		<script>
+			function downloadAsPdf() {
+				var element = document.getElementById("content-to-pdf");
+				html2pdf(element);
+			}
+
+			function openEmailDialog() {
+				var mailtoLink = "mailto:?subject=" + encodeURIComponent("&lt;&gt;f__AnonymousDelegate0`2[System.String,System.String]") + "&body=" + encodeURIComponent(window.location.href);
+				window.location.href = mailtoLink;
+			}
+
+			function openPrintDialog() {
+				window.print();
+			}
+		</script>
+
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>

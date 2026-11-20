@@ -1,0 +1,981 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="pl" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    Ruch bezwizowy | Modu&#x142; Obs&#x142;ugi Spraw
+</title>
+<meta name="Description" content=" ?? Ruch bezwizowy" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-content ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/">
+						<img src="/clean-assets/images/logo_white.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/mapa-strony/"></a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/visas-movement-free/visa-free-travel/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/voyage-sans-visa/voyage-sans-visa/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thi-thuc-di-chuyen-mien-thi-thuc/chinh-sach-mien-thi-thuc/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				UK
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fwizy-ruch-bezwizowy%2Fruch-bezwizowy%2F" type="button">Zaloguj</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/visas-movement-free/visa-free-travel/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/voyage-sans-visa/voyage-sans-visa/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thi-thuc-di-chuyen-mien-thi-thuc/chinh-sach-mien-thi-thuc/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/">
+				UK
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fwizy-ruch-bezwizowy%2Fruch-bezwizowy%2F" type="button">Zaloguj</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							Ruch bezwizowy
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="Szukaj" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+	<div class="sub-nav  pt-3 pt-md-0">
+		<div class="container">
+			<p class="m-0 h6 py-2 bold">
+			</p>
+		</div>
+	</div>
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+						<li class="no-ellipsis">...</li>
+						<li aria-current="Wizy-Ruch-bezwizowy">
+							<a href="/kategorie-informacji/wizy-ruch-bezwizowy/" class="ellipsis">Wizy-Ruch-bezwizowy</a>
+						</li>
+
+					<li class="ellipsis active" aria-current="Ruch bezwizowy">Ruch bezwizowy</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+
+<div class="container pb-5 min-h-article">
+
+
+
+	<div id="content-to-pdf" class="content-section row m-0">
+		
+<div class="section-item menu-section col-12 col-lg-2">
+	<h4 class="content-menu">Menu</h4>
+	<ul class="p-3">
+			<li class="list-group-item px-2 ">
+				<a href="#4b100d95-d274-4c76-bb37-e78688bbae35">Wprowadzenie</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#da06b907-0ed4-43b9-a723-285a7d8044f3">Przepisy i g&#x142;&#xF3;wne zasady</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#3b2dde1c-d0e6-407c-83a0-ae8b3346358b">Dozwolony okres pobytu</a>
+			</li>
+	</ul>
+</div>
+
+
+		<div class="content col content-anchor">
+				<div id="4b100d95-d274-4c76-bb37-e78688bbae35">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Wprowadzenie</span></h2>
+<hr>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Wjazd do Polski w ruchu bezwizowym <strong>oznacza, że wjazd ten nie wymaga, aby cudzoziemiec uzyskał wizę </strong>krajową lub Schengen uprawniającą do przekroczenia granicy polskiej. </span><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt; font-family: 'Open Sans';">Dopuszczalny okres pobytu na tej podstawie w strefie Schengen, w tym w Polsce, <strong>wynosi 90 dni w okresie 180<span class="mce-nbsp-wrap">&nbsp;</span>-<span class="mce-nbsp-wrap">&nbsp;</span>dniowym.</strong></span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Cudzoziemiec może skorzystać z uproszczonej procedury wjazdu, <strong>jeśli jest obywatelem państwa wymienionego w rozporządzeniu Parlamentu Europejskiego i Rady (UE) 2018/1806, </strong>jako państwo, którego obywatele nie muszą posiadać wiz przy przekraczaniu granic zewnętrznych.&nbsp;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Dodatkowo <strong>niektóre kategorie cudzoziemców nie podlegają obowiązkowi wizowemu</strong>, niezależnie od posiadanego przez nich obywatelstwa.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Zwolnienie z obowiązku wizowego <strong>nie oznacza zwolnienia ze spełnienia pozostałych warunków wjazdu </strong>określonych w Kodeksie granicznym Schengen, które powinny być przestrzegane.&nbsp;</span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto; height: 303.2px;">
+<tbody>
+<tr style="height: 50.4px;">
+<td rowspan="2" style="background-color: rgb(241, 243, 255); vertical-align: top; width: 11.9146%; height: 303.2px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/u1jpcnz2/vector-12.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<th style="width: 88.0515%; height: 50.4px;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">System ETIAS</span></p>
+</th>
+</tr>
+<tr style="height: 252.8px;">
+<td style="width: 88.0515%; height: 252.8px;">
+<p><span style="font-size: 16pt;">- <span style="font-family: 'Open Sans';">w</span></span><span style="font-size: 16pt; font-family: 'Open Sans';">raz z uruchomieniem w 2026r. systemu ETIAS (europejskiego systemu informacji o podróży&nbsp; zezwoleń na podróż), cudzoziemcy przebywający na terytorium państw członkowskich w ruchu bezwizowym będą także <strong>zobowiązani&nbsp;do posiadania zezwolenia ETIAS przez cały okres pobytu krótkoterminowego</strong>.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Zezwolenie będzie to funkcjonowało na zasadach podobnych, co system autoryzacji podróży wprowadzane przez Australię (ETA), Kanadę (eTA), czy Stany Zjednoczone (ESTA).</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Informacja o systemie ETIAS -&nbsp;<a rel="noopener" href="https://travel-europe.europa.eu/en/etias" target="_blank" title="Przekierowanie na stronę ETIAS"><span style="text-decoration: underline;"><strong>otwórz link.</strong></span><span style="text-decoration: underline;"></span></a><a rel="noopener" href="https://travel-europe.europa.eu/pl/etias" target="_blank" title="Informacja_ETIAS"><span style="text-decoration: underline;"></span></a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12.023%; background-color: rgb(241, 243, 255); vertical-align: top;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/wbkpw2hs/vector-10.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<td style="width: 87.9509%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Sprawdź, czy posiadasz obywatelstwo, które zwalnia Cię z konieczności posiadania wizy - <a rel="noopener" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230" target="_blank" title="Dostęp do Rozporządzenia 2018_ 1806_EUR LEX" data-anchor="?uri=CELEX%3A02018R1806-20251230"><strong><span style="text-decoration: underline;">otwórz link.</span></strong></a></span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Zapoznaj się z informacją o zasadach wjazdu i krótkoterminowego pobytu w Polsce -&nbsp;<a rel="noopener" href="/kategorie-informacji/wizy-ruch-bezwizowy/zasady-wjazdu-i-krotkoterminowego-pobytu/" target="_blank" title="Zasady wjazdu"><strong><span style="text-decoration: underline;">otwórz link.</span></strong></a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>    </div>
+</div>
+</div>
+				</div>
+				<div id="da06b907-0ed4-43b9-a723-285a7d8044f3">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;">Przepisy i główne zasady</span></h2>
+<hr>
+<h3><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt;"><br>Podstawy prawne ruchu bezwizowego&nbsp;</span></strong></span></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2018/1806</strong> z dnia 14 listopada 2018 r. wymieniające państwa trzecie, których obywatele muszą posiadać wizy podczas przekraczania granic zewnętrznych, oraz te, których obywatele są zwolnieni z tego wymogu:</span></p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">w </span></strong><span style="font-family: 'Open Sans';"><strong>art. 4 </strong>określa, iż od obywateli państw trzecich <strong>wymienionych&nbsp;w załączniku II do tego rozporządzenia nie wymaga się wiz </strong>przy przekraczaniu granic zewnętrznych oraz określa</span></span><span style="font-size: 16pt; font-family: 'Open Sans';">&nbsp;<strong>ogólne kategorie osób zwolnionych z obowiązku wizowego;</strong></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku niektórych obywatelstw wprowadzone jest dodatkowe obostrzenie w kontekście konieczności posiadania przez obywateli danego kraju paszportów biometrycznych odpowiednich adnotacji (lub ich braku).</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>w art. 6</strong> <strong>określa dodatkowe kategorie osób</strong>, które mogą być zwolnione z obowiązku wizowego lub które mogą być wyłączone z tego zwolnienia na mocy jednostronnych postanowień lub umów bilateralnych;</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt;">Polska skorzystała z możliwości zwolnienia z obowiązku wizowego uczniów, od których normalnie wymagane są wizy, którzy mieszkają na stałe w jednym z państw zwolnionych z obowiązku wizowego albo w Szwajcarii lub Liechtensteinie, w sytuacji, gdy biorą udział w wycieczkach szkolnych odbywanych pod nadzorem nauczyciela szkoły (art. 24 ust. 2 ustawy o cudzoziemcach).</span></span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Niektóre umowy bilateralne zawarte przez UE, wprowadzają ułatwienia dot. braku konieczności uzyskania wizy, wyłączenie dla posiadaczy paszportów dyplomatycznych, służbowych (serwisowych) oraz specjalnych.</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku Polski jako państwa członkowskiego Unii Europejskiej jednostronne ustanowienie dodatkowego zwolnienia z obowiązku wizowego dla obywateli państw trzecich lub wyjątku od zwolnienia wizowego może nastąpić w drodze rozporządzenia ministra właściwego do spraw zagranicznych wydawanego w porozumieniu z ministrem właściwym do spraw wewnętrznych na podstawie art. 58a ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach. W przypadku wydania takiego rozporządzenia ustanawiającego dodatkowe zwolnienie z obowiązku wizowego, należy określić w nim także okres dozwolonego bezwizowego pobytu i jego niezbędne warunki.&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12%; background-color: rgb(241, 243, 255);"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/fwnltyhq/vector-11.svg?rmode=max&amp;width=55&amp;height=48" alt="" width="55" height="48"></td>
+<td style="width: 88%;">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Więcej informacji o polityce wizowej UE i zwolnieniach z obowiązku posiadania wizy znajdziesz na stronie Komisji Europejskiej - <a rel="noopener" href="https://home-affairs.ec.europa.eu/policies/schengen/visa-policy_en" target="_blank" title="KE Wizy">otwórz link.</a></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: 'Open Sans'; font-size: 14pt;">&nbsp;</span></p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-0" aria-controls="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-0">
+                             <span class="h2 px-0 accordion-title">Wyj&#x105;tki od obowi&#x105;zku wizowego</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-0" data-bs-parent="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709">
+                        <div class="accordion-body">
+                            <h3><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">Kategorie osób zwolnionych z obowiązku wizowego (art. 4 ust. 2)</span></strong></span></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Z obowiązku wizowego zwolnione są następujące kategorie osób, które wymienione są w załączniku I do rozporządzenia (UE) 2018/1806 jako osoby, od których wymagane jest posiadanie wiz:</span></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">osoby przekraczające granice w ramach małego ruchu granicznego;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">uczniowie zamieszkujący na stałe na terytorium państw członkowskich, biorący udział w wycieczce szkolnej w grupie uczniów pod opieką nauczyciela z danej szkoły;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">osoby posiadające status uchodźcy i bezpaństwowcy oraz inne osoby nieposiadające obywatelstwa żadnego państwa, zamieszkujące na stale w państwie członkowskim i są posiadaczami dokumentu podróży wydanych przez to państwo członkowskie.</span></li>
+</ul>
+<h3 style="font-size: 16pt; font-family: 'Open Sans';"><strong><span style="font-family: 'Open Sans'; font-size: 16pt;">Dalsze kategorie - zgodnie z prawem krajowym</span></strong></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Dodatkowo państwa członkowskie mogą zwolnić (na mocy własnej decyzji lub umów dwustronnych) z obowiązku wizowego następujące kategorie:</span></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">posiadaczy paszportów dyplomatycznych, paszportów służbowych (serwisowych)/urzędowych (oficjalnych), lub paszportów specjalnych;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">członków cywilnych załóg statków powietrznych i morskich w trakcie wykonywania czynności służbowych;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">członków cywilnych załóg statków morskich w trakcie pobytu na lądzie, którzy posiadają książeczkę marynarską;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">członków misji pomocowych lub ratunkowych w razie katastrofy lub wypadku;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">cywilnych załóg statków żeglujących po międzynarodowych wodach śródlądowych;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">posiadaczy dokumentów podróży wydawanych urzędnikom przez międzynarodowe organizacji międzyrządowe, których członkiem jest co najmniej jedno państwo członkowskie lub inne organizacje uznawane za podmioty prawa międzynarodowego;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">uczniów posiadających jedno z obywatelstw wymienionych w załączniku I do rozporządzenia oraz zamieszkujących na stałe w na terytorium Szwajcarii lub Liechtensteinu, biorących udział w wycieczce szkolnej w grupie uczniów pod opieką nauczyciela z danej szkoły;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">osoby posiadające status uchodźcy i bezpaństwowca, przebywających na stałe w kraju, który wydał im dokument podróży, należącym do państw z załącznika II;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">członków sił zbrojnych podróżujących w sprawach NATO lub Partnerstwa dla Pokoju;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">osoby posiadające status uchodźcy, bezpaństwowca lub nieposiadające innego dokumentu podróży wydanego przez Irlandię i uznawanego przez dane państwo członkowskie.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-1" aria-controls="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-1">
+                             <span class="h2 px-0 accordion-title">Wyj&#x105;tki od zwolnienia z obowi&#x105;zku wizowego</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709-heading-1" data-bs-parent="#accordion-7e4c4cbe-b351-43f1-85b4-467cbd16b709">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 16pt; font-family: 'Open Sans';">Państwa członkowskie mogą przewidzieć wyjątki od zwolnienia z obowiązku wizowego<strong> </strong>określonego w art. 4 rozporządzenia (UE) 2018/1806 <strong>w stosunku do osób prowadzących działalność zarobkową</strong> w trakcie swego pobytu, <strong>ale </strong></span><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">Polska&nbsp;</span></strong><span style="font-family: 'Open Sans';"><strong>nie przewiduje wyłączenia z tego tytułu.</strong> Posiadacze zezwoleń na pracę, zezwoleń na pracę sezonową, osoby wskazane w oświadczeniach o powierzeniu pracy lub innych tytułów pobytowych umożliwiających dostęp do rynku pracy nie muszą dodatkowo posiadać wiz.</span></span></p>
+<h3><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"><strong>Dodatkowo państwo członkowskie może wyłączyć od zwolnienia z obowiązku posiadania wiz następujące kategorie osób:</strong></span></span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">posiadaczy paszportów dyplomatycznych, paszportów służbowych (serwisowych)/urzędowych (oficjalnych), lub paszportów specjalnych;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">członków cywilnych załóg statków powietrznych i morskich w trakcie wykonywania czynności służbowych;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">członków cywilnych załóg statków morskich w trakcie pobytu na lądzie, którzy posiadają książeczkę marynarską;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">członków misji pomocowych lub ratunkowych w razie katastrofy lub wypadku;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">cywilnych załóg statków żeglujących po międzynarodowych wodach śródlądowych;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">posiadaczy dokumentów podróży wydawanych urzędnikom przez międzynarodowe organizacji międzyrządowe, których członkiem jest co najmniej jedno państwo członkowskie lub inne organizacje uznawane za podmioty prawa międzynarodowego.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+				<div id="3b2dde1c-d0e6-407c-83a0-ae8b3346358b">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Dozwolony okres pobytu</span></h2>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;"></span><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"><span style="font-size: 16pt;">W przypadku cudzoziemców podróżujących w ruchu bezwizowym na zasadach ogólnych, dozwolony okres pobytu w ramach ruchu bezwizowego to <strong>90 dni pobytu w ciągu każdego 180-dniowego okresu pobytu. </strong></span></span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"><span style="font-size: 16pt;">Jednak w<strong> </strong></span></span></span><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"><span style="font-size: 16pt;">przypadku derogacji narodowych dotyczących pobytów w ruchu bezwizowych szczególnych kategorii obywateli państw trzecich okres <strong>ten może być krótszy.&nbsp;</strong></span></span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>Przedłużenie pobytu </strong>w ramach ruchu bezwizowego jest możliwe jedynie w przypadku umów dwustronnych podpisanych przez Polskę i następnie notyfikowanych Komisji Europejskiej - <span style="text-decoration: underline;"><strong>otwórz link.<br><br></strong></span></span></span></p>
+<h3><span style="font-size: 14pt;"><span style="font-family: 'Open Sans';"></span></span><span style="font-family: 'Open Sans'; font-size: 14pt;"></span><strong><span style="font-family: 'Open Sans'; font-size: 18pt; color: rgb(133, 49, 77);"><span style="color: rgb(198, 54, 99);">Sposób naliczania okresu pobytu (90 dni w każdych 180 dniach)</span><br></span></strong></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 18pt; color: rgb(133, 49, 77);"></span><span style="font-family: 'Open Sans'; font-size: 14pt;"><span style="font-size: 16pt;">Legalność pobytu w ramach ruchu bezwizowego, ustala się biorąc każdy 180-dniowy okres (180 dni następujących po sobie, np. od 1 marca do 27 sierpnia, 20 czerwca do 16 grudnia, 15 sierpnia do 10 lutego) i sprawdzając, czy cudzoziemiec przebywał w danym dniu na terytorium jednego z państw członkowskich (wliczając w to dzień wjazdu i wyjazdu).</span><br><br></span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%; border-style: dashed; border-width: 1px; background-color: rgb(241, 243, 255);">
+<p style="text-align: left;"><span style="color: rgb(198, 54, 99); font-size: 14pt;"><strong><span style="font-family: 'Open Sans';">&nbsp;<span style="font-size: 16pt;">Przykład:</span></span></strong></span></p>
+<ul style="text-align: left;">
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">W dniu 15 czerwca cudzoziemiec chce sprawdzić, kiedy musi opuścić obszar Schengen. Cudzoziemiec przebywał na terytorium różnych państw obszaru Schengen od 12 marca do 27 kwietnia; na terytorium Islandii od 5 do 13 maja; na terytorium Irlandii od 13 do 20 maja; na terytorium Chorwacji od 20 maja do 5 czerwca i na terytorium Niemiec od 5 czerwca.<br><br>Okres pobytu = 47 (12.03 do 27.04) + 9 (5 do 13.05) + 27 (od 20.05) = 83 dni, gdyż Irlandii nie uwzględnia się przy badaniu okresu pobytu (nie należy do obszaru Schengen), natomiast uwzględnia się Islandię (państwo spoza UE należące do obszaru Schengen). Cudzoziemiec w związku z tym musi opuścić terytorium państw członkowskich do 22 czerwca.</span></li>
+</ul>
+<ul>
+<li style="font-size: 16pt; text-align: left; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">Ten sam cudzoziemiec wyjechał 19 czerwca i planuje 14-dniowy urlop na Malcie. Zastanawia się, kiedy będzie mógł rozpocząć ten urlop. W związku z tym, że przebywał 87 dni na terytorium państw członkowskich w okresie rozpoczynającym się 12 marca, to najwcześniej będzie mógł przyjechać na 14-dniowy urlop 5 września: 180-dniowy okres kończy się 7 września, a pozostały cudzoziemcowi w nim 3 dni dozwolonego pobytu.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 89.9948%; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12%; vertical-align: middle; text-align: center;"><strong><span style="font-size: 16pt; font-family: 'Open Sans';"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/wbkpw2hs/vector-10.svg?rmode=max&amp;width=50&amp;height=46" alt="" width="50" height="46"><br></span></strong></td>
+<td style="width: 88%; text-align: left;"><strong><span style="font-size: 16pt; font-family: 'Open Sans';">Przy obliczeniach skorzystaj z kalkulatora Schengen: </span><a rel="noopener" href="https://ec.europa.eu/assets/home/visa-calculator/calculator.htm?lang=en" target="_blank" title="Schengen calculator" data-anchor="?lang=en"><span style="font-size: 16pt; font-family: 'Open Sans';">otwórz link.</span></a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><span style="color: rgb(133, 49, 77); font-size: 18pt;"><strong><span style="font-family: 'Open Sans';"><span style="color: rgb(198, 54, 99);">Łączenie okresu dozwolonego pobytu z pobytem długoterminowym<br></span></span></strong></span></h3>
+<hr>
+<p><span style="color: rgb(133, 49, 77); font-size: 18pt;"><span style="font-family: 'Open Sans';"></span></span><span style="font-family: 'Open Sans'; font-size: 16pt;">Okresu pobytu na podstawie<strong> długoterminowej wizy krajowej lub tytułów pobytowych</strong> wydanych przez państwo członkowskie <strong>nie wlicza się do okresu dozwolonego pobytu w ramach ruchu bezwizowego.</strong><br><br>Obywatele krajów wymienionych w załączniku II do rozporządzenia (UE) 2018/1806 mogą, <strong>co do zasady</strong> <strong>przebywać 90 dni w ciągu kolejnych 180 dni po wygaśnięciu </strong>ważności długoterminowej wizy krajowej lub tytułu pobytowego lub po wygaśnięciu okresu dozwolonego pobytu wskazanego w długoterminowej wizie krajowej.&nbsp;</span></p>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Informacja SG - <a rel="noopener" href="https://www.strazgraniczna.pl/pl/cudzoziemcy/najczesciej-zadawane-py/6044,26-Czy-po-zakonczeniu-pobytu-na-podstawie-polskiej-wizy-krajowej-typ-D-lub-karty.html" target="_blank" title="Przekształcenie pobytu"><strong>otwórz link.</strong></a></span></p>    </div>
+</div>
+</div>
+				</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		var fragment = window.location.hash.substr(1); // Pobieranie fragmentu URL po #
+		if (fragment) {
+			$("ul li a[href='#" + fragment + "']").addClass("activeAnchor");
+		}
+		$("ul li a").click(function () {
+			$("ul li a").removeClass("activeAnchor");
+			$(this).addClass("activeAnchor");
+		});
+	});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.querySelector('.alert')) {
+            var paragraph = document.querySelector('.sub-nav p');
+            if (paragraph) {
+                paragraph.style.display = 'none';
+            }
+        }
+    });
+</script>
+<style>
+	.icons span {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+		.icons span:hover {
+			opacity: 0.8;
+		}
+
+	.alert p:last-child{
+		margin-bottom: unset;
+	}
+</style>
+
+
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Ta strona używa ciasteczek (plików cookies) w celu ułatwienia Ci korzystania z naszego serwisu oraz w celach statystycznych, w szczególności:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">dostosowania zawartości serwisu do Twoich preferencji językowych;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">utrzymywania sesji dostępu do treści i funkcjonalności portalu dostępnych wyłącznie dla zarejestrowanych użytkowników;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">unikania powtórnego wyświetlania komunikatów administratora serwisu na Twoim Urządzeniu;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">zbierania danych statystycznych dotyczących unikalnych wyświetleń portalu (dane dotyczące rodzaju i wersji używanej przeglądarki).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Jeśli w ustawieniach przeglądarki nie zostało włączone blokowanie tego typu plików, to zgadzasz się na ich użycie oraz zapisanie w pamięci swojego urządzenia. Pamiętaj, że zawsze możesz samodzielnie zarządzać tymi ustawieniami w swojej przeglądarce. Więcej informacji możesz znaleźć w naszej <a rel="noopener" href="/polityka-cookies/" target="_blank" title="Polityka cookies">Polityce cookies.</a></span></p>    <button id="agreeButton" class="btn">Zaakceptuj ciastka</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Wszystkie treści publikowane w serwisie są udostępniane na licencji Creative Commons: uznanie autorstwa - użycie niekomercyjne - bez utworów zależnych 3.0 Polska (CC BY-NC-ND 3.0 PL), o ile nie jest to stwierdzone inaczej. Informacja zamieszczona na portalu MOS nie stanowi źródła prawa. Autorzy dołożyli należytej staranności, aby była ona zgodna z obowiązującymi regulacjami prawnymi. W przypadku zidentyfikowania stanu niezgodności prosimy o poinformowanie organu o tym fakcie.</p>
+<p style="text-align: justify;">Projekt nr 1/8-2018/BK-FAMI pt. „Modernizacja Systemu Pobyt v.2 w zakresie utworzenia Modułu Obsługi Spraw” jest współfinansowany ze środków Programu Krajowego Funduszu Azylu Migracji i Integracji – Bezpieczna przystań.</p>
+</div>
+</div>			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Poznaj nas</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Pomoc</h5>
+		<div class="col">
+			<a href="/baza-pytan-i-odpowiedzi/" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="/mapa-strony/" target="_blank">
+				Mapa strony
+			</a>
+		</div>
+		<div class="col">
+			<a href="/pomoc-techniczna/" target="_blank">
+				Pomoc techniczna
+			</a>
+		</div>
+		<div class="col">
+			<a href="/redakcja/" target="_blank">
+				Redakcja
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Kwestie prawne</h5>
+		<div class="col">
+			<a href="/regulamin/" target="_blank">
+				Regulamin
+			</a>
+		</div>
+		<div class="col">
+			<a href="/deklaracja-dostepnosci/" target="_blank">
+				Deklaracja dost&#x119;pno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-prywatnosci/" target="_blank">
+				Polityka prywatno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-cookies/" target="_blank">
+				Polityka cookies
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+<!-- MY COLOR #c63663  -->
+<style type="text/css">
+	body {
+		border-color: #c63663 !important;
+	}
+
+	.alert,
+	.card .card-top,
+	nav {
+		border-color: #c63663 !important;
+	}
+
+	.sub-nav {
+		background: #c63663 !important;
+	}
+	.menu-section ul li::before {
+	color: #c63663 !important;}
+</style>
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>

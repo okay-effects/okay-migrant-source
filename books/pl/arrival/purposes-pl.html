@@ -1,0 +1,984 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="pl" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    Zezwolenie-czasowy | Modu&#x142; Obs&#x142;ugi Spraw
+</title>
+<meta name="Description" content=" ?? Zezwolenie-czasowy" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-content ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/">
+						<img src="/clean-assets/images/logo_white.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/mapa-strony/"></a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x627;&#x62D;&#x62A;&#x645;&#x627;&#x644;&#x627;&#x62A;-&#x627;&#x644;&#x62A;&#x634;&#x631;&#x64A;&#x639;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/possibilites-legalisation/sejour-continu-hors-de-l-ue/permis-temporaire/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/cac-phuong-an-hop-phap-hoa/ngoai-eu-gia-han-thoi-gian-luu-tru/giay-phep-tam-thoi/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vozmozhnosti-legalizafiya/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/">
+				UK
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fmozliwosci-legalizacji%2Fspoza-ue-kontynuacja-pobytu%2Fzezwolenie-czasowy%2F" type="button">Zaloguj</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/possibilities-legalization/non-eu-continued-stay/permit-temporary/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x627;&#x62D;&#x62A;&#x645;&#x627;&#x644;&#x627;&#x62A;-&#x627;&#x644;&#x62A;&#x634;&#x631;&#x64A;&#x639;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/possibilites-legalisation/sejour-continu-hors-de-l-ue/permis-temporaire/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/cac-phuong-an-hop-phap-hoa/ngoai-eu-gia-han-thoi-gian-luu-tru/giay-phep-tam-thoi/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vozmozhnosti-legalizafiya/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/&#x43C;&#x43E;&#x436;&#x43B;&#x438;&#x432;&#x43E;&#x441;&#x442;&#x456;-&#x43B;&#x435;&#x433;&#x430;&#x43B;&#x456;&#x437;&#x430;&#x446;&#x456;&#x44F;/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/">
+				UK
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fmozliwosci-legalizacji%2Fspoza-ue-kontynuacja-pobytu%2Fzezwolenie-czasowy%2F" type="button">Zaloguj</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							Wybierz g&#x142;&#xF3;wny cel pobytu
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="Szukaj" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+
+
+
+	<div class="sub-nav  pt-3 pt-md-0">
+		<div class="container">
+			
+		</div>
+	</div>
+
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+						<li class="no-ellipsis">...</li>
+						<li aria-current="spoza-UE-kontynuacja-pobytu">
+							<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/" class="ellipsis">spoza-UE-kontynuacja-pobytu</a>
+						</li>
+
+					<li class="ellipsis active" aria-current="Zezwolenie-czasowy">Zezwolenie-czasowy</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+<article class="min-h-article">
+    <div class="container">
+        <div class="row content-section">
+        <div class="content col">
+                  <div class="umb-block-list">
+	<div class="row cta vertical justify-content-center align-items-stretch ">
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/qbyf3ehu/mos_wykonywanie-pracy.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/">Wykonywanie pracy</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/">Wykonywanie pracy</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/byydn21x/mos_dzial-gosp.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/">Prowadzenie dzia&#x142;alno&#x15B;ci gospodarczej</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/dzialalnosc-gospodarcza/">Prowadzenie dzia&#x142;alno&#x15B;ci gospodarczej</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/qdhfb0ii/mos_nauka.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/zezwolenie-naukowiec/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/zezwolenie-naukowiec/">Badania naukowe lub prace rozwojowe </a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/zezwolenie-naukowiec/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/zezwolenie-naukowiec/">Badania naukowe lub prace rozwojowe </a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/25nc1ika/mos_pobyt-z-rodzina.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-z-rodzina/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-z-rodzina/">Pobyt z rodzin&#x105;</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-z-rodzina/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-z-rodzina/">Pobyt z rodzin&#x105;</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/ptwf4umz/mos_studia.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/">Stacjonarne studia wy&#x17C;sze lub szko&#x142;a doktorska</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/">Stacjonarne studia wy&#x17C;sze lub szko&#x142;a doktorska</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/1dzilg1r/mos_szkola.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/nauka/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/nauka/">Nauka w szkole lub inne formy kszta&#x142;cenia</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/nauka/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/nauka/">Nauka w szkole lub inne formy kszta&#x142;cenia</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/ceyljqx1/mos_staz.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/staz/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/staz/">Odbywanie sta&#x17C;u</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/staz/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/staz/">Odbywanie sta&#x17C;u</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/3sdpzcma/mos_absolwent-naukowiec.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/absolwent-lub-naukowiec/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/absolwent-lub-naukowiec/">Pobyt jako absolwent lub naukowiec</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/absolwent-lub-naukowiec/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/absolwent-lub-naukowiec/">Pobyt jako absolwent lub naukowiec</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/s4ietmiw/mos_wolontariat.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/wolontariat/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/wolontariat/">Wolontariat europejski</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/wolontariat/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/wolontariat/">Wolontariat europejski</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/cmcpw1my/mos_handel-ludzmi.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-dla-ofiar-handlu-ludzmi/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-dla-ofiar-handlu-ludzmi/">Pobyt dla ofiar handlu lud&#x17A;mi</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-dla-ofiar-handlu-ludzmi/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/pobyt-dla-ofiar-handlu-ludzmi/">Pobyt dla ofiar handlu lud&#x17A;mi</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-4 col-sm-6  col-md-4 col-lg-4 col-xl-3">
+				<div class="row clearfix  px-3">
+                     <div class="card px-0  position-relative">
+						<div class="card-top position-relative  d-flex flex-column align-items-center justify-content-center">
+								<div class="mt-2"><img class="img-card" src="/media/poojugbv/mos_inne.svg" alt="Card image cap"></div>
+
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/inne-okolicznosci/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/inne-okolicznosci/">Inne okoliczno&#x15B;ci pobytu</a>
+								</h5>
+						</div>
+						<div class="card-body text-center">
+								<h5 class="card-title">
+									<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/inne-okolicznosci/" class="position-absolute vertical-title top-0 start-0 w-100 h-100 z-3 m-0"></a>
+                                		<a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/inne-okolicznosci/">Inne okoliczno&#x15B;ci pobytu</a>
+								</h5>
+							<div>
+								<ul class="mb-0">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+              </div>
+        </div>
+    </div>
+</article>
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Ta strona używa ciasteczek (plików cookies) w celu ułatwienia Ci korzystania z naszego serwisu oraz w celach statystycznych, w szczególności:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">dostosowania zawartości serwisu do Twoich preferencji językowych;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">utrzymywania sesji dostępu do treści i funkcjonalności portalu dostępnych wyłącznie dla zarejestrowanych użytkowników;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">unikania powtórnego wyświetlania komunikatów administratora serwisu na Twoim Urządzeniu;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">zbierania danych statystycznych dotyczących unikalnych wyświetleń portalu (dane dotyczące rodzaju i wersji używanej przeglądarki).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Jeśli w ustawieniach przeglądarki nie zostało włączone blokowanie tego typu plików, to zgadzasz się na ich użycie oraz zapisanie w pamięci swojego urządzenia. Pamiętaj, że zawsze możesz samodzielnie zarządzać tymi ustawieniami w swojej przeglądarce. Więcej informacji możesz znaleźć w naszej <a rel="noopener" href="/polityka-cookies/" target="_blank" title="Polityka cookies">Polityce cookies.</a></span></p>    <button id="agreeButton" class="btn">Zaakceptuj ciastka</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Wszystkie treści publikowane w serwisie są udostępniane na licencji Creative Commons: uznanie autorstwa - użycie niekomercyjne - bez utworów zależnych 3.0 Polska (CC BY-NC-ND 3.0 PL), o ile nie jest to stwierdzone inaczej. Informacja zamieszczona na portalu MOS nie stanowi źródła prawa. Autorzy dołożyli należytej staranności, aby była ona zgodna z obowiązującymi regulacjami prawnymi. W przypadku zidentyfikowania stanu niezgodności prosimy o poinformowanie organu o tym fakcie.</p>
+<p style="text-align: justify;">Projekt nr 1/8-2018/BK-FAMI pt. „Modernizacja Systemu Pobyt v.2 w zakresie utworzenia Modułu Obsługi Spraw” jest współfinansowany ze środków Programu Krajowego Funduszu Azylu Migracji i Integracji – Bezpieczna przystań.</p>
+</div>
+</div>			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Poznaj nas</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Pomoc</h5>
+		<div class="col">
+			<a href="/baza-pytan-i-odpowiedzi/" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="/mapa-strony/" target="_blank">
+				Mapa strony
+			</a>
+		</div>
+		<div class="col">
+			<a href="/pomoc-techniczna/" target="_blank">
+				Pomoc techniczna
+			</a>
+		</div>
+		<div class="col">
+			<a href="/redakcja/" target="_blank">
+				Redakcja
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Kwestie prawne</h5>
+		<div class="col">
+			<a href="/regulamin/" target="_blank">
+				Regulamin
+			</a>
+		</div>
+		<div class="col">
+			<a href="/deklaracja-dostepnosci/" target="_blank">
+				Deklaracja dost&#x119;pno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-prywatnosci/" target="_blank">
+				Polityka prywatno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-cookies/" target="_blank">
+				Polityka cookies
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+<!-- MY COLOR #c63663  -->
+<style type="text/css">
+	body {
+		border-color: #c63663 !important;
+	}
+
+	.alert,
+	.card .card-top,
+	nav {
+		border-color: #c63663 !important;
+	}
+
+	.sub-nav {
+		background: #c63663 !important;
+	}
+	.menu-section ul li::before {
+	color: #c63663 !important;}
+</style>
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>

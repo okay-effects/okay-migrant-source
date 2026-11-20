@@ -1,0 +1,1706 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="pl" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    Wizy | Modu&#x142; Obs&#x142;ugi Spraw
+</title>
+<meta name="Description" content=" ?? Wizy" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/wizy-ruch-bezwizowy/wizy/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/wizy-ruch-bezwizowy/wizy/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-content ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/">
+						<img src="/clean-assets/images/logo_white.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/mapa-strony/"></a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/visas-movement-free/visas/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/wizy-ruch-bezwizowy/&#x627;&#x644;&#x62A;&#x623;&#x634;&#x64A;&#x631;&#x627;&#x62A;/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/voyage-sans-visa/visas/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thi-thuc-di-chuyen-mien-thi-thuc/thi-thuc/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/wizy-ruch-bezwizowy/vizy/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/wizy-ruch-bezwizowy/&#x432;&#x456;&#x437;&#x438;/">
+				UK
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fwizy-ruch-bezwizowy%2Fwizy%2F" type="button">Zaloguj</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/visas-movement-free/visas/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/wizy-ruch-bezwizowy/&#x627;&#x644;&#x62A;&#x623;&#x634;&#x64A;&#x631;&#x627;&#x62A;/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/voyage-sans-visa/visas/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thi-thuc-di-chuyen-mien-thi-thuc/thi-thuc/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/wizy-ruch-bezwizowy/vizy/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/wizy-ruch-bezwizowy/&#x432;&#x456;&#x437;&#x438;/">
+				UK
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fwizy-ruch-bezwizowy%2Fwizy%2F" type="button">Zaloguj</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							Wizy i procedury wizowe
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="Szukaj" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+	<div class="sub-nav  pt-3 pt-md-0">
+		<div class="container">
+			<p class="m-0 h6 py-2 bold">
+			</p>
+		</div>
+	</div>
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+						<li class="no-ellipsis">...</li>
+						<li aria-current="Wizy-Ruch-bezwizowy">
+							<a href="/kategorie-informacji/wizy-ruch-bezwizowy/" class="ellipsis">Wizy-Ruch-bezwizowy</a>
+						</li>
+
+					<li class="ellipsis active" aria-current="Wizy">Wizy</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+
+<div class="container pb-5 min-h-article">
+
+		<div class="alert">
+			<p>Aby uzyskać dalsze informacje o procedurach wizowych skieruj się <a rel="noopener" href="https://www.gov.pl/web/dyplomacja/wizy" target="_blank" title="Informacja_Wizy_Przekierowanie na Gov.pl_MSZ">na stronę Ministerstwa Spraw Zagranicznych.&nbsp;</a></p>
+           </div>
+
+
+	<div id="content-to-pdf" class="content-section row m-0">
+		
+<div class="section-item menu-section col-12 col-lg-2">
+	<h4 class="content-menu">Menu</h4>
+	<ul class="p-3">
+			<li class="list-group-item px-2 ">
+				<a href="#ad4dd8b1-1a88-4b69-8a71-fc1bed0c79f0">Wprowadzenie</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#8dbe34b7-2dbb-46d5-a076-009bc1d1a680">Przepisy</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#948130f5-bcf4-4762-9fa3-dfa2849d9c07">Wype&#x142;nienie i z&#x142;o&#x17C;enie wniosku</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#f518fd2e-b5c8-4272-bdd6-a7fd306c5c80">Rozpatrzenie wniosku</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#75e449c7-b5e1-4ddd-9cd4-af9b7c3810a1">Decyzja wizowa</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#dfb87876-1480-4255-b224-8374018651ab">&#x15A;rodki zaskar&#x17C;enia</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#a03f9e43-a846-4947-b97c-8182a29c4692">Dozwolony okres pobytu</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#63d79b4d-2260-4530-9fab-71fbf8ce0278">Inne zagadnienia</a>
+			</li>
+	</ul>
+</div>
+
+
+		<div class="content col content-anchor">
+				<div id="ad4dd8b1-1a88-4b69-8a71-fc1bed0c79f0">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans';"><span style="color: rgb(198, 54, 99); font-size: 36pt;"><br>Wprowadzenie</span><strong><span style="color: rgb(55, 92, 140);"><span style="font-size: 24pt;"><br></span></span></strong></span></h2>
+<hr>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="background-color: rgb(241, 243, 255); width: 3.0581%;">&nbsp;</td>
+<th style="width: 96.9856%; text-align: left;"><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(201, 74, 106);">Wizy Schengen</span></th>
+</tr>
+<tr>
+<td style="width: 96.9856%;">
+<p><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Wizy Schengen <strong>są wizami umożliwiającymi pobyt krótkoterminowy</strong>&nbsp;<strong>w strefie Schengen obywatelom państw trzecich, którzy nie są zwolnieni z obowiązku wizowego</strong> na mocy rozporządzenia Parlamentu Europejskiego i Rady (UE) 2018/1806. Pobyt krótkoterminowy to taki, który trwa nie dłużej niż 90 dni w każdym okresie 180 dni.</span></span></p>
+<p><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Informacja o zwolnieniach -&nbsp;<a rel="noopener" href="https://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/wizy-ruch-bezwizowy/ruch-bezwizowy/" target="_blank" title="Informacja_Ruch bezwizowy"><strong>otwórz link</strong>.</a></span></span></p>
+<p><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Zasady wydawania wiz Schengen regulują przepisy rozporządzenia (WE) nr 810/2009 z dnia 13 lipca 2009 r. ustanawiającego Wspólnotowy Kodeks Wizowy (kodeks wizowy).</span></span></p>
+<p><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Dane z wniosków o wizy Schengen, decyzji podjętych na ich podstawie, wydanych naklejek wizowych, informacje o przedłużeniu, cofnięciu oraz unieważnieniu wizy Schengen przechowuje się w Wizowym Systemie Informacyjnym (VIS).&nbsp;</span></span></p>
+<p><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Informacja o systemie - <a rel="noopener" href="https://www.gov.pl/web/mswia/zarzadzanie-granicami-zewnetrznymi" target="_blank" title="Informacja_Przekierowanie na stronę Gov.pl_MSWiA"><strong>otwórz link.</strong></a></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3.0581%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 96.9856%; text-align: left;"><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(201, 74, 106);">Wizy krajowe&nbsp;</span></th>
+</tr>
+<tr>
+<td style="width: 96.9856%;"><span style="font-size: 16pt; font-family: 'Open Sans';">Są wizami umożliwiającymi cudzoziemcom <strong>pobyt długoterminowy w okresie powyżej 3 miesięcy i nie dłużej niż 1 rok.</strong></span><br><br><span style="font-size: 16pt; font-family: 'Open Sans';">Jednocześnie <strong>umożliwiają podróżowanie po innych państwach obszaru Schengen </strong>pod warunkiem, że pobyt w tychże państwach nie przekracza<strong> </strong>90 dni w każdym 180-dniowym okresie, dokument podróży cudzoziemca jest uznawany przez ww. państwa członkowskie, a dane cudzoziemca nie zostały wprowadzone do krajowego zakazu wjazdu, do którego się on udaje.</span><br><br><span style="font-size: 16pt; font-family: 'Open Sans';">Zasady wydawania wiz krajowych są regulowane przepisami ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>    </div>
+</div>
+</div>
+				</div>
+				<div id="8dbe34b7-2dbb-46d5-a076-009bc1d1a680">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2 style="text-align: left;"><span style="font-family: 'Open Sans';"><span style="font-size: 24pt; color: rgb(55, 92, 140);"><span style="color: rgb(198, 54, 99); font-size: 36pt;">Przepisy</span></span><strong><span style="font-size: 24pt; color: rgb(55, 92, 140);"><br></span></strong></span></h2>
+<hr>
+<h3 style="text-align: left;"><span style="font-family: 'Open Sans'; font-size: 18pt;"><span style="color: rgb(55, 92, 140);"></span><span style="color: rgb(198, 54, 99);"><strong>Ustawa o cudzoziemcach</strong></span></span></h3>
+<hr>
+<p style="text-align: left;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Ustawa z dnia 12 grudnia 2013r. o cudzoziemcach <strong>w dziale IV. reguluje proces wydawania wiz krajowych oraz niektóre procedury związane z wydawaniem wiz Schengen</strong> (m.in. cele krajowe wydawania czy adnotacje krajowe), jak też kwestie związane z procedurami dotyczącymi przedłużania wiz, a także ich cofania i unieważnienia.</span></p>
+<p style="text-align: left;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Dodatkowo w art. 5 ust. 2 ustawy o cudzoziemcach wskazane jest, iż do wydawania, cofania lub unieważniania wiz krajowych lub przedłużania okresu ich ważności lub okresu objętego tymi wizami, które nie zostały uregulowane w przepisach ustawy o cudzoziemcach stosuje się </span><span style="font-family: 'Open Sans'; font-size: 16pt;">Wspólnotowy Kodeks Wizowy.</span></p>
+<h3 style="text-align: left;"><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt;">Rozporządzenie (WE) nr 810/2009 (kodeks wizowy)</span></strong></span></h3>
+<hr>
+<p style="text-align: left;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Rozporządzenie (WE) nr 810/2009 z dnia 13 lipca 2009 r. <strong>ustanawiające Wspólnotowy Kodeks Wizowy (kodeks wizowy) jest głównym źródłem prawa dotyczącym wydawania wiz Schengen. </strong>U</span><span style="font-family: 'Open Sans'; font-size: 16pt;">stanawia wspólne zasady składania wniosków wizowych dla wszystkich państw UE, określając m.in.:</span></p>
+<ul>
+<li style="text-align: left; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">zasady składania wniosku o wizę Schengen, wymagane dokumenty i opłaty oraz </span><span style="font-family: 'Open Sans'; font-size: 16pt;">państwo właściwe dla jego rozpatrzenia;</span></li>
+<li style="text-align: left; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">zasady rozpatrywania wniosku i podejmowania decyzji </span><span style="font-family: 'Open Sans'; font-size: 16pt;">wizowej przez konsula;</span></li>
+<li style="text-align: left; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">przesłanki odmowy wydania wizy Schengen;</span></li>
+<li style="text-align: left; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">zasady przedłużenia, unieważnienia i cofnięcia wizy Schengen;</span></li>
+<li style="text-align: left; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">procedury związane z wydawaniem wiz na granicach zewnętrznych.</span><span style="font-family: 'Open Sans'; font-size: 16pt;"></span></li>
+</ul>
+<h3 style="text-align: left;"><span style="color: rgb(198, 54, 99);"><strong><span style="font-family: 'Open Sans'; font-size: 18pt;">Art. 3 rozporządzenia (UE) 2018/1806</span></strong></span></h3>
+<hr>
+<p style="text-align: left;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Art. 3 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2018/1806 z dnia 14 listopada 2018 r. wymieniającego państwa trzecie, których obywatele muszą posiadać wizy podczas przekraczania granic zewnętrznych, oraz te, których obywatele są zwolnienie z tego wymogu określa, że <strong>wizę na wjeździe do obszaru Schengen muszą posiadać obywatele państw trzecich wymienionych w załączniku I.</strong> do tego rozporządzenia oraz </span><span style="font-family: 'Open Sans'; font-size: 16pt;">osoby, które uzyskały<strong> status bezpaństwowca lub uchodźcy w państwach spoza obszaru Schengen.</strong></span></p>    </div>
+</div>
+</div>
+				</div>
+				<div id="948130f5-bcf4-4762-9fa3-dfa2849d9c07">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; font-size: 36pt; color: rgb(198, 54, 99);"><br>Wypełnienie i złożenie wniosku</span></h2>
+<hr>
+<h3><span style="font-size: 18pt; font-family: 'Open Sans';"><strong><span style="color: rgb(198, 54, 99);">Kiedy złożyć wniosek?&nbsp;</span></strong></span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"><strong>nie wcześniej niż 6 miesięcy i nie później niż 15 dni przed datą planowanego wjazdu</strong>, z zastrzeżeniem, że w </span><span style="font-family: 'Open Sans';">przypadku marynarzy jest możliwe złożenie wniosku na 9 miesięcy przed datą planowanego wjazdu.</span></span></li>
+</ul>
+<h3><span style="font-family: 'Open Sans'; font-size: 18pt; color: rgb(198, 54, 99);"><strong>Gdzie złożyć wniosek?</strong></span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>do konsulatu właściwego </strong>ze względu na miejsce zamieszkania (co do zasady)<strong>. </strong></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>Wniosek należy złożyć d</strong><strong>o polskiego konsula, gdy:</strong></span></p>
+<ul style="text-align: left;">
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>głównym celem podróży jest terytorium Polski;</strong></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">gdy przekroczenie granicy zewnętrznej Schengen następuje przez granicę Polski, a państwa członkowskiego, które jest głównym celem podróży nie da się określić.&nbsp;</span></li>
+</ul>
+<p style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W niektórych przypadkach wniosek może być rozpatrywany przez ministra właściwego do spraw zagranicznych – w tym przypadku wniosek w zależności od miejsca pobytu cudzoziemca, jest składany<strong> </strong>za pośrednictwem konsula lub usługodawcy zewnętrznego.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 12%; background-color: rgb(241, 243, 255); vertical-align: top;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/u1jpcnz2/vector-12.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<th style="width: 88%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Sytuacje wyjątkowe&nbsp;</span></th>
+</tr>
+<tr>
+<td style="width: 49.5844%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W sytuacjach szczególnych i pilnych (np. śmierć bliskiej osoby, wypadki, przyczyny humanitarne), gdy niemożliwe jest złożenie w konsulacie wniosku wizowego, <strong>możliwe jest złożenie wniosku wizowego na granicy.</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-0" aria-controls="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-0">
+                             <span class="h2 px-0 accordion-title">E-konsulat oraz sk&#x142;adanie wniosku u us&#x142;ugodawcy zewn&#x119;trznego</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-heading-0" data-bs-parent="#accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 14pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">W niektórych lokacjach konsularnych, wymagane jest zarejestrowania wniosku wizowego lub umówienie się na wizytę o konsula przez <strong>system e-Konsulat: </strong></span></span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><a rel="noopener" href="https://secure.e-konsulat.gov.pl" target="_blank"><strong><span style="background-color: rgb(241, 243, 255);">https://secure.e-konsulat.gov.pl</span></strong></a><br></span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">Niektóre konsulaty RP korzystają także z możliwości złożenia wniosku za pośrednictwem usługodawcy zewnętrznego. Szczegółowe informacje można znaleźć na stronach poszczególnych konsulatów RP.<br></span><br></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-1" aria-controls="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-1">
+                             <span class="h2 px-0 accordion-title">Reprezentacja wizowa</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-heading-1" data-bs-parent="#accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku starania się o wizę Schengen, <strong>w niektórych lokacjach konsularnych, Polska jest reprezentowana przez inne państwo członkowskie.&nbsp;</strong></span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">W takim wypadku, co do zasady, wniosek o wizę Schengen składa się w konsulacie państwa reprezentowanego, który to reguluje szczegóły proceduralne złożenia wniosku (kwestie stawiennictwa osobistego, możliwość/konieczność składania wniosku u usługodawcy zewnętrznego), a jego prawo reguluje ewentualne kwestie odwołania od decyzji wizowej.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-heading-2">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-2" aria-controls="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-2">
+                             <span class="h2 px-0 accordion-title">Cel z&#x142;o&#x17C;enia wniosku</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305-heading-2" data-bs-parent="#accordion-f91f2b22-ab5d-4127-9ecc-e5441f28a305">
+                        <div class="accordion-body">
+                            <h3><span style="color: rgb(201, 74, 106);"><strong><span style="font-family: 'Open Sans'; font-size: 16pt;">Cele wydania wiz</span></strong></span></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Wypełniając wniosek wizowy należy wskazać główny cel podróży. Na formularzu dokonuje się&nbsp;<strong>wyboru spośród ogólnych celów&nbsp;</strong>ubiegania się o wizę.&nbsp;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>Cele szczegółowe</strong>&nbsp;(zarówno Schengen, jak i krajowych) oraz uprawnienia z nich wynikające <strong>są określone przez prawo krajowe </strong>- w przypadku Polski są to przepisy art. 60 ustawy o cudzoziemcach.&nbsp;</span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></p>
+<h3><strong><span style="font-family: 'Open Sans'; font-size: 16pt; color: rgb(201, 74, 106);">Typ wiz (Schengen vs. krajowa)</span></strong></h3>
+<hr>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Typ wizy, o którą powinien ubiegać się cudzoziemiec zależy przede wszystkim od długości planowanego pobytu w Polsce.&nbsp;</span><span style="font-family: 'Open Sans'; font-size: 16pt;">Jeśli cudzoziemiec planuje pobyt dłuższy niż<strong> 90 dni w ciągu roku, powinien obiegać się o wizę krajową, a jeśli krótszy – o wizę Schengen. </strong></span></p>
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;">Od powyższej zasady, art. 60 ust. 2 ustawy o cudzoziemcach wprowadza wyjątki.</span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 2.98046%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 97.0306%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Wizy wydawane wyłącznie jako wizy Schengen</span></th>
+</tr>
+<tr>
+<td style="width: 97.0306%;">
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu tranzytu;</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu tranzytu lotniczego;</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 2.98046%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 97.0306%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Wizy wydawane wyłącznie jako wizy krajowe</span></th>
+</tr>
+<tr>
+<td style="width: 97.0306%;">
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu odbycia studiów pierwszego stopnia, studiów drugiego stopnia lub jednolitych studiów magisterskich albo kształcenia się w szkole doktorskiej;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu prowadzenia badań naukowych lub prac rozwojowych;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu odbycia stażu;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu udziału w programie wolontariatu europejskiego;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu repatriacji,&nbsp;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu przybycia na terytorium Rzeczypospolitej Polskiej jako członek najbliższej rodziny repatrianta,&nbsp;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu korzystania z uprawnień wynikających z posiadania Karty Polaka,&nbsp;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">wizy w celu przybycia na terytorium Rzeczypospolitej Polskiej jako członek najbliższej rodziny osoby przebywającej w Polsce na podstawie zezwolenia na pobyt stały uzyskanego na podstawie Karty Polaka;</span></li>
+</ul>
+<p style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">&nbsp;⇒ Dla wydania wiz krajowych studentom studiów stacjonarnych, doktorantom, naukowcom, stażystom i wolontariuszom wymagane jest zatwierdzenie jednostki przyjmującej przez ministra właściwego ds. wewnętrznych, w ramach specjalnej procedury.&nbsp;<br>Listę jednostek zatwierdzonych znajdziesz na stronie MSWiA -&nbsp;<a rel="noopener" href="https://www.gov.pl/web/mswia/zloz-wniosek-o-zatwierdzanie-jednostki-na-potrzeby-przyjmowania-cudzoziemcow" target="_blank" title="Pzrekierowanie do MSWiA_lista jednostek zatwierdzonych"><strong>kliknij i przejdź</strong>.</a><br></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90.1965%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr style="height: 38.1333px;">
+<td style="width: 100%; background-color: rgb(55, 92, 140);">
+<p><span style="font-size: 12pt;"><span style="font-family: 'Open Sans';"><img style="float: left;" src="/media/mbllk3dm/mos_info-o-bledach.svg?rmode=max&amp;width=30&amp;height=30" alt="" width="30" height="30"></span></span></p>
+</td>
+</tr>
+<tr style="height: 272.4px;">
+<td style="width: 100%; height: 272.4px;">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Konsul na podstawie przedstawionych informacji (we wniosku oraz dokumentach towarzyszących) podczas rozpatrywania wniosku,&nbsp;<strong>wskazuje na naklejce wizowej właściwy cel wydania wizy</strong>, zgodnie z Rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 25 czerwca 2025r. w sprawie wiz dla cudzoziemców.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku wniosków o wizę Schengen składanych w ramach reprezentacji wizowej, obowiązują w tym zakresie przepisy państw reprezentujących Polskę.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h3><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(198, 54, 99);"><strong>Wymogi formalne</strong></span></h3>
+<hr>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-collapse-0" aria-controls="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-collapse-0">
+                             <span class="h2 px-0 accordion-title">Wiza Schengen</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-heading-0" data-bs-parent="#accordion-83cdcc7d-28aa-404a-ac3e-c07835769414">
+                        <div class="accordion-body">
+                            <h3><span style="font-family: 'Open Sans'; font-size: 16pt;">Osoba ubiegająca się o wizę Schengen:</span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>wypełnia wniosek o wizę Schengen</strong>, stanowiący załącznik I do kodeksu wizowego;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>przedstawia dokument podróży</strong>, który:</span><span style="font-family: 'Open Sans'; font-size: 16pt;"></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.432%; text-align: left;">
+<ul style="list-style-type: circle;">
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jest ważny co najmniej trzy miesiące po planowanej dacie ostatniego opuszczenia państw członkowskich,</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">zwiera przynajmniej dwie wolne strony oraz&nbsp;</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">został wydany w ciągu ostatnich dziesięciu lat.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">składa fotografię,&nbsp;</span></strong><span style="font-family: 'Open Sans';">zgodną z wymogami technicznymi określonymi w dokumencie ICAO 9303, część 1, wydanie VI, lub taka fotografia jest jej wykonywana w chwili składania wniosku;</span></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>umożliwia pobranie odcisków palców - </strong>o ile:</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.432%;">
+<ul style="list-style-type: circle;">
+<li style="font-size: 16pt; text-align: left; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">odciski nie były pobierane przy poprzednim wniosku o wizę Schengen w ciągu ostatnich 59 miesięcy;</span></li>
+<li style="font-size: 16pt; text-align: left; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">nie jest dzieckiem w wieku poniżej 12 roku życia;</span></li>
+<li style="font-size: 16pt; text-align: left; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">pobranie od niej odcisków linii papilarnych jest fizycznie możliwe;</span></li>
+<li style="font-size: 16pt; text-align: left; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">nie jest przywódcą państwa lub rządu, członkiem rządu krajowego lub towarzyszącym im małżonkiem, członkiem oficjalnej delegacji, monarchom lub ważnym rangą członkiem rodziny królewskiej zapraszanym przez rządy państw członkowskich lub organizacje międzynarodowe w celach oficjalnych</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">uiszcza opłatę wizową;</span></strong></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>dostarcza dokumenty uzupełniające</strong> wskazane w art. 14 oraz załączniku II do kodeksu wizowego lub też wskazane jako ich odpowiedniki w ramach lokalnej współpracy Schengen;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>dostarcza dowód posiadania podróżnego ubezpieczenia medycznego</strong>, które jest odpowiednie i aktualne - w przypadkach, gdy ma to zastosowanie.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-collapse-1" aria-controls="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-collapse-1">
+                             <span class="h2 px-0 accordion-title">Wiza krajowa</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-83cdcc7d-28aa-404a-ac3e-c07835769414-heading-1" data-bs-parent="#accordion-83cdcc7d-28aa-404a-ac3e-c07835769414">
+                        <div class="accordion-body">
+                            <h3><span style="font-size: 16pt; font-family: 'Open Sans';">Osoba ubiegająca się o wizę krajową:</span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>wypełnia wniosek o wizę krajową na formularzu</strong> według wzoru określonego w załączniku nr 2 do rozporządzenia Ministra Spraw Wewnętrznych i Administracji z dnia 22 marca 2022 r. w sprawie wiz dla cudzoziemców;<br><br></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; font-weight: bold;"><strong><span style="font-size: 16pt; font-family: 'Open Sans';">składa fotografię spełniającą określone wymagania;</span></strong><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.432%;">
+<ul style="list-style-type: circle;">
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;">nieuszkodzoną, kolorową, o dobrej ostrości, o wymiarze 35mm x 45mm,</li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;">wykonaną nie wcześniej niż 6 miesięcy przed złożeniem wniosku;</li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;">przedstawiającą wizerunek twarzy składającego wniosek od wierzchołka głowy do górnej części barków, tak aby twarz zajmowała 70-80% fotografii, na jednolitym jasnym tle, w pozycji frontalnej, patrzącej na wprost z otwartymi oczami, nieprzesłoniętymi włosami z naturalnym wyrazem twarzy i zamkniętymi ustami, a także odwzorowują naturalny kolor jego skóry,</li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;">przedstawiającą wyraźnie oczy cudzoziemca, zwłaszcza jego źrenice, gdzie linia oczu powinna być równoległa do górnej krawędzi fotografii</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><strong><span style="font-size: 16pt; font-family: 'Open Sans';">składa wymagane dokumenty:&nbsp;</span></strong>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">potwierdzające cel i warunki planowanego pobytu;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">potwierdzające posiadanie wystarczających środków finansowych na pokrycie kosztów utrzymania przez cały okres planowanego pobytu oraz na podróż do państwa pochodzenia lub zamieszkania albo na tranzyt do państwa trzeciego, które zezwoli na jej wjazd, albo możliwość uzyskania takich środków zgodnych z prawem;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">potwierdzające posiadanie ubezpieczenia zdrowotnego lub podróżnego ubezpieczenia medycznego</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">potwierdzające wiarygodność deklaracji o zamiarze opuszczenia terytorium Polski przed upływem terminu ważności wizy oraz inne okoliczności podane we wniosku;<br><br></span></li>
+</ul>
+</li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; font-weight: bold;"><strong><span style="font-family: 'Open Sans'; font-size: 16pt;">przedstawia dokument podróży, który:</span></strong></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td colspan="2" style="width: 99.9003%;">
+<ul style="list-style-type: circle;">
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-family: 'Open Sans';">jest ważny co najmniej trzy miesiące po planowanej dacie ostatniego opuszczenia państw członkowskich,</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-family: 'Open Sans';">zwiera przynajmniej dwie wolne strony oraz&nbsp;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-family: 'Open Sans';">został wydany w ciągu ostatnich dziesięciu lat.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h3><span style="color: rgb(198, 54, 99); font-size: 18pt;"><strong><span style="font-family: 'Open Sans';"><br>Opłaty wizowe</span></strong></span></h3>
+<hr>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-collapse-0" aria-controls="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-collapse-0">
+                             <span class="h2 px-0 accordion-title">Wiza Schengen</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-heading-0" data-bs-parent="#accordion-93bb129e-ebb7-4223-88c2-9810a42cb207">
+                        <div class="accordion-body">
+                            <ul>
+<li style="font-family: 'Open Sans'; font-size: 16pt; font-weight: bold;"><span style="font-size: 16pt;"><strong><span style="font-family: 'Open Sans';">Standardowa opłata - 90 Euro.</span></strong></span></li>
+<li style="font-family: 'Open Sans'; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Obniżona opłata (dla dzieci wieku od lat 6 do poniżej lat 12 ) - 45 Euro.</span></li>
+<li style="font-family: 'Open Sans'; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Zwolnienie z opłaty wizowej, obejmuje m.in. dzieci poniżej 6 roku życia oraz naukowców podróżujących w celu wzięcia udziału w seminarium naukowym lub konferencji naukowej.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-collapse-1" aria-controls="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-collapse-1">
+                             <span class="h2 px-0 accordion-title">Wiza krajowa</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-93bb129e-ebb7-4223-88c2-9810a42cb207-heading-1" data-bs-parent="#accordion-93bb129e-ebb7-4223-88c2-9810a42cb207">
+                        <div class="accordion-body">
+                            <ul>
+<li style="font-size: 16pt; font-family: 'Open Sans'; font-weight: bold;"><strong><span style="font-size: 16pt; font-family: 'Open Sans';">Standardowa opłata - 135 euro.</span></strong></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">Zwolnienie z opłaty wizowej obejmuje obywateli Ukrainy.</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">Wskazana opłata wizowa nie uwzględnia opłaty za skorzystanie z usług usługodawcy zewnętrznego.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+				<div id="f518fd2e-b5c8-4272-bdd6-a7fd306c5c80">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; font-size: 36pt; color: rgb(198, 54, 99);"><br>Rozpatrzenie wniosku</span></h2>
+<hr>
+<h3><span style="font-family: 'Open Sans'; font-size: 16pt;">W trakcie rozpatrywania wniosku, organ właściwy do rozpatrzenia wniosku przeprowadza kolejno następujące czynności:</span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">sprawdza, czy zostały spełnione wymogi formalne;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">wprowadza dane do systemu VIS (*wizy Schengen);</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">umieszcza stempel świadczący o dopuszczalności wniosku (*za wyjątkiem paszportów dyplomatycznych, służbowych lub serwisowych);</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">weryfikuje spełnienie warunków wjazdu, o których mowa jest w art. 6 ust. 1 lit. a), c), d) i e) Kodeksu granicznego Schengen;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">ocenia środki utrzymania na planowany pobyt uwzględniając długość i cel pobytu oraz średnie koszty niedrogiego zakwaterowania i wyżywienia w danym państwie członkowskim uwzględniające czas planowanego pobytu,</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">może przeprowadzić rozmowę z osobą ubiegającą się o wizę i zażądać dodatkowych dokumentów;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">przeprowadza konsultacje wizowe oraz </span><span style="font-family: 'Open Sans'; font-size: 14pt;"><span style="font-size: 16pt;">może przeprowadzić konsultacje<span style="font-size: 11.0pt; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">&nbsp;<span style="font-size: 16pt; font-family: 'Open Sans';">na podstawie art. 27 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2018/1861 z dnia 28 listopada 2018 r. w sprawie utworzenia, funkcjonowania i użytkowania Systemu Informacyjnego Schengen (SIS) w dziedzinie odpraw granicznych, zmiany konwencji wykonawczej do układu z Schengen oraz zmiany i uchylenia rozporządzenia (WE) nr 1987/2006</span></span></span></span><span style="font-family: 'Open Sans'; font-size: 14pt;"><span style="font-size: 16pt;">.</span><br><br></span><span style="font-family: 'Open Sans'; font-size: 14pt;"></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.4951%; background-color: rgb(55, 92, 140); border-style: dashed;"><img style="float: left;" src="/media/mpkfhtzz/frame.svg?rmode=max&amp;width=30&amp;height=30" alt="" width="30" height="30"></td>
+</tr>
+<tr>
+<td style="width: 99.4951%;"><span style="font-size: 16pt; font-family: 'Open Sans';">Organ rozpatrujący wniosek wizowy, zatem <strong>konsul lub minister właściwy do spraw zagranicznych, jest jedynym organem, który może odpowiedzieć na wszelkie pytania dotyczące procesu wizowego</strong>. Do tego organu kieruj swoje pytania.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>    </div>
+</div>
+</div>
+				</div>
+				<div id="75e449c7-b5e1-4ddd-9cd4-af9b7c3810a1">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; font-size: 36pt; color: rgb(198, 54, 99);"><br>Decyzja wizowa</span></h2>
+<hr>
+<h3><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99);"><span style="font-size: 18pt;"><strong>Termin rozpatrzenia wniosku</strong></span></span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;"><span style="font-family: 'Open Sans';"><strong>15 dni kalendarzowych od daty złożenia wniosku </strong>i może być wydłużony przez konsula. </span></span><span style="font-family: 'Open Sans'; font-size: 16pt;"><span style="font-family: 'Open Sans';">Terminy te&nbsp;</span>nie obowiązują w przypadku wiz krajowych wydawanych w celu repatriacji lub członkom rodziny repatrianta.</span></li>
+</ul>
+<h3 style="text-align: left;"><span style="color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt; font-family: 'Open Sans';">Rodzaje decyzji</span></strong></span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">o wydaniu wizy ( krajowej lub Schengen);</span></li>
+<li style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">o wydaniu wizy ograniczonej terytorialnie (w przypadku wiz Schengen),</span></li>
+<li style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">o odmowie wydania wizy.</span></li>
+</ul>
+<h3 style="text-align: left;"><span style="color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt; font-family: 'Open Sans';">Wydanie wizy</span></strong></span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Konsul może wydać wizy na jeden, dwa lub więcej wjazdów.</span><span style="font-family: 'Open Sans';"> </span><span style="font-family: 'Open Sans';">W przypadku wizy Schengen, gdy okres ważności wizy przekracza sześć miesięcy, wizę przyznaje się z prawem do wielokrotnego wjazdu.</span><span style="font-family: 'Open Sans';"> </span></span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';">Konsul wydaje wizę&nbsp;<strong>poprzez wydruk naklejki wizowej i wklejenie naklejki do dokumentu podróży aplikującego</strong>. W szczególnych przypadkach, gdy dokument podróży cudzoziemca nie jest uznawany przez państwo rozpatrujące wniosek wizowy, konsul umieszcza wizę na osobnym blankiecie wizowym.</span></span></li>
+</ul>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';">Wzór naklejki wizy Schengen:</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/d0dfgyjl/blob.jpg?rmode=max&amp;width=407&amp;height=286" alt="" title="" width="407" height="286" data-display="inline"></span></p>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';">Wzór naklejki wizy krajowej:</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/hzdihsws/blob.jpg?rmode=max&amp;width=410&amp;height=289" alt="" title="" width="410" height="289" data-display="inline"></span></p>
+<p style="text-align: left;">&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; height: 68.9833px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr style="height: 50px;">
+<td style="width: 99.4951%; background-color: rgb(55, 92, 140);"><span style="font-size: 12pt; font-family: 'Open Sans';"><img style="float: left;" src="/media/mbllk3dm/mos_info-o-bledach.svg?rmode=max&amp;width=30&amp;height=30" alt="" width="30" height="30"></span></td>
+</tr>
+<tr style="height: 18.9833px;">
+<td style="width: 99.4951%; height: 18.9833px;"><span style="font-size: 16pt; font-family: 'Open Sans';">Posiadanie wizy Schengen lub wizy krajowej<strong> nie gwarantuje wjazdu na terytorium państw członkowskich - jest jedynie jednym z elementów wymaganym do przekraczania granicy.</strong></span></td>
+</tr>
+</tbody>
+</table>
+<h3 style="text-align: left;"><span style="color: rgb(198, 54, 99); font-size: 18pt;"><strong><span style="font-family: 'Open Sans';"><br>Wiza o ograniczonej ważności terytorialnej (LTV) - przypadki wydania</span></strong></span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>gdy dokument podróży cudzoziemca nie jest uznawany przez wszystkie państwa członkowskie </strong>wydaje się wizę ograniczoną do państw członkowskich uznających ten dokument podróży (w tym państwo rozpatrujące wniosek) lub ograniczoną do terytorium państwa członkowskiego wydającego wniosek (jeśli państwo to nie uznaje przedstawionego dokumentu podróży), zgodnie z art. 25 ust. 3 kodeksu wizowego.</span></li>
+<li style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>gdy jedno z państw członkowskich sprzeciwiło się wydaniu wizy w trakcie procedury zasięgania opinii</strong>, o której mowa z art. 22 kodeksu wizowego, nie można było przeprowadzić tychże konsultacji ze względu na pilność sytuacji lub gdy cudzoziemiec nie spełnia jednego z pozostałych warunków wjazdu z art. 6 ust. 1 kodeksu granicznego Schengen, a jednocześnie organ wizowy uzna, iż z przyczyn humanitarnych (np. śmierć lub ciężka choroba członka rodziny), z uwagi na interes państwowy (np. wezwanie do sądu) lub zobowiązania międzynarodowe, cudzoziemiec powinien wjechać na terytorium państwa członkowskiego.</span></li>
+<li style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>gdy cudzoziemiec wykorzystał 90-dniowy okres pobytu w każdym 180-dniowym okresie</strong>, a organ wizowy uzna jego pobyt za zasadny. Zgodnie z art. 25 ust. 2 kodeksu wizowego wiza LTV jest w tym wypadku ważna jedynie na terytorium państwa członkowskiego ją wydającego. Może ona wyjątkowo zostać na terytorium więcej niż jednego państwa rozszerzona pod warunkiem wyrażenia zgody przez każde z tych państw.</span></li>
+</ul>
+<h3 style="text-align: left;"><span style="color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt; font-family: 'Open Sans';">Odmowa wydania wizy</span></strong></span></h3>
+<hr>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 16pt;">Organ rozpatrujący wniosek wizowy odmawia wydania wizy <strong>poprzez podjęcie decyzji i przekazanie jej aplikującego na standardowym formularzu</strong> wraz z przesłankami oraz odpowiednim faktycznym uzasadnieniem, a także ze wskazaniem procedury odwoławczej od ww. decyzji.</span></span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-style: dashed; border-width: 1px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 80%; border-style: dashed; background-color: rgb(55, 92, 140);"><img style="float: left;" src="/media/mpkfhtzz/frame.svg?rmode=max&amp;width=30&amp;height=30" alt="" width="30" height="30"></td>
+</tr>
+<tr>
+<td style="width: 99.4951%;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>Informacje dotyczące </strong>przesłanek formalnych (w formie checkboxów) oraz faktycznych (w formie krótkiego uzasadnienia) <strong>odmowy wydania wizy krajowej przekazuje się aplikującemu na standardowym formularzu</strong> według wzoru określonego w załączniku 3 do rozporządzenia Ministra Spraw Wewnętrznych i Administracji z dnia 25 czerwca 2025 r. w sprawie wiz dla cudzoziemców wraz informacjami o środkach odwoławczych.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-0" aria-controls="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-0">
+                             <span class="h2 px-0 accordion-title">Powody odmowy wydania wizy Schengen</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-0" data-bs-parent="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161">
+                        <div class="accordion-body">
+                            <h3 style="text-align: left;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Przesłanki do odmowy wydania wizy Schengen są przedstawione w art. 32 rozporządzenia (WE) 810/2009 (kodeksu wizowego):</span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">przedstawienie fałszywego, podrobionego lub przerobionego dokumentu podróży;</span><span style="font-family: 'Open Sans';"></span></span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">nieprzedstawienie potwierdzenia celów i warunków planowanego pobytu (lub w przypadku tranzytu lotniczego – tegoż tranzytu);</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">niedostarczenie dowodów na posiadanie wystarczających środków utrzymania odpowiednich do długości planowanego pobytu oraz środków pozwalających na powrót do państwa pochodzenia lub zamieszkania, ani na tranzyt do państwa trzeciego, co do którego istnieje pewność, iż udzieli osobie ubiegającej się o wizę pozwolenia na wjazdu, albo na uzyskanie zgodnie z prawem takich środków;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">wykorzystanie w bieżącym 180-dniowym okresie dozwolonych 90 dni pobytu na terytorium państw członkowskich na podstawie wizy jednolitej lub wizy o ograniczonej ważności terytorialnej;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">istnienie dotyczącego aplikującego wpisu w SIS do celów odmowy wjazdu i pobytu;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">stanowienie przez aplikującego zagrożenia dla porządku publicznego, bezpieczeństwa wewnętrznego, zdrowia publicznego lub dla stosunków międzynarodowych, któregokolwiek z państwa członkowskich, zwłaszcza, gdy dane aplikującego figurują w krajowych bazach danych do celów odmowy wjazdu;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">niedostarczenie, gdy ma to zastosowanie, dowodu na posiadanie odpowiedniego, ważnego podróżnego ubezpieczenia medycznego;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">istnienie poważnych wątpliwości, co do autentyczności przedstawionych przez aplikującego dokumentów lub prawdziwości ich treści, wiarygodności oświadczeń przez niego złożonych lub zamiaru opuszczenia terytorium państw członkowskich przed wygaśnięciem terminu ważności wizy.</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Informacje dotyczące przesłanek formalnych (w formie checkboxów) oraz faktycznych (w formie krótkiego uzasadnienia) odmowy wydania wizy Schengen przekazuje się aplikującemu na standardowym formularzu określonym w załączniku VI w raz z informacjami o trybie postępowania odwoławczego.</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-1" aria-controls="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-1">
+                             <span class="h2 px-0 accordion-title">Powody odmowy wydania wizy krajowej - zasadnicze</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-1" data-bs-parent="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161">
+                        <div class="accordion-body">
+                            <h3 style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku wizy krajowej, podstawowe przesłanki odmowy wydania wizy krajowej określa art. 65 ust. 1 ustawy o cudzoziemcach:</span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">obowiązywanie wpisu danych cudzoziemca do wykazu cudzoziemców, których pobyt na terytorium Rzeczypospolitej Polskiej jest niepożądany;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';">istnienie dotyczącego aplikującego wpisu w SIS do celów odmowy wjazdu i pobytu;</span></span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">brak środków finansowych na czas trwania planowanego pobytu aplikującego na terytorium Rzeczypospolitej Polskiej oraz na podróż powrotną do państwa pochodzenia lub zamieszkania albo na tranzyt do państwa trzeciego, które udzieli pozwolenia na wjazdu; lub też możliwości legalnego uzyskania takich środków;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">brak wymaganego prawem ubezpieczenia zdrowotnego lub medycznego;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">względy obronności lub bezpieczeństwa państwa lub ochrony bezpieczeństwa i porządku publicznego lub interesu Rzeczypospolitej Polskiej;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">złożenie w toku postępowania wniosku zawierającego nieprawdziwe dane osobowe lub fałszywe informacje lub dołączenie do wniosku takowych dokumentów;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">zeznanie nieprawdy lub zatajenie prawdy albo przerobienie dokumentu w celu użycia go jako autentycznego lub użycie takiego dokumentu;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">nieuzasadnienie celów lub warunków planowanego pobytu;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">zachodzenie uzasadnionych wątpliwości co do zamiaru opuszczenia terytorium Rzeczypospolitej Polskiej przed upływem terminu ważności wizy;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">zachodzenie poważnych wątpliwości, co do wiarygodności złożonych przez cudzoziemca odnośnie do celu jego pobytu albo obiektywne okoliczności wskazujące na to, że cel pobytu cudzoziemca mógłby być inny niż deklarowany.</span></li>
+</ul>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Dodatkowo art. 65 w ust. 1a-1e ustawy o cudzoziemcach określają szczególne przesłanki odmowy wizy krajowej w stosunku do osób ubiegających się o wizę w celu odbycia studiów, prowadzenia badań naukowych, odbycia stażu lub wolontariatu europejskiego.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-2">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-2" aria-controls="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-2">
+                             <span class="h2 px-0 accordion-title">Studia - dodatkowe powody odmowy wydania wizy krajowej</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-2" data-bs-parent="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161">
+                        <div class="accordion-body">
+                            <h3 style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku, gdy celem wydania wizy krajowej miałyby być studia, wizy odmawia się dodatkowo w przypadku, gdy:</span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka prowadząca studia działa głównie w celu ułatwienia studentom lub doktorantom niezgodnego z prawem wjazdu lub pobyt na terytorium Rzeczypospolitej Polskiej, w szczególności oferuje i świadczy usługi edukacyjne związane wyłącznie z kształceniem cudzoziemców na studiach;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec ubiega się o kolejną wizę w tym celu, a okoliczności sprawy wskazują, iż poprzednia wiza była wydana w sposób niezgodny z celem jej wydania;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">w przypadku, gdy cudzoziemiec został skreślony z listy studentów bądź doktorantów.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-3">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-3" aria-controls="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-3">
+                             <span class="h2 px-0 accordion-title">Prace naukowe lub rozwojowe - dodatkowe powody odmowy wydania wizy krajowej</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-3" data-bs-parent="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161">
+                        <div class="accordion-body">
+                            <h3 style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku, gdy celem wydania wizy krajowej miałoby być prowadzenie prac naukowych lub prac rozwojowych odmawia się dodatkowo w przypadku, gdy:</span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka naukowa działa głównie w celu ułatwiania naukowcom niezgodnego z prawem wjazdu lub pobytu na terytorium Rzeczypospolitej Polskiej;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec ubiega się o kolejną wizę w tym celu, a okoliczności sprawy wskazują, iż poprzednia wiza była wydana w sposób niezgodny z celem jej wydania.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-4">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-4" aria-controls="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-4">
+                             <span class="h2 px-0 accordion-title">Sta&#x17C;e - dodatkowe powody odmowy wydania wizy krajowej</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-4" class="accordion-collapse collapse" aria-labelledby="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-4" data-bs-parent="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161">
+                        <div class="accordion-body">
+                            <ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">organizator stażu działa głównie w celu ułatwiania stażystą niezgodnego z prawem wjazdu lub pobytu na terytorium Rzeczypospolitej Polskiej;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">organizator stażu jest zarządzany lub kontrolowany przez osobę fizyczną ukaraną za wykroczenie, o którym mowa w art. 84 ust. 1 ustawy z dnia 20 marca 2025 r. o dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej, która w ciągu 2 lat od ukarania została ponownie ukarana za podobne wykroczenie;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">organizator stażu jest zarządzany lub kontrolowany przez osobę fizyczną ukaraną za wykroczenia, o których mowa w art. 84 ust. 3-5 ustawy z dnia 20 marca 2025 r. o dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">organizator stażu jest zarządzany lub kontrolowany przez osobę fizyczną skazaną za&nbsp; przestępstwo, o którym mowa w art. 218-221 ustawy z dnia 6 czerwca 1997 r. – Kodeks Karny;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">organizator stażu nie dopełnia obowiązku opłacenia składek na ubezpieczenia społeczne;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">organizator stażu zalega z uiszczeniem podatków, z wyjątkiem przypadków, gdy uzyskał przewidziane prawem zwolnienie, odroczenie, rozłożenie na raty zaległych płatności lub wstrzymania w całości wykonania decyzji właściwego organu;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">organizator stażu nie prowadzi działalności gospodarczej, a staż pozostaje w bezpośrednim związku z taką działalnością;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">została ogłoszona upadłość organizatora stażu lub jest likwidowany;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec ubiega się o kolejną wizę w tym celu, a okoliczności sprawy wskazują, iż poprzednia wiza była wydana w sposób niezgodny z celem jej wydania.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-5">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-5" aria-controls="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-5">
+                             <span class="h2 px-0 accordion-title">Wolontariat europejski - dodatkowe powody odmowy wydania wizy krajowej</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-collapse-5" class="accordion-collapse collapse" aria-labelledby="accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161-heading-5" data-bs-parent="#accordion-7a04bb30-1a12-4ad0-a211-f7d3abfea161">
+                        <div class="accordion-body">
+                            <h3 style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">W przypadku ubiegania się o wizę w celu uczestnictwa w wolontariacie europejskim, wizy odmawia się dodatkowo w przypadku, gdy:</span></h3>
+<hr>
+<ul>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka organizacyjna, na rzecz której cudzoziemiec wykonuje lub zamierza wykonywać świadczenia jako wolontariusz działa głównie w celu ułatwiania wolontariuszom niezgodnego z prawem wjazdu lub pobytu na terytorium Rzeczypospolitej Polskiej;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka organizacyjna, na rzecz której cudzoziemiec wykonuje lub zamierza wykonywać świadczenia jako wolontariusz jest zarządzana lub kontrolowana przez osobę fizyczną ukaraną za wykroczenie, o którym mowa art. 84 ust. 1 ustawy z dnia 20 marca 2025 r. o dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej, która w ciągu 2 lat od ukarania została ponownie ukarana za podobne wykroczenie;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka organizacyjna, na rzecz której cudzoziemiec wykonuje lub zamierza wykonywać świadczenia jako wolontariusz jest zarządzana lub kontrolowana przez osobę fizyczną za wykroczenia, o których mowa w art. 84 ust. 3-5 ustawy z dnia 20 marca 2025 r. o dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka organizacyjna, na rzecz której cudzoziemiec wykonuje lub zamierza wykonywać świadczenia jako wolontariusz jest zarządzana lub kontrolowana przez osobę fizyczną jest osobą skazaną za przestępstwo, o którym mowa w art. 218-211 ustawy z dnia 6 czerwca 1997 r. – Kodeks Karny;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka organizacyjna, na rzecz której cudzoziemiec wykonuje lub zamierza wykonywać świadczenia jako wolontariusz nie dopełnia obowiązku opłacenia składek na ubezpieczenia społeczne;</span></li>
+<li style="text-align: justify; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jednostka organizacyjna, na rzecz której cudzoziemiec wykonuje lub zamierza wykonywać świadczenia jako wolontariusz zalega z uiszczeniem podatków, z wyjątkiem przypadków, gdy uzyskał przewidziane prawem zwolnienie, odroczenie, rozłożenie na raty zaległych płatności lub wstrzymania w całości wykonania decyzji właściwego organu.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+				<div id="dfb87876-1480-4255-b224-8374018651ab">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; font-size: 36pt; color: rgb(198, 54, 99);"><strong><br></strong>Środki zaskarżenia</span></h2>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-weight: bold; font-family: 'Open Sans';"><span style="font-family: 'Open Sans';"><strong><span style="font-size: 16pt;">decyzji wydanej przez konsula lub ministra właściwego do spraw zagranicznych &nbsp;⇒ &nbsp;wniosek o ponowne rozpatrzenie sprawy przez ten organ;</span></strong></span></li>
+</ul>
+<p style="padding-left: 40px;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">Wniosek o ponowne rozpatrzenie sprawy przez konsula lub ministra spraw właściwego do spraw zagranicznego składa się w terminie 14 dni od dnia doręczenia decyzji wizy Schengen lub wizy krajowej. Konsul lub minister właściwy do spraw zagranicznych rozpatruje ww. wniosek w terminie 14 dni.</span></span></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';">
+<p><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>decyzji wydanej&nbsp;przez komendanta placówki Straży Granicznej</strong> ⇒&nbsp;<strong>odwołanie do Komendanta Głównego Straży Granicznej.</strong></span></p>
+</li>
+</ul>    </div>
+</div>
+</div>
+				</div>
+				<div id="a03f9e43-a846-4947-b97c-8182a29c4692">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Dozwolony okres pobytu</span></h2>
+<hr>
+<h3><span style="font-family: 'Open Sans';"><strong><span style="font-size: 18pt; color: rgb(133, 49, 77);"><span style="color: rgb(198, 54, 99);">Wiza Schengen</span><br></span></strong></span></h3>
+<hr>
+<p><span style="font-family: 'Open Sans';"><span style="font-size: 18pt; color: rgb(133, 49, 77);"></span></span><span style="font-size: 16pt; font-family: 'Open Sans';">Okres dozwolonego pobytu na wizie Schengen <strong>oblicza się biorąc pod uwagę liczbę dni dozwolonego pobytu, okres ważności wizy oraz liczbę dozwolonych wjazdów</strong> do strefy Schengen.<br><br></span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; height: 111.667px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr style="height: 111.667px;">
+<td style="width: 90%; height: 111.667px; border-style: dashed; padding-left: 40px; text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><br><strong><span style="color: rgb(198, 54, 99);">Przykład 1.&nbsp;</span></strong><br></span><br><span style="font-size: 14pt; font-family: 'Open Sans';">Cudzoziemcowi wydano wizę uprawniającą do jednokrotnego wjazdu, z okresem dozwolonego pobytu 30 dni oraz okresem ważności od 1 marca do 29 maja. Cudzoziemiec może zatem wjechać jednokrotnie do strefy Schengen i powinien ją opuścić przed upływem 30 dni (wliczając w to dzień wjazdu i wyjazdu), ale nie później niż 29 maja.<br><br></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.4951%; border-width: 1px;">
+<p style="text-align: left; padding-left: 40px;"><span style="font-family: 'Open Sans'; font-size: 14pt;"><strong><span style="color: rgb(198, 54, 99);"><br>Przykład 2.&nbsp;</span></strong></span><br><br><span style="font-size: 14pt; font-family: 'Open Sans';">Cudzoziemcowi wydano wizę uprawniającą do dwukrotnego wjazdu, z okresem dozwolonego pobytu 60 dni oraz okresem ważności od 1 marca do 15 lipca. Cudzoziemiec przebywał w strefie Schengen od 12 marca do 20 kwietnia. Chciałby przyjechać do Polski na urlop wypoczynkowy i zastanawia się na ile dni i kiedy może przyjechać. Cudzoziemiec wykorzystał już 40 dni z okresu dozwolonego pobytu. Może zatem przyjechać na maksymalnie 20 dni licząc łącznie z datę wjazdu i wyjechać nie później niż 15 lipca.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><br><span style="font-size: 16pt;">W przypadku wizy pozwalającej na wjazd wielokrotny, cudzoziemiec może wielokrotnie wjeżdżać do obszaru Schengen, a łączny okres pobytu nie może przekroczyć liczby dni wskazanej w naklejce wizowej w okresie ważności wizy.</span><br><br></span><span style="font-size: 16pt; font-family: 'Open Sans';">Wizy Schengen z okresem ważności niż 180 dni wydaje się wyłącznie jako wizy uprawniające do wielokrotnego wjazdu z okresem pobytem oznaczonym jako 90 dni w każdym okresie 180-dniowym podczas ważności wizy.</span></p>
+<hr>
+<p style="text-align: left;"><strong><span style="font-size: 14pt; font-family: 'Open Sans';">Przykład:</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/sj4fe0ty/blob.jpg?rmode=max&amp;width=334&amp;height=254" alt="" title="" width="334" height="254" data-display="inline"></span></p>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><br>Powyższa wiza Schengen (C), jest wizą uprawniającą do wielokrotnego wjazdu (MULT) w okresie od 28 sierpnia 2020 r. do 28 sierpnia 2022 r., uprawniającą do przebywania w państwach obszaru Schengen przez 90 dni w każdym 180-dniowym okresie.</span></p>
+<hr>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><br><br></span></p>
+<h3 style="text-align: left;"><span style="color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt; font-family: 'Open Sans';">Wiza krajowa</span></strong></span></h3>
+<hr>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Okres dozwolonego pobytu na wizie krajowej <strong>oblicza się biorąc pod uwagę liczbę dni dozwolonego pobytu, okres ważności wizy oraz liczbę dozwolonych wjazdów.</strong><br><br>Łączny okres pobytu nie może przekroczyć liczby dni pobytu wskazanej w wizie krajowej we wskazanym okresie ważności wizy. Cudzoziemiec posiadający wizę krajową może przebywać w innym państwie obszaru Schengen niż państwo, które wydało wizę krajową nie dłużej niż 90 dni w ciągu każdego 180-dniowego okresu.</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 16pt;">Liczba wjazdów oznacza w przypadku wiz krajowych wydanych przez Rzeczpospolitą Polską&nbsp;oznacza łączną liczbę dozwolonych przekroczeń granicy zewnętrznej państw członkowskich.</span><br></span></p>
+<hr>
+<p style="text-align: left;"><strong><span style="font-size: 14pt; font-family: 'Open Sans';">Przykład:</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/gzmlqn3h/blob.jpg?rmode=max&amp;width=357&amp;height=272" alt="" title="" width="357" height="272" data-display="inline"></span></p>
+<p style="text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';">Powyższa wiza jest wizą krajową (D) uprawniającą do jednokrotnego wjazdu (01) do Polski na okres 120 dni od 25 października 2020 r. do 21 lutego 2021 r.</span></p>
+<hr>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;"><span style="color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt; font-family: 'Open Sans';">Łączenie okresu dozwolonego pobytu na wizie Schengen z pobytem długoterminowym</span></strong></span></p>
+<hr>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>Pobyt krótkoterminowy </strong>(na wizie Schengen)<strong> można łączyć z pobytem długoterminowym </strong>(na wizie krajowej lub innym tytule pobytowym)<strong>.</strong> Okresy dozwolonego pobytu liczone są w tym wypadku osobno.<br><br>W przypadku, w którym pobyt krótkoterminowy następuje po upływie okresu ważności tytułu pobytowego, należy pamiętać, iż <strong>maksymalny dozwolony okres pobytu to 90 dni,</strong> po których cudzoziemiec musi opuścić terytorium państw członkowskich, chyba że w międzyczasie uzyska nowy tytuł pobytowy lub wizę krajową.</span></p>    </div>
+</div>
+</div>
+				</div>
+				<div id="63d79b4d-2260-4530-9fab-71fbf8ce0278">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2 style="text-align: left;"><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><strong><br></strong>Inne zagadnienia</span></h2>
+<hr>
+<h3 style="text-align: left;"><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99);"><strong><span style="font-size: 18pt;">Cofnięcie i unieważnienie wizy</span></strong></span></h3>
+<hr>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12%; background-color: rgb(241, 243, 255); vertical-align: top;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/wbkpw2hs/vector-10.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<td style="width: 88%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Podstawową różnicą pomiędzy cofnięciem a unieważnieniem wizy jest to, iż w przypadku cofnięcia wizy – posiadacz wizy przestał spełniać warunki pobytu po wydaniu wizy, a w przypadku unieważnienia wizy – pierwotna decyzja organu wizowego była błędna (nie powinno dojść do wydania wizy).</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3.04466%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 96.994%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Wiza Schengen</span></th>
+</tr>
+<tr>
+<td style="width: 96.994%;">
+<ul style="text-align: left;">
+<li style="font-family: 'Open Sans'; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">Wizę cofa się, jeżeli w okresie ważności wizy okaże się, iż warunki uprawniające do jej wydania nie są już spełniane (art. 34 ust. 2 kodeksu wizowego).</span></li>
+<li style="font-family: 'Open Sans'; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">Można też cofnąć na wniosek posiadacza wizy (dotyczy najczęściej sytuacji, w których zmienia się planowany okres pobytu w strefie Schengen).</span></li>
+<li style="font-family: 'Open Sans'; font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Wizę unieważnia się w przypadku, gdy w chwili wydania wizy warunki uprawniające do wydania wizy nie były spełnione (wiza Schengen: art. 34 ust. 1 kodeksu wizowego)</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3.04466%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<th style="width: 96.994%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Wiza krajowa&nbsp;</span></th>
+</tr>
+<tr>
+<td style="width: 96.994%;">
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">Wizę cofa się&nbsp;z urzędu w przypadkach określonych w art. 90 ustawy o cudzoziemcach – zatem do zasady na podstawie tych samych przesłanek, co skutkujące odmową wydania wizy, z wyjątkiem przesłanki dotyczącej figurowania danych cudzoziemca w SIS na skutek wpisu państwa członkowskiego innego niż Polska.</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">Wizę unieważnia się w przypadku, gdy w chwili wydania wizy zachodziły okoliczności uzasadniające odmowę jej wydania (wiza krajowa: art. 91 ustawy o cudzoziemcach).</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;">&nbsp;</p>
+<p id="test-content" style="text-align: left;" data-v-6a103362=""></p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-e2de697e-8b79-4269-babe-bb7576c206a1">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-e2de697e-8b79-4269-babe-bb7576c206a1-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-e2de697e-8b79-4269-babe-bb7576c206a1-collapse-0" aria-controls="accordion-e2de697e-8b79-4269-babe-bb7576c206a1-collapse-0">
+                             <span class="h2 px-0 accordion-title">Decyzja o cofni&#x119;ciu lub uniewa&#x17C;nieniu wizy</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-e2de697e-8b79-4269-babe-bb7576c206a1-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-e2de697e-8b79-4269-babe-bb7576c206a1-heading-0" data-bs-parent="#accordion-e2de697e-8b79-4269-babe-bb7576c206a1">
+                        <div class="accordion-body">
+                            <h3 style="text-align: left;"><span style="color: rgb(201, 74, 106);"><strong><span style="font-size: 18pt; font-family: 'Open Sans';">Organ wydający</span></strong></span></h3>
+<hr>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Zgodnie z art. 92 ustawy o cudzoziemcach, wizę Schengen lub wizę krajową cofa lub unieważnia w drodze decyzji:</span></p>
+<ul>
+<li style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">konsul;</span></li>
+<li style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">minister właściwy do spraw zagranicznych;</span></li>
+<li style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">komendant oddziału Straży Granicznej lub komendant placówki Straży Granicznej.</span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.4643%; text-align: left;"><span style="font-size: 14pt; font-family: 'Open Sans';">W przypadkach wiz wydawanych członkom misji dyplomatycznych lub urzędów konsularnych lub innym osobom zrównanych z nimi pod względem przywilejów i immunitetów na podstawie ustaw, umów lub powszechnie ustalonych zwyczajów międzynarodowych, a także członkom ich rodzin, cofa lub unieważnia wizę <strong>minister właściwy do spraw zagranicznych poprzez skierowanie noty </strong>do ministerstwa spraw zagranicznych państwa obcego lub jego misji dyplomatycznej.</span></td>
+</tr>
+</tbody>
+</table>
+<h3><span style="font-family: 'Open Sans'; font-size: 18pt;"><strong><br><span style="color: rgb(201, 74, 106);">Forma decyzji</span></strong></span></h3>
+<hr>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Decyzja o cofnięciu lub unieważnieniu wizy Schengen wydawana jest na formularzu zgodnym z:</span></p>
+<ul>
+<li style="text-align: left; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">załącznikiem VI do Kodeksu wizowego w przypadku wiz Schengen;</span></li>
+<li style="text-align: left; font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';">załącznikiem do rozporządzenia Ministra Spraw Wewnętrznych i Administracji z dnia 25 maja 2021 r. w sprawie unieważnienia i cofania wiz dla cudzoziemców.</span></span></li>
+</ul>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Odpowiednia <strong>adnotacja o cofnięciu lub unieważnieniu wizy jest odnotowana w dokumencie podróży </strong>lub też na blankiecie, na którym umieszczona została naklejka wizowa.</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Jeśli organ podejmujący decyzję nie ma dostępu do dokumentu podróży cudzoziemca lub blankietu, na którym umieszczono naklejkę wizową – dane takiej naklejki są wprowadzone do SIS.</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Decyzja ta <strong>podlega natychmiastowemu wykonaniu.</strong></span></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h3><strong><span style="font-size: 18pt; color: rgb(198, 54, 99); font-family: 'Open Sans';">Szczególne sytuacje dotyczące wydawania wiz</span></strong></h3>
+<hr>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-92717c1a-be08-485e-b048-a05ee7711b11">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-92717c1a-be08-485e-b048-a05ee7711b11-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-92717c1a-be08-485e-b048-a05ee7711b11-collapse-0" aria-controls="accordion-92717c1a-be08-485e-b048-a05ee7711b11-collapse-0">
+                             <span class="h2 px-0 accordion-title">Wizy wydawane na granicach zewn&#x119;trznych</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-92717c1a-be08-485e-b048-a05ee7711b11-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-92717c1a-be08-485e-b048-a05ee7711b11-heading-0" data-bs-parent="#accordion-92717c1a-be08-485e-b048-a05ee7711b11">
+                        <div class="accordion-body">
+                            <h3 style="text-align: left;"><strong><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(201, 74, 106);">Przesłanki wydania</span></strong></h3>
+<hr>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Art. 35 kodeksu wizowego pozwala w wyjątkowych przypadkach wizy na wydanie wiz Schengen na granicy w przypadkach, gdy <strong>wszystkie poniższe warunki pozostają spełnione:</strong></span></p>
+<ul style="text-align: left;">
+<li style="font-family: 'Open Sans'; font-size: 16pt;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>osoba ubiegające się o wizę spełnia warunki wjazdu</strong> określone w art. 6 ust. 1 lit. a), c), d) i e) kodeksu granicznego Schengen;<br>Od wymogu dotyczącego posiadania podróżnego medycznego można odstąpić w przypadku, gdy takie ubezpieczenie nie jest dostępne na przejściu granicznym.<br></span></p>
+</li>
+<li style="font-family: 'Open Sans'; font-size: 16pt;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>osoba ubiegająca się o wizę nie mogła wystąpić o wizę z wyprzedzeniem </strong>-&nbsp; przedstawi, w razie potrzeby, dokumenty, które potwierdzają niemożliwe do przewidzenia i bezwzględne przyczyny uzasadniające konieczność wjazdu;&nbsp;</span></p>
+</li>
+<li style="font-family: 'Open Sans'; font-size: 16pt;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>ocenia się, że jej powrót </strong>do państwa pochodzenia lub zamieszkania <strong>lub jej tranzyt</strong> przez terytorium krajów innych niż państwa członkowskie w pełni stosujące dorobek Schengen <strong>jest pewny.</strong></span></p>
+</li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 12%; background-color: rgb(241, 243, 255); vertical-align: top;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/wbkpw2hs/vector-10.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<td style="width: 88%;">
+<p style="text-align: left;"><strong><span style="font-size: 16pt; font-family: 'Open Sans';">Typowe powody wydania</span></strong></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">nagła choroba lub śmierć osoby bliskiej;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">konieczność objęcia opieki nad osobą małoletnią;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">ewakuacja do państwa trzeciego poprzez terytorium państw członkowskich.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><span style="font-family: 'Open Sans';"><strong><span style="color: rgb(201, 74, 106); font-size: 18pt;">Organ wydający</span></strong></span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-family: 'Open Sans'; font-size: 16pt;"><strong>Komendant placówki Straży Granicznej.</strong> Od decyzji tego organu przysługuje odwołanie do Komendanta Głównego Straży Granicznej.&nbsp;</span></li>
+</ul>
+<h3 style="text-align: left;"><strong><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(201, 74, 106);">Okres ważności&nbsp;</span></strong></h3>
+<hr>
+<ul>
+<li style="text-align: left; font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">okres niezbędny do realizacji celu pobytu lub tranzytu - <strong>do 15 dni.</strong></span></li>
+</ul>
+<h3><span style="font-family: 'Open Sans';"><strong><span style="font-size: 18pt; color: rgb(201, 74, 106);">Informacje uzupełniające</span></strong></span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">Gdy cudzoziemiec nie spełnia jednego z warunków wjazdu lub należy do kategorii osób, wobec których niezbędne jest zasięgnięcie opinii organów centralnych państw członkowskich (art. 22 ust. 1 kodeksu wizowego) możliwe jest wydanie <strong>wizy o ograniczonej ważności terytorialnej.</strong></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">Za wydanie wizy Schengen na granicy<strong><span style="font-size: 16pt;"> pobierana jest opłata skarbowa</span>.</strong></span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-92717c1a-be08-485e-b048-a05ee7711b11-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-92717c1a-be08-485e-b048-a05ee7711b11-collapse-1" aria-controls="accordion-92717c1a-be08-485e-b048-a05ee7711b11-collapse-1">
+                             <span class="h2 px-0 accordion-title">Wizy wydawane cz&#x142;onkom za&#x142;&#xF3;g statk&#xF3;w morskich</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-92717c1a-be08-485e-b048-a05ee7711b11-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-92717c1a-be08-485e-b048-a05ee7711b11-heading-1" data-bs-parent="#accordion-92717c1a-be08-485e-b048-a05ee7711b11">
+                        <div class="accordion-body">
+                            <p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Członkom załóg statków morskich, którzy podlegają obowiązkowi wizowemu,&nbsp;<strong>można wydać wizę na tranzyt,</strong> gdy spełniają oni warunki wydania wiz na granicach zewnętrznych określone w art. 35 ust. 1 kodeksu wizowego, a granica jest przez nich przekraczana w celu zaokrętowania lub ponownego zaokrętowania na statku, na którym będą pracować jako członek załogi; lub w celu wyokrętowania ze statku.</span></p>
+<p style="text-align: left;"><span style="font-family: 'Open Sans'; font-size: 16pt;">Dodatkowe procedury związane z wydawaniem wizy członkom statków morskich na granicach zewnętrznych opisane są w załączniku do decyzji wykonawczej Komisji ustanawiającej instrukcje operacyjne dotyczące wydawania marynarzom wiz na granicach zewnętrznych (decyzja C (2020) 64 z dnia 15.1.2020 r.).</span></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		var fragment = window.location.hash.substr(1); // Pobieranie fragmentu URL po #
+		if (fragment) {
+			$("ul li a[href='#" + fragment + "']").addClass("activeAnchor");
+		}
+		$("ul li a").click(function () {
+			$("ul li a").removeClass("activeAnchor");
+			$(this).addClass("activeAnchor");
+		});
+	});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.querySelector('.alert')) {
+            var paragraph = document.querySelector('.sub-nav p');
+            if (paragraph) {
+                paragraph.style.display = 'none';
+            }
+        }
+    });
+</script>
+<style>
+	.icons span {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+		.icons span:hover {
+			opacity: 0.8;
+		}
+
+	.alert p:last-child{
+		margin-bottom: unset;
+	}
+</style>
+
+
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Ta strona używa ciasteczek (plików cookies) w celu ułatwienia Ci korzystania z naszego serwisu oraz w celach statystycznych, w szczególności:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">dostosowania zawartości serwisu do Twoich preferencji językowych;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">utrzymywania sesji dostępu do treści i funkcjonalności portalu dostępnych wyłącznie dla zarejestrowanych użytkowników;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">unikania powtórnego wyświetlania komunikatów administratora serwisu na Twoim Urządzeniu;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">zbierania danych statystycznych dotyczących unikalnych wyświetleń portalu (dane dotyczące rodzaju i wersji używanej przeglądarki).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Jeśli w ustawieniach przeglądarki nie zostało włączone blokowanie tego typu plików, to zgadzasz się na ich użycie oraz zapisanie w pamięci swojego urządzenia. Pamiętaj, że zawsze możesz samodzielnie zarządzać tymi ustawieniami w swojej przeglądarce. Więcej informacji możesz znaleźć w naszej <a rel="noopener" href="/polityka-cookies/" target="_blank" title="Polityka cookies">Polityce cookies.</a></span></p>    <button id="agreeButton" class="btn">Zaakceptuj ciastka</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Wszystkie treści publikowane w serwisie są udostępniane na licencji Creative Commons: uznanie autorstwa - użycie niekomercyjne - bez utworów zależnych 3.0 Polska (CC BY-NC-ND 3.0 PL), o ile nie jest to stwierdzone inaczej. Informacja zamieszczona na portalu MOS nie stanowi źródła prawa. Autorzy dołożyli należytej staranności, aby była ona zgodna z obowiązującymi regulacjami prawnymi. W przypadku zidentyfikowania stanu niezgodności prosimy o poinformowanie organu o tym fakcie.</p>
+<p style="text-align: justify;">Projekt nr 1/8-2018/BK-FAMI pt. „Modernizacja Systemu Pobyt v.2 w zakresie utworzenia Modułu Obsługi Spraw” jest współfinansowany ze środków Programu Krajowego Funduszu Azylu Migracji i Integracji – Bezpieczna przystań.</p>
+</div>
+</div>			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Poznaj nas</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Pomoc</h5>
+		<div class="col">
+			<a href="/baza-pytan-i-odpowiedzi/" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="/mapa-strony/" target="_blank">
+				Mapa strony
+			</a>
+		</div>
+		<div class="col">
+			<a href="/pomoc-techniczna/" target="_blank">
+				Pomoc techniczna
+			</a>
+		</div>
+		<div class="col">
+			<a href="/redakcja/" target="_blank">
+				Redakcja
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Kwestie prawne</h5>
+		<div class="col">
+			<a href="/regulamin/" target="_blank">
+				Regulamin
+			</a>
+		</div>
+		<div class="col">
+			<a href="/deklaracja-dostepnosci/" target="_blank">
+				Deklaracja dost&#x119;pno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-prywatnosci/" target="_blank">
+				Polityka prywatno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-cookies/" target="_blank">
+				Polityka cookies
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+<!-- MY COLOR #c63663  -->
+<style type="text/css">
+	body {
+		border-color: #c63663 !important;
+	}
+
+	.alert,
+	.card .card-top,
+	nav {
+		border-color: #c63663 !important;
+	}
+
+	.sub-nav {
+		background: #c63663 !important;
+	}
+	.menu-section ul li::before {
+	color: #c63663 !important;}
+</style>
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>

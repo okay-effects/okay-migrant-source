@@ -1,0 +1,1001 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="pl" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    Zasady-ogolne | Modu&#x142; Obs&#x142;ugi Spraw
+</title>
+<meta name="Description" content=" ?? Zasady-ogolne" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/wykonywanie-pracy/zasady-ogolne/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/kategorie-informacji/wykonywanie-pracy/zasady-ogolne/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-content ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/">
+						<img src="/clean-assets/images/logo_white.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/mapa-strony/"></a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/doing-the-job/principles-general/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x642;&#x64A;&#x627;&#x645;-&#x628;&#x627;&#x644;&#x645;&#x647;&#x645;&#x629;/zasady-ogolne/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/faire-le-travail/principes-generaux/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thuc-hien-cong-viec/cac-nguyen-tac-chung/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vypolnenie-raboty/zasady-ogolne/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/vikonuyuchi-robotu/zasady-ogolne/">
+				UK
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fwykonywanie-pracy%2Fzasady-ogolne%2F" type="button">Zaloguj</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/categories-information/doing-the-job/principles-general/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/kategorie-informacji/&#x627;&#x644;&#x642;&#x64A;&#x627;&#x645;-&#x628;&#x627;&#x644;&#x645;&#x647;&#x645;&#x629;/zasady-ogolne/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/categories-information/faire-le-travail/principes-generaux/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/danh-muc-thong-tin/thuc-hien-cong-viec/cac-nguyen-tac-chung/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/kategorie-informacji/vypolnenie-raboty/zasady-ogolne/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/kategorie-informacji/vikonuyuchi-robotu/zasady-ogolne/">
+				UK
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fkategorie-informacji%2Fwykonywanie-pracy%2Fzasady-ogolne%2F" type="button">Zaloguj</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							Og&#xF3;lne zasady wykonywania przez cudzoziemc&#xF3;w pracy
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="Szukaj" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+	<div class="sub-nav  pt-3 pt-md-0">
+		<div class="container">
+			<p class="m-0 h6 py-2 bold">
+			</p>
+		</div>
+	</div>
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+						<li class="no-ellipsis">...</li>
+						<li aria-current="Wykonywanie pracy">
+							<a href="/kategorie-informacji/wykonywanie-pracy/" class="ellipsis">Wykonywanie pracy</a>
+						</li>
+
+					<li class="ellipsis active" aria-current="Zasady-ogolne">Zasady-ogolne</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+
+<div class="container pb-5 min-h-article">
+
+		<div class="alert">
+			<p>Jeśli chcesz dowiedzieć się więcej, zapoznaj się z informacjami na <a rel="noopener" href="https://psz.praca.gov.pl/" target="_blank" title="Wortal Publicznych Służb Zatrudnienia">Wortalu Publicznych Służb Zatrudnienia</a> w zakładce Zatrudnianie cudzoziemców oraz materiałami <a rel="noopener" href="https://www.biznes.gov.pl/pl" target="_blank" title="Portal biznes.gov.pl">portalu biznes.gov.pl</a>. W razie wątpliwości wsparcie uzyskasz dzwoniąc na numer Zielonej Linii: 19524 (więcej informacji: <a rel="noopener" href="https://zielonalinia.gov.pl/" target="_blank" title="Portal Zielona Linia">zielonalinia.gov.pl</a>) lub kontaktując się z Ministerstwem Rodziny, Pracy i Polityki Społecznej.</p>
+           </div>
+
+
+	<div id="content-to-pdf" class="content-section row m-0">
+		
+<div class="section-item menu-section col-12 col-lg-2">
+	<h4 class="content-menu">Menu</h4>
+	<ul class="p-3">
+			<li class="list-group-item px-2 ">
+				<a href="#65a81dcd-48c9-4022-99f4-1e2cdd70755e">Wprowadzenie</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#b83fa94f-2545-4192-abd2-869f60b1e392">Przepisy</a>
+			</li>
+			<li class="list-group-item px-2 ">
+				<a href="#6851fdb5-4649-4de1-815d-3baae0e53a1b">Szczeg&#xF3;&#x142;owe obja&#x15B;nienie</a>
+			</li>
+	</ul>
+</div>
+
+
+		<div class="content col content-anchor">
+				<div id="65a81dcd-48c9-4022-99f4-1e2cdd70755e">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Wprowadzenie</span></h2>
+<hr>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 3%; background-color: rgb(241, 243, 255); text-align: left;">&nbsp;</td>
+<th style="width: 97%; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Słownik terminów - Swoboda przepływu pracowników w Unii Europejskiej</span></th>
+</tr>
+<tr>
+<td style="width: 49.5472%;">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"><a rel="noopener" href="https://www.europarl.europa.eu/factsheets/pl/sheet/147/swobodny-przeplyw-osob" target="_blank">Swobodny przepływ pracowników</a> jest jedną z czterech podstawowych swobód, z których korzystają obywatele UE, EOG (Norwegii, Islandii, Liechtensteinu) oraz Szwajcarii, jak również członkowie ich rodzin.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Obejmuje on prawo do:</span></p>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">poszukiwania pracy w innym państwie UE;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">podejmowania pracy w innym państwie UE bez konieczności uzyskania pozwolenia na pracę;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">zamieszkania w innym państwie UE ze względu na pracę;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">pozostania w innym państwie UE nawet po zakończeniu stosunku pracy, o ile spełnione są warunki określone prawem UE;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">traktowania na równi z obywatelami danego państwa UE w zakresie dostępu do zatrudnienia, warunków pracy oraz przywilejów socjalnych i podatkowych. Ograniczenia w dostępie do rynku pracy stosowane są w odniesieniu do służby publicznej.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">O ile prawo Unii zapewnia obywatelom UE, EOG i Szwajcarii oraz członkom ich rodzin swobodny dostęp do polskiego rynku pracy, <strong>pozostali cudzoziemcy korzystają z takiego dostępu jedynie w ściśle określonych przypadkach.&nbsp;</strong></span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>Poza tymi przypadkami, możliwość wykonywania przez cudzoziemców pracy w Polsce jest ograniczona</strong> - aby podjąć pracę cudzoziemcy&nbsp;muszą spełnić pewne warunki:&nbsp;</span></p>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">przebywać w Polsce legalnie;</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';">podstawa ich legalnego pobytu (np. wiza) musi pozwalać na ich zatrudnienie, zgodnie z przepisami prawa;</span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">muszą być uprawnieni do wykonywania w Polsce pracy - uprawnienie to może&nbsp;</span><span style="font-family: 'Open Sans';"></span><span style="font-family: 'Open Sans';">wynikać bądź z dokumentu pozwalającego im na pracę w Polsce, który uzyskał dla nich pracodawca (np. zezwolenie na pracę) lub, który sami uzyskali (np. zezwolenie na pobyt czasowy i pracę), bądź z określonej sytuacji, która sprawia, iż mogą wykonywać w Polsce pracę <a rel="noopener" href="/kategorie-informacji/wykonywanie-pracy/wykonywanie-pracy-bez-koniecznosci-posiadania-zezwolenia-na-prace/" target="_blank" title="Wykonywanie pracy bez zezwolenia na pracę">bez tego dokumentu.</a></span></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt;"><span style="font-family: 'Open Sans';">praca odbywa się u określonego pracodawcy, na warunkach oraz stanowisku, które zostały określone w zezwoleniu na pracę, oświadczeniu o powierzeniu pracy lub zezwoleniu na pobyt czasowy (poza sytuacją, gdy warunki te zostały zmienione na korzyść cudzoziemca, np. podwyższenie wynagrodzenia)</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto; height: 493.6px;">
+<tbody>
+<tr style="height: 71.2px;">
+<td rowspan="2" style="width: 1%; height: 493.6px; background-color: rgb(52, 73, 94);">&nbsp;</td>
+<th style="width: 99%; text-align: left; background-color: rgb(241, 243, 255); height: 71.2px;"><span style="font-size: 16pt; font-family: 'Open Sans'; color: rgb(236, 240, 241);">&nbsp;<span style="font-size: 14pt;"><span style="color: rgb(0, 0, 0); font-size: 16pt;">Jeśli chcesz zatrudnić cudzoziemca spoza UE/EOG i CH</span></span></span></th>
+</tr>
+<tr style="height: 422.4px;">
+<td style="width: 98.8788%; height: 422.4px; background-color: rgb(241, 243, 255);">
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ sprawdź na jakiej podstawie przebywa w Polsce - poproś go o okazanie dokumentu, który potwierdza, że przebywa w Polsce legalnie.&nbsp;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ upewnij się, że posiadana przez cudzoziemca wiza lub zezwolenie pobytowe pozwala, by podjąć w Polsce pracę - nie każda wiza i nie każde zezwolenie na pobyt czasowy na to pozwala.&nbsp;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ jeśli, by móc pracować, cudzoziemiec potrzebuje zezwolenia na pracę ⇒ przed zawarciem umowy wystąp o wydanie dla niego takiego zezwolenia, lub, jeśli jest obywatelem Armenii, Białorusi, Mołdawii i Ukrainy skorzystaj z procedury uproszczonej wpisania oświadczenia o powierzeniu cudzoziemcowi pracy do ewidencji oświadczeń. Inną opcją w tej sytuacji jest wystąpienie przez cudzoziemca z wnioskiem o zezwolenie, które jednocześnie legalizuje jego pobyt i pracę w Polsce (tzw. zezwolenie jednolitego, jak m.in. zezwolenie na pobyt czasowy i pracę).&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>    </div>
+</div>
+</div>
+				</div>
+				<div id="b83fa94f-2545-4192-abd2-869f60b1e392">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; font-size: 36pt; color: rgb(198, 54, 99);"><br>Przepisy</span></h2>
+<hr>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-family: 'Open Sans'; font-size: 16pt;">ustawa z dnia 20 marca 2025r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej;&nbsp;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">rozporządzenie Ministra Rodziny, Pracy i Polityki Społecznej z dnia 20 listopada 2025r. w sprawie szczególnych przypadków, w których cudzoziemiec uprawniony do pobytu na terytorium Rzeczypospolitej Polskiej może wykonywać pracę bez zezwolenia na pracę lub oświadczenia o powierzeniu pracy cudzoziemcowi;</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">rozporządzenie Ministra Rodziny, Pracy i Polityki Społecznej z dnia 21 listopada 2025r. w sprawie państw, których obywateli mogą dotyczyć oświadczenia o powierzeniu pracy cudzoziemcowi oraz niektóre przepisy dotyczące zezwolenia na pracę sezonową.</span></li>
+</ul>    </div>
+</div>
+</div>
+				</div>
+				<div id="6851fdb5-4649-4de1-815d-3baae0e53a1b">
+<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99); font-size: 36pt;"><br>Szczegółowe objaśnienie</span></h2>
+<hr>
+<h3><strong><span style="font-family: 'Open Sans'; color: rgb(198, 54, 99);"><span style="font-size: 18pt;">I. Swobodny dostęp do polskiego rynku pracy</span></span></strong></h3>
+<hr>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Swobodny dostęp do polskiego rynku pracy dotyczy sytuacji, kiedy możesz wykonywać pracę bez konieczności dopełniania dodatkowych formalności administracyjnych. Nie jest w tej sytuacji potrzebne uzyskanie dodatkowego dokumentu uprawniającego do pracy, jak zezwolenie na pracę czy oświadczenie o powierzeniu pracy cudzoziemcowi.&nbsp;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Posiadając taki dostęp możesz pracować u wybranego pracodawcy i na uzgodnionych z nim warunkach. Nie oznacza to jednak całkowitej dowolności zatrudnienia - Kodeks pracy chroni Cię przed wykorzystaniem przez pracodawcę.&nbsp;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Sytuacja w zakresie zatrudnienia jest podobna do sytuacji obywateli polskich, z zastrzeżeniem dla wykonywania określonych zawodów i pełnienia określonych funkcji, które wymagają posiadania obywatelstwa polskiego.</span><span style="font-size: 16pt; font-family: 'Open Sans'; color: rgb(198, 54, 99);"></span><span style="font-size: 18pt; font-family: 'Open Sans'; color: rgb(133, 49, 77);"></span></p>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 3%; background-color: rgb(241, 243, 255);">&nbsp;</td>
+<td style="width: 97%; vertical-align: middle;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Z takiej swobody korzystają przede wszystkim obywatele UE, EOG (NO, IS, LI), Szwajcarii oraz UK - beneficjenci Brexitu, a także określeni członkowie ich rodzin.&nbsp;</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Pełen dostęp do rynku pracy mają także ci obywatele państw trzecich i bezpaństwowcy, którzy posiadają zezwolenie na pobyt udzielane bezterminowo (m.in. na pobyt stały, status uchodźcy) lub których szczególna sytuacja rodzinna lub prawna pozwala na pobyt w Polsce i wykonywanie pracy bez zezwolenia (np. małżonkowie obywateli polskich, którym udzielono zezwolenia na pobyt czasowy z uwagi na małżeństwo).</span></p>
+</td>
+</tr>
+</tbody>
+</table>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-collapse-0" aria-controls="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-collapse-0">
+                             <span class="h2 px-0 accordion-title">Swobodny dost&#x119;p do polskiego rynku pracy - przypadki szczeg&#xF3;&#x142;owe</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6-heading-0" data-bs-parent="#accordion-32ae47bc-bfdf-41bd-be46-d63b022f26d6">
+                        <div class="accordion-body">
+                            <div id="art(3)ust(1)pkt(6)" class="a_pkt unit-menu">
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec korzysta z <strong>ochrony czasowej </strong>w Polsce;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec posiada <strong>status uchodźcy </strong>nadany w Polsce, posiada ważne<strong> zaświadczenie wydane przez Szefa UdSC</strong> w związku z postępowaniem ws. udzielenia ochrony międzynarodowej (art. 35 ust. 1<span style="font-size: 14pt;">*</span>) <strong>lub&nbsp;korzysta z ochrony uzupełniającej;</strong><hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec posiada <strong>zgodę na pobyt ze względów humanitarnych</strong> lub posiada zgodę <strong>na pobyt tolerowany;</strong><hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec posiada <strong>zezwolenie na pobyt stały;</strong></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec posiada <strong>zezwolenie na pobyt rezydenta długoterminowego UE;</strong><hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec posiada <strong>zezwolenie na pobyt czasowy:</strong>
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';">w celu kształcenia się na studiach (<strong>art. 144**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">w celu prowadzenia badań naukowych (<strong>art. 151 ust. 1**</strong>) l<strong>ub wizę krajową w celu prowadzenia badań naukowych lub prac rozwojowych</strong>, lub zezwolenie na pobyt czasowy ze względu na inne okoliczności (udzielane po zakończeniu badań naukowych lub prac rozwojowych / <strong>art. 186 ust. 1 pkt 7**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">w celu mobilności długoterminowej naukowca (<strong>art. 151b ust. 1**</strong>) lub w celu mobilności długoterminowej członka rodziny naukowca (<strong>art. 161b ust. 1**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">dla członka rodziny obywatela RP, udzielone w związku z pozostawaniem w uznawanym przez prawo związku małżeńskim z obywatelem RP (<strong>art. 158 ust. 1 pkt 1**</strong>) lub udzielone po raz kolejny w przypadku rozwodu lub separacji albo owdowienia (<strong>158 ust. 2 pkt 1 albo 2**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">w celu połączenia z rodziną (<strong>art. 159 ust. 1**</strong>) lub udzielone po raz kolejny ze względu na rozwód, separację, owdowienie lub śmierć członka rodziny (<strong>art. 161 ust. 2**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">dla ofiar handlu ludźmi (<strong>art. 176**</strong>);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">ze względu na inne okoliczności /dla posiadacza zezwolenia na pobyt rezydenta długoterminowego UE w innym państwie UE lub dla członka rodziny takiego cudzoziemca/ (<strong>art. 186 ust. 1 pkt 3 lub 4**)</strong>;</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">ze względu na inne okoliczności, o których mowa <strong>w art. 186 ust. 1 pkt 8-9**;&nbsp;</strong></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">udzielone w związku <strong>z zawarciem związku małżeńskiego z cudzoziemcem, </strong>który:
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans';">posiada jedno z ww. zezwoleń na pobyt czasowy;</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">który posiada zezwolenie bezterminowe (na pobyt stały lub na pobyt rezydenta długoterminowego);</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">jest beneficjentem ochrony międzynarodowej (status uchodźcy, ochrona uzupełniająca), krajowych (zgoda na pobyt ze względów humanitarnych, zgoda na pobyt tolerowany) lub innych form ochrony (ochrona czasowa);&nbsp;<hr></li>
+</ul>
+</li>
+</ul>
+</li>
+<li style="font-size: 16pt; font-family: 'Open Sans';"><strong>cudzoziemiec jest zstępnym obywatela polskiego lub osoby, o której mowa w art. 3 ust. 1 pkt 6-12, 14 lub 15</strong> ustawy o warunkach dopuszczalności***, posiadającym zezwolenie na pobyt czasowy na terytorium Rzeczypospolitej Polskiej, w wieku do 21 lat lub pozostającym na jej utrzymaniu;<hr></li>
+<li style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemiec przebywa w Polsce<strong> na podstawie art. 108 ust. 1 pkt 2, art. 206 ust. 1 pkt 2 lub art. 222a ust. 1 pkt 2 ustawy o cudzoziemcach&nbsp;</strong>(tj. w ramach pobytu uznawalnego za legalny po złożeniu wniosku o udzielenie zezwolenia na pobyt czasowy, stały lub rezydenta długoterminowego UE), jeśli przed złożeniem wniosku spełniał warunki, o których mowa w art. 3 ust. 1 pkt 14-17 ustawy o dopuszczalności***.&nbsp;</li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.432%; text-align: left; background-color: rgb(241, 243, 255);"><span style="font-family: 'Open Sans';"><em>Legenda:&nbsp;</em></span><br><span style="font-family: 'Open Sans';"><em>* - ustawa z dnia 13 czerwca 2003r. o udzielaniu cudzoziemcom ochrony na terytorium Rzeczypospolitej Polskiej; <br>** - ustawa z dnia 12 grudnia 2013r. o cudzoziemcach; <br>*** - ustawa z dnia 20 marca 2025r. o warunkach dopuszczalności powierzania pracy cudzoziemcom na terytorium Rzeczypospolitej Polskiej.</em></span></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 16pt; font-family: 'Open Sans'; line-height: 1;">&nbsp;</p>
+</div>
+<div id="art(3)ust(1)pkt(13)" class="a_pkt unit-menu"></div>
+<div id="art(3)ust(1)pkt(18)" class="a_pkt unit-menu"></div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h3><span style="font-family: 'Open Sans';"><strong><span style="color: rgb(198, 54, 99); font-size: 18pt;">II. Ograniczony dostęp do polskiego rynku pracy</span></strong></span></h3>
+<hr>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Ograniczony dostęp do polskiego rynku pracy dotyczy sytuacji, kiedy możesz wykonywać pracę na podstawie dokumentu zezwalającego na pracę, w którym z reguły określony jest pracodawca, u którego możesz pracować oraz warunki, na jakich możesz u niego pracować. </span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Tak samo, jak w przypadku swobodnego dostępu, podlegasz przepisom Kodeksu pracy. Chronią Cię one przed wykorzystaniem przez pracodawcę.&nbsp;</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Jeśli przebywasz w Polsce na wizie pamiętaj, że możesz wykonywać pracę jedynie w przypadku wizy wydanej w celu, o którym mowa w art. 60 ust. 1 pkt 3-10, 12 -13b, 17-21 lub 23-24b ustawy o cudzoziemcach. Każda inna wiza cię do tego nie uprawnia, nawet, jeśli masz ważne zezwolenie na pracę lub oświadczenie o powierzeniu pracy cudzoziemcowi. </span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Zezwolenia na pobyt czasowy z reguły pozwalają na wykonywanie w ramach zezwolenia na pracę (ew. oświadczenia). Wyjątkiem jest zezwolenie na pobyt czasowy ze względu na okoliczności uprawniające do krótkoterminowego pobytu (art. 181 ustawy o cudzoziemcach) - pobyt na jego podstawie uniemożliwia podjęcie legalnego zatrudnienia.&nbsp;</span></p>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-collapse-0" aria-controls="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-collapse-0">
+                             <span class="h2 px-0 accordion-title">Ograniczony dost&#x119;p do rynku pracy - przypadki szczeg&#xF3;&#x142;owe</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-7ca923ea-c55c-470c-8b03-7597ac99e546-heading-0" data-bs-parent="#accordion-7ca923ea-c55c-470c-8b03-7597ac99e546">
+                        <div class="accordion-body">
+                            <h3 class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-size: 16pt; font-family: 'Open Sans';">Cudzoziemcy, którym nie przysługuje swobodny dostęp do rynku pracy, mogą wykonywać w Polsce pracę:</span></h3>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><!-- [if !supportLists]--><!--[endif]--><strong>w ramach tzw. zezwolenia jednolitego</strong>, które łączy elementy zezwolenia pobytowego i zezwolenia na pracę;</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 99.432%;">
+<ul>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy i pracę (art. 114 ust. 1, art. 126)</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy w celu wykonywania pracy w zawodzie wymagającym wysokich kwalifikacji (art. 127);</span><span style="font-size: 16pt; font-family: 'Open Sans';"><!--[endif]--></span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy w celu wykonywania pracy w ramach przeniesienia wewnątrz przedsiębiorstwa (art. 139a);</span></li>
+<li style="font-size: 16pt; font-family: 'Open Sans'; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">zezwolenie na pobyt czasowy w celu prowadzenia działalności gospodarczej, udzielanego na podstawie art. 142 ust. 3 ustawy o cudzoziemcach;</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>w ramach zezwolenia na pobyt czasowy w celu mobilności długoterminowej</strong> posiadacza Niebieskiej Karty UE (art. 137a) lub </span><span style="font-size: 16pt; font-family: 'Open Sans';">pracownika kadry kierowniczej, specjalisty lub pracownika odbywającego staż, w ramach przeniesienia wewnątrz przedsiębiorstwa (art. 139o);</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>w ramach korzystania z mobilności krótkoterminowej</strong> posiadacza Niebieskiej Karty, ICT, naukowca lub studenta, na warunkach określonych w ustawie o cudzoziemcach;</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>na podstawie zezwolenia na pracę</strong>, jeśli przebywają w Polsce na innej podstawie, która pozwala na wykonywanie pracy (np. wiza czy zezwolenie na pobyt czasowy - z określonymi wyjątkami);</span><hr><span style="font-size: 16pt; font-family: 'Open Sans';"></span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><strong>obywatele Armenii, Białorusi, Mołdawii lub Ukrainy - na podstawie oświadczenia o powierzeniu pracy cudzoziemcowi </strong>wpisanego do ewidencji oświadczeń, jeśli przebywają w Polsce na innej podstawie, która pozwala na wykonywanie pracy (np. wiza czy zezwolenie na pobyt czasowy - z określonymi wyjątkami).</span></li>
+</ul>
+<table border="1" style="border-collapse: collapse; width: 90%; border-width: 1px; border-style: dashed; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 11.9777%; background-color: rgb(241, 243, 255); vertical-align: top;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/u1jpcnz2/vector-12.svg?rmode=max&amp;width=55&amp;height=51" alt="" width="55" height="51"></td>
+<td style="width: 88.0029%;">
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Przepisy prawa przewidują <strong>szereg wyjątków od konieczności posiadania zezwolenia na pracę oraz oświadczenia</strong> o powierzeniu cudzoziemcowi pracy.</span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Możliwość wykonywania pracy na podstawie wiz oraz zezwoleń na pobyt czasowy jest <strong>ograniczona do określonych celów wydania wiz oraz zezwoleń.</strong></span></p>
+<p style="text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">Więcej informacji w zakładkach:</span></p>
+<p style="padding-left: 40px; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Szczególne przypadki zwolnienia z konieczności posiadania zezwolenia na pracę - <span style="text-decoration: underline;"><strong>otwórz link</strong></span></span></p>
+<p style="padding-left: 40px; text-align: left;"><span style="font-size: 16pt; font-family: 'Open Sans';">⇒ Na podstawie jakiej wizy można pracować pracować w Polsce </span><span style="font-size: 16pt; font-family: 'Open Sans';">- <span style="text-decoration: underline;"><strong>otwórz link.</strong></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+				</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		var fragment = window.location.hash.substr(1); // Pobieranie fragmentu URL po #
+		if (fragment) {
+			$("ul li a[href='#" + fragment + "']").addClass("activeAnchor");
+		}
+		$("ul li a").click(function () {
+			$("ul li a").removeClass("activeAnchor");
+			$(this).addClass("activeAnchor");
+		});
+	});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.querySelector('.alert')) {
+            var paragraph = document.querySelector('.sub-nav p');
+            if (paragraph) {
+                paragraph.style.display = 'none';
+            }
+        }
+    });
+</script>
+<style>
+	.icons span {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+		.icons span:hover {
+			opacity: 0.8;
+		}
+
+	.alert p:last-child{
+		margin-bottom: unset;
+	}
+</style>
+
+
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Ta strona używa ciasteczek (plików cookies) w celu ułatwienia Ci korzystania z naszego serwisu oraz w celach statystycznych, w szczególności:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">dostosowania zawartości serwisu do Twoich preferencji językowych;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">utrzymywania sesji dostępu do treści i funkcjonalności portalu dostępnych wyłącznie dla zarejestrowanych użytkowników;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">unikania powtórnego wyświetlania komunikatów administratora serwisu na Twoim Urządzeniu;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">zbierania danych statystycznych dotyczących unikalnych wyświetleń portalu (dane dotyczące rodzaju i wersji używanej przeglądarki).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Jeśli w ustawieniach przeglądarki nie zostało włączone blokowanie tego typu plików, to zgadzasz się na ich użycie oraz zapisanie w pamięci swojego urządzenia. Pamiętaj, że zawsze możesz samodzielnie zarządzać tymi ustawieniami w swojej przeglądarce. Więcej informacji możesz znaleźć w naszej <a rel="noopener" href="/polityka-cookies/" target="_blank" title="Polityka cookies">Polityce cookies.</a></span></p>    <button id="agreeButton" class="btn">Zaakceptuj ciastka</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Wszystkie treści publikowane w serwisie są udostępniane na licencji Creative Commons: uznanie autorstwa - użycie niekomercyjne - bez utworów zależnych 3.0 Polska (CC BY-NC-ND 3.0 PL), o ile nie jest to stwierdzone inaczej. Informacja zamieszczona na portalu MOS nie stanowi źródła prawa. Autorzy dołożyli należytej staranności, aby była ona zgodna z obowiązującymi regulacjami prawnymi. W przypadku zidentyfikowania stanu niezgodności prosimy o poinformowanie organu o tym fakcie.</p>
+<p style="text-align: justify;">Projekt nr 1/8-2018/BK-FAMI pt. „Modernizacja Systemu Pobyt v.2 w zakresie utworzenia Modułu Obsługi Spraw” jest współfinansowany ze środków Programu Krajowego Funduszu Azylu Migracji i Integracji – Bezpieczna przystań.</p>
+</div>
+</div>			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Poznaj nas</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Pomoc</h5>
+		<div class="col">
+			<a href="/baza-pytan-i-odpowiedzi/" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="/mapa-strony/" target="_blank">
+				Mapa strony
+			</a>
+		</div>
+		<div class="col">
+			<a href="/pomoc-techniczna/" target="_blank">
+				Pomoc techniczna
+			</a>
+		</div>
+		<div class="col">
+			<a href="/redakcja/" target="_blank">
+				Redakcja
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Kwestie prawne</h5>
+		<div class="col">
+			<a href="/regulamin/" target="_blank">
+				Regulamin
+			</a>
+		</div>
+		<div class="col">
+			<a href="/deklaracja-dostepnosci/" target="_blank">
+				Deklaracja dost&#x119;pno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-prywatnosci/" target="_blank">
+				Polityka prywatno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-cookies/" target="_blank">
+				Polityka cookies
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+<!-- MY COLOR #c63663  -->
+<style type="text/css">
+	body {
+		border-color: #c63663 !important;
+	}
+
+	.alert,
+	.card .card-top,
+	nav {
+		border-color: #c63663 !important;
+	}
+
+	.sub-nav {
+		background: #c63663 !important;
+	}
+	.menu-section ul li::before {
+	color: #c63663 !important;}
+</style>
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>
