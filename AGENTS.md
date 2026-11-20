@@ -2,7 +2,7 @@
 
 A legal assistant for an immigrant: a country's rules for foreigners, read from its OFFICIAL texts into exact
 models, and an assistant that asks for the facts a person's case lacks and answers with the rule's source and its
-date. The method and its library are okay-study (`~/work/my/okay-study`: read its `specs/study.md` — the model
+date. The method and its library are okay-study (github.com/okay-effects/okay-study, `~/work/my/okay-study`: read its `specs/study.md` — the model
 as data, the study by a teacher, the book as the judge). Scala 3, lines at most 120 characters, English in the
 repository; the assistant speaks the people's languages (uk, ru, pl, en first).
 
@@ -27,6 +27,7 @@ repository; the assistant speaks the people's languages (uk, ru, pl, en first).
      advice; what the model does not cover is said, not guessed.
   3. The law changes: a book is fetched again before it is relied on; the day is part of the data.
   4. A person's facts stay on the device.
-- Tests: `sbt test` (no model). okay-study comes from ivy-local for now (`sbt coreJVM/publishLocal
-  coreJS/publishLocal study/publishLocal` there).
+- Tests: `sbt test` (no model). okay-study 0.1.0 comes from its release (github.com/okay-effects/okay-study);
+  to try a change of it here, `sbt coreJVM/publishLocal coreJS/publishLocal study/publishLocal` there under a
+  SNAPSHOT number and name that number in `build.sbt` for the while.
 - Plans: `SPRINT.md`; results: `specs/assistant.md`. Commits: plain messages, no attribution trailers.

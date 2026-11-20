@@ -6,7 +6,8 @@ ThisBuild / organization := "io.github.okay-effects"
 ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / scalaVersion := "3.3.8"
 ThisBuild / scalacOptions ++= Seq("-deprecation", "-feature", "-Wunused:all", "-Werror")
-ThisBuild / resolvers ++= Seq("okay-datalog" at "https://okay-effects.github.io/okay-datalog/maven",
+ThisBuild / resolvers ++= Seq("okay-study" at "https://okay-effects.github.io/okay-study/maven",
+  "okay-datalog" at "https://okay-effects.github.io/okay-datalog/maven",
   "okay-llm" at "https://okay-effects.github.io/okay-llm/maven",
   "okay-scala" at "https://okay-effects.github.io/okay-scala/maven",
   "okay-simple" at "https://okay-effects.github.io/okay-simple/maven",
@@ -15,7 +16,7 @@ ThisBuild / resolvers ++= Seq("okay-datalog" at "https://okay-effects.github.io/
   "okay-ui" at "https://okay-effects.github.io/okay-ui/maven")
 
 val munit = Def.setting("org.scalameta" %%% "munit" % "1.2.3" % Test)
-val study = "0.1.0-SNAPSHOT" // ivy-local for now: `sbt coreJVM/publishLocal coreJS/publishLocal study/publishLocal` there
+val study = "0.1.0" // okay-study, released on its GitHub Pages
 
 /** the topics' cases, readings and questions, the conversation (the JVM and Scala.js); on the JVM also the books
  * written for a teacher, the console, the tests. `Models`: the checked models as text, made from `models/` */
