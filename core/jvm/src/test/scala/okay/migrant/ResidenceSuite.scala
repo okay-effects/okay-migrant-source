@@ -8,6 +8,10 @@ class ResidenceSuite extends munit.FunSuite:
     test(s"permanent residence: $what"):
       val verdict = Verdict.of(Permanent.reference, e)
       assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
+  for (what, e) <- Work.official do
+    test(s"the single permit: $what"):
+      val verdict = Verdict.of(Work.reference, e)
+      assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
   for (what, e) <- EuResident.official do
     test(s"long-term EU resident: $what"):
       val verdict = Verdict.of(EuResident.reference, e)

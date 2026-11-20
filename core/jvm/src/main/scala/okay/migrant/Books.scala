@@ -65,3 +65,12 @@ object ResidenceBooks:
       (Books.between(eu.resolve("info-pl.txt"), "Wprowadzenie", "Dokumenty") ++
         Vector("", "PYTANIA I ODPOWIEDZI", "") ++ euQa).mkString("\n"),
       { val r = Random(20261121); (1 to 120).toVector.map(EuResident.sampled(_, r)) })
+
+    val work = Path.of("books/pl/work")
+    val workFaq = Files.readString(work.resolve("faq-pl.txt")).linesIterator.toVector
+    val workQa = workFaq.drop(workFaq.indexWhere(_.contains("Czy pracodawca jest stroną")).ensuring(_ >= 0))
+      .takeWhile(l => !l.contains("ciasteczek"))
+    Books.write(work.resolve("study"),
+      (Books.between(work.resolve("info-pl.txt"), "Wprowadzenie", "Dokumenty") ++
+        Vector("", "PYTANIA I ODPOWIEDZI", "") ++ workQa).mkString("\n"),
+      { val r = Random(20261122); (1 to 160).toVector.map(Work.sampled(_, r)) })
