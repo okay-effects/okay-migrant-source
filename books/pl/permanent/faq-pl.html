@@ -1,0 +1,848 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="pl" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    Zezwolenia bezterminowe | Modu&#x142; Obs&#x142;ugi Spraw
+</title>
+<meta name="Description" content=" ?? Zezwolenia bezterminowe" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/baza-pytan-i-odpowiedzi/zezwolenia-bezterminowe/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/baza-pytan-i-odpowiedzi/zezwolenia-bezterminowe/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-faqList ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/">
+						<img src="/clean-assets/images/logo_white.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/mapa-strony/"></a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/question-and-answer-database/unlimited-permits/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/baza-pytan-i-odpowiedzi/&#x62A;&#x635;&#x627;&#x631;&#x64A;&#x62D;-&#x63A;&#x64A;&#x631;-&#x645;&#x62D;&#x62F;&#x648;&#x62F;&#x629;-&#x627;&#x644;&#x645;&#x62F;&#x629;/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/base-de-donnees-de-questions-et-reponses/permis-de-duree-illimitee/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/co-so-du-lieu-cau-hoi-va-cau-tra-loi/giay-phep-khong-thoi-han/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/baza-pytan-i-odpowiedzi/razresheniya-neogranichennogo-sroka-deistviya/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/baza-pytan-i-odpowiedzi/&#x434;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x438;-&#x43D;&#x430;-&#x43D;&#x435;&#x43E;&#x431;&#x43C;&#x435;&#x436;&#x435;&#x43D;&#x438;&#x439;-&#x442;&#x435;&#x440;&#x43C;&#x456;&#x43D;-&#x434;&#x456;&#x457;/">
+				UK
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fbaza-pytan-i-odpowiedzi%2Fzezwolenia-bezterminowe%2F" type="button">Zaloguj</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/question-and-answer-database/unlimited-permits/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/baza-pytan-i-odpowiedzi/&#x62A;&#x635;&#x627;&#x631;&#x64A;&#x62D;-&#x63A;&#x64A;&#x631;-&#x645;&#x62D;&#x62F;&#x648;&#x62F;&#x629;-&#x627;&#x644;&#x645;&#x62F;&#x629;/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/base-de-donnees-de-questions-et-reponses/permis-de-duree-illimitee/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/co-so-du-lieu-cau-hoi-va-cau-tra-loi/giay-phep-khong-thoi-han/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/baza-pytan-i-odpowiedzi/razresheniya-neogranichennogo-sroka-deistviya/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/baza-pytan-i-odpowiedzi/&#x434;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x438;-&#x43D;&#x430;-&#x43D;&#x435;&#x43E;&#x431;&#x43C;&#x435;&#x436;&#x435;&#x43D;&#x438;&#x439;-&#x442;&#x435;&#x440;&#x43C;&#x456;&#x43D;-&#x434;&#x456;&#x457;/">
+				UK
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fbaza-pytan-i-odpowiedzi%2Fzezwolenia-bezterminowe%2F" type="button">Zaloguj</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							Zezwolenia bezterminowe
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="Szukaj" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+							<li class="breadcrumb-item" aria-current="Baza pyta&#x144; i odpowiedzi">
+								<a href="/baza-pytan-i-odpowiedzi/" class="ellipsis">Baza pyta&#x144; i odpowiedzi</a>
+							</li>
+
+					<li class="ellipsis active" aria-current="Zezwolenia bezterminowe">Zezwolenia bezterminowe</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+<article class="min-h-article">
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-12 col-md-4 col-lg-3">
+				<h5>MENU</h5>
+				<ul class="list-group-faq px-0">
+						<li class="list-group-faq px-2 active">
+
+								<a class=" w-100 active">	Zezwolenie na pobyt sta&#x142;y </a>
+						</li>
+						<li class="list-group-faq px-2 ">
+
+								<a href="./?category=d2886afe-bd5a-4bbb-97ab-045c346d5178" data-togle="tab" class=" w-100 ">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a>
+						</li>
+				</ul>
+
+
+			</div>
+			<div class="col">
+				<div class="container">
+							<div class="row" id="337e71c5-0342-4dc7-97e4-fc91300262be">
+								<div class="col-12 mx-auto px-0">
+									<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="color: rgb(133, 49, 77);"><strong><span style="font-size: 36pt; font-family: 'Open Sans';"><span style="font-size: 24pt;"><br>Q&amp;A: Zezwolenie na pobyt stały</span></span></strong></span></h2>
+<hr>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-0" aria-controls="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-0">
+                             <span class="h2 px-0 accordion-title">Posiadam Kart&#x119; Polaka ile lat musz&#x119; zamieszkiwa&#x107; w Polsce aby uzyska&#x107; prawo sta&#x142;ego pobytu?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-0" data-bs-parent="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                        <div class="accordion-body">
+                            <p class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Posiadacz Karty Polaka nie musi wykazywać wcześniejszych pobytów w Polsce. Warunkiem uzyskania zezwolenia na pobyt stały jest posiadanie ważnej Karty Polaka i zamiar osiedlenia się w Polsce na stałe</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-1" aria-controls="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-1">
+                             <span class="h2 px-0 accordion-title">Jestem uchod&#x17A;c&#x105;, po jakim czasie zamieszkiwania w Polsce mog&#x119; uzyska&#x107; zezwolenie na pobyt sta&#x142;y?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-1" data-bs-parent="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                        <div class="accordion-body">
+                            <p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Cudzoziemiec, któremu nadano status uchodźcy w Polsce, aby uzyskać zezwolenie na pobyt stały musi przebywać w Polsce nieprzerwanie przez co najmniej 5 lat w związku z tą okolicznością. Do tego okresu zalicza się okres jego pobytu na terytorium Polski w toku postępowania w sprawie udzielenia ochrony międzynarodowej, nawet jeżeli przebywał w tym okresie w strzeżonym ośrodku lub w areszcie dla cudzoziemców. Pobyt w Polsce uznaje się za nieprzerwany, jeśli żadna z przerw w pobycie nie przekroczyła 6 miesięcy a łącznie przerwy w pobycie nie były dłuższe niż 10 miesięcy. Przepisy prawa dopuszczają przerwy w pobycie na terytorium Polski spowodowane m.in. wykonywaniem przez cudzoziemca obowiązków służbowych lub świadczeniem pracy zagranicą na podstawie umowy z pracodawcą posiadającym siedzibę w Polsce lub wynikające z jego szczególnej sytuacji osobistej (np. leczenia wymagającego pobytu zagranicznego, o ile przerwa taka nie trwa dłużej niż 6 miesięcy).</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-2">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-2" aria-controls="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-2">
+                             <span class="h2 px-0 accordion-title">Jestem &#x17C;on&#x105;/m&#x119;&#x17C;em obywatela/obywatelki polskiej czy mog&#x119; ubiega&#x107; si&#x119; o zezwolenie na pobyt sta&#x142;y od razu po &#x15B;lubie?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-2" data-bs-parent="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                        <div class="accordion-body">
+                            <p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Nie, zezwolenie na pobyt stały udziela się cudzoziemcowi, który pozostaje w uznawanym przez prawo polskie związku małżeńskim z obywatelem polskim i pozostawał w tym związku małżeńskim przez co najmniej 3 lata przed dniem, w którym złożył wniosek o udzielenie mu zezwolenia na pobyt stały, i bezpośrednio przed złożeniem tego wniosku przebywał nieprzerwanie na terytorium Rzeczypospolitej Polskiej przez okres nie krótszy niż 2 lata na podstawie zezwolenia na pobyt czasowy udzielonego w związku z pozostawaniem w związku małżeńskim z tym obywatelem polskim lub w związku z uzyskaniem statusu uchodźcy, ochrony uzupełniającej lub zgody na pobyt ze względów humanitarnych.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-3">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-3" aria-controls="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-3">
+                             <span class="h2 px-0 accordion-title">Czy osoba polskiego pochodzenia mo&#x17C;e uzyska&#x107; zezwolenie na pobyt sta&#x142;y?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-3" data-bs-parent="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                        <div class="accordion-body">
+                            <p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Tak, zezwolenia&nbsp; na pobyt stały udziela się cudzoziemcowi, jeżeli jest osobą o polskim pochodzeniu i zamierza osiedlić się na terytorium Rzeczypospolitej Polskiej na stałe. W myśl obowiązujących przepisów za osobę polskiego pochodzenia uznaje się osobę deklarującą narodowość polską i spełniającą łącznie następujące warunki:</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">1) co najmniej jedno z jej rodziców lub dziadków albo dwoje pradziadków było narodowości polskiej;</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">2) wykaże ona swój związek z polskością.</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Dowodami potwierdzającymi polskie pochodzenie mogą być dokumenty, wydane przez polskie władze państwowe lub kościelne, a także przez władze byłego Związku Socjalistycznych Republik Radzieckich, dotyczące wnioskodawcy lub jego rodziców, dziadków lub pradziadków, a w szczególności:</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">1) polskie dokumenty tożsamości;</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">2) akty stanu cywilnego lub ich odpisy albo metryki chrztu poświadczające związek z polskością;</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">3) dokumenty potwierdzające odbycie służby wojskowej w Wojsku Polskim, zawierające wpis informujący o narodowości polskiej;</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">4) dokumenty potwierdzające fakt deportacji lub uwięzienia, zawierające wpis informujący o narodowości polskiej;</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">5) dokumenty tożsamości lub inne dokumenty urzędowe zawierające wpis informujący o narodowości polskiej.</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Ponadto dowodami potwierdzającymi polskie pochodzenie mogą być również inne dokumenty, a w szczególności:</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">1) o rehabilitacji osoby deportowanej, zawierające wpis informujący o jej narodowości polskiej;</span></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">2) potwierdzające prześladowanie osoby ze względu na jej polskie pochodzenie.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-4">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-4" aria-controls="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-4">
+                             <span class="h2 px-0 accordion-title">Czy ka&#x17C;de dziecko urodzone w Polsce automatycznie uzyskuje prawo sta&#x142;ego pobytu?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-4" class="accordion-collapse collapse" aria-labelledby="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-4" data-bs-parent="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                        <div class="accordion-body">
+                            <p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Nie, zezwolenia na pobyt stały udziela się cudzoziemcowi, jeżeli:</span></p>
+<ul>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';"><!-- [if !supportLists]--><!--[endif]-->jest dzieckiem cudzoziemca, któremu udzielono zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE pozostającym pod jego władzą rodzicielską:</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">urodzonym po udzieleniu temu cudzoziemcowi zezwolenia na pobyt stały lub zezwolenia na pobyt rezydenta długoterminowego UE lub</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">urodzonym w okresie ważności zezwolenia na pobyt czasowy udzielonego temu cudzoziemcowi lub w okresie pobytu tego cudzoziemca na terytorium Rzeczypospolitej Polskiej na podstawie zgody na pobyt ze względów humanitarnych lub zgody na pobyt tolerowany albo w związku z nadaniem mu statusu uchodźcy lub udzieleniem ochrony uzupełniającej, lub</span></li>
+<li style="font-size: 16pt;"><span style="font-size: 16pt; font-family: 'Open Sans';">jest dzieckiem obywatela polskiego pozostającym pod jego władzą rodzicielską.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-5">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-5" aria-controls="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-5">
+                             <span class="h2 px-0 accordion-title">Czy ubiegaj&#x105;c si&#x119; o udzielenie zezwolenia na pobyt sta&#x142;y musz&#x119; udokumentowa&#x107; znajomo&#x15B;&#x107; j&#x119;zyka polskiego?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-5" class="accordion-collapse collapse" aria-labelledby="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-5" data-bs-parent="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                        <div class="accordion-body">
+                            <p style="text-align: justify;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Nie. Ustawa o cudzoziemcach nie zawiera w zakresie zezwoleń na pobyt stały wymogu dotyczącego konieczności posiadania przez cudzoziemca potwierdzonej znajomości języka polskiego, jak w przypadku zezwoleń na pobyt rezydenta długoterminowego UE.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-6">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-6" aria-controls="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-6">
+                             <span class="h2 px-0 accordion-title">Ile wynosi op&#x142;ata za udzielenie zezwolenia na pobyt sta&#x142;y?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-collapse-6" class="accordion-collapse collapse" aria-labelledby="accordion-0a46deb0-d396-43b9-ab32-e8d548613360-heading-6" data-bs-parent="#accordion-0a46deb0-d396-43b9-ab32-e8d548613360">
+                        <div class="accordion-body">
+                            <p><span style="font-size: 16pt; font-family: 'Open Sans';">Opłata skarbowa za udzielenie zezwolenia na pobyt stały wynosi 640 zł.</span></p>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Zwolnione z opłaty skarbowej są:</span></p>
+<ul>
+<li><span style="font-size: 16pt; font-family: 'Open Sans';">Członkowie najbliższej rodziny repatrianta,</span></li>
+<li><span style="font-size: 16pt; font-family: 'Open Sans';">cudzoziemcy, którym udzielono azylu,&nbsp;</span></li>
+<li><span style="font-size: 16pt; font-family: 'Open Sans';">posiadacze Karty Polaka,</span></li>
+<li><span style="font-size: 16pt; font-family: 'Open Sans';">obywatel Zjednoczonego Królestwa Wielkiej Brytanii i Irlandii Północnej, o którym mowa w art. 10 ust. 1 lit. b i d Umowy Wystąpienia, który do dnia 31 grudnia 2020 r. wykonywał na terytorium Rzeczypospolitej Polskiej pracę jako pracownik delegowany przez pracodawcę zagranicznego na terytorium Rzeczypospolitej Polskiej</span></li>
+</ul>
+<p><span style="font-size: 16pt; font-family: 'Open Sans';">Opłatę skarbową należy uiścić z góry pod rygorem zwrotu wniosku o udzielenie zezwolenia na pobyt stały. Opłatę skarbową należy uiścić na rachunek bankowy lub w kasie organu podatkowego, jakim jest prezydent miasta właściwy ze względu na siedzibę wojewody, do którego składany jest wniosek.</span></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+
+								</div>
+							</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Ta strona używa ciasteczek (plików cookies) w celu ułatwienia Ci korzystania z naszego serwisu oraz w celach statystycznych, w szczególności:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">dostosowania zawartości serwisu do Twoich preferencji językowych;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">utrzymywania sesji dostępu do treści i funkcjonalności portalu dostępnych wyłącznie dla zarejestrowanych użytkowników;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">unikania powtórnego wyświetlania komunikatów administratora serwisu na Twoim Urządzeniu;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">zbierania danych statystycznych dotyczących unikalnych wyświetleń portalu (dane dotyczące rodzaju i wersji używanej przeglądarki).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Jeśli w ustawieniach przeglądarki nie zostało włączone blokowanie tego typu plików, to zgadzasz się na ich użycie oraz zapisanie w pamięci swojego urządzenia. Pamiętaj, że zawsze możesz samodzielnie zarządzać tymi ustawieniami w swojej przeglądarce. Więcej informacji możesz znaleźć w naszej <a rel="noopener" href="/polityka-cookies/" target="_blank" title="Polityka cookies">Polityce cookies.</a></span></p>    <button id="agreeButton" class="btn">Zaakceptuj ciastka</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Wszystkie treści publikowane w serwisie są udostępniane na licencji Creative Commons: uznanie autorstwa - użycie niekomercyjne - bez utworów zależnych 3.0 Polska (CC BY-NC-ND 3.0 PL), o ile nie jest to stwierdzone inaczej. Informacja zamieszczona na portalu MOS nie stanowi źródła prawa. Autorzy dołożyli należytej staranności, aby była ona zgodna z obowiązującymi regulacjami prawnymi. W przypadku zidentyfikowania stanu niezgodności prosimy o poinformowanie organu o tym fakcie.</p>
+<p style="text-align: justify;">Projekt nr 1/8-2018/BK-FAMI pt. „Modernizacja Systemu Pobyt v.2 w zakresie utworzenia Modułu Obsługi Spraw” jest współfinansowany ze środków Programu Krajowego Funduszu Azylu Migracji i Integracji – Bezpieczna przystań.</p>
+</div>
+</div>			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Poznaj nas</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Pomoc</h5>
+		<div class="col">
+			<a href="/baza-pytan-i-odpowiedzi/" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="/mapa-strony/" target="_blank">
+				Mapa strony
+			</a>
+		</div>
+		<div class="col">
+			<a href="/pomoc-techniczna/" target="_blank">
+				Pomoc techniczna
+			</a>
+		</div>
+		<div class="col">
+			<a href="/redakcja/" target="_blank">
+				Redakcja
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Kwestie prawne</h5>
+		<div class="col">
+			<a href="/regulamin/" target="_blank">
+				Regulamin
+			</a>
+		</div>
+		<div class="col">
+			<a href="/deklaracja-dostepnosci/" target="_blank">
+				Deklaracja dost&#x119;pno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-prywatnosci/" target="_blank">
+				Polityka prywatno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-cookies/" target="_blank">
+				Polityka cookies
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>
