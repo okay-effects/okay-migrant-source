@@ -1,0 +1,987 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="pl" >
+<head>
+	
+
+<meta charset="utf-8" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/clean-assets/favicon/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/clean-assets/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/clean-assets/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/clean-assets/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+    Zezwolenia - pobyt i praca | Modu&#x142; Obs&#x142;ugi Spraw
+</title>
+<meta name="Description" content=" ?? Zezwolenia - pobyt i praca" />
+<meta name="Name" content="" />
+<meta name="Keywords" content="" />
+<link rel="canonical" href="http://www.mos.cudzoziemcy.gov.pl/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mos.cudzoziemcy.gov.pl/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://www.mos.cudzoziemcy.gov.pl/socialimage.png">
+
+    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<link href="/sc/262900dd.css.v2" rel="stylesheet">
+
+    <script>
+        var isContrastActive;
+
+        function addColour() {
+            var articleElement = document.querySelector('article[data-main-colour]');
+
+            if (articleElement && articleElement.dataset.mainColour) {
+                var mainColourValue = articleElement.dataset.mainColour;
+
+                var mainNavElement = document.querySelector('#mainNav');
+
+                if (mainNavElement) {
+                    mainNavElement.classList.add('border-' + mainColourValue);
+                }
+            }
+        }
+
+        function checkContrast(isContrast) {
+          isContrastActive = (isContrast === "false") ? false : Boolean(isContrast);
+          if (isContrastActive == null) {
+            return false;
+           }
+           document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+
+        function toggleContrast(isContrastActive) {
+              if(isContrastActive) {
+              setCookie('highContrast', 'true', 365, getDomain());
+              } else{
+                 setCookie('highContrast', 'false', 365, getDomain());
+              }
+                document.body.classList[isContrastActive? 'add' : 'remove']('high-contrast');
+        }
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+        function initMouseDown() {
+            var mouseDownElements = document.querySelectorAll('.mouse-down');
+
+            mouseDownElements.forEach(function(element) {
+                element.addEventListener('click', function() {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function scrollUp() {
+            var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            });
+
+            scrollUpBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var navbar = document.getElementById('mainNav');
+
+            window.onscroll = function() {
+                if (window.pageYOffset > 50) {
+                    navbar.classList.add('shadow-navbar');
+                } else {
+                    navbar.classList.remove('shadow-navbar');
+                }
+            };
+
+            initMouseDown();
+            scrollUp();
+            checkContrast(getCookie('highContrast'));
+            addColour();
+           var button = document.querySelector('.change-colours');
+           button.addEventListener('click', function () {
+               toggleContrast(isContrastActive = !isContrastActive);
+           });
+        });
+    </script>
+
+    <style>
+        .shadow-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</head>
+
+<body class="page-id-faqList ">
+
+
+<nav class="navbar navbar-expand-lg bg-blue-dark nav-other shadow-none" id="mainNav">
+	<div class="container position-relative">
+		<div class="col-1 d-none d-lg-block mouse-down position-absolute">
+			<img src="/clean-assets/images/mouse_blue.png" class="moving-image" />
+		</div>
+		<div class="row">
+                <div class="col-12 my-3">
+				<div class="d-flex justify-content-between">
+					<a class="navbar-brand position-relative" href="/">
+						<img src="/clean-assets/images/logo_white.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="w-100 h-auto" />
+						<img src="/clean-assets/images/ribbon.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' class="d-none ribbon position-absolute z-3" />
+					</a>
+
+					<div class="collapse other-page navbar-collapse justify-content-center d-none ps-3 pe-3" id="navbarResponsive">
+						<ul class="navbar-nav flex-wrap d-none d-lg-flex">
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link with-contrast-color" href="/mapa-strony/"></a>
+								</li>
+						</ul>
+						<div class="w-100 d-lg-none py-2 px-4">
+							<ul class="navbar-nav">
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/prawo/">Prawo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/kontakt/">Kontakt</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link with-contrast-color" href="/informacje-o-portalu/">Informacje o portalu</a>
+										</li>
+							</ul>
+							<div class="py-2 ">
+								<div class="dropdown me-2">
+
+									<div class="d-flex">
+										
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+										<div>
+											
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/question-and-answer-database/permits-residence-and-work/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/base-de-donnees-de-questions-et-reponses/permis-de-sejour-et-de-travail/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/co-so-du-lieu-cau-hoi-va-cau-tra-loi/giay-phep-cu-tru-va-lam-viec/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/">
+				UK
+			</a>
+		</li>
+</ul>
+
+										</div>
+										<div class="mx-3"> 
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fbaza-pytan-i-odpowiedzi%2Fzezwolenia-pobyt-i-praca%2F" type="button">Zaloguj</a>
+
+ </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="align-items-center d-none d-lg-flex">
+						<button class="btn btn-outline-secondary invert-to-white me-2 change-colours" type="button" aria-expanded="false">
+							<img src="/clean-assets/images/color_switch.svg" />
+						</button>
+						
+
+<div class="dropdown me-2">
+	<button class="btn btn-outline-secondary dropdown-toggle invert-to-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src="/clean-assets/images/menu.svg" />
+	</button>
+	<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+			<li><a href="/baza-pytan-i-odpowiedzi/" class="dropdown-item">Baza pyta&#x144; i odpowiedzi</a></li>
+			<li><a href="/jak-zaczac/" class="dropdown-item">Jak zacz&#x105;&#x107; ?</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/praca/zezwolenie-jednolite/" class="dropdown-item">Zezwolenie-jednolite</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-czasowy/studia/zezwolenie-studia/" class="dropdown-item">Zezwolenie-Studia</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-staly/" class="dropdown-item">Zezwolenie na pobyt sta&#x142;y</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/spoza-ue-kontynuacja-pobytu/zezwolenie-na-pobyt-rezydenta-dlugoterminowego-ue/" class="dropdown-item">Zezwolenie na pobyt rezydenta d&#x142;ugoterminowego UE</a></li>
+			<li><a href="/kategorie-informacji/mozliwosci-legalizacji/rozwiazania-ob-ukrainy/karta-pobytu-cukr/" class="dropdown-item">Karta pobytu &quot;CUKR&quot;</a></li>
+			<li><a href="/kategorie-informacji/dokumenty/dokumenty-op3/karta-pobytu/" class="dropdown-item">Karta pobytu</a></li>
+			<li><a href="/regulamin/" class="dropdown-item">Regulamin</a></li>
+	</ul>
+</div>
+						<div class="dropdown me-2">
+							
+
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	PL
+</button>
+<ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton">
+		<li>
+			<a class="dropdown-item" href="/en/question-and-answer-database/permits-residence-and-work/">
+				EN
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ar/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/">
+				AR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/fr/base-de-donnees-de-questions-et-reponses/permis-de-sejour-et-de-travail/">
+				FR
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/vn/co-so-du-lieu-cau-hoi-va-cau-tra-loi/giay-phep-cu-tru-va-lam-viec/">
+				VI
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/ru/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/">
+				RU
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="/uk/baza-pytan-i-odpowiedzi/zezwolenia-pobyt-i-praca/">
+				UK
+			</a>
+		</li>
+</ul>
+
+						</div>
+						
+
+	<a class="btn btn-secondary action-button" href="https://wnioskimos.cudzoziemcy.gov.pl/konto?redirect-url=http%3A%2F%2Fwww.mos.cudzoziemcy.gov.pl%2Fbaza-pytan-i-odpowiedzi%2Fzezwolenia-pobyt-i-praca%2F" type="button">Zaloguj</a>
+
+
+					</div>
+
+					<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+					<!--                            <i class="fas fa-bars"></i>-->
+					<!--                        </button>-->
+				</div>
+			</div>
+			<div class="col-12 d-none d-lg-block mb-2 mb-xxl-0">
+				<div class="d-flex justify-content-between pb-3 pb-md-0">
+					<!-- Remove position-absolute and w-75 -->
+					<h1 class="ps-0 header-title text-white h3 pt-2 mb-3">
+						<div class="d-inline-block end-0  top-50">
+							Zezwolenia - pobyt i praca
+						</div>
+					</h1>
+
+					<!-- Use the Bootstrap grid classes with flex-shrink-0 to make the second element take remaining width without shrinking -->
+					<div class="d-flex flex-shrink-0">
+						<div class="w-100 d-flex justify-content-end">
+							<div>
+<form action="/szukaj/" method="GET" class="d-flex search-box">
+	<div class="search">
+		<button class="search-button d-flex justify-content-center align-items-center">
+			<img src="/clean-assets/images/search.svg" alt="search" />
+		</button>
+		<div class="input-group">
+			<input placeholder="Szukaj" name="q" type="text" class="form-control" />
+		</div>
+	</div>
+</form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile Menu Toggle -->
+		<button class="border-0 end-0 navbar-toggler position-absolute" style="outline: none; box-shadow: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="/clean-assets/images/hamburger.svg" />
+		</button>
+	</div>
+</nav>
+
+	
+
+
+
+<nav aria-label="breadcrumb" class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ol class="d-flex h-100 m-0 p-0">
+					<li class="breadcrumb-item no-ellipsis">
+						<a href="/">
+							<img src="/clean-assets/images/home.svg" />
+						</a>
+					</li>
+
+							<li class="breadcrumb-item" aria-current="Baza pyta&#x144; i odpowiedzi">
+								<a href="/baza-pytan-i-odpowiedzi/" class="ellipsis">Baza pyta&#x144; i odpowiedzi</a>
+							</li>
+
+					<li class="ellipsis active" aria-current="Zezwolenia - pobyt i praca">Zezwolenia - pobyt i praca</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</nav>
+
+<article class="min-h-article">
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-12 col-md-4 col-lg-3">
+				<h5>MENU</h5>
+				<ul class="list-group-faq px-0">
+						<li class="list-group-faq px-2 active">
+
+								<a class=" w-100 active">	Zezwolenie na pobyt czasowy i prac&#x119; </a>
+						</li>
+						<li class="list-group-faq px-2 ">
+
+								<a href="./?category=9fcdcf2f-7b7c-400a-8ed4-3d5f0e3464df" data-togle="tab" class=" w-100 ">Niebieska Karta UE</a>
+						</li>
+				</ul>
+
+
+			</div>
+			<div class="col">
+				<div class="container">
+							<div class="row" id="54567373-b426-43a6-99db-7772455e7c7b">
+								<div class="col-12 mx-auto px-0">
+									<div class="umb-block-list">
+
+
+<div class="row rich-text clearfix m-0  contrast-reset" style="background-color: #f1f7ff">
+    <div class="col-md-12 column ">
+<h2><span style="font-size: 36pt; color: rgb(198, 54, 99); font-family: 'Open Sans';"><br><strong><span style="color: rgb(133, 49, 77); font-size: 24pt;">Q&amp;A: Zezwolenie na pobyt czasowy i pracę</span></strong></span></h2>
+<hr>    </div>
+</div>
+
+<div class="my-2">
+    <div class="accordion" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-0">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-0" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-0">
+                             <span class="h2 px-0 accordion-title">Czy pracodawca jest stron&#x105; w post&#x119;powaniu o udzielenie zezwolenia na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-0" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-0" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Nie, pracodawca nie jest stroną postępowania w sprawie udzielenia zezwolenia na pobyt czasowy i pracę. Zgodnie z przepisami stroną ww. postępowania jest wyłącznie cudzoziemiec.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-1">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-1" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-1">
+                             <span class="h2 px-0 accordion-title">Na jaki okres jest udzielane zezwolenie na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-1" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Zezwolenie na pobyt czasowy i pracę udzielane jest na okres niezbędny do realizacji celu pobytu powyżej 3 miesięcy do 3 lat.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-2">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-2" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-2">
+                             <span class="h2 px-0 accordion-title">Jaka jest op&#x142;ata za udzielenie zezwolenia na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-2" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Opłata za udzielenie zezwolenia na pobyt czasowy i pracę wynosi:</span></p>
+<ul style="text-align: left;">
+<li class="MsoNormal" style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><!-- [if !supportLists]-->440 zł – w przypadku pracownika (za udzielenie zezwolenia na podstawie art. 114 ust. 1 ustawy o cudzoziemcach);</span></li>
+<li class="MsoNormal" style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><!-- [if !supportLists]-->340 zł – w przypadku cudzoziemca pełniącego funkcję w zarządzie lub prokurenta spółki (za udzielenie zezwolenia na podstawie art. 126 ust. 1 ustawy o cudzoziemcach).</span></li>
+</ul>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Należy ją uiścić z góry, z chwilą złożenia wniosku. Jeśli nie zapłacisz tej opłaty wojewoda wezwie cię do jej uiszczenia w terminie, który wynosić będzie od 7 do 14 dni. Jeśli nie zastosujesz się do wezwania, musisz się liczyć z tym, że wojewoda zwróci wniosek w drodze postanowienia.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Opłatę skarbową zapłać na rachunek bankowy lub w kasie organu podatkowego, jakim jest prezydent miasta właściwy ze względu na siedzibę wojewody, do którego składasz wniosek.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-3">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-3" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-3">
+                             <span class="h2 px-0 accordion-title">W jakiej wysoko&#x15B;ci musz&#x119; otrzymywa&#x107; wynagrodzenie, aby uzyska&#x107; zezwolenie na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-3" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Wynagrodzenie, które jest wskazane przez pracodawcę w załączniku do&nbsp;</span><span style="font-size: 16pt; font-family: 'Open Sans';">wniosku o udzielenie zezwolenia na pobyt czasowy i pracę powinno być:</span></p>
+<ul style="text-align: left;">
+<li class="MsoNormal" style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><!-- [if !supportLists]-->nie niższe niż wynagrodzenie pracowników wykonujących, w tym samym wymiarze czasu pracy, pracę porównywalnego rodzaju lub na porównywalnym stanowisku;</span></li>
+<li class="MsoNormal" style="text-align: justify; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><!-- [if !supportLists]-->w skali miesiąca - nie niższe niż wysokość minimalnego wynagrodzenia za pracę.</span></li>
+</ul>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Otrzymywane wynagrodzenie musi wynosić co najmniej 4806 zł brutto miesięcznie, niezależnie od tego, w jakim wymiarze cudzoziemiec wykonuje lub zamierza wykonywać pracę (tj. niezależnie, czy wniosek dotyczy pracy na 1/4, 1/2 etatu czy pełen etat) i jaka jest podstawa jej wykonywania (np. umowa o pracę, umowa o dzieło).</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Jeś<span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">li wykonujesz prac</span>ę na rzecz kilku pracodawców, wymóg związany z wysokością wynagrodzenia zostanie spełniony, jeś<span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">li suma uzyskiwanych wynagrodze</span>ń w każdym miesiącu będzie przewyższać wysokość<span style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"> minimalnego wynagrodzenia za pracę. Oznacza to, że jeśli pracujesz na rzecz pracodawcy A w wymiarze 1/4 etatu oraz pracodawcy B w wymiarze 3/4 etatu, a wynagrodzenie z obu źródeł wskazane w załącznikach do wniosku przewyższa kwotę 4806 zł brutto miesięcznie, spełnisz wymóg udzielenia zezwolenia.</span></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-4">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-4" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-4">
+                             <span class="h2 px-0 accordion-title">Czy mog&#x119; uzyska&#x107; zezwolenie na pobyt i prac&#x119; pracuj&#x105;c u kilki pracodawc&#xF3;w?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-4" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-4" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Tak, każdy z pracodawców powinien wypełnić załącznik nr 1 do wniosku o udzielenie zezwolenia na pobyt czasowy i pracę.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Jeśli wykonujesz pracę na rzecz kilku pracodawców, wymóg związany z wysokością wynagrodzenia zostanie spełniony, jeśli suma uzyskiwanych wynagrodzeń w każdym miesiącu będzie przewyższać wysokość minimalnego wynagrodzenia za pracę. Oznacza to, że jeśli pracujesz na rzecz pracodawcy A w wymiarze 1/4 etatu oraz pracodawcy B w wymiarze 3/4 etatu, a wynagrodzenie z obu źródeł wskazane w załącznikach do wniosku przewyższa kwotę 4806 zł brutto miesięcznie, spełnisz wymóg udzielenia zezwolenia.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-5">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-5" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-5">
+                             <span class="h2 px-0 accordion-title">Czy mog&#x119; uzyska&#x107; zezwolenie na pobyt i prac&#x119; pracuj&#x105;c na p&#xF3;&#x142; etatu?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-5" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-5" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Tak, należy jednak pamiętać, iż wysokość wynagrodzenia wymaganego do uzyskania zezwolenia na pobyt czasowy i pracę otrzymywanego za pracę musi stanowić równowartość co najmniej minimalnego wynagrodzenia za pracę niezależnie od tego w jakim wymiarze wykonujesz pracę.  Wynagrodzenie za pracę  powinno wynosić zatem minimum 4806 zł brutto miesięcznie, niezależnie od tego, w jakim wymiarze wykonujesz lub zamierzasz wykonywać pracę (tj. niezależnie, czy wniosek dotyczy pracy na 1/4, 1/2 etatu czy pełen etat) i jaka jest podstawa jej wykonywania (np. umowa o pracę, umowa o dzieło).</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-6">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-6" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-6">
+                             <span class="h2 px-0 accordion-title">Jaki jest termin rozpatrywania wniosku o udzielenie zezwolenia na pobyt i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-6" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-6" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Wniosek o udzielenie zezwolenia zostanie rozpoznany w terminie 60 dni od złożenia kompletnego wniosku wraz z koniecznymi załącznikami i wymaganymi dokumentami.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Wnioski o udzielenie zezwolenia na pobyt czasowy i pracę są rozpatrywane w następującej kolejności:</span></p>
+<ul>
+<li class="MsoNormal" style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><span style="mso-list: Ignore;"><span style="font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-weight: normal; font-stretch: normal; line-height: normal;"></span></span><!--[endif]-->wnioski składane w celu wykonywania pracy na rzecz przedsiębiorców o istotnym znaczeniu dla gospodarki narodowej;</span></li>
+<li class="MsoNormal" style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><span style="mso-list: Ignore;"><span style="font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-weight: normal; font-stretch: normal; line-height: normal;"></span></span><!--[endif]-->wnioski składane w celu kontynuacji wykonywania pracy na rzecz tego samego pracodawcy, przy niezmienionym wynagrodzeniu i wymiarze czasu pracy;</span></li>
+<li class="MsoNormal" style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><span style="mso-list: Ignore;"><span style="font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-weight: normal; font-stretch: normal; line-height: normal;"></span></span><!--[endif]-->wnioski składane w celu wykonywania pracy w zawodach deficytowych (ujętych specjalnym w wykazie);</span></li>
+<li class="MsoNormal" style="text-align: left; font-size: 16pt; font-family: 'Open Sans';"><span style="font-size: 16pt; font-family: 'Open Sans';"><span style="mso-list: Ignore;"><span style="font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-weight: normal; font-stretch: normal; line-height: normal;"></span></span><!--[endif]-->wnioski składane w pozostałych sprawach.</span></li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-7">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-7" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-7">
+                             <span class="h2 px-0 accordion-title">Czy musz&#x119; przedstawi&#x107; tytu&#x142; prawny do zajmowanego lokalu ubiegaj&#x105;c si&#x119; o zezwolenie na pobyt i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-7" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-7" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Nie, posiadanie tytuł prawny do zajmowanego lokalu nie jest warunkiem uzyskania zezwolenia na pobyt czasowy i pracę. Nie musisz też przedstawiać dokumentów potwierdzających, że masz zapewnione na terytorium Polski miejsce zamieszkania.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-8">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-8" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-8">
+                             <span class="h2 px-0 accordion-title">Czy w toku prowadzonego post&#x119;powania badane jest czy &#x15B;rodki uzyskiwane z tytu&#x142;u zatrudnienia s&#x105; wystarczaj&#x105;ce do pokrycia koszt&#xF3;w utrzymania mnie oraz mojej rodziny?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-8" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-8" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Nie, na potrzeby udzielenia tego konkretnego zezwolenia, wojewoda nie będzie badał, czy środki uzyskiwane z tytułu zatrudnienia są wystarczające do pokrycia kosztów utrzymania rodziny czy pokrycia zobowiązań cudzoziemca, np. z tytułu zaciągniętych kredytów.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-9">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-9" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-9">
+                             <span class="h2 px-0 accordion-title">Czy mog&#x119; z&#x142;o&#x17C;y&#x107; wniosek o zezwolenie na pobyt i prac&#x119; bez wype&#x142;nionego przez pracodawc&#x119; za&#x142;&#x105;cznika nr 1?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-9" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-9" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Nie, wniosek o udzielenie zezwolenia na pobyt czasowy i pracę może zostać złożony za pośrednictwem MOS dopiero po wypełnieniu załącznika nr 1 przez pracodawcę. Załącznik nr 1 wypełniany jest w postaci elektronicznej w MOS. Załącznik podpisuje za pośrednictwem login.gov.pl osoba uprawniona do reprezentowania pracodawcy podpisem zaufanym, podpisem osobistym lub kwalifikowanym podpisem elektronicznym.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Warunki powierzenia pracy określone w załączniku nr 1 muszą być aktualne w dniu wydawania zezwolenia. Muszą też być zgodne z warunkami wynikającymi z innych dokumentów, jak umowa o pracę.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Załącznik nr 1 pomaga określić, czy masz cel pobytu w Polsce powyżej 3 miesięcy, odpowiedni dochód z pracy oraz ubezpieczenie zdrowotne (w przypadku umowy o pracę i umowy zlecenie).</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-10">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-10" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-10">
+                             <span class="h2 px-0 accordion-title">Kto powinien podpisa&#x107; za&#x142;&#x105;cznik nr 1?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-10" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-10" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Załącznik nr 1 do wniosku o udzielenie zezwolenia na pobyt czasowy i pracę &nbsp;musi opatrzyć stosownym kwalifikowanym podpisem elektronicznym, podpisem osobistym lub podpisem zaufanym osoba, która działa w imieniu i na rzecz pracodawcy, jeżeli nie jest on osobą fizyczną. Załącznik nr 1 do wniosku o udzielenie zezwolenia na pobyt czasowy i pracę, w przypadku, gdy pracodawcą jest osoba prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej, powinien zostać złożony przez osobę, która działa w imieniu i na rzecz tego pracodawcy. W imieniu konkretnego podmiotu (np. spółki handlowej) powinien działać pełnomocnik legitymujący się pełnomocnictwem udzielonym w imieniu tego podmiotu przez jego właściwy do reprezentacji organ.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Dokument potwierdzający umocowanie do reprezentowania pracodawcy powinien być dołączony do wniosku o udzielenie zezwolenia na pobyt czasowy i pracę.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-11">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-11" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-11">
+                             <span class="h2 px-0 accordion-title">Posiadam zezwolenie na pobyt czasowy i prac&#x119; dla jednego pracodawcy, czy mog&#x119; dodatkowo podj&#x105;&#x107; prac&#x119; u innego pracodawcy?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-11" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-11" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Posiadając ważne zezwolenie na pobyt czasowy i pracę udzielone dla konkretnego pracodawcy możesz dodatkowo rozpocząć pracę u kolejnego pracodawcy, jeżeli uzyska ona stosowne zezwolenie na pracę dla ciebie.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-12">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-12" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-12">
+                             <span class="h2 px-0 accordion-title">Czy musz&#x119; informowa&#x107; wojewod&#x119; o zako&#x144;czeniu pracy u pracodawcy wpisanego w decyzji o udzieleniu zezwolenia na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-12" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-12" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-family: 'Open Sans'; font-size: 16pt;">Tak, masz obowiązek powiadomić właściwego wojewodę, na piśmie, w terminie 15 dni, o utracie pracy u któregokolwiek z podmiotów powierzających pracę, wymienionych w decyzji o udzieleniu zezwolenia na pobyt czasowy i pracę.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-13">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-13" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-13">
+                             <span class="h2 px-0 accordion-title">Czy musz&#x119; informowa&#x107; wojewod&#x119; o zako&#x144;czeniu pracy u pracodawcy je&#x17C;eli nie jest on wpisany w decyzji o udzieleniu zezwolenia na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-13" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-13" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-family: 'Open Sans'; font-size: 16pt;">Nie, masz obowiązek powiadomić właściwego wojewodę, na piśmie, w terminie 15 dni, o utracie pracy u któregokolwiek z podmiotów powierzających pracę, wymienionych w decyzji o udzieleniu zezwolenia na pobyt czasowy i pracę. Jeżeli posiadasz decyzję o udzieleniu zezwolenia na pobyt i pracę, w której nie została zamieszczona informacja o pracodawcy, nie musisz informować wojewody o utracie pracy.</span></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-family: 'Open Sans'; font-size: 16pt;">Istnieje jednak ogólny obowiązek zawiadamia wojewody który udzielił zezwolenia na pobyt czasowy i pracę, w terminie 15 dni roboczych, o ustaniu przyczyny udzielenia zezwolenia.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-14">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-14" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-14">
+                             <span class="h2 px-0 accordion-title">Posiadam zezwolenie na pobyt czasowy i prac&#x119; z wpisana informacj&#x105; o pracodawcy i warunkach pracy, czy mog&#x119; podj&#x105;&#x107; prac&#x119; u innego pracodawcy lub na innych warunkach?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-14" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-14" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Decyzja o udzieleniu zezwolenia na pobyt czasowy i pracę co do zasady określa wymogi wykonywania przez cudzoziemca pracy w Polsce, w tym pracodawcę (ewentualnie także – pracodawcę użytkownika) oraz m.in. stanowisko i najniższy poziom otrzymywanego wynagrodzenia. Wykonywanie pracy niezgodnie z tymi wymogami, o ile zostały określone w treści decyzji i nie zostały następnie zmienione, jest niezgodne z przepisami i może skutkować wydaniem decyzji o zobowiązaniu do powrotu lub odpowiedzialnością wykroczeniową.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-15">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-15" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-15">
+                             <span class="h2 px-0 accordion-title">Czy w przypadku zmiany pracodawcy musz&#x119; zmieni&#x107; zezwolenie na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-15" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-15" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-family: 'Open Sans'; font-size: 16pt;">Tak, jeżeli w decyzji o udzieleniu zezwolenia na pobyt czasowy i pracę został wpisany pracodawca. Zezwolenie na pobyt czasowy i pracę z reguły określa warunki, zgodnie z którymi praca powinna być wykonywana, w tym m.in. pracodawcę. Jeśli w decyzji o udzieleniu zezwolenia warunki te zostały określone, a następnie uległy zmianie, konieczne może być wystąpienie z wnioskiem o zmianę zezwolenia. Wniosek o zmianę zezwolenia na pobyt czasowy i pracę należy złożyć w wersji papierowej wraz niezbędnymi dokumentami do wojewody, który jest właściwy ze względu na miejsce twojego aktualnego pobytu w Polsce.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-16">
+                        <button class="bg-info-grey d-block accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-16" aria-controls="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-16">
+                             <span class="h2 px-0 accordion-title">Czy w przypadku zmiany warunk&#xF3;w wykonywanej pracy musz&#x119; zmieni&#x107; zezwolenie na pobyt czasowy i prac&#x119;?</span>
+                             <img class="float-end" src="/clean-assets/images/arrow-according.svg" alt='arrow' />
+                        </button>
+
+                    </h2>
+                    <div id="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-collapse-16" class="accordion-collapse collapse" aria-labelledby="accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163-heading-16" data-bs-parent="#accordion-04ab4488-6fd6-4520-b9e2-65c5f6fbf163">
+                        <div class="accordion-body">
+                            <p style="text-align: left;" class="MsoNormal"><span style="font-size: 16pt; font-family: 'Open Sans';">Tak, jeżeli w decyzji o udzieleniu zezwolenia na pobyt czasowy i pracę zostały wpisane warunki na których praca może być wykonywana. Zezwolenie na pobyt czasowy i pracę z reguły określa warunki, zgodnie z którymi praca powinna być wykonywana, w tym m.in. poziom minimalnego wynagrodzenia i wymiar czasu pracy. Jeśli w decyzji o udzieleniu zezwolenia warunki te zostały określone, a następnie uległy zmianie, konieczne może być wystąpienie z wnioskiem o zmianę zezwolenia. Wniosek o zmianę zezwolenia na pobyt czasowy i pracę należy złożyć w wersji papierowej wraz niezbędnymi dokumentami do wojewody, który jest właściwy ze względu na miejsce twojego aktualnego pobytu w Polsce.</span></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+
+								</div>
+							</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+
+    
+
+<div class="cookies">
+<span class="cookie-box">
+<img src="/clean-assets/images/cookie.png" alt='cookie' class="cookie-img" />
+</span>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Ta strona używa ciasteczek (plików cookies) w celu ułatwienia Ci korzystania z naszego serwisu oraz w celach statystycznych, w szczególności:</span></p>
+<ul>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">dostosowania zawartości serwisu do Twoich preferencji językowych;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">utrzymywania sesji dostępu do treści i funkcjonalności portalu dostępnych wyłącznie dla zarejestrowanych użytkowników;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">unikania powtórnego wyświetlania komunikatów administratora serwisu na Twoim Urządzeniu;</span></li>
+<li style="font-size: 14pt; font-family: 'Open Sans';"><span style="font-size: 14pt; font-family: 'Open Sans';">zbierania danych statystycznych dotyczących unikalnych wyświetleń portalu (dane dotyczące rodzaju i wersji używanej przeglądarki).</span></li>
+</ul>
+<p><span style="font-size: 14pt; font-family: 'Open Sans';">Jeśli w ustawieniach przeglądarki nie zostało włączone blokowanie tego typu plików, to zgadzasz się na ich użycie oraz zapisanie w pamięci swojego urządzenia. Pamiętaj, że zawsze możesz samodzielnie zarządzać tymi ustawieniami w swojej przeglądarce. Więcej informacji możesz znaleźć w naszej <a rel="noopener" href="/polityka-cookies/" target="_blank" title="Polityka cookies">Polityce cookies.</a></span></p>    <button id="agreeButton" class="btn">Zaakceptuj ciastka</button>
+</div>
+<script>
+$(document).ready(function(){
+  var agreeButton = getCookie('cookieConsent');
+
+  if (agreeButton) {
+    $('.cookies').hide();
+  } else {
+    $('.cookies').show();
+  }
+
+  $('#agreeButton').click(function(){
+    setCookie('cookieConsent', '1', 365, getDomain());
+    $('.cookies').hide();
+  });
+
+function setCookie(name, value, days, domain) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+}
+
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function getDomain() {
+   const hostDomain = window.location.hostname
+
+    const isDomain = /[a-z]/i.test(hostDomain)
+
+    const isLocalhost = isDomain && hostDomain.indexOf("localhost") !== -1
+
+    let serverDomain = null
+    if (isDomain && !isLocalhost) {
+
+      const domainWithoutSubDomain = hostDomain
+
+        .split(".")
+
+        .slice(1)
+
+        .join(".")
+
+      serverDomain =  "." + domainWithoutSubDomain;
+
+    }
+    return serverDomain
+    }
+
+
+
+});
+</script>
+
+	
+
+<!-- Footer-->
+<footer id="footer" class="pt-4 pb-2">
+	<div class="container">
+		<div class="row license">
+			<div class="col-lg-1 col-md-4 col-12 justify-content-center d-flex icons">
+				<img src="/clean-assets/images/cc.svg" alt='' />
+			</div>
+			<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<div class="col-lg-11 col-md-8 col-12">
+<p style="text-align: justify;">Wszystkie treści publikowane w serwisie są udostępniane na licencji Creative Commons: uznanie autorstwa - użycie niekomercyjne - bez utworów zależnych 3.0 Polska (CC BY-NC-ND 3.0 PL), o ile nie jest to stwierdzone inaczej. Informacja zamieszczona na portalu MOS nie stanowi źródła prawa. Autorzy dołożyli należytej staranności, aby była ona zgodna z obowiązującymi regulacjami prawnymi. W przypadku zidentyfikowania stanu niezgodności prosimy o poinformowanie organu o tym fakcie.</p>
+<p style="text-align: justify;">Projekt nr 1/8-2018/BK-FAMI pt. „Modernizacja Systemu Pobyt v.2 w zakresie utworzenia Modułu Obsługi Spraw” jest współfinansowany ze środków Programu Krajowego Funduszu Azylu Migracji i Integracji – Bezpieczna przystań.</p>
+</div>
+</div>			</div>
+		</div>
+		<hr />
+		<div class="row pb-3 pt-4">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<img class="w-100 h-auto logo-footer" src="/clean-assets/images/logo_blue.svg" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+					<div class="col-12 text-center mb-4">
+						<img class="w-100 h-auto mt-4 logo-footer" src="/clean-assets/images/footer-euro-flag.png" alt='Modu&#x142; Obs&#x142;ugi Spraw' />
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12 menu-footer">
+				<div class="row">
+
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Poznaj nas</h5>
+		<div class="col">
+			<a href="https://www.gov.pl/web/udsc" target="_blank">
+				UdSC
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://www.gov.pl/web/europejska-siec-migracyjna" target="_blank">
+				ESM
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://migracje.gov.pl/" target="_blank">
+				Migracje.gov.pl
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Pomoc</h5>
+		<div class="col">
+			<a href="/baza-pytan-i-odpowiedzi/" target="_blank">
+				FAQ
+			</a>
+		</div>
+		<div class="col">
+			<a href="/iodo/" target="_blank">
+				IODO
+			</a>
+		</div>
+		<div class="col">
+			<a href="/mapa-strony/" target="_blank">
+				Mapa strony
+			</a>
+		</div>
+		<div class="col">
+			<a href="/pomoc-techniczna/" target="_blank">
+				Pomoc techniczna
+			</a>
+		</div>
+		<div class="col">
+			<a href="/redakcja/" target="_blank">
+				Redakcja
+			</a>
+		</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+	<h5>Kwestie prawne</h5>
+		<div class="col">
+			<a href="/regulamin/" target="_blank">
+				Regulamin
+			</a>
+		</div>
+		<div class="col">
+			<a href="/deklaracja-dostepnosci/" target="_blank">
+				Deklaracja dost&#x119;pno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-prywatnosci/" target="_blank">
+				Polityka prywatno&#x15B;ci
+			</a>
+		</div>
+		<div class="col">
+			<a href="/polityka-cookies/" target="_blank">
+				Polityka cookies
+			</a>
+		</div>
+</div>
+					<div class="col-12 col-lg-3 col-12">
+						<div class="social-media align-content-around h-auto card bg-transparent mt-4 mt-md-0">
+							<div class="row">
+
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.facebook.com/udsc.gov" target="_blank">
+		<img src="/media/fiypm4g2/facebook.svg" alt="Facebook" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.instagram.com/urzad_do_spraw_cudzoziemcow/" target="_blank">
+		<img src="/media/rghevsye/instagram.svg" alt="Instagram" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://www.youtube.com/channel/UCf7HqgNTLJa5WggL2KymhxA" target="_blank">
+		<img src="/media/4vidcd1t/youtube.svg" alt="Youtube" />
+	</a>
+</div>
+
+
+<div class="col-6 mb-4 text-center">
+	<a href="https://twitter.com/udsc_gov_pl" target="_blank">
+		<img src="/media/tahkobbg/x.svg" alt="X" />
+	</a>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</footer>
+
+    
+
+	<script src="/sc/2b134f1d.js.v2"></script>
+	
+    <button id="scrollUpBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+</body>
+</html>
