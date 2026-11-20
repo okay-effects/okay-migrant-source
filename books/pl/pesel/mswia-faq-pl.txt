@@ -1,0 +1,321 @@
+                        Najczęściej zadawane pytania i odpowiedzi
+I. Legalizacja pobytu
+
+1. Czy będzie przedłużenie statusu UKR? Jak długo mogę legalnie przebywać w Polsce
+ze statusem UKR i co muszę zrobić, aby nie stracić tego statusu (PESEL UKR, wyjazdy
+z Polski, zmiana sytuacji życiowej)?
+Na mocy aktualnych przepisów* status UKR nadawany obywatelom Ukrainy i określonym
+członkom ich rodzin został przedłużony do 4 marca 2027 r.
+Jeżeli podczas otrzymywania numeru PESEL przedstawiłeś dokument podróży (paszport),
+nic nie musisz robić - status UKR zostaje przedłużony automatycznie. Jeżeli jednak zostałeś
+zarejestrowany jedynie na podstawie oświadczenia o swojej tożsamości, bez okazania
+dokumentu podróży, koniecznie musisz potwierdzić swoją tożsamość pokazując ważny
+dokument podróży (paszport) w dowolnym urzędzie gminy do 31 sierpnia 2026 r.
+W przeciwnym razie utracisz PESEL UKR i przestaniesz być legalnie w Polsce.
+
+Status UKR stracą również osoby, które:
+    -   opuściły terytorium Polski na okres powyżej 30 dni,
+    -   otrzymały zezwolenie na pobyt stały, zezwolenie na pobyt rezydenta
+        długoterminowego Unii Europejskiej, zezwolenie na pobyt czasowy, status uchodźcy,
+        ochrony uzupełniającej, zgodę na pobyt tolerowany, zgodę na pobyt ze względów
+        humanitarnych,
+    -   złożyły w Polsce wniosek o udzielenie ochrony międzynarodowej lub w ich imieniu
+        taki wniosek został złożony,
+    -   uzyskały ochronę czasową na terenie innego niż Polska państwa członkowskiego
+        Unii Europejskiej,
+    -   nabyły obywatelstwo polskie lub obywatelstwo innego państwa członkowskiego Unii
+        Europejskiej,
+    -   wjechały na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na
+        przekraczanie granicy w ramach małego ruchu granicznego.
+2. Czy można otrzymać status UKR, jeśli osoba dopiero przyjechała do Polski?
+Obywatel Ukrainy, który dopiero przybył na terytorium Rzeczypospolitej Polskiej w związku
+z ucieczką przed wojną, może otrzymać nr PESEL ze statusem UKR, jeżeli:
+    1. Zgłosi się w dowolnym urzędzie gminy w Polsce najpóźniej w ciągu 30 dni od
+       przekroczenia granicy Polski. Przekroczenie tego terminu uniemożliwia otrzymanie
+       statusu UKR.
+    2. Posiada ważny dokument podróży (paszport), który okaże przy zgłoszeniu w
+       dowolnym urzędzie gminy.
+3. Co z przechodzeniem ze statusu UKR na CUKR? Oczekiwanie na decyzję trwa do
+roku czasu, zatem potrzeba informacji w szczególności dla osób z
+niepełnosprawnościami, którzy po 4 marca 2027 r. nie będą mieli podstawy
+przebywania w PL z powodu pracy, studiowania, polskiego małżonka itd.
+W przypadku obywateli Ukrainy, posiadających numer PESEL ze statusem UKR, którzy
+złożą wniosek o kartę pobytu CUKR i wniosek ten nie zostanie rozpatrzony do dnia 4 marca
+2027 r., ich pobyt na terenie Rzeczypospolitej Polskiej uznaje się za legalny do dnia:
+- odbioru karty pobytu (lub jej unieważnienia, z uwagi na nieodebranie w terminie 60 dni od
+dnia udostępnienia przez urząd wojewódzki informacji o możliwości jej odbioru),
+- w którym decyzja o odmowie wydania karty pobytu lub umorzeniu postępowania w sprawie
+wydania karty pobytu stanie się ostateczna.
+
+4. Co jest potrzebne aby wyrobić kartę pobytu CUKR?
+Aby złożyć wniosek o kartę pobytu CUKR, należy spełnić łącznie następujące warunki:
+   ●   być obywatelem Ukrainy lub członkiem rodziny obywatela Ukrainy (np. małżonkiem),
+   ●   przebywać w Polsce legalnie w związku z korzystaniem z ochrony czasowej,
+   ●   na dzień 4 czerwca 2025 r. posiadać nr PESEL ze statusem UKR,
+   ●   w dniu złożenia wniosku posiadać nr PESEL ze statusem UKR na podstawie
+       zgłoszonego w dowolnej gminie ważnego aktualnego dokumentu podróży,
+   ●   posiadać nieprzerwany status UKR przynajmniej przez 365 dni.
+Złożenie wniosku o wydanie karty pobytu CUKR możliwe będzie wyłącznie w formie
+elektronicznej i tylko wtedy, gdy dane zamieszczone w rejestrze PESEL są kompletne.
+Proces ten odbywać się będzie poprzez logowanie do systemu Moduł Obsługi Spraw (MOS)
+za pośrednictwem login.gov.pl, następnie wypełnienie formularza wniosku o wydanie karty
+pobytu, a na końcu podpisanie elektroniczne wniosku, do którego konieczne będzie
+posiadanie profilu zaufanego, kwalifikowanego podpisu elektronicznego lub podpisu
+osobistego.
+
+Do wniosku należy dołączyć:
+- aktualną fotografię w formacie cyfrowym, spełniającą określone wymagania, m.in. bez tła,
+w określonym formacie,
+- potwierdzenie dokonania płatności (scan dokumentu lub elektroniczne potwierdzenie
+przelewu): opłaty w wysokości 100 zł za wydanie karty pobytu oraz opłaty skarbowej
+w wysokości 340 zł za udzielenie zezwolenia na pobyt czasowy.
+
+Złożenie wniosku o kartę pobytu CUKR będzie możliwe po wydaniu komunikatu przez MSWiA.
+5. Jakie dokładnie dokumenty należy przygotować do złożenia wniosku o kartę pobytu
+lub status CUKR dla dzieci, które wjechały do Polski przed ukończeniem 12. roku
+życia, oraz jaki minimalny okres ważności paszportu zagranicznego dziecka jest
+wymagany?
+
+Jeżeli małoletnie dziecko wjechało na terytorium Rzeczypospolitej Polskiej przed
+ukończeniem 12. roku życia i korzysta na tym terytorium z ochrony czasowej (statusu UKR),
+to dla złożenia wniosku o wydanie karty pobytu, w rejestrze Ministra Cyfryzacji muszą
+znajdować się:
+   ●     odciski linii papilarnych (odciski palców) lub informacja o fizycznej niemożności
+         pobrania odcisków, albo informacja o chwilowej niemożności pobrania (dwukrotnie) –
+         jeżeli dziecko ukończyło 6. rok życia (z chwilą ukończenia 6. roku życia przez dziecko
+         pojawia się obowiązek uzupełnienia danych w postaci odcisków linii papilarnych w
+         drodze złożenia wniosku o uzupełnienie danych);
+   ● odwzorowanie własnoręcznego podpisu (za wyjątkiem przypadku, gdy dana osoba
+         nie może złożyć podpisu – np. z powodu choroby lub niepełnosprawności) – jeżeli
+         dziecko ukończyło 12. rok życia (z chwilą ukończenia 12. roku życia przez dziecko
+         pojawia się obowiązek uzupełnienia danych w postaci odwzorowania
+         własnoręcznego podpisu w drodze złożenia wniosku).
+Ważny dokument podróży (paszport) jest niezbędny do wprowadzenia danych do rejestru
+PESEL oraz do okazania w czasie odbioru karty pobytu. Nie ma zaś wymagań dotyczących
+tego, ile lat do przodu dokument podróży musi być ważny.
+6. Jak zalegalizować pobyt w Polsce osobom, które nie mogą pracować lub nie mogą
+znaleźć pracy? Czy osoby w wieku emerytalnym lub osoby z niepełnosprawnościami
+mogą ubiegać się o kartę CUKR, jeśli nie pracują?
+
+Kwestia zatrudnienia nie jest czynnikiem, który ma wpływ na decyzję o wydaniu karty pobytu
+CUKR. Nie ma przeciwskazań, aby zarówno osoby w wieku emerytalnym, jak i osoby z
+niepełnosprawnościami mogły ubiegać się o kartę CUKR.
+
+Niemniej jednak cudzoziemiec, który planuje pozostać w Polsce powinien mieć stabilny
+dochód, zapewniający środki do życia. Karta pobytu CUKR gwarantuje legalny pobyt, nie
+wiąże się jednak z żadnym nadzwyczajnym wsparciem, poza tym generalnie przysługującym
+wszystkim osobom, mieszkającym w Polsce.
+
+7. Czy osoba w wieku emerytalnym, która nie posiada umiejętności obsługi komputera i nie
+ma Profilu Zaufanego, będzie mogła złożyć wniosek o kartę pobytu CUKR, jeśli
+składanie będzie możliwe wyłącznie elektronicznie? Czy przewidziano wyjątki dla
+takich osób?
+Sposób składania wniosku dla wszystkich wnioskodawców jest jednakowy. W procesie tym
+będzie można uzyskać wsparcie pracowników urzędów wojewódzkich, organizacji
+pozarządowych oraz w ramach projektu „Wspólnie do Niezależności”.
+
+8. Gdzie uzyskam pomoc w legalizacji pobytu? Kto może mi pomóc?
+Pomoc w procedurze legalizacji pobytu będzie udzielana w ramach projektu „Wspólnie do
+Niezależności” realizowanego przez MSWiA wraz z partnerami tj. Polskim Czerwonym
+Krzyżem (PCK) oraz Fundacją Polskie Centrum Pomocy Międzynarodowej (PCPM). Każdy
+beneficjent tego projektu będzie mógł skorzystać z profesjonalnego wsparcia personelu
+projektu. Kontynuowane będą również szkolenia z zakresu legalizacji pobytu na terytorium
+Rzeczypospolitej Polskiej.
+
+9. Czy będzie można wyjeżdżać z Polski po złożeniu wniosku o kartę pobytu CUKR?
+Złożenie przez beneficjenta ochrony czasowej, który posiada numer PESEL ze statusem
+UKR, wniosku o kartę pobytu CUKR, nie pozbawia go ww. statusu, co w praktyce oznacza,
+że taki cudzoziemiec będzie mógł opuścić terytorium Rzeczypospolitej Polskiej, jednakże na
+okres nie dłuższy niż 30 dni.
+10. Czy pobyt na statusie UKR oraz pobyt na karcie pobytu CUKR będzie w całości
+zaliczany do 5 lat legalnego pobytu, pod warunkiem że osoba przez cały ten okres
+pracowała i odprowadzała wszystkie składki, aby w przyszłości móc ubiegać się o
+kartę rezydenta?
+
+Zgodnie ze stanowiskiem Szefa Urzędu do Spraw Cudzoziemców okres pobytu
+cudzoziemca na terytorium Rzeczypospolitej Polskiej w ramach korzystania z ochrony
+czasowej (okres ze statusem UKR) nie wlicza się do okresu 5-letniego, o którym mowa w art.
+211 ust. 1 ustawy o cudzoziemcach.
+
+Natomiast, pobyt na terytorium Rzeczypospolitej Polskiej na podstawie karty CUKR będzie
+już zaliczany do 5-letniego okresu pobytu niezbędnego do uzyskania zezwolenia na pobyt
+rezydenta długoterminowego Unii Europejskiej.
+
+11. Karta pobytu czy karta CUKR: co będzie lepszym wyborem dla kobiet z dziećmi,
+które uczą się w szkole?
+Projektowana ścieżka pobytu poprzez uzyskanie karty CUKR jest prostsza i szybsza, niż
+otrzymanie standardowej karty pobytu. Stąd rekomenduje się, aby wszystkie osoby, które
+spełniają warunki do uzyskania karty pobytu CUKR skorzystały z tej możliwości legalizacji
+pobytu.
+12. Do jakiej daty trzeba złożyć wniosek o kartę pobytu CUKR, żeby być legalnie w
+Polsce z legalnym dostępem do pracy? Na jaki okres czasu można dostać kartę?
+Wnioski o kartę pobytu CUKR należy złożyć najpóźniej do dnia 4 marca 2027 r. Karta pobytu
+CUKR wydawana jest na okres 3 lat.
+
+
+
+
+II. Dostęp do rynku pracy
+1. Jakie mam prawa jako pracownik w Polsce (umowa, wynagrodzenie, składki ZUS,
+ubezpieczenie zdrowotne, urlop)?
+Legalnie zatrudnionym cudzoziemcom przysługują te same prawa pracownicze, co
+obywatelom Rzeczypospolitej Polskiej. Kwestie te uregulowane są w ustawie z dnia 26 czerwca
+1974 r. Kodeks pracy (Dz. U. z 2025 r., poz. 277 z późn. zm.), który określa prawa i
+obowiązki pracowników i pracodawców.
+2. Czy mogę legalnie pracować w Polsce ze statusem UKR i co musi zrobić
+pracodawca, aby moja praca była zgodna z prawem (zgłoszenie, umowa, ZUS)?
+
+Tak, praca osób ze statusem UKR jest w pełni legalna. Jeśli masz numer PESEL ze
+statusem UKR, możesz pracować w Polsce bez konieczności wyrabiania specjalnego
+zezwolenia na pracę. Twoje prawo do pracy jest niemal takie samo, jak u obywateli polskich
+– jedynym wyjątkiem są stanowiska, które prawo rezerwuje wyłącznie dla Polaków.
+
+Aby Twoja praca była zgodna z prawem, pracodawca musi:
+
+   ●   Zgłosić fakt Twojego zatrudnienia do powiatowego urzędu pracy (właściwego dla jego
+       siedziby lub miejsca zamieszkania),
+   ●   Zrobić to w ciągu 7 dni od dnia, w którym faktycznie zaczniesz u niego pracować.
+
+Zgodnie z najnowszymi przepisami, ewentualny brak zgłoszenia ze strony pracodawcy nie
+sprawia, że Twoja praca staje się nielegalna.
+
+Wcześniej istniały wątpliwości prawne, przez które błąd pracodawcy mógł spowodować, że
+pracownik tracił prawo do pracy (również wstecz). Teraz przepisy jasno mówią, że Twoje
+prawo do pracy nie zależy od tego, czy pracodawca dopełnił obowiązku powiadomienia
+urzędu.
+
+To pracodawca bierze na siebie pełną odpowiedzialność za formalności. Jeśli nie zgłosi
+Twojego zatrudnienia w terminie, grozi mu kara grzywny w wysokości od 1 000 zł do 3 000
+zł. Dla Ciebie jednak praca pozostaje legalna.
+
+
+
+III. Zakwaterowanie
+1. Czy będzie pomoc na pokrycie kosztów zakwaterowania dla osób niezdolnych do
+pracy (osób w wieku emerytalnym i osób z niepełnosprawnościami)?
+Osoby ze statusem UKR, które:
+
+- posiadają orzeczenie o niepełnosprawności lub stopniu niepełnosprawności umiarkowanym
+lub znacznym, lub orzeczenie równoważne, udokumentowane polskim dokumentem
+potwierdzającym posiadanie orzeczenia,
+- ukończyły 60, rok życia (kobieta) lub 65. rok życia (mężczyzna), o ile nie pobierają
+polskiego świadczenia emerytalnego, nie pracują, nie posiadają na terytorium
+Rzeczypospolitej Polskiej pełnoletnich dzieci, wnuków lub innych zstępnych, którzy
+podlegają obowiązkowi alimentacyjnemu,
+a które nie są w stanie samodzielnie zapewnić sobie zakwaterowania, mogą otrzymać pomoc
+polegającą na zakwaterowaniu zbiorowym wraz z całodziennym wyżywieniem, która jest
+zorganizowana w ramach systemu wsparcia, udzielonego przez Ministra Rodziny, Pracy i Polityki
+Społecznej.
+2. Jestem matką z 3 dzieci, czy po 30 czerwca będę mogła mieszkać w OZZ na zasadach
+komercyjnych?
+
+Osoby nienależące do grupy wrażliwej, po 30 czerwca 2026 r. będą mogły mieszkać w OZZ
+(o ile obiekt oferuje taką możliwość) wyłącznie na zasadach komercyjnych, ustalonych z
+właścicielem obiektu. W takich sytuacjach osoba w pełni pokrywa koszt swojego
+zakwaterowania i swojej rodziny.
+3. Gdzie będą mieszkać osoby w wieku emerytalnym, gdy wszystkie ośrodki
+zbiorowego zakwaterowania zostaną zamknięte?
+Osobom ze statusem UKR, należącym do grup wrażliwych (w tym emerytom bez polskiego
+świadczenia emerytalnego, które nie pracują, nie posiadają na terytorium Rzeczypospolitej
+Polskiej pełnoletnich zstępnych, którzy podlegają obowiązkowi alimentacyjnemu i nie są
+w stanie samodzielnie zapewnić sobie zakwaterowania) na podstawie obecnie
+obowiązujących przepisów przysługuje pomoc w OZZ do 4 marca 2027 r.
+
+4. Kto jest zwolniony z obowiązku opłat za zakwaterowanie i wyżywienie w ośrodkach
+zbiorowego zakwaterowania?
+Z obowiązku uiszczania opłat za zakwaterowanie i wyżywienie w OZZ zwolnione są osoby,
+które należą do grup wrażliwych. Od 5 marca 2026 r. za osobę należącą do grupy wrażliwej
+uznaje się osobę, która spełnia co najmniej jeden z poniższych warunków:
+
+     1)   posiada orzeczenie o niepełnosprawności lub stopniu niepełnosprawności
+          umiarkowanym lub znacznym, lub orzeczenie równoważne, lub jest opiekunem
+          takiej osoby i nie pobiera świadczenia pielęgnacyjnego;
+     2)   ukończyła:
+          a) w przypadku kobiet – 60. rok życia,
+          b) w przypadku mężczyzn – 65. rok życia
+          – o ile nie pobiera polskiego świadczenia emerytalnego, nie pracuje i nie posiada
+          na terytorium Rzeczypospolitej Polskiej pełnoletnich zstępnych (dzieci lub
+          wnuków), którzy podlegają obowiązkowi alimentacyjnemu;
+     3)   jest kobietą w ciąży lub osobą wychowującą dziecko do 12. miesiąca życia wraz z
+          tym dzieckiem, na podstawie przedstawionych dokumentów;
+     4)   jest osobą z zagranicznej instytucjonalnej pieczy zastępczej;
+     5)   jest osobą bezpośrednio po hospitalizacji finansowanej przez Narodowy Fundusz
+          Zdrowia, trwającej przynajmniej 7 dni, nie dłużej niż do ustania przyczyny będącej
+          powodem hospitalizacji.
+Pomoc w zapewnieniu zakwaterowania i wyżywienia może być udzielona również
+cudzoziemcowi, który odniósł obrażenia w wyniku działań wojennych prowadzonych na
+terytorium państwa lub obszaru geograficznego, którego dotyczy decyzja Rady Unii
+Europejskiej, stwierdzająca istnienie masowego napływu wysiedleńców, niespełniającego
+warunków dot. legalnego wjazdu na terytorium Rzeczypospolitej Polskiej, który został
+przetransportowany do Polski w celu udzielania świadczeń opieki zdrowotnej.
+Na dotychczasowych zasadach pomoc w zakwaterowaniu i wyżywieniu do 30 czerwca br.
+będzie przysługiwała również osobom, które 4 marca br. będą przebywały w ośrodkach
+zbiorowego zakwaterowania.
+5. Czy matka z niepełnosprawnością z kilkorgiem dzieci musi płacić za pobyt w
+ośrodku zbiorowego zakwaterowania?
+Matka ze statusem UKR, która posiada orzeczenie o niepełnosprawności lub stopniu
+niepełnosprawności umiarkowanym lub znacznym, lub orzeczenie równoważne,
+udokumentowane polskim dokumentem, zwolniona jest z ponoszenia opłat z tytułu
+zakwaterowania i wyżywienia w OZZ. Zwolniony z opłat może być również jej opiekun, o ile
+nie pobiera świadczenia pielęgnacyjnego. Natomiast jej dzieci nie są zakwalifikowane jako
+grupa szczególnie wrażliwa, w związku z czym będą mogły mieszkać w OZZ (o ile obiekt
+oferuje taką możliwość) wyłącznie na zasadach komercyjnych (odpłatnie), ustalonych z
+właścicielem obiektu.
+6. Czy świadczenie pielęgnacyjne jest wliczane jako dochód przy obliczaniu
+odpłatności za pobyt w OZZ?
+Obywatelowi Ukrainy, który przebywa na terenie Rzeczypospolitej Polskiej i pobiera
+świadczenie pielęgnacyjne nie przysługuje zakwaterowanie, ani wyżywienie w ośrodku
+zbiorowego zakwaterowania.
+7. Czy uchodźcy mają prawo do korzystania z programu mieszkań
+socjalnych/komunalnych w gminie?
+Obywatele Ukrainy posiadający numer PESEL ze statusem UKR, mają prawo ubiegać się
+o mieszkania komunalne lub socjalne w gminie na takich samych zasadach jak pozostali
+cudzoziemcy, pod warunkiem spełnienia kryteriów dochodowych i mieszkaniowych.
+8. Czy osoby chore po hospitalizacji mogą przebywać w OZZ? Jakie są kryteria, aby
+osoba chora po hospitalizacji mogła przebywać w OZZ? Gdzie należy zgłosić się i jak
+otrzymać skierowanie do OZZ? Jak długo taka osoba może przebywać w OZZ?
+Osoby bezpośrednio po hospitalizacji finansowanej przez Narodowy Fundusz Zdrowia,
+trwającej przynajmniej 7 dni, mogą przebywać w OZZ, nie dłużej niż do ustania przyczyny
+będącej powodem tej hospitalizacji.
+Dokumentem uprawniającym do pobytu w OZZ jest wtedy wypis ze szpitala z odpowiednią
+adnotacją, która pozwoli ustalić ww. okoliczności.
+IV. Świadczenia zdrowotne
+1. Czy obywatele Ukrainy będą mieć ubezpieczenie zdrowotne, jeżeli nie pracują?
+Dostęp do opieki zdrowotnej przysługuje obywatelom Ukrainy, posiadającym numer PESEL
+ze statusem UKR, pod warunkiem, że są ubezpieczeni i odprowadzają składki na
+ubezpieczenie zdrowotne.
+Te zasady są analogiczne do zasad dotyczących obywateli Polski.
+
+Wyjątek od tej zasady stanowią osoby posiadające zaświadczenie o zamieszkiwaniu w OZZ,
+kobiety w ciąży, porodu i połogu, osoby do ukończenia 18 roku życia, osoby będące ofiarami
+gwałtu lub tortur, które posiadają numer PESEL ze statusem UKR.
+Przy czym finansowanie z NFZ nie dotyczy leczenia uzdrowiskowego i rehabilitacji
+uzdrowiskowej, leczenia niepłodności, zabiegów endoprotezoplastyki i usunięcia zaćmy oraz
+podania produktów leczniczych wydawanych świadczeniobiorcom w ramach programów
+polityki zdrowotnej ministra właściwego do spraw zdrowia.
+2. Czy emeryci, którzy nie mieszkają już w ośrodkach zbiorowego zakwaterowania
+(wynajmują mieszkanie samodzielnie lub mieszkają z dziećmi), będą mieli dostęp do
+opieki zdrowotnej po 4.03.2026 roku?
+Obywatele Ukrainy posiadający numer PESEL ze statusem UKR, pobierający polskie
+świadczenie emerytalne, bez względu na to czy zamieszkują w OZZ będą mieli prawo do
+świadczeń opieki zdrowotnej, udzielanych na zasadach i w zakresie określonym w ustawie o
+świadczeniach opieki zdrowotnej. Wysokość otrzymywanego świadczenia emerytalnego nie
+ma żadnego wpływu na to prawo. Nie dotyczy to leczenia uzdrowiskowego i rehabilitacji
+uzdrowiskowej, leczenia niepłodności, zabiegów endoprotezoplastyki i usunięcia zaćmy oraz
+podania produktów leczniczych wydawanych świadczeniobiorcom w ramach programów
+polityki zdrowotnej ministra właściwego do spraw zdrowia.
+3. Jakie usługi medyczne są bezpłatne dla wszystkich osób ze statusem UKR?
+Beneficjenci ochrony czasowej, którzy posiadają numer PESEL ze statusem UKR, mogą
+korzystać z opieki zdrowotnej na zasadach analogicznych do obywateli Polski. Oznacza to,
+że będą mieli dostęp do wszystkich świadczeń opieki zdrowotnej jedynie w przypadku, gdy
+są ubezpieczeni i odprowadzają składki na ubezpieczenie zdrowotne. Wyjątek stanowią
+grupy, opisane w odpowiedzi na pytanie nr. 1.
+Wszyscy beneficjenci ochrony czasowej, którzy posiadają numer PESEL ze statusem UKR,
+znajdujący się w stanie nagłego zagrożenia zdrowotnego będą uprawnieni do świadczeń
+opieki zdrowotnej udzielanych niezwłocznie w niezbędnym zakresie.
+4. Czy emeryci powyżej 65. roku życia ze statusem UKR mają prawo do refundacji
+leków?
+Emeryci z Ukrainy posiadający numer PESEL ze statusem UKR mają prawo do refundacji
+leków, pod warunkiem, że będą objęci ubezpieczeniem zdrowotnym w Polsce
+(obowiązkowym lub dobrowolnym).
+
