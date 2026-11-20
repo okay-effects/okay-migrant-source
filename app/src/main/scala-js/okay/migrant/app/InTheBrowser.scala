@@ -27,7 +27,26 @@ object InTheBrowser:
     private def button = Option(dom.document.getElementById("share"))
     private def said(path: Vector[String]) = words.getOrElse(path.headOption.getOrElse("en"), words("en"))
 
-    def at(path: Vector[String]): Unit = button.foreach(_.textContent = said(path)._1)
+    /** the foot's note in the screen's language (English before a language is chosen) */
+    private val notes = Map(
+      "uk" -> ("Інформація з офіційних матеріалів польських установ (UdSC, MSWiA, Управа міста Варшави), а не " +
+        "юридична консультація. Ваші відповіді залишаються на цій сторінці: нічого нікуди не надсилається. Посилання " +
+        "на екран містить відповіді, що до нього ведуть: надсилайте його лише тим, кому хочете їх показати."),
+      "ru" -> ("Информация из официальных материалов польских учреждений (UdSC, MSWiA, Управа города Варшавы), а не " +
+        "юридическая консультация. Ваши ответы остаются на этой странице: ничего никуда не отправляется. Ссылка на " +
+        "экран содержит ответы, которые к нему ведут: отправляйте её только тем, кому хотите их показать."),
+      "pl" -> ("Informacje z oficjalnych materiałów polskich urzędów (UdSC, MSWiA, Urząd m.st. Warszawy), " +
+        "a nie porada " +
+        "prawna. Twoje odpowiedzi zostają na tej stronie: nic nie jest nigdzie wysyłane. Link do ekranu zawiera " +
+        "odpowiedzi, które do niego prowadzą: wysyłaj go tylko tym, którym chcesz je pokazać."))
+    private lazy val english = Option(dom.document.getElementById("note")).map(_.textContent).getOrElse("")
+
+    def at(path: Vector[String]): Unit =
+      button.foreach(_.textContent = said(path)._1)
+      val note = english
+      Option(dom.document.getElementById("note")).foreach(_.textContent =
+        path.headOption.flatMap(notes.get).getOrElse(note))
+      path.headOption.foreach(l => dom.document.documentElement.setAttribute("lang", l))
 
     def install(): Unit = button.foreach { b =>
       at(Address.path(dom.window.location.hash))

@@ -63,6 +63,18 @@ class InterviewSuite extends munit.FunSuite:
       if !books(language).contains(plain(quote))
     yield s"$language: $quote"
     assertEquals(missing.distinct, Vector.empty[String])
+    // in every language of the page, a source is the office's own text or our translation; nothing stays Polish
+    val sources = ((topic +: after) ++ residence).flatMap(t => (t.reasons.values.toVector ++ t.remember)
+      .flatMap(_.sources)).distinct
+    val untranslated = for
+      s <- sources
+      language <- Vector("uk", "ru", "en")
+      if !s.quotes.contains(language) && !s.quotes.get("pl").exists(Translations.quotes.contains)
+    yield s"$language: ${s.quotes.get("pl")}"
+    assertEquals(untranslated.distinct, Vector.empty[String])
+    assertEquals(sources.map(_.place).filterNot(Translations.places.contains).distinct, Vector.empty[String])
+    // and no translation of what is not shown
+    assertEquals(Translations.quotes.keySet -- sources.flatMap(_.quotes.get("pl")).toSet, Set.empty[String])
 
   test("the residence permits: the office's statements told through the conversation"):
     def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)

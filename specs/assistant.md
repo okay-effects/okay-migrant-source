@@ -197,3 +197,13 @@ foot says a link carries the answers that lead to it. The fragment never goes to
 
 Checks: the program played with an address (each screen's path; a link opened at its answer; an old link at the
 nearest screen); the browser — the link opened in another page at the same answer, Back, the button's words.
+
+## 9. Everything in the person's language (2026-11-20)
+
+The user saw Polish on the Ukrainian page. 37 of the 72 official sentences shown were published in Polish alone
+(62 for Russian, all for English), and the sources' titles were Polish. `Translations`: our translation of each,
+by its Polish text, and of each title. Shown: the office's own text where it published one in the language, else
+our translation with "unofficial translation; in Polish: «…»" and the original. The foot's note follows the
+screen's language. Checks: every source shown has, in uk/ru/en, the office's text or our translation, every title
+its translation, no translation of what is not shown (`InterviewSuite`); the browser — the PESEL UKR answer in
+Ukrainian with the translation and its original.

@@ -130,6 +130,9 @@ import scala.jdk.CollectionConverters.*
     p.waitForSelector("text=PESEL UKR можна отримати")
     val ukr = body()
     require(ukr.contains("Numer PESEL ze statusem UKR możesz uzyskać") && ukr.contains("Звичайний PESEL"), ukr.take(700))
+    // the office wrote it in Polish alone: our translation shown, said to be ours, the original beside; the foot too
+    require(ukr.contains("«Номер PESEL зі статусом UKR ви можете отримати") && ukr.contains("неофіційний переклад") &&
+      ukr.contains("Інформація з офіційних матеріалів польських установ"), ukr.take(1500))
     p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("pesel.png")).setFullPage(true))
     // the screen's link: the language, the area, the topic, the answers; the button to send it in the language
     val link = p.url()

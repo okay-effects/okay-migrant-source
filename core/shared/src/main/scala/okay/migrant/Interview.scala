@@ -40,7 +40,17 @@ object Outcome:
   /** a source as shown: the office's sentence in the person's language where the office wrote in it, else in
    * Polish, and its place */
   def quoted(s: Source, language: String): String =
-    "«" + s.quotes.getOrElse(language, s.quotes.getOrElse("pl", s.quotes.values.head)) + "» — " + s.place
+    val place = Translations.places.get(s.place).fold(s.place)(_.in(language))
+    val polish = s.quotes.get("pl")
+    s.quotes.get(language) match
+      case Some(own) => s"«$own» — $place"
+      case None => polish.flatMap(Translations.quotes.get) match
+        // the office wrote in Polish alone: our translation, said to be ours, the original beside
+        case Some(t) => s"«${t.in(language)}» — $place (${unofficial.in(language)} «${polish.get}»)"
+        case None => s"«${polish.getOrElse(s.quotes.values.head)}» — $place"
+
+  val unofficial: Words = Words("неофіційний переклад; польською:", "неофициальный перевод; по-польски:",
+    "", "unofficial translation; in Polish:")
 
 object Interview:
   val notAdvice: Words = Words(
