@@ -6,7 +6,7 @@ Done 2026-11-19 (specs §1): the CUKR card's theory written by the teacher from 
 held out, the office's ten cases, no difference from the reference on 3000 cases.
 
 Done 2026-11-19 (specs §3): LIVE https://okay-effects.github.io/okay-migrant/ (the page's repository
-okay-effects/okay-migrant, public; the source okay-effects/okay-migrant-source, private; `sbt publishSite`); its
+okay-effects/okay-migrant, public; the source okay-effects/okay-migrant-source, public since 2026-11-20; `sbt publishSite`); its
 section on okay-effects.github.io.
 
 Done 2026-11-19 (specs §2): the conversation — the exact side chooses what to ask; the office's ten cases told

@@ -81,7 +81,7 @@ build), run by okay-study's core compiled to JavaScript: no server, no request b
 
 **Published 2026-11-19**: https://okay-effects.github.io/okay-migrant/ — the page's repository
 okay-effects/okay-migrant (public, GitHub Pages, branch main), the source okay-effects/okay-migrant-source
-(private). The live page answers the two conversations of `scripts/page.scala` (run with the address). Its section
+(public since 2026-11-20). The live page answers the two conversations of `scripts/page.scala` (run with the address). Its section
 is on okay-effects.github.io (a nav link, "What it does / How it is built", the libraries' line).
 
 ## 4. What follows the application: the second book (2026-11-20)
