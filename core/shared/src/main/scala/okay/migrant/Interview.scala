@@ -54,13 +54,17 @@ object Interview:
   def run[R[_]: Has[Person]](topic: Topic): Outcome ! R = by[R](topic)(Person.ask(_))
 
   /** the same conversation, the asking given: a person behind the effect, a screen of a page */
-  def by[R[_]](topic: Topic)(ask: Question => Person.Said ! R): Outcome ! R =
+  def by[R[_]](topic: Topic)(ask: Question => Person.Said ! R): Outcome ! R = along[R](topic)((_, q) => ask(q))
+
+  /** the same, the asking told what was answered so far (by the question's id, its sentence): a page keeps it in
+   * its address */
+  def along[R[_]](topic: Topic)(ask: (Map[String, String], Question) => Person.Said ! R): Outcome ! R =
     loop[(Map[String, String], Vector[String]), Outcome, R]((Map.empty, Vector.empty)) { (known, asked) =>
       topic.next(known) match
         case None =>
           pure(Right(Outcome(known.values.toVector.sorted, topic.verdicts(known.values.toSet).toVector.sorted, asked)))
         case Some(q) =>
-          ask(q).map { said =>
+          ask(known, q).map { said =>
             val sentence = said match
               case Person.Said.Chose(id) => q.choices.find(_.id == id).map(_.sentence)
               case Person.Said.Typed(value) => q.typed.flatMap(_(value))

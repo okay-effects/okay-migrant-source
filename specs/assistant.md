@@ -182,3 +182,18 @@ registering one's residence, or on application, in person, when a law requires t
   sentence); an ordinary PESEL is only a number and no basis of stay.
 
 Checks: 180 tests; the browser — eight conversations, PESEL UKR in Ukrainian among them.
+
+## 8. A link to every screen (2026-11-20)
+
+The user's request: every page of the app has a link that can be sent and opens where it should. The page's
+program says where it is by an effect, `Address` (`Opened`: where the page was opened; `Now(path)`: the screen
+shown); the browser's handler keeps it in the URL's fragment, each screen a new entry of the history, so Back goes
+to the screen before. A path: the language, the area (`cukr`, `pesel`, `work`, `permanent`, `eu-resident`), the
+topic of an area of several (its English name as words of a link), the answers given as `question=choice` —
+`#/uk/pesel/how-to-get-pesel-ukr/who=ua/crossed=in/passport=yes/excluded=none` opens at that answer. A link's
+answers are given to the conversation (`Interview.along`), not asked; what no longer exists in a link is skipped
+and the nearest screen shown. The header's button sends the link by the phone's own sharing, or copies it; the
+foot says a link carries the answers that lead to it. The fragment never goes to the server.
+
+Checks: the program played with an address (each screen's path; a link opened at its answer; an old link at the
+nearest screen); the browser — the link opened in another page at the same answer, Back, the button's words.

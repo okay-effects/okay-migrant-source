@@ -131,6 +131,21 @@ import scala.jdk.CollectionConverters.*
     val ukr = body()
     require(ukr.contains("Numer PESEL ze statusem UKR możesz uzyskać") && ukr.contains("Звичайний PESEL"), ukr.take(700))
     p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("pesel.png")).setFullPage(true))
+    // the screen's link: the language, the area, the topic, the answers; the button to send it in the language
+    val link = p.url()
+    require(link.contains("#/uk/pesel/how-to-get-pesel-ukr/who=ua/crossed=in/passport=yes/excluded=none"), link)
+    require(p.textContent("#share").contains("Поділитися посиланням"), p.textContent("#share"))
+    // opened in another page: straight to the same answer
+    val other = ctx.newPage()
+    other.onPageError(e => failed :+= "page error (the link): " + e.take(300))
+    other.navigate(link)
+    other.waitForSelector("text=PESEL UKR можна отримати")
+    other.close()
+    // Back: the question before, its address without the last answer
+    p.goBack()
+    p.waitForSelector("text=Чи щось із цього стосується вас?")
+    require(p.url().endsWith("passport=yes"), p.url())
     require(failed.isEmpty, failed.mkString("\n"))
-    println(s"the page: eight conversations answered as expected, no error, no request beyond the page; $out")
+    println(s"the page: eight conversations answered as expected, a link opened at its screen, Back, no error, " +
+      s"no request beyond the page; $out")
   finally { browser.close(); pw.close(); server.stop(0) }

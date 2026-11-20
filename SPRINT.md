@@ -24,6 +24,8 @@ area on the page.
 
 Done 2026-11-20 (specs §7): PESEL and PESEL UKR — the teacher's model 37/37 held out, an area of three topics.
 
+Done 2026-11-20 (specs §8): a link to every screen — the address in the URL, Back, a button to share it.
+
 2. **A person's own words** — an answer typed freely read into one of the question's options by the small reader
    (okay-study's reader by choices). Check: the options chosen right on answers written by other hands, in four
    languages; in doubt the options are shown instead.

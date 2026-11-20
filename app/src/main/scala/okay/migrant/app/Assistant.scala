@@ -25,31 +25,46 @@ object Assistant:
       CukrAfterTopic.topics(Model.parse(Models.plCukrAfter).fold(sys.error, identity))
 
   /** AN AREA: a kind of permit and the topics of it; an area of one topic is that topic */
-  final case class Area(name: Words, topics: Vector[Topic])
+  final case class Area(id: String, name: Words, topics: Vector[Topic])
 
   private def model(text: String) = Model.parse(text).fold(sys.error, identity)
 
   /** what the page knows, in Poland: the CUKR card (eight topics), PESEL (three), the single permit, permanent
    * residence, the EU resident */
   def areas(today: Int): Vector[Area] = Vector(
-    Area(Words("Посвідка CUKR (для громадян України зі статусом UKR)",
+    Area("cukr", Words("Посвідка CUKR (для громадян України зі статусом UKR)",
       "Карта CUKR (для граждан Украины со статусом UKR)",
       "Karta pobytu CUKR (dla obywateli Ukrainy ze statusem UKR)",
       "The CUKR card (for Ukrainians with the UKR status)"),
       topics(today)),
-    Area(Words("PESEL і PESEL UKR", "PESEL и PESEL UKR", "PESEL i PESEL UKR", "PESEL and PESEL UKR"),
+    Area("pesel", Words("PESEL і PESEL UKR", "PESEL и PESEL UKR", "PESEL i PESEL UKR", "PESEL and PESEL UKR"),
       PeselTopics.topics(model(Models.plPesel))),
-    Area(ResidenceTopics.work(model(Models.plWork)).name, Vector(ResidenceTopics.work(model(Models.plWork)))),
-    Area(ResidenceTopics.permanent(model(Models.plPermanent)).name,
+    Area("work", ResidenceTopics.work(model(Models.plWork)).name, Vector(ResidenceTopics.work(model(Models.plWork)))),
+    Area("permanent", ResidenceTopics.permanent(model(Models.plPermanent)).name,
       Vector(ResidenceTopics.permanent(model(Models.plPermanent)))),
-    Area(ResidenceTopics.euResident(model(Models.plEuResident)).name,
+    Area("eu-resident", ResidenceTopics.euResident(model(Models.plEuResident)).name,
       Vector(ResidenceTopics.euResident(model(Models.plEuResident)))))
 
-  private def asked[R[_]: Has[Ui]](topic: Topic, language: String)(q: Question): Person.Said ! R =
-    show(Screen[Person.Said](topic.name.in(language))(Part.section(q.text.in(language))())(
-      q.choices.map(c => Button(c.label.in(language))(Person.Said.Chose(c.id)))*))
+  /** a topic's place in an address: its English name, as words of a link (`can-i-apply-for-the-cukr-card`) */
+  def slug(topic: Topic): String = topic.name.en.toLowerCase.replaceAll("[^a-z0-9]+", "-").stripPrefix("-")
+    .stripSuffix("-")
 
-  private def answered[R[_]: Has[Ui]](topic: Topic, language: String, outcome: Outcome): Unit ! R =
+  /** the answers given, as an address's segments `question=choice`, in the topic's order of questions */
+  private def answeredSoFar(topic: Topic, known: Map[String, String]): Vector[String] =
+    topic.questions.flatMap(q => known.get(q.id).flatMap(s => q.choices.find(_.sentence == s))
+      .map(c => s"${q.id}=${c.id}"))
+
+  private def asked[R[_]: Has[Ui]: Has[Address]](topic: Topic, language: String, at: Vector[String],
+      opened: Map[String, String])(known: Map[String, String], q: Question): Person.Said ! R =
+    opened.get(q.id).filter(id => q.choices.exists(_.id == id)) match
+      // a link's answer: given, not asked
+      case Some(id) => pure(Person.Said.Chose(id))
+      case None => Address.now[R](at ++ answeredSoFar(topic, known)).andThen(
+        show(Screen[Person.Said](topic.name.in(language))(Part.section(q.text.in(language))())(
+          q.choices.map(c => Button(c.label.in(language))(Person.Said.Chose(c.id)))*)))
+
+  private def answered[R[_]: Has[Ui]: Has[Address]](topic: Topic, language: String, at: Vector[String],
+      outcome: Outcome): Unit ! R =
     val w = words(language)
     def sources(r: okay.migrant.Reason): Vector[Part] = r.sources.map(s => Part.text(Outcome.quoted(s, language)))
     val good = outcome.good(topic)
@@ -58,19 +73,44 @@ object Assistant:
     val remember = if !good then Vector.empty else topic.remember.flatMap(r =>
       Part.warning(r.text.in(language)) +: sources(r))
     val foot = Part.text(s"${topic.book.in(language)} ${topic.fetched}. ${Interview.notAdvice.in(language)}")
-    show(Screen[Unit](topic.title(good).in(language))((verdicts ++ remember :+ foot)*)(
-      Button(w("Ще раз", "Ещё раз", "Jeszcze raz", "Again"), Style.Primary)(())))
+    val known = outcome.asked.flatMap(id => topic.questions.find(_.id == id)).flatMap(q =>
+      q.choices.find(c => outcome.sentences.contains(c.sentence)).map(c => q.id -> c.sentence)).toMap
+    Address.now[R](at ++ answeredSoFar(topic, known)).andThen(
+      show(Screen[Unit](topic.title(good).in(language))((verdicts ++ remember :+ foot)*)(
+        Button(w("Ще раз", "Ещё раз", "Jeszcze raz", "Again"), Style.Primary)(()))))
 
-  /** the page, for ever: a language, a situation, its conversation, an answer, and again */
-  def main[R[_]: Has[Ui]](today: Int): Unit ! R =
-    menu[String, R]("Polska · Польща · Польша · Poland", languages*).flatMap { language =>
+  /** a menu at its address: the address said, then the menu — unless the address opened already chose */
+  private def chosen[A, R[_]: Has[Ui]: Has[Address]](at: Vector[String], opened: Option[A], title: String,
+      options: (String, A)*): A ! R =
+    opened.fold(Address.now[R](at).andThen(menu[A, R](title, options*)))(pure(_))
+
+  /** the page, for ever: a language, a situation, its conversation, an answer, and again. Every screen has its
+   * address — the language, the area, the topic, the answers given — and the page opened at an address goes
+   * straight to its screen */
+  def main[R[_]: Has[Ui]: Has[Address]](today: Int): Unit ! R =
+    Address.opened[R].flatMap(from[R](today, _))
+
+  private def from[R[_]: Has[Ui]: Has[Address]](today: Int, path: Vector[String]): Unit ! R =
+    val all = areas(today)
+    val language = path.headOption.filter(l => languages.exists(_._2 == l))
+    chosen[String, R](Vector.empty, language, "Polska · Польща · Польша · Poland", languages*).flatMap { language =>
+      val rest = if path.headOption.contains(language) then path.drop(1) else Vector.empty
       val what = words(language)("Що вас цікавить?", "Что вас интересует?", "Co Cię interesuje?",
         "What do you want to know?")
-      menu[Area, R](what, areas(today).map(a => a.name.in(language) -> a)*).flatMap { area =>
-        val chosen =
-          if area.topics.size == 1 then pure[Topic, R](area.topics.head)
-          else menu[Topic, R](area.name.in(language), area.topics.map(t => t.name.in(language) -> t)*)
-        chosen.flatMap(topic =>
-          Interview.by[R](topic)(asked[R](topic, language)).flatMap(answered[R](topic, language, _)))
+      val area = rest.headOption.flatMap(id => all.find(_.id == id))
+      chosen[Area, R](Vector(language), area, what, all.map(a => a.name.in(language) -> a)*).flatMap { area =>
+        val more = if rest.headOption.contains(area.id) then rest.drop(1) else Vector.empty
+        val (topic, answers) =
+          if area.topics.size == 1 then (Some(area.topics.head), more)
+          else more.headOption.flatMap(id => area.topics.find(slug(_) == id)).fold((None, Vector.empty))(t =>
+            (Some(t), more.drop(1)))
+        chosen[Topic, R](Vector(language, area.id), topic, area.name.in(language),
+          area.topics.map(t => t.name.in(language) -> t)*).flatMap { topic =>
+          val at = Vector(language, area.id) ++ Option.when(area.topics.size > 1)(slug(topic))
+          val opened = answers.flatMap(_.split("=", 2) match
+            case Array(q, c) => Some(q -> c)
+            case _ => None).toMap
+          Interview.along[R](topic)(asked[R](topic, language, at, opened)).flatMap(answered[R](topic, language, at, _))
+        }
       }
-    }.andThen(defer(main[R](today)))
+    }.andThen(defer(from[R](today, Vector.empty)))

@@ -10,6 +10,9 @@
     /* this page's own rules over okay-ui's calm skin (Laminar.run installs it) */
     body > header .brand { letter-spacing: 0.08em; }
     body > header .bar { flex-wrap: wrap; }
+    /* the link to this screen, to send: at the right of the header */
+    #share { margin-left: auto; font: inherit; font-size: 14px; color: #fff; background: transparent;
+      border: 1px solid rgba(255,255,255,0.6); border-radius: 8px; padding: 4px 10px; cursor: pointer; }
     /* an answer's button: the whole width on a phone, the text as long as it is */
     .okay-actions > button { text-align: left; white-space: normal; }
     /* the foot: who built it on the left, "Need more?" (the author) on the right */
@@ -24,11 +27,13 @@
 </head>
 <body>
   <header><div class="bar"><a class="brand" href="./">okay-migrant</a>
-    <span class="tag">pobyt w Polsce · проживання в Польщі · проживание в Польше</span></div></header>
+    <span class="tag">pobyt w Polsce · проживання в Польщі · проживание в Польше</span>
+    <button id="share" type="button">Share link</button></div></header>
   <main id="app"></main>
   <footer><div class="bar">
     <span class="note">Information from the official materials of Polish offices (UdSC, MSWiA, the City of Warsaw), not legal
-      advice. Your answers stay in this page: nothing is sent anywhere.</span>
+      advice. Your answers stay in this page: nothing is sent anywhere. A link to a screen carries the answers that
+      lead to it: send it only to whom you want to show them.</span>
     <span>Built on <a href="https://github.com/okay-effects" target="_blank" rel="noopener noreferrer">okay-effects</a>
       — algebraic effects for Scala</span>
     <a class="more" href="https://okay-effects.github.io/#author" target="_blank" rel="noopener noreferrer">Need more?</a>

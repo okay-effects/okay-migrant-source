@@ -4,7 +4,8 @@ import okay.business.scala3.*
 
 /** the page's program played by its buttons' labels (okay-ui's `Play`), no browser */
 class AssistantSuite extends munit.FunSuite:
-  private def played(acts: Act*) = Play(steps(Assistant.main[Ui](20261119)), acts*)
+  private def played(acts: Act*) = Play(steps(Address.played[(Ui + Address), Ui, Unit](Vector.empty,
+    collection.mutable.ArrayBuffer.empty)(Assistant.main[(Ui + Address)](20261119))), acts*)
 
   test("in Russian: a person who came, the status under a year — the reason, then again from the languages"):
     val p = played(Act.press("Русский"), Act.press("Карта CUKR (для граждан Украины со статусом UKR)"), Act.press("Могу ли я подать заявление на карту CUKR?"),
@@ -64,3 +65,32 @@ class AssistantSuite extends munit.FunSuite:
       Act.press("Больше 30 дней"), Act.press("Ничего из этого"))
     assertEquals(p.problems, Nil)
     assertEquals(p.at.map(_.title), Some("Статус UKR утрачен"))
+
+  private def at(path: Vector[String], acts: Act*) =
+    val went = collection.mutable.ArrayBuffer.empty[Vector[String]]
+    (Play(steps(Address.played[(Ui + Address), Ui, Unit](path, went)(Assistant.main[(Ui + Address)](20261119))),
+      acts*), went.toVector)
+
+  test("every screen has its address: the language, the area, the topic, the answers given"):
+    val (p, went) = at(Vector.empty, Act.press("Русский"), Act.press("PESEL и PESEL UKR"),
+      Act.press("Сохранится ли мой статус UKR?"), Act.press("Больше 30 дней"))
+    assertEquals(p.problems, Nil)
+    assertEquals(went, Vector(Vector(), Vector("ru"), Vector("ru", "pesel"),
+      Vector("ru", "pesel", "will-i-keep-the-ukr-status"), Vector("ru", "pesel", "will-i-keep-the-ukr-status", "away=long")))
+
+  test("a link opened goes straight to its screen: the answer of the PESEL UKR conversation"):
+    val link = Vector("uk", "pesel", "how-to-get-pesel-ukr", "who=ua", "crossed=in", "passport=yes", "excluded=none")
+    val (p, went) = at(link)
+    assertEquals(p.at.map(_.title), Some("PESEL UKR можна отримати"))
+    assertEquals(went, Vector(link))
+
+  test("a link to a question, and one with what no longer exists: the nearest screen that does"):
+    val (q, _) = at(Vector("en", "work"))
+    assertEquals(q.at.map(_.title), Some(Assistant.areas(20261119).find(_.id == "work").get.topics.head.name.en))
+    val (old, went) = at(Vector("pl", "nothing-like-this", "x=y"))
+    assertEquals(old.at.map(_.title), Some("Co Cię interesuje?"))
+    assertEquals(went, Vector(Vector("pl")))
+
+  test("topics' addresses differ within an area"):
+    for a <- Assistant.areas(20261119) do
+      assertEquals(a.topics.map(Assistant.slug).distinct.size, a.topics.size, a.id)
