@@ -1,0 +1,170 @@
+{
+  "sentences": [
+    {
+      "pattern": "the applicant is in Poland legally on a basis that allows applying",
+      "facts": [
+        "in_poland_allowed({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant is in Poland on an excluded basis",
+      "facts": [
+        "in_poland_excluded({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant is outside Poland",
+      "facts": [
+        "outside_poland({#})"
+      ]
+    },
+    {
+      "pattern": "the pay is lower than that of comparable workers",
+      "facts": [
+        "pay_lower_than_comparable({#})"
+      ]
+    },
+    {
+      "pattern": "the pay is not lower than that of comparable workers",
+      "facts": [
+        "pay_not_lower_than_comparable({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant has health insurance",
+      "facts": [
+        "has_insurance({#})"
+      ]
+    },
+    {
+      "pattern": "the applicant has no health insurance",
+      "facts": [
+        "lacks_insurance({#})"
+      ]
+    },
+    {
+      "pattern": "the purpose is a posting by a foreign employer",
+      "facts": [
+        "purpose_posting({#})"
+      ]
+    },
+    {
+      "pattern": "the purpose is running one's own business",
+      "facts": [
+        "purpose_business({#})"
+      ]
+    },
+    {
+      "pattern": "the purpose is seasonal work",
+      "facts": [
+        "purpose_seasonal({#})"
+      ]
+    },
+    {
+      "pattern": "the purpose is work of 3 months or less",
+      "facts": [
+        "purpose_short_work({#})"
+      ]
+    },
+    {
+      "pattern": "the purpose is work of more than 3 months, not seasonal, not a posting",
+      "facts": [
+        "purpose_long_work({#})"
+      ]
+    },
+    {
+      "pattern": "the gross monthly pay from all employers is {N:[0-9]+} zl",
+      "facts": [
+        "monthly_pay({#}, {N})"
+      ]
+    },
+    {
+      "pattern": "the occupation is on the starost's list but the applicant continues the same job with the same employer or is a citizen of Turkey",
+      "facts": [
+        "occupation_listed_exempt({#})"
+      ]
+    },
+    {
+      "pattern": "the occupation is on the starost's list",
+      "facts": [
+        "occupation_listed({#})"
+      ]
+    },
+    {
+      "pattern": "the occupation is not on the starost's list",
+      "facts": [
+        "occupation_not_listed({#})"
+      ]
+    }
+  ],
+  "terms": [],
+  "rules": [
+    "% purpose not covered by this permit: another permit fits",
+    "another_permit(posted) :- purpose_posting(S).",
+    "another_permit(business) :- purpose_business(S).",
+    "another_permit(seasonal) :- purpose_seasonal(S).",
+    "% stay basis",
+    "basis_excluded(basis_excluded) :- in_poland_excluded(S).",
+    "apply_in_poland(apply_in_poland) :- outside_poland(S).",
+    "% health insurance",
+    "no_insurance(no_insurance) :- lacks_insurance(S).",
+    "% labour market test (starost's list), exemptions read as occupation_listed_exempt",
+    "closed(yes) :- occupation_listed(S).",
+    "occupation_closed(occupation_closed) :- closed(yes).",
+    "% pay",
+    "pay_under_comparable(pay_under_comparable) :- pay_lower_than_comparable(S).",
+    "low_pay(yes) :- monthly_pay(S, P), P < 4806.",
+    "pay_under_minimum(pay_under_minimum) :- low_pay(yes).",
+    "% stay must be over 3 months",
+    "stay_not_over_3_months(stay_not_over_3_months) :- purpose_short_work(S).",
+    "% all requirements met",
+    "eligible(eligible) :- in_poland_allowed(A), purpose_long_work(B), has_insurance(C), pay_not_lower_than_comparable(D), monthly_pay(E, P), not low_pay(yes), not closed(yes)."
+  ],
+  "answers": [
+    {
+      "pattern": "another_permit_{K:[a-z]+}",
+      "goal": "another_permit(K)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:basis_excluded}",
+      "goal": "basis_excluded(A)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:apply_in_poland}",
+      "goal": "apply_in_poland(A)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:no_insurance}",
+      "goal": "no_insurance(A)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:occupation_closed}",
+      "goal": "occupation_closed(A)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:pay_under_comparable}",
+      "goal": "pay_under_comparable(A)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:pay_under_minimum}",
+      "goal": "pay_under_minimum(A)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:stay_not_over_3_months}",
+      "goal": "stay_not_over_3_months(A)",
+      "unordered": false
+    },
+    {
+      "pattern": "{A:eligible}",
+      "goal": "eligible(A)",
+      "unordered": false
+    }
+  ]
+}

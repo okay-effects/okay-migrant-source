@@ -34,7 +34,8 @@ lazy val core = crossProject(JVMPlatform, JSPlatform).crossType(CrossType.Full).
       val out = (Compile / sourceManaged).value / "okay" / "migrant" / "Models.scala"
       IO.write(out, "package okay.migrant\n\n/** the checked models as text (made from `models/` by the build) */\n" +
         "object Models:\n" + Vector("plCukr" -> "pl-cukr.json", "plCukrAfter" -> "pl-cukr-after.json",
-          "plPermanent" -> "pl-permanent.json", "plEuResident" -> "pl-eu-resident.json")
+          "plPermanent" -> "pl-permanent.json", "plEuResident" -> "pl-eu-resident.json",
+          "plWork" -> "pl-work.json")
           .map { case (name, file) => s"  val $name: String = ${text(file)}\n" }.mkString)
       Seq(out)
     }.taskValue)

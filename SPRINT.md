@@ -19,11 +19,14 @@ months, and the page says so.
 Done 2026-11-20 (specs §5): beyond CUKR — permanent residence and the long-term EU resident, the teachers'
 models (12/12 and 106/106 held out), the page's areas.
 
+Done 2026-11-20 (specs §6): the single permit (stay and work) — the teacher's model 77/77 held out, a fourth
+area on the page.
+
 2. **A person's own words** — an answer typed freely read into one of the question's options by the small reader
    (okay-study's reader by choices). Check: the options chosen right on answers written by other hands, in four
    languages; in doubt the options are shown instead.
-5. **The next book** — the temporary permit for work (the single permit), studies, citizenship; or another
-   country; the same directory, the same judge.
+5. **The next book** — studies, family reunion, citizenship; or another country; the same directory, the same
+   judge.
 6. **What the page still does not say** — the answers with no rule to check: health care (59), the count toward
    the long-term resident's permit (57, 58), the wait of up to 180 days (48), the documents and the photograph
    (27, 36), the fees (24–26). As facts with their sources, a situation "what else should I know".

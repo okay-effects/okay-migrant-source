@@ -53,7 +53,7 @@ class InterviewSuite extends munit.FunSuite:
     def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)
     val after = CukrAfterTopic.topics(model("pl-cukr-after.json"))
     val residence = Vector(ResidenceTopics.permanent(model("pl-permanent.json")),
-      ResidenceTopics.euResident(model("pl-eu-resident.json")))
+      ResidenceTopics.euResident(model("pl-eu-resident.json")), ResidenceTopics.work(model("pl-work.json")))
     val missing = for
       t <- (topic +: after) ++ residence
       reason <- t.reasons.values.toVector ++ t.remember
@@ -66,7 +66,8 @@ class InterviewSuite extends munit.FunSuite:
   test("the residence permits: the office's statements told through the conversation"):
     def model(file: String) = Model.parse(text(s"models/$file")).fold(e => fail(e), identity)
     val cases = Vector(ResidenceTopics.permanent(model("pl-permanent.json")) -> Permanent.official,
-      ResidenceTopics.euResident(model("pl-eu-resident.json")) -> EuResident.official)
+      ResidenceTopics.euResident(model("pl-eu-resident.json")) -> EuResident.official,
+      ResidenceTopics.work(model("pl-work.json")) -> Work.official)
     for (t, official) <- cases; (what, e) <- official do
       val answers = t.questions.flatMap(q => q.choices.find(c => e.sentences.contains(c.sentence))
         .map(c => q.id -> Person.Said.Chose(c.id))).toMap

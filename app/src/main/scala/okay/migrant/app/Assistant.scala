@@ -34,8 +34,8 @@ object Assistant:
     Area(Words("Посвідка CUKR (для громадян України зі статусом UKR)", "Карта CUKR (для граждан Украины со статусом UKR)",
       "Karta pobytu CUKR (dla obywateli Ukrainy ze statusem UKR)", "The CUKR card (for Ukrainians with the UKR status)"),
       topics(today)),
-    Area(ResidenceTopics.permanent(model(Models.plPermanent)).name,
-      Vector(ResidenceTopics.permanent(model(Models.plPermanent)))),
+    Area(ResidenceTopics.work(model(Models.plWork)).name, Vector(ResidenceTopics.work(model(Models.plWork)))),
+    Area(ResidenceTopics.permanent(model(Models.plPermanent)).name, Vector(ResidenceTopics.permanent(model(Models.plPermanent)))),
     Area(ResidenceTopics.euResident(model(Models.plEuResident)).name,
       Vector(ResidenceTopics.euResident(model(Models.plEuResident)))))
 

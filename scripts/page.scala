@@ -109,6 +109,17 @@ import scala.jdk.CollectionConverters.*
     val absent = body()
     require(absent.contains("не превышал 6 месяцев единовременно"), absent.take(700))
     p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("eu.png")).setFullPage(true))
+    // the single permit, in Polish: 4000 zł gross a month — under the minimum
+    press("Ещё раз")
+    press("Polski")
+    press("Zezwolenie na pobyt czasowy i pracę")
+    press("W Polsce legalnie: ruch bezwizowy, wiza w celu pracy, inne zezwolenie na pobyt")
+    press("Praca u pracodawcy w Polsce dłużej niż 3 miesiące")
+    press("Mniej niż 4806 zł"); press("Tak"); press("Tak"); press("Nie")
+    p.waitForSelector("text=Teraz — nie")
+    val pay = body()
+    require(pay.contains("Otrzymywane wynagrodzenie musi wynosić co najmniej 4806 zł brutto miesięcznie"), pay.take(700))
+    p.screenshot(Page.ScreenshotOptions().setPath(Path.of(out).resolveSibling("work.png")).setFullPage(true))
     require(failed.isEmpty, failed.mkString("\n"))
-    println(s"the page: six conversations answered as expected, no error, no request beyond the page; $out")
+    println(s"the page: seven conversations answered as expected, no error, no request beyond the page; $out")
   finally { browser.close(); pw.close(); server.stop(0) }

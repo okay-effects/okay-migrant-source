@@ -24,10 +24,15 @@ class ResidenceTeacherSuite extends munit.FunSuite:
     java.nio.file.Path.of("models", file))).fold(e => fail(e), identity)
   private val permanent = model("pl-permanent.json")
   private val eu = model("pl-eu-resident.json")
+  private val work = model("pl-work.json")
 
   for (what, e) <- Permanent.official do
     test(s"the teacher's permanent residence model: $what"):
       val verdict = Verdict.of(permanent, e)
+      assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
+  for (what, e) <- Work.official do
+    test(s"the teacher's single permit model: $what"):
+      val verdict = Verdict.of(work, e)
       assert(verdict.isInstanceOf[Verdict.Right_], s"$verdict for ${e.sentences.mkString("; ")}")
   for (what, e) <- EuResident.official do
     test(s"the teacher's EU resident model: $what"):
@@ -53,3 +58,5 @@ class ResidenceTeacherSuite extends munit.FunSuite:
     agree(Permanent.reference, permanent, Permanent.sampled, 7)
   test("EU resident: the teacher's model and the reference agree on three thousand cases"):
     agree(EuResident.reference, eu, EuResident.sampled, 8)
+  test("the single permit: the teacher's model and the reference agree on three thousand cases"):
+    agree(Work.reference, work, Work.sampled, 9)

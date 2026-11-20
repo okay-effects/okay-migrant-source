@@ -141,3 +141,24 @@ page in Polish, Ukrainian and Russian and the official questions and answers, as
 Checks: 125 tests; `scripts/page.scala` — six conversations in Chromium at a phone's size, the two new permits
 among them. Not modelled: the documents, the procedure, appeals, the Blue Card's "2+3" rule and its 12/18-month
 breaks, the income's exact sums (asked as yes or no with the thresholds said).
+
+## 6. The single permit: temporary residence and work (2026-11-20)
+
+The permit most working foreigners need (`books/pl/work/`: the MOS information page in pl/uk/ru and the official
+questions and answers in pl/uk/ru). `Work`: where the person is and on what basis (an application from abroad is
+not admissible; a tourist, family-visit, student, transit or medical visa excludes it), the purpose (work of more
+than 3 months; seasonal work, a posting by a foreign employer and one's own business have other permits), the
+gross monthly pay from all employers together (at least 4806 zł in 2026, whatever the hours), pay not under that
+of comparable workers, insurance, the starost's list of closed occupations (except the same job continued with
+the same employer, and Turkish citizens). Thirteen of the office's statements as cases.
+
+- **The teacher**: words at the second writing — the third teacher in a row wrote answers as atoms with no
+  arguments; okay-study's format now says a goal has at least one argument (republished 0.1.0) — rules at the
+  first: **12 shown, 77 of 77 held out**, the thirteen statements, no difference from the reference on three
+  thousand cases (`models/pl-work.json`).
+- **On the page**: a fourth area, before permanent residence. The answer reminds of the fees (440 + 100 zł), the
+  employer's annex no. 1 in MOS, the 15 days to report a lost job, and that a change of the named employer is a
+  change of the permit.
+- The law of quotes caught one of mine: a Russian quote with "злотих" for the portal's "злотых".
+
+Checks: 140 tests; the browser — seven conversations, the single permit's pay under the minimum among them.
