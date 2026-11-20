@@ -74,3 +74,16 @@ object ResidenceBooks:
       (Books.between(work.resolve("info-pl.txt"), "Wprowadzenie", "Dokumenty") ++
         Vector("", "PYTANIA I ODPOWIEDZI", "") ++ workQa).mkString("\n"),
       { val r = Random(20261122); (1 to 160).toVector.map(Work.sampled(_, r)) })
+
+    // PESEL: MSWiA's answers 1, 2 and 9, the City of Warsaw's two pages (their main text), as published
+    val pesel = Path.of("books/pl/pesel")
+    val mswia = Files.readString(pesel.resolve("mswia-faq-pl.txt")).linesIterator.toVector
+    def warsaw(file: String) = Files.readString(pesel.resolve(file)).linesIterator.toVector
+      .dropWhile(l => !l.contains("Zaktualizowano")).takeWhile(l => !l.contains("Nie znalazłeś informacji"))
+      .filter(_.trim.length > 20)
+    val mswiaPart = mswia.takeWhile(l => !l.trim.startsWith("3. Co z przechodzeniem")) ++
+      mswia.dropWhile(l => !l.trim.startsWith("9. Czy będzie można")).takeWhile(l => !l.trim.startsWith("10. "))
+    Books.write(pesel.resolve("study"),
+      (mswiaPart ++ Vector("", "URZĄD M.ST. WARSZAWY", "") ++ warsaw("warszawa-ukr-pl.txt") ++ Vector("") ++
+        warsaw("warszawa-pesel-pl.txt")).mkString("\n"),
+      { val r = Random(20261123); (1 to 160).toVector.map(Pesel.sampled(_, r)) })
